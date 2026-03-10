@@ -1,6 +1,173 @@
 {
   "repository": "realworld-nodejs-express",
-  "files_analyzed": 1,
-  "data_functions": [],
-  "elementary_processes": []
+  "files_analyzed": 39,
+  "data_functions": [
+    {
+      "name": "HttpException",
+      "file": "\\src\\app\\models\\http-exception.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\app\\routes\\article\\article.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Comment",
+      "file": "\\src\\app\\routes\\article\\comment.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "RegisterInput",
+      "file": "\\src\\app\\routes\\auth\\register-input.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "RegisteredUser",
+      "file": "\\src\\app\\routes\\auth\\registered-user.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Request",
+      "file": "\\src\\app\\routes\\auth\\user-request.d.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "User",
+      "file": "\\src\\app\\routes\\auth\\user.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Profile",
+      "file": "\\src\\app\\routes\\profile\\profile.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Tag",
+      "file": "\\src\\app\\routes\\tag\\tag.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Global",
+      "file": "\\src\\prisma\\prisma-client.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "CustomNodeJsGlobal",
+      "file": "\\src\\prisma\\prisma-client.ts",
+      "language": "typescript"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "constructor",
+      "file": "\\src\\app\\models\\http-exception.model.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getArticles",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getFeed",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "createArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "updateArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "deleteArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getCommentsByArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "addComment",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "deleteComment",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "favoriteArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "unfavoriteArticle",
+      "file": "\\src\\app\\routes\\article\\article.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "createUser",
+      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "login",
+      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getCurrentUser",
+      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "updateUser",
+      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getProfile",
+      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "followUser",
+      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "unfollowUser",
+      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "generateUser",
+      "file": "\\src\\prisma\\seed.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "generateArticle",
+      "file": "\\src\\prisma\\seed.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "generateComment",
+      "file": "\\src\\prisma\\seed.ts",
+      "language": "typescript"
+    }
+  ]
 }

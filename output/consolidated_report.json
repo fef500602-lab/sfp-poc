@@ -2049,9 +2049,176 @@
   },
   {
     "repository": "realworld-nodejs-express",
-    "files_analyzed": 1,
-    "data_functions": [],
-    "elementary_processes": []
+    "files_analyzed": 39,
+    "data_functions": [
+      {
+        "name": "HttpException",
+        "file": "\\src\\app\\models\\http-exception.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\app\\routes\\article\\article.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\app\\routes\\article\\comment.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "RegisterInput",
+        "file": "\\src\\app\\routes\\auth\\register-input.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "RegisteredUser",
+        "file": "\\src\\app\\routes\\auth\\registered-user.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Request",
+        "file": "\\src\\app\\routes\\auth\\user-request.d.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\app\\routes\\auth\\user.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Profile",
+        "file": "\\src\\app\\routes\\profile\\profile.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Tag",
+        "file": "\\src\\app\\routes\\tag\\tag.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "Global",
+        "file": "\\src\\prisma\\prisma-client.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "CustomNodeJsGlobal",
+        "file": "\\src\\prisma\\prisma-client.ts",
+        "language": "typescript"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "constructor",
+        "file": "\\src\\app\\models\\http-exception.model.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getArticles",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getFeed",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "createArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "updateArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "deleteArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getCommentsByArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "addComment",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "deleteComment",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "favoriteArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "unfavoriteArticle",
+        "file": "\\src\\app\\routes\\article\\article.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "createUser",
+        "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "login",
+        "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getCurrentUser",
+        "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "updateUser",
+        "file": "\\src\\app\\routes\\auth\\auth.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "getProfile",
+        "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "followUser",
+        "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "unfollowUser",
+        "file": "\\src\\app\\routes\\profile\\profile.service.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "generateUser",
+        "file": "\\src\\prisma\\seed.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "generateArticle",
+        "file": "\\src\\prisma\\seed.ts",
+        "language": "typescript"
+      },
+      {
+        "name": "generateComment",
+        "file": "\\src\\prisma\\seed.ts",
+        "language": "typescript"
+      }
+    ]
   },
   {
     "repository": "realworld-python-django",
@@ -2708,8 +2875,488 @@
     ],
     "elementary_processes": [
       {
+        "name": "responseBody",
+        "file": "\\src\\agent.js",
+        "language": "javascript"
+      },
+      {
+        "name": "tokenPlugin",
+        "file": "\\src\\agent.js",
+        "language": "javascript"
+      },
+      {
+        "name": "limit",
+        "file": "\\src\\agent.js",
+        "language": "javascript"
+      },
+      {
+        "name": "omitSlug",
+        "file": "\\src\\agent.js",
+        "language": "javascript"
+      },
+      {
+        "name": "promiseMiddleware",
+        "file": "\\src\\middleware.js",
+        "language": "javascript"
+      },
+      {
+        "name": "localStorageMiddleware",
+        "file": "\\src\\middleware.js",
+        "language": "javascript"
+      },
+      {
         "name": "isPromise",
         "file": "\\src\\middleware.js",
+        "language": "javascript"
+      },
+      {
+        "name": "getMiddleware",
+        "file": "\\src\\store.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillReceiveProps",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ArticleList",
+        "file": "\\src\\components\\ArticleList.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\ArticlePreview.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ArticlePreview",
+        "file": "\\src\\components\\ArticlePreview.js",
+        "language": "javascript"
+      },
+      {
+        "name": "handleClick",
+        "file": "\\src\\components\\ArticlePreview.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "constructor",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "updateFieldEvent",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillReceiveProps",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "LoggedOutView",
+        "file": "\\src\\components\\Header.js",
+        "language": "javascript"
+      },
+      {
+        "name": "LoggedInView",
+        "file": "\\src\\components\\Header.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Header.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\ListErrors.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\ListPagination.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ListPagination",
+        "file": "\\src\\components\\ListPagination.js",
+        "language": "javascript"
+      },
+      {
+        "name": "setPage",
+        "file": "\\src\\components\\ListPagination.js",
+        "language": "javascript"
+      },
+      {
+        "name": "onClick",
+        "file": "\\src\\components\\ListPagination.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "constructor",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "EditProfileSettings",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "FollowUserButton",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "handleClick",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "renderTabs",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\ProfileFavorites.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\ProfileFavorites.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\ProfileFavorites.js",
+        "language": "javascript"
+      },
+      {
+        "name": "renderTabs",
+        "file": "\\src\\components\\ProfileFavorites.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "constructor",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "constructor",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillReceiveProps",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Article\\ArticleActions.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ArticleActions",
+        "file": "\\src\\components\\Article\\ArticleActions.js",
+        "language": "javascript"
+      },
+      {
+        "name": "del",
+        "file": "\\src\\components\\Article\\ArticleActions.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ArticleMeta",
+        "file": "\\src\\components\\Article\\ArticleMeta.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\components\\Article\\Comment.js",
+        "language": "javascript"
+      },
+      {
+        "name": "CommentContainer",
+        "file": "\\src\\components\\Article\\CommentContainer.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Article\\CommentInput.js",
+        "language": "javascript"
+      },
+      {
+        "name": "constructor",
+        "file": "\\src\\components\\Article\\CommentInput.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Article\\CommentInput.js",
+        "language": "javascript"
+      },
+      {
+        "name": "CommentList",
+        "file": "\\src\\components\\Article\\CommentList.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Article\\DeleteButton.js",
+        "language": "javascript"
+      },
+      {
+        "name": "DeleteButton",
+        "file": "\\src\\components\\Article\\DeleteButton.js",
+        "language": "javascript"
+      },
+      {
+        "name": "del",
+        "file": "\\src\\components\\Article\\DeleteButton.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Banner",
+        "file": "\\src\\components\\Home\\Banner.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillMount",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "componentWillUnmount",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "render",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "YourFeedTab",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "clickHandler",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "GlobalFeedTab",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "clickHandler",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "TagFilterTab",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapStateToProps",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "mapDispatchToProps",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "MainView",
+        "file": "\\src\\components\\Home\\MainView.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Tags",
+        "file": "\\src\\components\\Home\\Tags.js",
+        "language": "javascript"
+      },
+      {
+        "name": "handleClick",
+        "file": "\\src\\components\\Home\\Tags.js",
         "language": "javascript"
       }
     ]

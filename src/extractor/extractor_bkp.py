@@ -30,24 +30,9 @@ QUERIES = {
         "elementary_processes": "(function_definition name: (identifier) @func_name)",
     },
     "javascript": {
-            "data_functions": """
-                [
-                (class_declaration name: (identifier) @class_name)
-                ]
-            """,
-            "elementary_processes": """
-                [
-                (method_definition name: (property_identifier) @func_name)
-                (function_declaration name: (identifier) @func_name)
-                (lexical_declaration
-                    (variable_declarator
-                    name: (identifier) @func_name
-                    value: (arrow_function)
-                    )
-                )
-                ]
-            """,
-        },
+        "data_functions":       "(class_declaration name: (identifier) @class_name)",
+        "elementary_processes": "(function_declaration name: (identifier) @func_name)",
+    },
     "java": {
         "data_functions":       "(class_declaration name: (identifier) @class_name)",
         "elementary_processes": "(method_declaration name: (identifier) @method_name)",
