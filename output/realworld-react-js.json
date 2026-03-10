@@ -1,0 +1,78 @@
+{
+  "repository": "realworld-react-js",
+  "files_analyzed": 38,
+  "data_functions": [
+    {
+      "name": "App",
+      "file": "\\src\\components\\App.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Editor",
+      "file": "\\src\\components\\Editor.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Header",
+      "file": "\\src\\components\\Header.js",
+      "language": "javascript"
+    },
+    {
+      "name": "ListErrors",
+      "file": "\\src\\components\\ListErrors.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Login",
+      "file": "\\src\\components\\Login.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Profile",
+      "file": "\\src\\components\\Profile.js",
+      "language": "javascript"
+    },
+    {
+      "name": "ProfileFavorites",
+      "file": "\\src\\components\\ProfileFavorites.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Register",
+      "file": "\\src\\components\\Register.js",
+      "language": "javascript"
+    },
+    {
+      "name": "SettingsForm",
+      "file": "\\src\\components\\Settings.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Settings",
+      "file": "\\src\\components\\Settings.js",
+      "language": "javascript"
+    },
+    {
+      "name": "CommentInput",
+      "file": "\\src\\components\\Article\\CommentInput.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\components\\Article\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "Home",
+      "file": "\\src\\components\\Home\\index.js",
+      "language": "javascript"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "isPromise",
+      "file": "\\src\\middleware.js",
+      "language": "javascript"
+    }
+  ]
+}

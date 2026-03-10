@@ -1,0 +1,2717 @@
+[
+  {
+    "repository": "realworld-java-spring",
+    "files_analyzed": 116,
+    "data_functions": [
+      {
+        "name": "JacksonCustomizations",
+        "file": "\\src\\main\\java\\io\\spring\\JacksonCustomizations.java",
+        "language": "java"
+      },
+      {
+        "name": "RealWorldModules",
+        "file": "\\src\\main\\java\\io\\spring\\JacksonCustomizations.java",
+        "language": "java"
+      },
+      {
+        "name": "DateTimeSerializer",
+        "file": "\\src\\main\\java\\io\\spring\\JacksonCustomizations.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisConfig",
+        "file": "\\src\\main\\java\\io\\spring\\MyBatisConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "RealWorldApplication",
+        "file": "\\src\\main\\java\\io\\spring\\RealWorldApplication.java",
+        "language": "java"
+      },
+      {
+        "name": "Util",
+        "file": "\\src\\main\\java\\io\\spring\\Util.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleFavoriteApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticlesApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentsApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "NewCommentParam",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "CurrentUserApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
+        "language": "java"
+      },
+      {
+        "name": "TagsApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\TagsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "UsersApi",
+        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
+        "language": "java"
+      },
+      {
+        "name": "LoginParam",
+        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
+        "language": "java"
+      },
+      {
+        "name": "CustomizeExceptionHandler",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "ErrorResource",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\ErrorResource.java",
+        "language": "java"
+      },
+      {
+        "name": "ErrorResourceSerializer",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\ErrorResourceSerializer.java",
+        "language": "java"
+      },
+      {
+        "name": "FieldErrorResource",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\FieldErrorResource.java",
+        "language": "java"
+      },
+      {
+        "name": "InvalidAuthenticationException",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\InvalidAuthenticationException.java",
+        "language": "java"
+      },
+      {
+        "name": "InvalidRequestException",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\InvalidRequestException.java",
+        "language": "java"
+      },
+      {
+        "name": "NoAuthorizationException",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\NoAuthorizationException.java",
+        "language": "java"
+      },
+      {
+        "name": "ResourceNotFoundException",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\ResourceNotFoundException.java",
+        "language": "java"
+      },
+      {
+        "name": "JwtTokenFilter",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\JwtTokenFilter.java",
+        "language": "java"
+      },
+      {
+        "name": "WebSecurityConfig",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\WebSecurityConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleQueryService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentQueryService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "CursorPageParameter",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPageParameter.java",
+        "language": "java"
+      },
+      {
+        "name": "CursorPager",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPager.java",
+        "language": "java"
+      },
+      {
+        "name": "DateTimeCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\DateTimeCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "Page",
+        "file": "\\src\\main\\java\\io\\spring\\application\\Page.java",
+        "language": "java"
+      },
+      {
+        "name": "PageCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\PageCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileQueryService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ProfileQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "TagsQueryService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\TagsQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "UserQueryService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\UserQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleCommandService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
+        "language": "java"
+      },
+      {
+        "name": "DuplicatedArticleValidator",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\DuplicatedArticleValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "NewArticleParam",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\NewArticleParam.java",
+        "language": "java"
+      },
+      {
+        "name": "UpdateArticleParam",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\UpdateArticleParam.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleData",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\ArticleData.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleDataList",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\ArticleDataList.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleFavoriteCount",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\ArticleFavoriteCount.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentData",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\CommentData.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileData",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\ProfileData.java",
+        "language": "java"
+      },
+      {
+        "name": "UserData",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\UserData.java",
+        "language": "java"
+      },
+      {
+        "name": "UserWithToken",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\UserWithToken.java",
+        "language": "java"
+      },
+      {
+        "name": "DuplicatedEmailValidator",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\DuplicatedEmailValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "DuplicatedUsernameValidator",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\DuplicatedUsernameValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "RegisterParam",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\RegisterParam.java",
+        "language": "java"
+      },
+      {
+        "name": "UpdateUserCommand",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UpdateUserCommand.java",
+        "language": "java"
+      },
+      {
+        "name": "UpdateUserParam",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UpdateUserParam.java",
+        "language": "java"
+      },
+      {
+        "name": "UserService",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+        "language": "java"
+      },
+      {
+        "name": "UpdateUserValidator",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+        "language": "java"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\Article.java",
+        "language": "java"
+      },
+      {
+        "name": "Tag",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\Tag.java",
+        "language": "java"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\main\\java\\io\\spring\\core\\comment\\Comment.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleFavorite",
+        "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavorite.java",
+        "language": "java"
+      },
+      {
+        "name": "AuthorizationService",
+        "file": "\\src\\main\\java\\io\\spring\\core\\service\\AuthorizationService.java",
+        "language": "java"
+      },
+      {
+        "name": "FollowRelation",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\FollowRelation.java",
+        "language": "java"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\User.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleDatafetcher",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleMutation",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentDatafetcher",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentMutation",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "MeDatafetcher",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\MeDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileDatafetcher",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "RelationMutation",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "SecurityUtil",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\SecurityUtil.java",
+        "language": "java"
+      },
+      {
+        "name": "TagDatafetcher",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\TagDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "UserMutation",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "AuthenticationException",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\AuthenticationException.java",
+        "language": "java"
+      },
+      {
+        "name": "GraphQLCustomizeExceptionHandler",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "DateTimeHandler",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\DateTimeHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisArticleFavoriteRepository",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisArticleRepository",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisCommentRepository",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisCommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisUserRepository",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "DefaultJwtService",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "RealworldApplicationTests",
+        "file": "\\src\\test\\java\\io\\spring\\RealworldApplicationTests.java",
+        "language": "java"
+      },
+      {
+        "name": "TestHelper",
+        "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleFavoriteApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticlesApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentsApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "CurrentUserApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ListArticleApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "TestWithCurrentUser",
+        "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+        "language": "java"
+      },
+      {
+        "name": "UsersApiTest",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleQueryServiceTest",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "CommentQueryServiceTest",
+        "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ProfileQueryServiceTest",
+        "file": "\\src\\test\\java\\io\\spring\\application\\profile\\ProfileQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "TagsQueryServiceTest",
+        "file": "\\src\\test\\java\\io\\spring\\application\\tag\\TagsQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleTest",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "DbTestBase",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\DbTestBase.java",
+        "language": "java"
+      },
+      {
+        "name": "ArticleRepositoryTransactionTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\ArticleRepositoryTransactionTest.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisArticleRepositoryTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisCommentRepositoryTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\comment\\MyBatisCommentRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisArticleFavoriteRepositoryTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "DefaultJwtServiceTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "MyBatisUserRepositoryTest",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "realWorldModules",
+        "file": "\\src\\main\\java\\io\\spring\\JacksonCustomizations.java",
+        "language": "java"
+      },
+      {
+        "name": "serialize",
+        "file": "\\src\\main\\java\\io\\spring\\JacksonCustomizations.java",
+        "language": "java"
+      },
+      {
+        "name": "main",
+        "file": "\\src\\main\\java\\io\\spring\\RealWorldApplication.java",
+        "language": "java"
+      },
+      {
+        "name": "isEmpty",
+        "file": "\\src\\main\\java\\io\\spring\\Util.java",
+        "language": "java"
+      },
+      {
+        "name": "article",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
+        "language": "java"
+      },
+      {
+        "name": "updateArticle",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
+        "language": "java"
+      },
+      {
+        "name": "deleteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
+        "language": "java"
+      },
+      {
+        "name": "articleResponse",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
+        "language": "java"
+      },
+      {
+        "name": "favoriteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
+        "language": "java"
+      },
+      {
+        "name": "unfavoriteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
+        "language": "java"
+      },
+      {
+        "name": "responseArticleData",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
+        "language": "java"
+      },
+      {
+        "name": "createArticle",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
+        "language": "java"
+      },
+      {
+        "name": "getFeed",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
+        "language": "java"
+      },
+      {
+        "name": "getArticles",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
+        "language": "java"
+      },
+      {
+        "name": "createComment",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "getComments",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "deleteComment",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "commentResponse",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "currentUser",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
+        "language": "java"
+      },
+      {
+        "name": "updateProfile",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
+        "language": "java"
+      },
+      {
+        "name": "userResponse",
+        "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
+        "language": "java"
+      },
+      {
+        "name": "getProfile",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
+        "language": "java"
+      },
+      {
+        "name": "follow",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
+        "language": "java"
+      },
+      {
+        "name": "unfollow",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
+        "language": "java"
+      },
+      {
+        "name": "profileResponse",
+        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
+        "language": "java"
+      },
+      {
+        "name": "getTags",
+        "file": "\\src\\main\\java\\io\\spring\\api\\TagsApi.java",
+        "language": "java"
+      },
+      {
+        "name": "createUser",
+        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
+        "language": "java"
+      },
+      {
+        "name": "userLogin",
+        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
+        "language": "java"
+      },
+      {
+        "name": "userResponse",
+        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
+        "language": "java"
+      },
+      {
+        "name": "handleInvalidRequest",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "handleInvalidAuthentication",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "handleMethodArgumentNotValid",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "handleConstraintViolation",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getParam",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "serialize",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\ErrorResourceSerializer.java",
+        "language": "java"
+      },
+      {
+        "name": "getErrors",
+        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\InvalidRequestException.java",
+        "language": "java"
+      },
+      {
+        "name": "doFilterInternal",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\JwtTokenFilter.java",
+        "language": "java"
+      },
+      {
+        "name": "getTokenString",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\JwtTokenFilter.java",
+        "language": "java"
+      },
+      {
+        "name": "jwtTokenFilter",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\WebSecurityConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "passwordEncoder",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\WebSecurityConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "configure",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\WebSecurityConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "corsConfigurationSource",
+        "file": "\\src\\main\\java\\io\\spring\\api\\security\\WebSecurityConfig.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findRecentArticlesWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findUserFeedWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findRecentArticles",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findUserFeed",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "fillExtraInfo",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "setIsFollowingAuthor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "setFavoriteCount",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "setIsFavorite",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "fillExtraInfo",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findByArticleId",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findByArticleIdWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "isNext",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPageParameter.java",
+        "language": "java"
+      },
+      {
+        "name": "getQueryLimit",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPageParameter.java",
+        "language": "java"
+      },
+      {
+        "name": "setCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPageParameter.java",
+        "language": "java"
+      },
+      {
+        "name": "setLimit",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPageParameter.java",
+        "language": "java"
+      },
+      {
+        "name": "hasNext",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPager.java",
+        "language": "java"
+      },
+      {
+        "name": "hasPrevious",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPager.java",
+        "language": "java"
+      },
+      {
+        "name": "getStartCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPager.java",
+        "language": "java"
+      },
+      {
+        "name": "getEndCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\CursorPager.java",
+        "language": "java"
+      },
+      {
+        "name": "toString",
+        "file": "\\src\\main\\java\\io\\spring\\application\\DateTimeCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "parse",
+        "file": "\\src\\main\\java\\io\\spring\\application\\DateTimeCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "getCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\Node.java",
+        "language": "java"
+      },
+      {
+        "name": "setOffset",
+        "file": "\\src\\main\\java\\io\\spring\\application\\Page.java",
+        "language": "java"
+      },
+      {
+        "name": "setLimit",
+        "file": "\\src\\main\\java\\io\\spring\\application\\Page.java",
+        "language": "java"
+      },
+      {
+        "name": "getData",
+        "file": "\\src\\main\\java\\io\\spring\\application\\PageCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "toString",
+        "file": "\\src\\main\\java\\io\\spring\\application\\PageCursor.java",
+        "language": "java"
+      },
+      {
+        "name": "findByUsername",
+        "file": "\\src\\main\\java\\io\\spring\\application\\ProfileQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "allTags",
+        "file": "\\src\\main\\java\\io\\spring\\application\\TagsQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\application\\UserQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "createArticle",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
+        "language": "java"
+      },
+      {
+        "name": "updateArticle",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
+        "language": "java"
+      },
+      {
+        "name": "isValid",
+        "file": "\\src\\main\\java\\io\\spring\\application\\article\\DuplicatedArticleValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "getCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\ArticleData.java",
+        "language": "java"
+      },
+      {
+        "name": "getCursor",
+        "file": "\\src\\main\\java\\io\\spring\\application\\data\\CommentData.java",
+        "language": "java"
+      },
+      {
+        "name": "isValid",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\DuplicatedEmailValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "isValid",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\DuplicatedUsernameValidator.java",
+        "language": "java"
+      },
+      {
+        "name": "createUser",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+        "language": "java"
+      },
+      {
+        "name": "updateUser",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+        "language": "java"
+      },
+      {
+        "name": "isValid",
+        "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+        "language": "java"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\Article.java",
+        "language": "java"
+      },
+      {
+        "name": "toSlug",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\Article.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\ArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\ArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\ArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\core\\article\\ArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\core\\comment\\CommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\core\\comment\\CommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\core\\comment\\CommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "find",
+        "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "canWriteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\core\\service\\AuthorizationService.java",
+        "language": "java"
+      },
+      {
+        "name": "canWriteComment",
+        "file": "\\src\\main\\java\\io\\spring\\core\\service\\AuthorizationService.java",
+        "language": "java"
+      },
+      {
+        "name": "toToken",
+        "file": "\\src\\main\\java\\io\\spring\\core\\service\\JwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "getSubFromToken",
+        "file": "\\src\\main\\java\\io\\spring\\core\\service\\JwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\User.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findByUsername",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findByEmail",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "saveRelation",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findRelation",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "removeRelation",
+        "file": "\\src\\main\\java\\io\\spring\\core\\user\\UserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "getFeed",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "userFeed",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "userFavorites",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "userArticles",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getArticles",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getCommentArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "findArticleBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "buildArticlePageInfo",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "buildArticleResult",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "createArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "updateArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "favoriteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "unfavoriteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "deleteArticle",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "getComment",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "articleComments",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "buildCommentPageInfo",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "buildCommentResult",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "createComment",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "removeComment",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "getMe",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\MeDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getUserPayloadUser",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\MeDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getUserProfile",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getAuthor",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "getCommentAuthor",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "queryProfile",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "queryProfile",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "follow",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "unfollow",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "buildProfile",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "getCurrentUser",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\SecurityUtil.java",
+        "language": "java"
+      },
+      {
+        "name": "getTags",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\TagDatafetcher.java",
+        "language": "java"
+      },
+      {
+        "name": "createUser",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "login",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "updateUser",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
+        "language": "java"
+      },
+      {
+        "name": "onException",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getErrorsAsData",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getParam",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "errorsToMap",
+        "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "setParameter",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\DateTimeHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getResult",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\DateTimeHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getResult",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\DateTimeHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "getResult",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\DateTimeHandler.java",
+        "language": "java"
+      },
+      {
+        "name": "find",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleFavoriteMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insert",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleFavoriteMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "delete",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleFavoriteMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insert",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findTag",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insertTag",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insertArticleTagRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "delete",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\ArticleMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insert",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\CommentMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\CommentMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "delete",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\CommentMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "insert",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findByUsername",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findByEmail",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "findRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "saveRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "deleteRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\mapper\\UserMapper.java",
+        "language": "java"
+      },
+      {
+        "name": "isUserFavorite",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleFavoritesReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "articleFavoriteCount",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleFavoritesReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "articlesFavoriteCount",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleFavoritesReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "userFavorites",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleFavoritesReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "queryArticles",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "countArticle",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findArticles",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findArticlesOfAuthors",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findArticlesOfAuthorsWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "countFeedSize",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findArticlesWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\ArticleReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\CommentReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findByArticleId",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\CommentReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findByArticleIdWithCursor",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\CommentReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "all",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\TagReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findByUsername",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\UserReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\UserReadService.java",
+        "language": "java"
+      },
+      {
+        "name": "isUserFollowing",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\UserRelationshipQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "followingAuthors",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\UserRelationshipQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "followedUsers",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\mybatis\\readservice\\UserRelationshipQueryService.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "find",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleFavoriteRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "createNew",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisArticleRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisCommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisCommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "remove",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisCommentRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "save",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findById",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findByUsername",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findByEmail",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "saveRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "findRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "removeRelation",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\repository\\MyBatisUserRepository.java",
+        "language": "java"
+      },
+      {
+        "name": "toToken",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "getSubFromToken",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "expireTimeFromNow",
+        "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+        "language": "java"
+      },
+      {
+        "name": "contextLoads",
+        "file": "\\src\\test\\java\\io\\spring\\RealworldApplicationTests.java",
+        "language": "java"
+      },
+      {
+        "name": "articleDataFixture",
+        "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+        "language": "java"
+      },
+      {
+        "name": "getArticleDataFromArticleAndUser",
+        "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_read_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_404_if_article_not_found",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_update_article_content_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_403_if_not_author_to_update_article",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_delete_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_403_if_not_author_delete_article",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "prepareUpdateParam",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_favorite_an_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_unfavorite_an_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_error_message_with_wrong_parameter",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_error_message_with_duplicated_title",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "prepareParam",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_comment_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_422_with_empty_body",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_comments_of_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_delete_comment_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_current_user_with_token",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_401_without_token",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_401_with_invalid_token",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_update_current_user_profile",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_error_if_email_exists_when_update_user_profile",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "prepareUpdateParam",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_401_if_not_login",
+        "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_default_article_list",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_feeds_401_without_login",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_feeds_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_user_profile_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_follow_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_unfollow_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "userFixture",
+        "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_show_error_message_for_blank_username",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_show_error_message_for_invalid_email",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_show_error_for_duplicated_username",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_show_error_for_duplicated_email",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "prepareRegisterParameter",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_login_success",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_fail_login_with_wrong_password",
+        "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_fetch_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_article_with_right_favorite_and_favorite_count",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_default_article_list",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_default_article_list_by_cursor",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_query_article_by_author",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_query_article_by_favorite",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_query_article_by_tag",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_show_following_if_user_followed_author",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_user_feed",
+        "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_read_comment_success",
+        "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_read_comments_of_article",
+        "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_fetch_profile_success",
+        "file": "\\src\\test\\java\\io\\spring\\application\\profile\\ProfileQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_all_tags",
+        "file": "\\src\\test\\java\\io\\spring\\application\\tag\\TagsQueryServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_right_slug",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_right_slug_with_number_in_title",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_lower_case_slug",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_handle_other_language",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_handle_commas",
+        "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+        "language": "java"
+      },
+      {
+        "name": "transactional_test",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\ArticleRepositoryTransactionTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_and_fetch_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_update_and_fetch_article_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_delete_article",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_and_fetch_comment_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\comment\\MyBatisCommentRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_save_and_fetch_articleFavorite_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_remove_favorite_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_generate_and_parse_token",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_null_with_wrong_jwt",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_get_null_with_expired_jwt",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+        "language": "java"
+      },
+      {
+        "name": "setUp",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_save_and_fetch_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_update_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_create_new_user_follow_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      },
+      {
+        "name": "should_unfollow_user_success",
+        "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+        "language": "java"
+      }
+    ]
+  },
+  {
+    "repository": "realworld-nodejs-express",
+    "files_analyzed": 1,
+    "data_functions": [],
+    "elementary_processes": []
+  },
+  {
+    "repository": "realworld-python-django",
+    "files_analyzed": 44,
+    "data_functions": [
+      {
+        "name": "Article",
+        "file": "\\conduit\\apps\\articles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "Comment",
+        "file": "\\conduit\\apps\\articles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "Tag",
+        "file": "\\conduit\\apps\\articles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "TagRelatedField",
+        "file": "\\conduit\\apps\\articles\\relations.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticleJSONRenderer",
+        "file": "\\conduit\\apps\\articles\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "CommentJSONRenderer",
+        "file": "\\conduit\\apps\\articles\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticleSerializer",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "CommentSerializer",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "TagSerializer",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticleViewSet",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "CommentsListCreateAPIView",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "CommentsDestroyAPIView",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticlesFavoriteAPIView",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "TagListAPIView",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticlesFeedAPIView",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ArticlesAppConfig",
+        "file": "\\conduit\\apps\\articles\\__init__.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\articles\\migrations\\0001_initial.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\articles\\migrations\\0002_comment.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\articles\\migrations\\0003_auto_20160828_1656.py",
+        "language": "python"
+      },
+      {
+        "name": "JWTAuthentication",
+        "file": "\\conduit\\apps\\authentication\\backends.py",
+        "language": "python"
+      },
+      {
+        "name": "UserManager",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "User",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "UserJSONRenderer",
+        "file": "\\conduit\\apps\\authentication\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "RegistrationSerializer",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "LoginSerializer",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "UserSerializer",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "RegistrationAPIView",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "LoginAPIView",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "UserRetrieveUpdateAPIView",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "AuthenticationAppConfig",
+        "file": "\\conduit\\apps\\authentication\\__init__.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\authentication\\migrations\\0001_initial.py",
+        "language": "python"
+      },
+      {
+        "name": "TimestampedModel",
+        "file": "\\conduit\\apps\\core\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\core\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "ConduitJSONRenderer",
+        "file": "\\conduit\\apps\\core\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "ProfileDoesNotExist",
+        "file": "\\conduit\\apps\\profiles\\exceptions.py",
+        "language": "python"
+      },
+      {
+        "name": "Profile",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "ProfileJSONRenderer",
+        "file": "\\conduit\\apps\\profiles\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "ProfileSerializer",
+        "file": "\\conduit\\apps\\profiles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "Meta",
+        "file": "\\conduit\\apps\\profiles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "ProfileRetrieveAPIView",
+        "file": "\\conduit\\apps\\profiles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ProfileFollowAPIView",
+        "file": "\\conduit\\apps\\profiles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\profiles\\migrations\\0001_initial.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\profiles\\migrations\\0002_profile_follows.py",
+        "language": "python"
+      },
+      {
+        "name": "Migration",
+        "file": "\\conduit\\apps\\profiles\\migrations\\0003_profile_favorites.py",
+        "language": "python"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "__str__",
+        "file": "\\conduit\\apps\\articles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "__str__",
+        "file": "\\conduit\\apps\\articles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "get_queryset",
+        "file": "\\conduit\\apps\\articles\\relations.py",
+        "language": "python"
+      },
+      {
+        "name": "to_internal_value",
+        "file": "\\conduit\\apps\\articles\\relations.py",
+        "language": "python"
+      },
+      {
+        "name": "to_representation",
+        "file": "\\conduit\\apps\\articles\\relations.py",
+        "language": "python"
+      },
+      {
+        "name": "create",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_created_at",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_favorited",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_favorites_count",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_updated_at",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "create",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_created_at",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_updated_at",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "to_representation",
+        "file": "\\conduit\\apps\\articles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "add_slug_to_article_if_not_exists",
+        "file": "\\conduit\\apps\\articles\\signals.py",
+        "language": "python"
+      },
+      {
+        "name": "get_queryset",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "create",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "list",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "retrieve",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "update",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "filter_queryset",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "create",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "destroy",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "delete",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "post",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "list",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "get_queryset",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "list",
+        "file": "\\conduit\\apps\\articles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ready",
+        "file": "\\conduit\\apps\\articles\\__init__.py",
+        "language": "python"
+      },
+      {
+        "name": "authenticate",
+        "file": "\\conduit\\apps\\authentication\\backends.py",
+        "language": "python"
+      },
+      {
+        "name": "_authenticate_credentials",
+        "file": "\\conduit\\apps\\authentication\\backends.py",
+        "language": "python"
+      },
+      {
+        "name": "create_user",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "create_superuser",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "__str__",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "token",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "get_full_name",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "get_short_name",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "_generate_jwt_token",
+        "file": "\\conduit\\apps\\authentication\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "render",
+        "file": "\\conduit\\apps\\authentication\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "create",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "validate",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "update",
+        "file": "\\conduit\\apps\\authentication\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "create_related_profile",
+        "file": "\\conduit\\apps\\authentication\\signals.py",
+        "language": "python"
+      },
+      {
+        "name": "post",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "post",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "retrieve",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "update",
+        "file": "\\conduit\\apps\\authentication\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "ready",
+        "file": "\\conduit\\apps\\authentication\\__init__.py",
+        "language": "python"
+      },
+      {
+        "name": "core_exception_handler",
+        "file": "\\conduit\\apps\\core\\exceptions.py",
+        "language": "python"
+      },
+      {
+        "name": "_handle_generic_error",
+        "file": "\\conduit\\apps\\core\\exceptions.py",
+        "language": "python"
+      },
+      {
+        "name": "_handle_not_found_error",
+        "file": "\\conduit\\apps\\core\\exceptions.py",
+        "language": "python"
+      },
+      {
+        "name": "render",
+        "file": "\\conduit\\apps\\core\\renderers.py",
+        "language": "python"
+      },
+      {
+        "name": "generate_random_string",
+        "file": "\\conduit\\apps\\core\\utils.py",
+        "language": "python"
+      },
+      {
+        "name": "__str__",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "follow",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "unfollow",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "is_following",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "is_followed_by",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "favorite",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "unfavorite",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "has_favorited",
+        "file": "\\conduit\\apps\\profiles\\models.py",
+        "language": "python"
+      },
+      {
+        "name": "get_image",
+        "file": "\\conduit\\apps\\profiles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "get_following",
+        "file": "\\conduit\\apps\\profiles\\serializers.py",
+        "language": "python"
+      },
+      {
+        "name": "retrieve",
+        "file": "\\conduit\\apps\\profiles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "delete",
+        "file": "\\conduit\\apps\\profiles\\views.py",
+        "language": "python"
+      },
+      {
+        "name": "post",
+        "file": "\\conduit\\apps\\profiles\\views.py",
+        "language": "python"
+      }
+    ]
+  },
+  {
+    "repository": "realworld-react-js",
+    "files_analyzed": 38,
+    "data_functions": [
+      {
+        "name": "App",
+        "file": "\\src\\components\\App.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Editor",
+        "file": "\\src\\components\\Editor.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Header",
+        "file": "\\src\\components\\Header.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ListErrors",
+        "file": "\\src\\components\\ListErrors.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Login",
+        "file": "\\src\\components\\Login.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Profile",
+        "file": "\\src\\components\\Profile.js",
+        "language": "javascript"
+      },
+      {
+        "name": "ProfileFavorites",
+        "file": "\\src\\components\\ProfileFavorites.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Register",
+        "file": "\\src\\components\\Register.js",
+        "language": "javascript"
+      },
+      {
+        "name": "SettingsForm",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Settings",
+        "file": "\\src\\components\\Settings.js",
+        "language": "javascript"
+      },
+      {
+        "name": "CommentInput",
+        "file": "\\src\\components\\Article\\CommentInput.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\components\\Article\\index.js",
+        "language": "javascript"
+      },
+      {
+        "name": "Home",
+        "file": "\\src\\components\\Home\\index.js",
+        "language": "javascript"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "isPromise",
+        "file": "\\src\\middleware.js",
+        "language": "javascript"
+      }
+    ]
+  }
+]
