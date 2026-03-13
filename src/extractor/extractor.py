@@ -4,6 +4,7 @@ from tree_sitter import Language, Parser
 import tree_sitter_python as tspython
 import tree_sitter_javascript as tsjavascript
 import tree_sitter_java as tsjava
+import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
 
 # ─────────────────────────────────────────
@@ -14,17 +15,34 @@ JS_LANGUAGE   = Language(tsjavascript.language())
 JAVA_LANGUAGE = Language(tsjava.language())
 
 LANGUAGES = {
+    "csharp":     {"language": Language(tscsharp.language()), "extensions": [".cs"]},
     "python":     {"language": PY_LANGUAGE,   "extensions": [".py"]},
     "javascript": {"language": JS_LANGUAGE,   "extensions": [".js", ".jsx"]},
     "java":       {"language": JAVA_LANGUAGE, "extensions": [".java"]},
     "typescript": {"language": Language(tstypescript.language_typescript()), "extensions": [".ts"]},
-    "tsx":{"language": Language(tstypescript.language_tsx()), "extensions": [".tsx"]},
+    "tsx":        {"language": Language(tstypescript.language_tsx()), "extensions": [".tsx"]},
 }
 
 # ─────────────────────────────────────────
 # 2. Queries SFP por linguagem
 # ─────────────────────────────────────────
 QUERIES = {
+
+    "csharp": {
+        "data_functions": """
+            [
+              (class_declaration name: (identifier) @class_name)
+              (interface_declaration name: (identifier) @class_name)
+              (record_declaration name: (identifier) @class_name)
+            ]
+        """,
+        "elementary_processes": """
+            [
+              (method_declaration name: (identifier) @method_name)
+              (constructor_declaration name: (identifier) @method_name)
+            ]
+        """,
+    },
     "python": {
         "data_functions":       "(class_definition name: (identifier) @class_name)",
         "elementary_processes": "(function_definition name: (identifier) @func_name)",

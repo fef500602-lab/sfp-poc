@@ -1,0 +1,1208 @@
+{
+  "repository": "realworld-csharp-dotnet",
+  "files_analyzed": 74,
+  "data_functions": [
+    {
+      "name": "ServicesExtensions",
+      "file": "\\src\\Conduit\\ServicesExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\Conduit\\Domain\\Article.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleFavorite",
+      "file": "\\src\\Conduit\\Domain\\ArticleFavorite.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleTag",
+      "file": "\\src\\Conduit\\Domain\\ArticleTag.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Comment",
+      "file": "\\src\\Conduit\\Domain\\Comment.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FollowedPeople",
+      "file": "\\src\\Conduit\\Domain\\FollowedPeople.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Person",
+      "file": "\\src\\Conduit\\Domain\\Person.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Tag",
+      "file": "\\src\\Conduit\\Domain\\Tag.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleEnvelope",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleExtensions",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticlesController",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticlesEnvelope",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleData",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleDataValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Details",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Edit",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleData",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Model",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "List",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommentEnvelope",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommentsController",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommentsEnvelope",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommentData",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Model",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "List",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Add",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FavoritesController",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Add",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FollowersController",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Details",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IProfileReader",
+      "file": "\\src\\Conduit\\Features\\Profiles\\IProfileReader.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\MappingProfile.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Profile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Profile.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ProfileEnvelope",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ProfileReader",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileReader.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ProfilesController",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfilesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "List",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TagsController",
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TagsEnvelope",
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsEnvelope.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserData",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Details",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Query",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryHandler",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Edit",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserData",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Login",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserData",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Command",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handler",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingProfile",
+      "file": "\\src\\Conduit\\Features\\Users\\MappingProfile.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "User",
+      "file": "\\src\\Conduit\\Features\\Users\\User.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserEnvelope",
+      "file": "\\src\\Conduit\\Features\\Users\\User.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserController",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UsersController",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ConduitContext",
+      "file": "\\src\\Conduit\\Infrastructure\\ConduitContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CurrentUserAccessor",
+      "file": "\\src\\Conduit\\Infrastructure\\CurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DBContextTransactionPipelineBehavior",
+      "file": "\\src\\Conduit\\Infrastructure\\DBContextTransactionPipelineBehavior.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GroupByApiRootConvention",
+      "file": "\\src\\Conduit\\Infrastructure\\GroupByApiRootConvention.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ICurrentUserAccessor",
+      "file": "\\src\\Conduit\\Infrastructure\\ICurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Slug",
+      "file": "\\src\\Conduit\\Infrastructure\\Slug.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationPipelineBehavior",
+      "file": "\\src\\Conduit\\Infrastructure\\ValidationPipelineBehavior.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidatorActionFilter",
+      "file": "\\src\\Conduit\\Infrastructure\\ValidatorActionFilter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Constants",
+      "file": "\\src\\Conduit\\Infrastructure\\Errors\\Constants.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ErrorHandlingMiddleware",
+      "file": "\\src\\Conduit\\Infrastructure\\Errors\\ErrorHandlingMiddleware.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RestException",
+      "file": "\\src\\Conduit\\Infrastructure\\Errors\\RestException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IJwtTokenGenerator",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\IJwtTokenGenerator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IPasswordHasher",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\IPasswordHasher.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "JwtIssuerOptions",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\JwtIssuerOptions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "JwtTokenGenerator",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\JwtTokenGenerator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PasswordHasher",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\PasswordHasher.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SliceFixture",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "StubCurrentUserAccessor",
+      "file": "\\tests\\Conduit.IntegrationTests\\StubCurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleHelpers",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\ArticleHelpers.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTests",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\CreateTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTests",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "EditTests",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\EditTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommentHelpers",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Comments\\CommentHelpers.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTests",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\CreateTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LoginTests",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\LoginTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UserHelpers",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\UserHelpers.cs",
+      "language": "csharp"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "AddConduit",
+      "file": "\\src\\Conduit\\ServicesExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddJwt",
+      "file": "\\src\\Conduit\\ServicesExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddSerilogLogging",
+      "file": "\\src\\Conduit\\ServicesExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetAllData",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Get",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetFeed",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Get",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Edit",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ArticleDataValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetArticleTagsToCreate",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetArticleTagsToDelete",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Get",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Delete",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Comments\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FavoriteAdd",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FavoriteDelete",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Follow",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Unfollow",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ReadProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\IProfileReader.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\MappingProfile.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ReadProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileReader.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Get",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfilesController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Get",
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "QueryValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommandValidator",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingProfile",
+      "file": "\\src\\Conduit\\Features\\Users\\MappingProfile.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetCurrent",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateUser",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Create",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Login",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OnModelCreating",
+      "file": "\\src\\Conduit\\Infrastructure\\ConduitContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeginTransaction",
+      "file": "\\src\\Conduit\\Infrastructure\\ConduitContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CommitTransaction",
+      "file": "\\src\\Conduit\\Infrastructure\\ConduitContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RollbackTransaction",
+      "file": "\\src\\Conduit\\Infrastructure\\ConduitContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetCurrentUsername",
+      "file": "\\src\\Conduit\\Infrastructure\\CurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Infrastructure\\DBContextTransactionPipelineBehavior.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Apply",
+      "file": "\\src\\Conduit\\Infrastructure\\GroupByApiRootConvention.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetCurrentUsername",
+      "file": "\\src\\Conduit\\Infrastructure\\ICurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GenerateSlug",
+      "file": "\\src\\Conduit\\Infrastructure\\Slug.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "InvalidCharsRegex",
+      "file": "\\src\\Conduit\\Infrastructure\\Slug.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MultipleSpacesRegex",
+      "file": "\\src\\Conduit\\Infrastructure\\Slug.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TrimRegex",
+      "file": "\\src\\Conduit\\Infrastructure\\Slug.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Infrastructure\\ValidationPipelineBehavior.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OnActionExecuting",
+      "file": "\\src\\Conduit\\Infrastructure\\ValidatorActionFilter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OnActionExecuted",
+      "file": "\\src\\Conduit\\Infrastructure\\ValidatorActionFilter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Invoke",
+      "file": "\\src\\Conduit\\Infrastructure\\Errors\\ErrorHandlingMiddleware.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HandleExceptionAsync",
+      "file": "\\src\\Conduit\\Infrastructure\\Errors\\ErrorHandlingMiddleware.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateToken",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\IJwtTokenGenerator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Hash",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\IPasswordHasher.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateToken",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\JwtTokenGenerator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Hash",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\PasswordHasher.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Dispose",
+      "file": "\\src\\Conduit\\Infrastructure\\Security\\PasswordHasher.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SliceFixture",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetDbContext",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Dispose",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ExecuteScopeAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ExecuteScopeAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SendAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SendAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ExecuteDbContextAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ExecuteDbContextAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "InsertAsync",
+      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetCurrentUsername",
+      "file": "\\tests\\Conduit.IntegrationTests\\StubCurrentUserAccessor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateArticle",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\ArticleHelpers.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Create_Article",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\CreateTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Delete_Article",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Delete_Article_With_Tags",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Delete_Article_With_Comments",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Edit_Article",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\EditTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateComment",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Comments\\CommentHelpers.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Create_User",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\CreateTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Expect_Login",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\LoginTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateDefaultUser",
+      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\UserHelpers.cs",
+      "language": "csharp"
+    }
+  ]
+}
