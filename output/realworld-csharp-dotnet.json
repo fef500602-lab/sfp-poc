@@ -1,6 +1,6 @@
 {
   "repository": "realworld-csharp-dotnet",
-  "files_analyzed": 74,
+  "files_analyzed": 64,
   "data_functions": [
     {
       "name": "ServicesExtensions",
@@ -621,56 +621,6 @@
       "name": "PasswordHasher",
       "file": "\\src\\Conduit\\Infrastructure\\Security\\PasswordHasher.cs",
       "language": "csharp"
-    },
-    {
-      "name": "SliceFixture",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "StubCurrentUserAccessor",
-      "file": "\\tests\\Conduit.IntegrationTests\\StubCurrentUserAccessor.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "ArticleHelpers",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\ArticleHelpers.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CreateTests",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\CreateTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "DeleteTests",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "EditTests",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\EditTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CommentHelpers",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Comments\\CommentHelpers.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CreateTests",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\CreateTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "LoginTests",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\LoginTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "UserHelpers",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\UserHelpers.cs",
-      "language": "csharp"
     }
   ],
   "elementary_processes": [
@@ -1097,111 +1047,6 @@
     {
       "name": "Dispose",
       "file": "\\src\\Conduit\\Infrastructure\\Security\\PasswordHasher.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "SliceFixture",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "GetDbContext",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Dispose",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "ExecuteScopeAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "ExecuteScopeAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "SendAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "SendAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "ExecuteDbContextAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "ExecuteDbContextAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "InsertAsync",
-      "file": "\\tests\\Conduit.IntegrationTests\\SliceFixture.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "GetCurrentUsername",
-      "file": "\\tests\\Conduit.IntegrationTests\\StubCurrentUserAccessor.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CreateArticle",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\ArticleHelpers.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Create_Article",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\CreateTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Delete_Article",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Delete_Article_With_Tags",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Delete_Article_With_Comments",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\DeleteTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Edit_Article",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Articles\\EditTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CreateComment",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Comments\\CommentHelpers.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Create_User",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\CreateTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "Expect_Login",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\LoginTests.cs",
-      "language": "csharp"
-    },
-    {
-      "name": "CreateDefaultUser",
-      "file": "\\tests\\Conduit.IntegrationTests\\Features\\Users\\UserHelpers.cs",
       "language": "csharp"
     }
   ]

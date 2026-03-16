@@ -1,6 +1,6 @@
 {
   "repository": "realworld-nodejs-express",
-  "files_analyzed": 39,
+  "files_analyzed": 31,
   "data_functions": [
     {
       "name": "HttpException",

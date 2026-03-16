@@ -176,6 +176,15 @@ IGNORE_DIRS = {
     ".venv", "dist", "build", "target"
 }
 
+IGNORE_FILE_PATTERNS = [
+    "test", "tests", "spec", "mock",
+    "stub", "fake", "fixture", "helper"
+]
+
+def should_ignore_file(filename):
+    name_lower = filename.lower().replace("-", "").replace("_", "")
+    return any(pattern in name_lower for pattern in IGNORE_FILE_PATTERNS)
+
 def analyze_repository(repo_path, repo_name):
     print(f"\n🔍 Analisando repositório: {repo_name}")
     print(f"   Caminho: {repo_path}")
@@ -196,6 +205,8 @@ def analyze_repository(repo_path, repo_name):
             lang_name = detect_language(filepath)
 
             if not lang_name:
+                continue
+            if should_ignore_file(filename):
                 continue
 
             try:
