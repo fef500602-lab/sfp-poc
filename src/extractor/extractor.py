@@ -7,27 +7,52 @@ import tree_sitter_java as tsjava
 import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
 
-# ─────────────────────────────────────────
-# 1. Configura linguagens
-# ─────────────────────────────────────────
-PY_LANGUAGE   = Language(tspython.language())
-JS_LANGUAGE   = Language(tsjavascript.language())
-JAVA_LANGUAGE = Language(tsjava.language())
+# =============================================================================
+# SFP Extractor — Simple Function Points via tree-sitter
+#
+# Varre repositórios de código fonte e extrai dois elementos da metodologia SFP:
+#   - Funções de Dados:       classes e modelos de dados (as entidades)
+#   - Processos Elementares:  métodos e endpoints (operações de leitura/escrita)
+#
+# O resultado é salvo em JSON para posterior análise pela LLM.
+# O código fonte nunca circula pela LLM — apenas nomes de classes e métodos.
+#
+# Compatibilidade: tree-sitter==0.22.3
+# Linguagens:      Python, Java, JavaScript, TypeScript, TSX, C#
+# =============================================================================
 
+
+# ─────────────────────────────────────────
+# 1. Configuração dos parsers por linguagem
+#
+# Cada linguagem precisa de um parser específico (grammar).
+# As versões 0.21.x dos pacotes de linguagem são compatíveis
+# com tree-sitter 0.22.3 — não atualizar sem validar compatibilidade.
+# ─────────────────────────────────────────
 LANGUAGES = {
-    "csharp":     {"language": Language(tscsharp.language()), "extensions": [".cs"]},
-    "python":     {"language": PY_LANGUAGE,   "extensions": [".py"]},
-    "javascript": {"language": JS_LANGUAGE,   "extensions": [".js", ".jsx"]},
-    "java":       {"language": JAVA_LANGUAGE, "extensions": [".java"]},
-    "typescript": {"language": Language(tstypescript.language_typescript()), "extensions": [".ts"]},
-    "tsx":        {"language": Language(tstypescript.language_tsx()), "extensions": [".tsx"]},
+    "csharp":     {"language": Language(tscsharp.language()),                  "extensions": [".cs"]},
+    "python":     {"language": Language(tspython.language()),                  "extensions": [".py"]},
+    "javascript": {"language": Language(tsjavascript.language()),              "extensions": [".js", ".jsx"]},
+    "java":       {"language": Language(tsjava.language()),                    "extensions": [".java"]},
+    "typescript": {"language": Language(tstypescript.language_typescript()),   "extensions": [".ts"]},
+    "tsx":        {"language": Language(tstypescript.language_tsx()),          "extensions": [".tsx"]},
 }
+
 
 # ─────────────────────────────────────────
 # 2. Queries SFP por linguagem
+#
+# Queries escritas na linguagem de consulta do tree-sitter (S-expressions).
+# Cada linguagem tem padrões próprios para identificar:
+#   - data_functions:       classes, interfaces, modelos de dados
+#   - elementary_processes: métodos, funções, endpoints
+#
+# Referência: https://tree-sitter.github.io/tree-sitter/using-parsers/queries
 # ─────────────────────────────────────────
 QUERIES = {
 
+    # C# — captura classes, interfaces e records como Funções de Dados.
+    # Métodos e construtores como Processos Elementares.
     "csharp": {
         "data_functions": """
             [
@@ -43,33 +68,48 @@ QUERIES = {
             ]
         """,
     },
+
+    # Python — classes cobrem tanto models (Django) quanto ViewSets e Serializers.
+    # Funções de nível de módulo e métodos são capturados como Processos Elementares.
     "python": {
         "data_functions":       "(class_definition name: (identifier) @class_name)",
         "elementary_processes": "(function_definition name: (identifier) @func_name)",
     },
+
+    # JavaScript — usado principalmente para React (class components).
+    # Arrow functions exportadas são capturadas como Processos Elementares
+    # pois representam handlers e funções de serviço no padrão Redux/React.
     "javascript": {
-            "data_functions": """
-                [
-                (class_declaration name: (identifier) @class_name)
-                ]
-            """,
-            "elementary_processes": """
-                [
-                (method_definition name: (property_identifier) @func_name)
-                (function_declaration name: (identifier) @func_name)
-                (lexical_declaration
-                    (variable_declarator
-                    name: (identifier) @func_name
-                    value: (arrow_function)
-                    )
+        "data_functions": """
+            [
+              (class_declaration name: (identifier) @class_name)
+            ]
+        """,
+        "elementary_processes": """
+            [
+              (method_definition name: (property_identifier) @func_name)
+              (function_declaration name: (identifier) @func_name)
+              (lexical_declaration
+                (variable_declarator
+                  name: (identifier) @func_name
+                  value: (arrow_function)
                 )
-                ]
-            """,
-        },
+              )
+            ]
+        """,
+    },
+
+    # Java — classes como Funções de Dados.
+    # Apenas method_declaration captura métodos públicos de negócio,
+    # excluindo construtores e blocos estáticos que não representam operações SFP.
     "java": {
         "data_functions":       "(class_declaration name: (identifier) @class_name)",
         "elementary_processes": "(method_declaration name: (identifier) @method_name)",
     },
+
+    # TypeScript — usa type_identifier em vez de identifier para classes e interfaces.
+    # Funções exportadas como arrow functions representam serviços e controllers
+    # no padrão Node.js/Express usado nos projetos da empresa.
     "typescript": {
         "data_functions": """
             [
@@ -93,6 +133,8 @@ QUERIES = {
             ]
         """,
     },
+
+    # TSX — mesmo padrão do TypeScript, aplicado a arquivos React com JSX.
     "tsx": {
         "data_functions": """
             [
@@ -118,8 +160,9 @@ QUERIES = {
     },
 }
 
+
 # ─────────────────────────────────────────
-# 3. Detecta linguagem pela extensão
+# 3. Detecção de linguagem por extensão de arquivo
 # ─────────────────────────────────────────
 def detect_language(filepath):
     ext = os.path.splitext(filepath)[1].lower()
@@ -128,15 +171,20 @@ def detect_language(filepath):
             return lang
     return None
 
+
 # ─────────────────────────────────────────
-# 4. Executa query — API 0.21.x
-#    captures() retorna lista de (node, capture_name)
+# 4. Execução de query tree-sitter
+#
+# Usa a API captures() da versão 0.22.x que retorna
+# uma lista de tuplas (node, capture_name).
+# Versões mais novas (0.25+) mudaram esta API — não atualizar
+# o tree-sitter sem revisar esta função.
 # ─────────────────────────────────────────
 def run_query(language, query_string, root_node):
     names = []
     try:
         q        = language.query(query_string)
-        captures = q.captures(root_node)          # [(node, "capture_name"), ...]
+        captures = q.captures(root_node)
         for node, capture_name in captures:
             text = node.text.decode("utf-8") if node.text else ""
             if text.strip():
@@ -145,8 +193,9 @@ def run_query(language, query_string, root_node):
         print(f"      ⚠️  Erro na query: {e}")
     return names
 
+
 # ─────────────────────────────────────────
-# 5. Analisa um único arquivo
+# 5. Análise de um único arquivo
 # ─────────────────────────────────────────
 def analyze_file(filepath, lang_name):
     config   = LANGUAGES[lang_name]
@@ -168,8 +217,13 @@ def analyze_file(filepath, lang_name):
         "elementary_processes": run_query(language, QUERIES[lang_name]["elementary_processes"], root),
     }
 
+
 # ─────────────────────────────────────────
-# 6. Varre repositório inteiro
+# 6. Filtros de arquivos irrelevantes para SFP
+#
+# IGNORE_DIRS:         pastas que não contêm código de negócio
+# IGNORE_FILE_PATTERNS: padrões de nome que indicam arquivos de teste,
+#                       mock ou infraestrutura — não contam no SFP
 # ─────────────────────────────────────────
 IGNORE_DIRS = {
     "node_modules", ".git", "__pycache__",
@@ -182,9 +236,15 @@ IGNORE_FILE_PATTERNS = [
 ]
 
 def should_ignore_file(filename):
+    # Normaliza o nome removendo separadores para capturar padrões
+    # como "article_test.py", "articleTest.java" e "article-spec.ts"
     name_lower = filename.lower().replace("-", "").replace("_", "")
     return any(pattern in name_lower for pattern in IGNORE_FILE_PATTERNS)
 
+
+# ─────────────────────────────────────────
+# 7. Varredura completa de um repositório
+# ─────────────────────────────────────────
 def analyze_repository(repo_path, repo_name):
     print(f"\n🔍 Analisando repositório: {repo_name}")
     print(f"   Caminho: {repo_path}")
@@ -237,8 +297,10 @@ def analyze_repository(repo_path, repo_name):
 
     return report
 
+
 # ─────────────────────────────────────────
-# 7. Main
+# 8. Ponto de entrada — processa todos os repositórios
+#    e salva um JSON por repositório + um consolidado
 # ─────────────────────────────────────────
 if __name__ == "__main__":
     base_dir   = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -262,6 +324,7 @@ if __name__ == "__main__":
             json.dump(report, f, indent=2, ensure_ascii=False)
         print(f"   💾 Salvo em: output/{repo_name}.json")
 
+    # Relatório consolidado — base para envio à LLM na próxima etapa
     consolidated_file = os.path.join(output_dir, "consolidated_report.json")
     with open(consolidated_file, "w", encoding="utf-8") as f:
         json.dump(all_reports, f, indent=2, ensure_ascii=False)
