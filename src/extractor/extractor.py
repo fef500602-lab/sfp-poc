@@ -230,16 +230,12 @@ IGNORE_DIRS = {
     ".venv", "dist", "build", "target"
 }
 
-IGNORE_FILE_PATTERNS = [
-    "test", "tests", "spec", "mock",
-    "stub", "fake", "fixture", "helper"
-]
+# Arquivos de teste e infraestrutura serão classificados pela LLM
+# com base na metodologia SFP, garantindo maior fidelidade na contagem.
+IGNORE_FILE_PATTERNS = []
 
 def should_ignore_file(filename):
-    # Normaliza o nome removendo separadores para capturar padrões
-    # como "article_test.py", "articleTest.java" e "article-spec.ts"
-    name_lower = filename.lower().replace("-", "").replace("_", "")
-    return any(pattern in name_lower for pattern in IGNORE_FILE_PATTERNS)
+    return False
 
 
 # ─────────────────────────────────────────
