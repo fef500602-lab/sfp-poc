@@ -1,0 +1,48 @@
+{
+  "repository": "realworld-nodejs-express",
+  "data_functions": [
+    "Article",
+    "Comment",
+    "RegisterInput",
+    "RegisteredUser",
+    "Request",
+    "User",
+    "Profile",
+    "Tag"
+  ],
+  "elementary_processes": [
+    "getArticles",
+    "getFeed",
+    "createArticle",
+    "getArticle",
+    "updateArticle",
+    "deleteArticle",
+    "getCommentsByArticle",
+    "addComment",
+    "deleteComment",
+    "favoriteArticle",
+    "unfavoriteArticle",
+    "createUser",
+    "login",
+    "getCurrentUser",
+    "updateUser",
+    "getProfile",
+    "followUser",
+    "unfollowUser"
+  ],
+  "ignored": [
+    "HttpException",
+    "Global",
+    "CustomNodeJsGlobal",
+    "constructor",
+    "generateUser",
+    "generateArticle",
+    "generateComment"
+  ],
+  "sfp_count": {
+    "data_functions": 8,
+    "elementary_processes": 18,
+    "total": 26
+  },
+  "notes": "Foram classificadas como Funções de Dados as entidades e DTOs/interfaces de domínio expostas no modelo da aplicação. 'HttpException' foi ignorada por ser classe de exceção, e 'Global'/'CustomNodeJsGlobal' por serem elementos de infraestrutura/tipagem global. 'Request' foi considerada Função de Dados por representar uma interface de dados usada no domínio da requisição autenticada. Foram classificados como Processos Elementares os métodos de serviço que executam operações de leitura/escrita de negócio. 'constructor' foi ignorado por não ser processo elementar. As funções 'generateUser', 'generateArticle' e 'generateComment' foram ignoradas por pertencerem a seed, caracterizando apoio/teste/população de dados e não processo elementar da aplicação."
+}
