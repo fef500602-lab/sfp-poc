@@ -1,0 +1,298 @@
+{
+  "repository": "edge-only-markdown",
+  "files_analyzed": 6,
+  "data_functions": [
+    {
+      "name": "TestValidadeFormat",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "FakeResponse",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "TestValidateLinks",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "test_error_message_return_and_return_type",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_if_get_categories_content_return_correct_data_of_categories",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_if_check_alphabetical_order_return_correct_msg_error",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_title_with_correct_title",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_title_with_markdown_syntax_incorrect",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_title_with_api_at_the_end_of_the_title",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_description_with_correct_description",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_description_with_first_char_is_not_capitalized",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_description_with_punctuation_in_the_end",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_description_that_exceeds_the_character_limit",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_auth_with_valid_auth",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_auth_without_backtick",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_auth_with_invalid_auth",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_https_with_valid_https",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_https_with_invalid_https",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_cors_with_valid_cors",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_cors_with_invalid_cors",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_entry_with_correct_segments",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_entry_with_incorrect_segments",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_file_format_with_correct_format",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_file_format_with_category_header_not_added_to_index",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_file_format_with_category_without_min_entries",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_file_format_entry_without_all_necessary_columns",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "test_check_file_format_without_1_space_between_the_segments",
+      "file": "\\scripts\\tests\\test_validate_format.py",
+      "language": "python"
+    },
+    {
+      "name": "__init__",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "setUp",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_find_link_in_text",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_find_link_in_text_with_invalid_argument",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_if_check_duplicate_links_has_the_correct_return",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_if_fake_user_agent_has_a_str_as_return",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_get_host_from_link",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_has_cloudflare_protection_with_code_403_and_503_in_response",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "test_has_cloudflare_protection_when_there_is_no_protection",
+      "file": "\\scripts\\tests\\test_validate_links.py",
+      "language": "python"
+    },
+    {
+      "name": "error_message",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "get_categories_content",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_alphabetical_order",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_title",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_description",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_auth",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_https",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_cors",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_entry",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "check_file_format",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "main",
+      "file": "\\scripts\\validate\\format.py",
+      "language": "python"
+    },
+    {
+      "name": "find_links_in_text",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "find_links_in_file",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "check_duplicate_links",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "fake_user_agent",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "get_host_from_link",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "has_cloudflare_protection",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "check_if_link_is_working",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "check_if_list_of_links_are_working",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "start_duplicate_links_checker",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "start_links_working_checker",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    },
+    {
+      "name": "main",
+      "file": "\\scripts\\validate\\links.py",
+      "language": "python"
+    }
+  ]
+}

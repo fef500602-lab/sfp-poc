@@ -1,6 +1,6 @@
 {
   "repository": "realworld-java-spring",
-  "files_analyzed": 93,
+  "files_analyzed": 116,
   "data_functions": [
     {
       "name": "JacksonCustomizations",
@@ -395,6 +395,121 @@
     {
       "name": "DefaultJwtService",
       "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+      "language": "java"
+    },
+    {
+      "name": "RealworldApplicationTests",
+      "file": "\\src\\test\\java\\io\\spring\\RealworldApplicationTests.java",
+      "language": "java"
+    },
+    {
+      "name": "TestHelper",
+      "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticleApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticleFavoriteApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticlesApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "CommentsApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "CurrentUserApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ListArticleApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ProfileApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "TestWithCurrentUser",
+      "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+      "language": "java"
+    },
+    {
+      "name": "UsersApiTest",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticleQueryServiceTest",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "CommentQueryServiceTest",
+      "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ProfileQueryServiceTest",
+      "file": "\\src\\test\\java\\io\\spring\\application\\profile\\ProfileQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "TagsQueryServiceTest",
+      "file": "\\src\\test\\java\\io\\spring\\application\\tag\\TagsQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticleTest",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "DbTestBase",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\DbTestBase.java",
+      "language": "java"
+    },
+    {
+      "name": "ArticleRepositoryTransactionTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\ArticleRepositoryTransactionTest.java",
+      "language": "java"
+    },
+    {
+      "name": "MyBatisArticleRepositoryTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "MyBatisCommentRepositoryTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\comment\\MyBatisCommentRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "MyBatisArticleFavoriteRepositoryTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "DefaultJwtServiceTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "MyBatisUserRepositoryTest",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
       "language": "java"
     }
   ],
@@ -1482,6 +1597,451 @@
     {
       "name": "expireTimeFromNow",
       "file": "\\src\\main\\java\\io\\spring\\infrastructure\\service\\DefaultJwtService.java",
+      "language": "java"
+    },
+    {
+      "name": "contextLoads",
+      "file": "\\src\\test\\java\\io\\spring\\RealworldApplicationTests.java",
+      "language": "java"
+    },
+    {
+      "name": "articleDataFixture",
+      "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+      "language": "java"
+    },
+    {
+      "name": "getArticleDataFromArticleAndUser",
+      "file": "\\src\\test\\java\\io\\spring\\TestHelper.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_read_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_404_if_article_not_found",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_update_article_content_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_403_if_not_author_to_update_article",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_delete_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_403_if_not_author_delete_article",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "prepareUpdateParam",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_favorite_an_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_unfavorite_an_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticleFavoriteApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_error_message_with_wrong_parameter",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_error_message_with_duplicated_title",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "prepareParam",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ArticlesApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_comment_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_422_with_empty_body",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_comments_of_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_delete_comment_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CommentsApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_current_user_with_token",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_401_without_token",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_401_with_invalid_token",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_update_current_user_profile",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_error_if_email_exists_when_update_user_profile",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "prepareUpdateParam",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_401_if_not_login",
+      "file": "\\src\\test\\java\\io\\spring\\api\\CurrentUserApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_default_article_list",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_feeds_401_without_login",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_feeds_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ListArticleApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_user_profile_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_follow_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_unfollow_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\ProfileApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "userFixture",
+      "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\TestWithCurrentUser.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_show_error_message_for_blank_username",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_show_error_message_for_invalid_email",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_show_error_for_duplicated_username",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_show_error_for_duplicated_email",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "prepareRegisterParameter",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_login_success",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_fail_login_with_wrong_password",
+      "file": "\\src\\test\\java\\io\\spring\\api\\UsersApiTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_fetch_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_article_with_right_favorite_and_favorite_count",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_default_article_list",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_default_article_list_by_cursor",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_query_article_by_author",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_query_article_by_favorite",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_query_article_by_tag",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_show_following_if_user_followed_author",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_user_feed",
+      "file": "\\src\\test\\java\\io\\spring\\application\\article\\ArticleQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_read_comment_success",
+      "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_read_comments_of_article",
+      "file": "\\src\\test\\java\\io\\spring\\application\\comment\\CommentQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_fetch_profile_success",
+      "file": "\\src\\test\\java\\io\\spring\\application\\profile\\ProfileQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_all_tags",
+      "file": "\\src\\test\\java\\io\\spring\\application\\tag\\TagsQueryServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_right_slug",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_right_slug_with_number_in_title",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_lower_case_slug",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_handle_other_language",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_handle_commas",
+      "file": "\\src\\test\\java\\io\\spring\\core\\article\\ArticleTest.java",
+      "language": "java"
+    },
+    {
+      "name": "transactional_test",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\ArticleRepositoryTransactionTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_and_fetch_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_update_and_fetch_article_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_delete_article",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\article\\MyBatisArticleRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_and_fetch_comment_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\comment\\MyBatisCommentRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_save_and_fetch_articleFavorite_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_remove_favorite_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\favorite\\MyBatisArticleFavoriteRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_generate_and_parse_token",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_null_with_wrong_jwt",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_get_null_with_expired_jwt",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\service\\DefaultJwtServiceTest.java",
+      "language": "java"
+    },
+    {
+      "name": "setUp",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_save_and_fetch_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_update_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_create_new_user_follow_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
+      "language": "java"
+    },
+    {
+      "name": "should_unfollow_user_success",
+      "file": "\\src\\test\\java\\io\\spring\\infrastructure\\user\\MyBatisUserRepositoryTest.java",
       "language": "java"
     }
   ]

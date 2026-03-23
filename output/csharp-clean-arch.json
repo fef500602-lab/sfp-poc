@@ -1,0 +1,2528 @@
+{
+  "repository": "csharp-clean-arch",
+  "files_analyzed": 164,
+  "data_functions": [
+    {
+      "name": "AspireExtensions",
+      "file": "\\src\\AppHost\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DependencyInjection",
+      "file": "\\src\\Application\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizationBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LoggingBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\LoggingBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PerformanceBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UnhandledExceptionBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ForbiddenAccessException",
+      "file": "\\src\\Application\\Common\\Exceptions\\ForbiddenAccessException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationException",
+      "file": "\\src\\Application\\Common\\Exceptions\\ValidationException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IApplicationDbContext",
+      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IIdentityService",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IUser",
+      "file": "\\src\\Application\\Common\\Interfaces\\IUser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingExtensions",
+      "file": "\\src\\Application\\Common\\Mappings\\MappingExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LookupDto",
+      "file": "\\src\\Application\\Common\\Models\\LookupDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\Common\\Models\\LookupDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PaginatedList",
+      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Result",
+      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizeAttribute",
+      "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemCommand",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemCommandValidator",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItemCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoItemCommand",
+      "file": "\\src\\Application\\TodoItems\\Commands\\DeleteTodoItem\\DeleteTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\DeleteTodoItem\\DeleteTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemCommand",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemCommandValidator",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItemCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemDetailCommand",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItemDetail\\UpdateTodoItemDetail.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemDetailCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItemDetail\\UpdateTodoItemDetail.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LogTodoItemCompleted",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCompleted.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LogTodoItemCreated",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCreated.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPaginationQuery",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPaginationQueryHandler",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPaginationQueryValidator",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPaginationQueryValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemBriefDto",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\TodoItemBriefDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\TodoItemBriefDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListCommand",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListCommandValidator",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoListCommand",
+      "file": "\\src\\Application\\TodoLists\\Commands\\DeleteTodoList\\DeleteTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\DeleteTodoList\\DeleteTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PurgeTodoListsCommand",
+      "file": "\\src\\Application\\TodoLists\\Commands\\PurgeTodoLists\\PurgeTodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PurgeTodoListsCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\PurgeTodoLists\\PurgeTodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListCommand",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListCommandValidator",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodosQuery",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodosQueryHandler",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemDto",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoItemDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoItemDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoListDto",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoListDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoListDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodosVm",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodosVm.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetWeatherForecastsQuery",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetWeatherForecastsQueryHandler",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WeatherForecast",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\WeatherForecast.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BaseAuditableEntity",
+      "file": "\\src\\Domain\\Common\\BaseAuditableEntity.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BaseEntity",
+      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BaseEvent",
+      "file": "\\src\\Domain\\Common\\BaseEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValueObject",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Policies",
+      "file": "\\src\\Domain\\Constants\\Policies.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Roles",
+      "file": "\\src\\Domain\\Constants\\Roles.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItem",
+      "file": "\\src\\Domain\\Entities\\TodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoList",
+      "file": "\\src\\Domain\\Entities\\TodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemCompletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemCreatedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemDeletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UnsupportedColourException",
+      "file": "\\src\\Domain\\Exceptions\\UnsupportedColourException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Colour",
+      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DependencyInjection",
+      "file": "\\src\\Infrastructure\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApplicationDbContext",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "InitialiserExtensions",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApplicationDbContextInitialiser",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemConfiguration",
+      "file": "\\src\\Infrastructure\\Data\\Configurations\\TodoItemConfiguration.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoListConfiguration",
+      "file": "\\src\\Infrastructure\\Data\\Configurations\\TodoListConfiguration.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuditableEntityInterceptor",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Extensions",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DispatchDomainEventsInterceptor",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\DispatchDomainEventsInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApplicationUser",
+      "file": "\\src\\Infrastructure\\Identity\\ApplicationUser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IdentityResultExtensions",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityResultExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IdentityService",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Extensions",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Services",
+      "file": "\\src\\Shared\\Services.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DependencyInjection",
+      "file": "\\src\\Web\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthGuard",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.guard.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "AuthService",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "AuthorizeInterceptor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\authorize.interceptor.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "LoginComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\login\\login.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "RegisterComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\register\\register.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "AppComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\app.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "AppModule",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "AppServerModule",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\app.server.module.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "Theme",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "ThemeService",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "CounterComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\counter\\counter.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "FetchDataComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\fetch-data\\fetch-data.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "HomeComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\home\\home.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "NavMenuComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\nav-menu\\nav-menu.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "ThemeToggleComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme-toggle\\theme-toggle.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "TasksComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "WeatherComponent",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\weather\\weather.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "App",
+      "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "TodoItems",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoLists",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Users",
+      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WeatherForecasts",
+      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApiExceptionOperationTransformer",
+      "file": "\\src\\Web\\Infrastructure\\ApiExceptionOperationTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BearerSecuritySchemeTransformer",
+      "file": "\\src\\Web\\Infrastructure\\BearerSecuritySchemeTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "EndpointRouteBuilderExtensions",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IdentityApiOperationTransformer",
+      "file": "\\src\\Web\\Infrastructure\\IdentityApiOperationTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IEndpointGroup",
+      "file": "\\src\\Web\\Infrastructure\\IEndpointGroup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MethodInfoExtensions",
+      "file": "\\src\\Web\\Infrastructure\\MethodInfoExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ProblemDetailsExceptionHandler",
+      "file": "\\src\\Web\\Infrastructure\\ProblemDetailsExceptionHandler.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WebApplicationExtensions",
+      "file": "\\src\\Web\\Infrastructure\\WebApplicationExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CurrentUser",
+      "file": "\\src\\Web\\Services\\CurrentUser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseCommand",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseCommandValidator",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseCommandHandler",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseQuery",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseQueryValidator",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseQueryHandler",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FunctionalTestSetup",
+      "file": "\\tests\\Application.FunctionalTests\\FunctionalTestSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DatabaseResetter",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\DatabaseResetter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TestApp",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TestBase",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestBase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WebApiFactory",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\WebApiFactory.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\CreateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoItemTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\DeleteTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemDetailTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemDetailTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\CreateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoListTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\DeleteTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PurgeTodoListsTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\PurgeTodoListsTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\UpdateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodosTests",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Queries\\GetTodosTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RequestLoggerTests",
+      "file": "\\tests\\Application.UnitTests\\Common\\Behaviours\\RequestLoggerTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationExceptionTests",
+      "file": "\\tests\\Application.UnitTests\\Common\\Exceptions\\ValidationExceptionTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MappingTests",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PaginatedListTests",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ColourTests",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Program",
+      "file": "\\tests\\TestAppHost\\Program.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AspireSetup",
+      "file": "\\tests\\Web.AcceptanceTests\\AspireSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PlaywrightSetup",
+      "file": "\\tests\\Web.AcceptanceTests\\PlaywrightSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BasePage",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\BasePage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CounterPage",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\CounterPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HomePage",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\HomePage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LoginPage",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WeatherPage",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\WeatherPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CounterStepDefinitions",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HomeStepDefinitions",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\HomeStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LoginStepDefinitions",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WeatherStepDefinitions",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "WithAspNetCoreEnvironment",
+      "file": "\\src\\AppHost\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddApplicationServices",
+      "file": "\\src\\Application\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizationBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LoggingBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\LoggingBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Process",
+      "file": "\\src\\Application\\Common\\Behaviours\\LoggingBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PerformanceBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UnhandledExceptionBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationBehaviour",
+      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ForbiddenAccessException",
+      "file": "\\src\\Application\\Common\\Exceptions\\ForbiddenAccessException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationException",
+      "file": "\\src\\Application\\Common\\Exceptions\\ValidationException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ValidationException",
+      "file": "\\src\\Application\\Common\\Exceptions\\ValidationException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SaveChangesAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetUserNameAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IsInRoleAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizeAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateUserAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteUserAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PaginatedListAsync",
+      "file": "\\src\\Application\\Common\\Mappings\\MappingExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ProjectToListAsync",
+      "file": "\\src\\Application\\Common\\Mappings\\MappingExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\Common\\Models\\LookupDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PaginatedList",
+      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateAsync",
+      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Result",
+      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Success",
+      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Failure",
+      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizeAttribute",
+      "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItemCommandValidator",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItemCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\DeleteTodoItem\\DeleteTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Commands\\DeleteTodoItem\\DeleteTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItem.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemCommandValidator",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItem\\UpdateTodoItemCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemDetailCommandHandler",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItemDetail\\UpdateTodoItemDetail.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Commands\\UpdateTodoItemDetail\\UpdateTodoItemDetail.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LogTodoItemCompleted",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCompleted.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCompleted.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LogTodoItemCreated",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCreated.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\EventHandlers\\LogTodoItemCreated.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPaginationQueryHandler",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPaginationQueryValidator",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPaginationQueryValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\TodoItemBriefDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoListCommandValidator",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeUniqueTitle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\DeleteTodoList\\DeleteTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\DeleteTodoList\\DeleteTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "PurgeTodoListsCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\PurgeTodoLists\\PurgeTodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\PurgeTodoLists\\PurgeTodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListCommandHandler",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoList.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoListCommandValidator",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeUniqueTitle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodosQueryHandler",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoItemDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoListDto",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoListDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Mapping",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\TodoListDto.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddDomainEvent",
+      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RemoveDomainEvent",
+      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ClearDomainEvents",
+      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "EqualOperator",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "NotEqualOperator",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetEqualityComponents",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Equals",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetHashCode",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemCompletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemCreatedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TodoItemDeletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UnsupportedColourException",
+      "file": "\\src\\Domain\\Exceptions\\UnsupportedColourException.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "From",
+      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ToString",
+      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetEqualityComponents",
+      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddInfrastructureServices",
+      "file": "\\src\\Infrastructure\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApplicationDbContext",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OnModelCreating",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContext.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "InitialiseDatabaseAsync",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ApplicationDbContextInitialiser",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "InitialiseAsync",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SeedAsync",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TrySeedAsync",
+      "file": "\\src\\Infrastructure\\Data\\ApplicationDbContextInitialiser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Configure",
+      "file": "\\src\\Infrastructure\\Data\\Configurations\\TodoItemConfiguration.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Configure",
+      "file": "\\src\\Infrastructure\\Data\\Configurations\\TodoListConfiguration.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuditableEntityInterceptor",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SavingChanges",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SavingChangesAsync",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateEntities",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasChangedOwnedEntities",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\AuditableEntityInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DispatchDomainEventsInterceptor",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\DispatchDomainEventsInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SavingChanges",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\DispatchDomainEventsInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SavingChangesAsync",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\DispatchDomainEventsInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DispatchDomainEvents",
+      "file": "\\src\\Infrastructure\\Data\\Interceptors\\DispatchDomainEventsInterceptor.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ToApplicationResult",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityResultExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IdentityService",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetUserNameAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateUserAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IsInRoleAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AuthorizeAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteUserAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteUserAsync",
+      "file": "\\src\\Infrastructure\\Identity\\IdentityService.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddServiceDefaults",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ConfigureOpenTelemetry",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddOpenTelemetryExporters",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddDefaultHealthChecks",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapDefaultEndpoints",
+      "file": "\\src\\ServiceDefaults\\Extensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddWebServices",
+      "file": "\\src\\Web\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddKeyVaultIfConfigured",
+      "file": "\\src\\Web\\DependencyInjection.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "getBaseUrl",
+      "file": "\\src\\Web\\ClientApp\\src\\main.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.guard.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "canActivate",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.guard.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "initialize",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "login",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "register",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "logout",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\authorize.interceptor.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "intercept",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\authorize.interceptor.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\login\\login.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "login",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\login\\login.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "emailValid",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\register\\register.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "passwordValid",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\register\\register.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\register\\register.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "register",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\register\\register.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "getApiBaseUrl",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "setTheme",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "applyTheme",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "incrementCounter",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\counter\\counter.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\fetch-data\\fetch-data.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\nav-menu\\nav-menu.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "logout",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\nav-menu\\nav-menu.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme-toggle\\theme-toggle.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "cycle",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme-toggle\\theme-toggle.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "ngOnInit",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "remainingItems",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "showNewListDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "newListCancelled",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "addList",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "showListOptionsDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "closeListOptionsDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "updateListOptions",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "confirmDeleteList",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "closeDeleteListDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "deleteListConfirmed",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "showItemDetailsDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "closeItemDetailsDialog",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "updateItemDetails",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "startAddingItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "cancelNewItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "commitNewItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "editItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "cancelEdit",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "updateItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "deleteItem",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\todo\\todo.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "constructor",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\weather\\weather.component.ts",
+      "language": "typescript"
+    },
+    {
+      "name": "render",
+      "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Counter",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Counter.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Home",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Home.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Layout",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Layout.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "AuthLinks",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\NavMenu.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "handleLogout",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\NavMenu.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "NavMenu",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\NavMenu.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "useTheme",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\ThemeContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "ThemeProvider",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\ThemeContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "ThemeToggle",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\ThemeToggle.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Tasks",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "remainingItems",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "showNewListDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "closeNewListDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "commitNewList",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "showListOptionsDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "closeListOptionsDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "updateListOptions",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "confirmDeleteList",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "closeDeleteListDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "deleteListConfirmed",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "showItemDetailsDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "closeItemDetailsDialog",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "updateItemDetails",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "deleteItem",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "updateCheckbox",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "editItem",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "cancelEdit",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "commitEdit",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "startAddingItem",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "cancelNewItem",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "commitNewItem",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Todo.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Weather",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Weather.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "fetchData",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\Weather.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "AuthProvider",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\AuthContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "login",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\AuthContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "register",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\AuthContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "logout",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\AuthContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "useAuth",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\AuthContext.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "LoginPage",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\LoginPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "handleSubmit",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\LoginPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "handleChange",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\LoginPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "ProtectedRoute",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\ProtectedRoute.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "validateEmail",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\RegisterPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "RegisterPage",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\RegisterPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "handleSubmit",
+      "file": "\\src\\Web\\ClientApp-React\\src\\components\\api-authorization\\RegisterPage.jsx",
+      "language": "javascript"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoItemsWithPagination",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoItemDetail",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetTodoLists",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "UpdateTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DeleteTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Logout",
+      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetWeatherForecasts",
+      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TransformAsync",
+      "file": "\\src\\Web\\Infrastructure\\ApiExceptionOperationTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TransformAsync",
+      "file": "\\src\\Web\\Infrastructure\\BearerSecuritySchemeTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapGet",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapPost",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapPut",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapPatch",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapDelete",
+      "file": "\\src\\Web\\Infrastructure\\EndpointRouteBuilderExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TransformAsync",
+      "file": "\\src\\Web\\Infrastructure\\IdentityApiOperationTransformer.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Infrastructure\\IEndpointGroup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "IsAnonymous",
+      "file": "\\src\\Web\\Infrastructure\\MethodInfoExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AnonymousMethod",
+      "file": "\\src\\Web\\Infrastructure\\MethodInfoExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TryHandleAsync",
+      "file": "\\src\\Web\\Infrastructure\\ProblemDetailsExceptionHandler.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MapEndpoints",
+      "file": "\\src\\Web\\Infrastructure\\WebApplicationExtensions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CurrentUser",
+      "file": "\\src\\Web\\Services\\CurrentUser.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseCommandValidator",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseCommandHandler",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseQueryValidator",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CleanArchitectureUseCaseQueryHandler",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeSetUp",
+      "file": "\\tests\\Application.FunctionalTests\\FunctionalTestSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeTearDown",
+      "file": "\\tests\\Application.FunctionalTests\\FunctionalTestSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DatabaseResetter",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\DatabaseResetter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CreateAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\DatabaseResetter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ResetAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\DatabaseResetter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DisposeAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\DatabaseResetter.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SendAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SendAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetUserId",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetRoles",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RunAsDefaultUserAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RunAsAdministratorAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "RunAsUserAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ResetState",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "FindAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AddAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "CountAsync",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestApp.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SetUp",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\TestBase.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ConfigureWebHost",
+      "file": "\\tests\\Application.FunctionalTests\\Infrastructure\\WebApiFactory.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireMinimumFields",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\CreateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldCreateTodoItem",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\CreateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireValidTodoItemId",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\DeleteTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDeleteTodoItem",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\DeleteTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireValidTodoItemId",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemDetailTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldUpdateTodoItem",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemDetailTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireValidTodoItemId",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldUpdateTodoItem",
+      "file": "\\tests\\Application.FunctionalTests\\TodoItems\\Commands\\UpdateTodoItemTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireMinimumFields",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\CreateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireUniqueTitle",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\CreateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldCreateTodoList",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\CreateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireValidTodoListId",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\DeleteTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDeleteTodoList",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\DeleteTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDenyAnonymousUser",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\PurgeTodoListsTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDenyNonAdministrator",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\PurgeTodoListsTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldAllowAdministrator",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\PurgeTodoListsTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDeleteAllLists",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\PurgeTodoListsTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireValidTodoListId",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\UpdateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldRequireUniqueTitle",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\UpdateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldUpdateTodoList",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Commands\\UpdateTodoListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldReturnPriorityLevels",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Queries\\GetTodosTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldReturnAllListsAndItems",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Queries\\GetTodosTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldDenyAnonymousUser",
+      "file": "\\tests\\Application.FunctionalTests\\TodoLists\\Queries\\GetTodosTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Setup",
+      "file": "\\tests\\Application.UnitTests\\Common\\Behaviours\\RequestLoggerTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldCallGetUserNameAsyncOnceIfAuthenticated",
+      "file": "\\tests\\Application.UnitTests\\Common\\Behaviours\\RequestLoggerTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldNotCallGetUserNameAsyncOnceIfUnauthenticated",
+      "file": "\\tests\\Application.UnitTests\\Common\\Behaviours\\RequestLoggerTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "DefaultConstructorCreatesAnEmptyErrorDictionary",
+      "file": "\\tests\\Application.UnitTests\\Common\\Exceptions\\ValidationExceptionTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SingleValidationFailureCreatesASingleElementErrorDictionary",
+      "file": "\\tests\\Application.UnitTests\\Common\\Exceptions\\ValidationExceptionTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "MulitpleValidationFailureForMultiplePropertiesCreatesAMultipleElementErrorDictionaryEachWithMultipleValues",
+      "file": "\\tests\\Application.UnitTests\\Common\\Exceptions\\ValidationExceptionTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeSetUp",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldHaveValidConfiguration",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldSupportMappingFromSourceToDestination",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GetInstanceOf",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeTearDown",
+      "file": "\\tests\\Application.UnitTests\\Common\\Mappings\\MappingTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasPreviousPage_ShouldBeFalse_WhenOnFirstPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasPreviousPage_ShouldBeTrue_WhenOnSecondPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasPreviousPage_ShouldBeTrue_WhenOnePageBeyondLastPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasPreviousPage_ShouldBeFalse_WhenTwoPagesOrMoreBeyondLastPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasNextPage_ShouldBeFalse_WhenOnLastPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "HasNextPage_ShouldBeTrue_WhenNotOnLastPage",
+      "file": "\\tests\\Application.UnitTests\\Common\\Models\\PaginatedListTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldReturnCorrectColourCode",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ToStringReturnsCode",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldPerformImplicitConversionToColourCodeString",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldPerformExplicitConversionGivenSupportedColourCode",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldThrowUnsupportedColourExceptionGivenNotSupportedColourCode",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ShouldBeComparableWithOperators",
+      "file": "\\tests\\Domain.UnitTests\\ValueObjects\\ColourTests.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "Main",
+      "file": "\\tests\\TestAppHost\\Program.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeSetup",
+      "file": "\\tests\\Web.AcceptanceTests\\AspireSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeTearDown",
+      "file": "\\tests\\Web.AcceptanceTests\\AspireSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeSetUp",
+      "file": "\\tests\\Web.AcceptanceTests\\PlaywrightSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "OneTimeTearDown",
+      "file": "\\tests\\Web.AcceptanceTests\\PlaywrightSetup.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GotoAsync",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\BasePage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertHeading",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\CounterPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertCurrentCount",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\CounterPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ClickIncrement",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\CounterPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertHeading",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\HomePage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SetEmail",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "SetPassword",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ClickLogin",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "LogoutButtonText",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertErrorVisible",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\LoginPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertHeading",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\WeatherPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertTableVisible",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\WeatherPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AssertRowCount",
+      "file": "\\tests\\Web.AcceptanceTests\\Pages\\WeatherPage.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeforeCounterFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AfterCounterFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GivenAUserVisitsTheCounterPage",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenTheCounterHeadingIs",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenTheCurrentCountIs",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "WhenTheUserClicksIncrement",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\CounterStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeforeHomeFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\HomeStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AfterHomeFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\HomeStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GivenAUserVisitsTheHomePage",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\HomeStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenTheHeadingIsVisible",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\HomeStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeforeLoginFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AfterLoginFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GivenALoggedOutUser",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TheUserLogsInWithValidCredentials",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TheyLogInSuccessfully",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "TheUserLogsInWithInvalidCredentials",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AnErrorIsDisplayed",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\LoginStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "BeforeWeatherFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "AfterWeatherFeature",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "GivenAnAuthenticatedUserVisitsTheWeatherPage",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenTheWeatherForecastHeadingIs",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenTheWeatherForecastTableIsDisplayed",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    },
+    {
+      "name": "ThenWeatherForecastsAreShown",
+      "file": "\\tests\\Web.AcceptanceTests\\StepDefinitions\\WeatherStepDefinitions.cs",
+      "language": "csharp"
+    }
+  ]
+}

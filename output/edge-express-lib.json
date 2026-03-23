@@ -1,0 +1,622 @@
+{
+  "repository": "edge-express-lib",
+  "files_analyzed": 141,
+  "data_functions": [],
+  "elementary_processes": [
+    {
+      "name": "authenticate",
+      "file": "\\examples\\auth\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "restrict",
+      "file": "\\examples\\auth\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "format",
+      "file": "\\examples\\content-negotiation\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "error",
+      "file": "\\examples\\error\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "list",
+      "file": "\\examples\\online\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "loadUser",
+      "file": "\\examples\\route-middleware\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "andRestrictToSelf",
+      "file": "\\examples\\route-middleware\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "andRestrictTo",
+      "file": "\\examples\\route-middleware\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "initializeRedis",
+      "file": "\\examples\\search\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "GithubView",
+      "file": "\\examples\\view-constructor\\github-view.js",
+      "language": "javascript"
+    },
+    {
+      "name": "ferrets",
+      "file": "\\examples\\view-locals\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "count",
+      "file": "\\examples\\view-locals\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "users",
+      "file": "\\examples\\view-locals\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "count2",
+      "file": "\\examples\\view-locals\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "users2",
+      "file": "\\examples\\view-locals\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "User",
+      "file": "\\examples\\view-locals\\user.js",
+      "language": "javascript"
+    },
+    {
+      "name": "error",
+      "file": "\\examples\\web-service\\index.js",
+      "language": "javascript"
+    },
+    {
+      "name": "logerror",
+      "file": "\\lib\\application.js",
+      "language": "javascript"
+    },
+    {
+      "name": "tryRender",
+      "file": "\\lib\\application.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApplication",
+      "file": "\\lib\\express.js",
+      "language": "javascript"
+    },
+    {
+      "name": "defineGetter",
+      "file": "\\lib\\request.js",
+      "language": "javascript"
+    },
+    {
+      "name": "sendfile",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onaborted",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "ondirectory",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onerror",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onend",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onfile",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onfinish",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onstream",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "stringify",
+      "file": "\\lib\\response.js",
+      "language": "javascript"
+    },
+    {
+      "name": "acceptParams",
+      "file": "\\lib\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createETagGenerator",
+      "file": "\\lib\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "parseExtendedQueryString",
+      "file": "\\lib\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\lib\\view.js",
+      "language": "javascript"
+    },
+    {
+      "name": "tryStat",
+      "file": "\\lib\\view.js",
+      "language": "javascript"
+    },
+    {
+      "name": "render",
+      "file": "\\test\\app.engine.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "View",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\app.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "handler1",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "handler2",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "supportsRegexp",
+      "file": "\\test\\app.router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn3",
+      "file": "\\test\\app.use.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn",
+      "file": "\\test\\config.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\config.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\config.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "parseError",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldContainInBody",
+      "file": "\\test\\express.json.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.raw.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.raw.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.raw.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\express.raw.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\express.static.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.text.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.text.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.text.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\express.text.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "accept",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createManyParams",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "expectKeyCount",
+      "file": "\\test\\express.urlencoded.js",
+      "language": "javascript"
+    },
+    {
+      "name": "getExpectedClientAddress",
+      "file": "\\test\\req.ip.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\req.query.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldHaveHeaderValues",
+      "file": "\\test\\res.append.js",
+      "language": "javascript"
+    },
+    {
+      "name": "test",
+      "file": "\\test\\res.format.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createRedirectServerForDomain",
+      "file": "\\test\\res.location.js",
+      "language": "javascript"
+    },
+    {
+      "name": "testRequestedRedirect",
+      "file": "\\test\\res.location.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\res.render.js",
+      "language": "javascript"
+    },
+    {
+      "name": "handleHeaders",
+      "file": "\\test\\res.sendFile.js",
+      "language": "javascript"
+    },
+    {
+      "name": "createApp",
+      "file": "\\test\\res.sendFile.js",
+      "language": "javascript"
+    },
+    {
+      "name": "no",
+      "file": "\\test\\Router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn1",
+      "file": "\\test\\Router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "fn2",
+      "file": "\\test\\Router.js",
+      "language": "javascript"
+    },
+    {
+      "name": "getCookie",
+      "file": "\\test\\acceptance\\auth.js",
+      "language": "javascript"
+    },
+    {
+      "name": "getCookies",
+      "file": "\\test\\acceptance\\cookie-sessions.js",
+      "language": "javascript"
+    },
+    {
+      "name": "onReadFile",
+      "file": "\\test\\support\\tmpl.js",
+      "language": "javascript"
+    },
+    {
+      "name": "generateVariableLookup",
+      "file": "\\test\\support\\tmpl.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldHaveBody",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldHaveHeader",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldNotHaveBody",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldNotHaveHeader",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "getMajorVersion",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    },
+    {
+      "name": "shouldSkipQuery",
+      "file": "\\test\\support\\utils.js",
+      "language": "javascript"
+    }
+  ]
+}
