@@ -149,6 +149,64 @@ def analyze_with_llm(repo_name, data_functions, elementary_processes):
 
 
 # ─────────────────────────────────────────
+# 6. Análise em lotes para repositórios grandes
+# ─────────────────────────────────────────
+BATCH_SIZE = 100
+
+def analyze_in_batches(repo_name, data_functions, elementary_processes):
+    total_df = len(data_functions)
+    total_ep = len(elementary_processes)
+    total    = total_df + total_ep
+
+    if total <= BATCH_SIZE * 2:
+        return analyze_with_llm(repo_name, data_functions, elementary_processes)
+
+    print(f"\n   ⚠️  Repositório grande ({total} itens) — processando em lotes de {BATCH_SIZE}")
+
+    all_data_functions       = []
+    all_elementary_processes = []
+    all_ignored              = []
+    batch_num                = 0
+
+    for i in range(0, total_df, BATCH_SIZE):
+        batch_num += 1
+        batch_df = data_functions[i:i + BATCH_SIZE]
+        print(f"\n   📦 Lote {batch_num} — Funções de Dados [{i}:{i+len(batch_df)}]")
+        result = analyze_with_llm(f"{repo_name} (lote {batch_num})", batch_df, [])
+        if result:
+            all_data_functions += result.get("data_functions", [])
+            all_ignored        += result.get("ignored", [])
+
+    for i in range(0, total_ep, BATCH_SIZE):
+        batch_num += 1
+        batch_ep = elementary_processes[i:i + BATCH_SIZE]
+        print(f"\n   ⚙️  Lote {batch_num} — Processos Elementares [{i}:{i+len(batch_ep)}]")
+        result = analyze_with_llm(f"{repo_name} (lote {batch_num})", [], batch_ep)
+        if result:
+            all_elementary_processes += result.get("elementary_processes", [])
+            all_ignored              += result.get("ignored", [])
+
+    final = {
+        "repository":           repo_name,
+        "data_functions":       list(set(all_data_functions)),
+        "elementary_processes": list(set(all_elementary_processes)),
+        "ignored":              list(set(all_ignored)),
+        "sfp_count": {
+            "data_functions":       len(set(all_data_functions)),
+            "elementary_processes": len(set(all_elementary_processes)),
+            "total":                len(set(all_data_functions)) + len(set(all_elementary_processes)),
+        },
+        "notes": f"Processado em {batch_num} lotes de até {BATCH_SIZE} itens."
+    }
+
+    print(f"\n   ✅ Funções de Dados       : {final['sfp_count']['data_functions']}")
+    print(f"   ⚙️  Processos Elementares  : {final['sfp_count']['elementary_processes']}")
+    print(f"   📊 Total SFP              : {final['sfp_count']['total']}")
+
+    return final
+
+
+# ─────────────────────────────────────────
 # 5. Processa todos os repositórios
 # ─────────────────────────────────────────
 if __name__ == "__main__":
@@ -158,18 +216,53 @@ if __name__ == "__main__":
 
     os.makedirs(sfp_dir, exist_ok=True)
 
+    # ─────────────────────────────────────────
+    # Controle de quais repositórios processar
+    #
+    # REPOS_PERMITIDOS: lista os JSONs que serão enviados à LLM.
+    # Deixe vazio [] para processar todos — mas cuidado com custos!
+    #
+    # MAX_ITENS_POR_REPO: repositórios com mais itens que este limite
+    # serão ignorados para evitar custo alto de API.
+    # ─────────────────────────────────────────
+    REPOS_PERMITIDOS = [
+        "realworld-csharp-dotnet.json",
+        "realworld-java-spring.json",
+        "realworld-nodejs-express.json",
+        "realworld-python-django.json",
+        "realworld-react-js.json",
+        "csharp-clean-arch.json",
+        "java-clean-arch.json",
+        "fastapi-fullstack.json",
+    ]
+
+    MAX_ITENS_POR_REPO = 500  # ignora repositórios maiores que isto
+
     all_results = []
 
     for filename in sorted(os.listdir(output_dir)):
-        # Processa apenas JSONs individuais por repositório
         if filename == "consolidated_report.json" or not filename.endswith(".json"):
+            continue
+
+        # Pula repositórios não listados
+        if REPOS_PERMITIDOS and filename not in REPOS_PERMITIDOS:
+            print(f"\n⏭️  Pulando: {filename} (não está na lista)")
             continue
 
         filepath = os.path.join(output_dir, filename)
         with open(filepath, "r", encoding="utf-8") as f:
             repo_data = json.load(f)
 
-        result = analyze_with_llm(
+        total_itens = len(repo_data["data_functions"]) + len(repo_data["elementary_processes"])
+
+        # Pula repositórios muito grandes
+        if total_itens > MAX_ITENS_POR_REPO:
+            print(f"\n⏭️  Pulando: {repo_data['repository']} ({total_itens} itens — acima do limite de {MAX_ITENS_POR_REPO})")
+            continue
+
+        print(f"\n📋 {repo_data['repository']} — {total_itens} itens")
+
+        result = analyze_in_batches(
             repo_name            = repo_data["repository"],
             data_functions       = repo_data["data_functions"],
             elementary_processes = repo_data["elementary_processes"],
@@ -177,19 +270,15 @@ if __name__ == "__main__":
 
         if result:
             all_results.append(result)
-
-            # Salva resultado SFP individual
             sfp_file = os.path.join(sfp_dir, filename)
             with open(sfp_file, "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
             print(f"   💾 Salvo em: output/sfp/{filename}")
 
-    # Relatório SFP consolidado
     consolidated = os.path.join(sfp_dir, "sfp_consolidated.json")
     with open(consolidated, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-    # Resumo final no terminal
     print("\n" + "=" * 50)
     print("📊 RESUMO FINAL SFP")
     print("=" * 50)

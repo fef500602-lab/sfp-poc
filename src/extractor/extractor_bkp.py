@@ -138,9 +138,19 @@ def analyze_file(filepath, lang_name):
 # ─────────────────────────────────────────
 # 6. Varre repositório inteiro
 # ─────────────────────────────────────────
+# Pastas estruturais — nunca contêm código de negócio SFP
 IGNORE_DIRS = {
+    # Dependências e build
     "node_modules", ".git", "__pycache__",
-    ".venv", "dist", "build", "target"
+    ".venv", "dist", "build", "target",
+    # Testes e integração
+    "tests", "test", "integration", "e2e",
+    "__tests__", "spec", "fixtures",
+    # Infraestrutura e configuração
+    "scripts", "tools", "hooks",
+    "migrations", "static", "media",
+    # Internals de frameworks e bibliotecas
+    "packages", "vendor", "third_party",
 }
 
 def analyze_repository(repo_path, repo_name):

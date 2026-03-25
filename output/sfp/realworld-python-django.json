@@ -15,18 +15,15 @@
     "ProfileSerializer"
   ],
   "elementary_processes": [
-    "ArticleViewSet.get_queryset",
     "ArticleViewSet.create",
     "ArticleViewSet.list",
     "ArticleViewSet.retrieve",
     "ArticleViewSet.update",
-    "ArticleViewSet.filter_queryset",
     "CommentsListCreateAPIView.create",
     "CommentsDestroyAPIView.destroy",
     "CommentsDestroyAPIView.delete",
     "ArticlesFavoriteAPIView.post",
     "TagListAPIView.list",
-    "ArticlesFeedAPIView.get_queryset",
     "ArticlesFeedAPIView.list",
     "JWTAuthentication.authenticate",
     "UserManager.create_user",
@@ -38,6 +35,10 @@
     "LoginAPIView.post",
     "UserRetrieveUpdateAPIView.retrieve",
     "UserRetrieveUpdateAPIView.update",
+    "Profile.follow",
+    "Profile.unfollow",
+    "Profile.favorite",
+    "Profile.unfavorite",
     "ProfileRetrieveAPIView.retrieve",
     "ProfileFollowAPIView.delete",
     "ProfileFollowAPIView.post"
@@ -81,6 +82,9 @@
     "get_updated_at (serializers.py)",
     "to_representation (serializers.py)",
     "add_slug_to_article_if_not_exists (signals.py)",
+    "get_queryset (views.py)",
+    "filter_queryset (views.py)",
+    "get_queryset (views.py)",
     "ready (__init__.py)",
     "_authenticate_credentials (backends.py)",
     "__str__ (models.py)",
@@ -97,20 +101,16 @@
     "render (renderers.py)",
     "generate_random_string (utils.py)",
     "__str__ (models.py)",
-    "follow (models.py)",
-    "unfollow (models.py)",
     "is_following (models.py)",
     "is_followed_by (models.py)",
-    "favorite (models.py)",
-    "unfavorite (models.py)",
     "has_favorited (models.py)",
     "get_image (serializers.py)",
     "get_following (serializers.py)"
   ],
   "sfp_count": {
     "data_functions": 12,
-    "elementary_processes": 26,
-    "total": 38
+    "elementary_processes": 27,
+    "total": 39
   },
-  "notes": "Foram contadas como Funções de Dados as entidades de domínio persistentes e os serializers/DTOs que representam estruturas de negócio expostas pela aplicação. Classes de infraestrutura, renderers, app configs, migrations, exceptions, campos relacionais utilitários e classes Meta foram ignoradas. Foram contados como Processos Elementares os endpoints/views e operações explícitas de autenticação e persistência expostas ao negócio. Métodos internos, helpers, signals, renderização, utilitários e comportamentos de modelo não expostos como operação de aplicação foram ignorados."
+  "notes": "Foram considerados como Funções de Dados apenas entidades de domínio persistentes e serializers/DTOs que representam estruturas de negócio expostas pela aplicação. Foram ignorados renderers, app configs, migrations, exceptions, classes utilitárias e classes internas de framework. Como Processos Elementares, foram contadas operações externas de leitura/escrita sobre essas entidades, principalmente endpoints/views, autenticação e métodos explícitos de negócio com efeito observável. Métodos internos de apoio, getters derivados, hooks, signals, utilitários e filtros de consulta foram desconsiderados."
 }
