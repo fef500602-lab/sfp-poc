@@ -226,17 +226,21 @@ if __name__ == "__main__":
     # serão ignorados para evitar custo alto de API.
     # ─────────────────────────────────────────
     REPOS_PERMITIDOS = [
+        # Repositórios RealWorld — domínio equivalente em múltiplas linguagens
         "realworld-csharp-dotnet.json",
         "realworld-java-spring.json",
         "realworld-nodejs-express.json",
         "realworld-python-django.json",
         "realworld-react-js.json",
+        # Casos extremos — validação da pipeline
+        "edge-express-lib.json",
+        "edge-only-markdown.json",
+        # Arquiteturas diferentes
         "csharp-clean-arch.json",
-        "java-clean-arch.json",
-        "fastapi-fullstack.json",
+        "nestjs-framework.json",
     ]
 
-    MAX_ITENS_POR_REPO = 500  # ignora repositórios maiores que isto
+    MAX_ITENS_POR_REPO = 510
 
     all_results = []
 

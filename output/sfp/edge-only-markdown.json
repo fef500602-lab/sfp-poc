@@ -21,9 +21,7 @@
     "check_if_link_is_working",
     "check_if_list_of_links_are_working",
     "start_duplicate_links_checker",
-    "start_links_working_checker",
-    "main (format.py)",
-    "main (links.py)"
+    "start_links_working_checker"
   ],
   "ignored": [
     "TestValidadeFormat",
@@ -61,12 +59,14 @@
     "test_if_fake_user_agent_has_a_str_as_return",
     "test_get_host_from_link",
     "test_has_cloudflare_protection_with_code_403_and_503_in_response",
-    "test_has_cloudflare_protection_when_there_is_no_protection"
+    "test_has_cloudflare_protection_when_there_is_no_protection",
+    "main (format.py)",
+    "main (links.py)"
   ],
   "sfp_count": {
     "data_functions": 0,
-    "elementary_processes": 22,
-    "total": 22
+    "elementary_processes": 20,
+    "total": 20
   },
-  "notes": "Não foram identificadas Funções de Dados entre os itens fornecidos, pois as classes listadas pertencem a testes e não representam entidades de negócio. Os métodos de teste, __init__ e setUp foram ignorados por serem artefatos de teste/infraestrutura. As funções dos arquivos format.py e links.py foram classificadas como Processos Elementares por representarem operações de validação, leitura, verificação e orquestração sobre conteúdo/links. As funções main foram contadas separadamente por arquivo para evitar ambiguidade de nome."
+  "notes": "Não foram identificadas Funções de Dados, pois os itens listados como classes são exclusivamente de teste e não representam entidades de negócio. Foram contados como Processos Elementares apenas as funções operacionais dos módulos format.py e links.py que executam validações, extração, verificação ou processamento de links/conteúdo. Métodos e classes de teste, além das funções main, foram ignorados por serem rotinas de teste ou inicialização/orquestração sem caracterização clara de processo elementar de negócio."
 }

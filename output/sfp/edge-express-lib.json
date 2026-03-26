@@ -9,17 +9,20 @@
     "andRestrictToSelf",
     "andRestrictTo",
     "initializeRedis",
-    "GithubView",
     "ferrets",
     "count",
     "users",
     "count2",
     "users2",
-    "render"
+    "render",
+    "createApp",
+    "getCookie",
+    "getCookies"
   ],
   "ignored": [
     "format",
     "error",
+    "GithubView",
     "User",
     "logerror",
     "tryRender",
@@ -39,7 +42,6 @@
     "parseExtendedQueryString",
     "View",
     "tryStat",
-    "createApp",
     "handler1",
     "handler2",
     "fn",
@@ -59,8 +61,6 @@
     "testRequestedRedirect",
     "handleHeaders",
     "no",
-    "getCookie",
-    "getCookies",
     "onReadFile",
     "generateVariableLookup",
     "shouldHaveBody",
@@ -72,8 +72,8 @@
   ],
   "sfp_count": {
     "data_functions": 0,
-    "elementary_processes": 14,
-    "total": 14
+    "elementary_processes": 16,
+    "total": 16
   },
-  "notes": "Não foram identificadas classes/interfaces de domínio que representem entidades de negócio; a lista de classes/interfaces está vazia e itens como View/User aparecem como componentes de framework, teste ou apoio, não como Funções de Dados do domínio. Foram considerados Processos Elementares apenas métodos/funções com indício claro de operação exposta ou ação de negócio/leitura-escrita sobre recursos. Funções utilitárias, callbacks genéricos, handlers de teste, infraestrutura, parsing, renderização interna e helpers foram ignorados. Nomes repetidos foram consolidados uma única vez."
+  "notes": "Não foram informadas classes/interfaces de domínio candidatas a Funções de Dados. Os itens listados como classes/funções com nomes como View, User e GithubView foram tratados como utilitários, exemplos, componentes de framework ou artefatos de teste, sem evidência suficiente de entidade de negócio persistente. Foram contados como Processos Elementares apenas funções com indício de operação externa relevante sobre dados/usuários/recursos. Funções internas de infraestrutura, callbacks de teste, helpers, parsers, handlers genéricos, utilitários de resposta/requisição e funções repetidas de arquivos de teste foram ignoradas."
 }
