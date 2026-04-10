@@ -1,173 +1,257 @@
 {
   "repository": "realworld-nodejs-express",
-  "files_analyzed": 39,
+  "files_analyzed": 28,
   "data_functions": [
     {
       "name": "HttpException",
       "file": "\\src\\app\\models\\http-exception.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "Article",
-      "file": "\\src\\app\\routes\\article\\article.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "Comment",
-      "file": "\\src\\app\\routes\\article\\comment.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "RegisterInput",
-      "file": "\\src\\app\\routes\\auth\\register-input.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "RegisteredUser",
-      "file": "\\src\\app\\routes\\auth\\registered-user.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "Request",
-      "file": "\\src\\app\\routes\\auth\\user-request.d.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\app\\routes\\auth\\user.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "Profile",
-      "file": "\\src\\app\\routes\\profile\\profile.model.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "Tag",
-      "file": "\\src\\app\\routes\\tag\\tag.model.ts",
-      "language": "typescript"
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [
+        "Error"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "Global",
       "file": "\\src\\prisma\\prisma-client.ts",
-      "language": "typescript"
+      "language": "typescript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "CustomNodeJsGlobal",
       "file": "\\src\\prisma\\prisma-client.ts",
-      "language": "typescript"
+      "language": "typescript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     }
   ],
   "elementary_processes": [
     {
-      "name": "constructor",
-      "file": "\\src\\app\\models\\http-exception.model.ts",
-      "language": "typescript"
+      "name": "GET",
+      "file": "\\src\\main.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "getArticles",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/articles"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "getFeed",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "getArticlesFeed",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/articles/feed"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "createArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "createArticles",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/articles"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "getArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "getArticlesSlug",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/articles/:slug"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "updateArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "updateArticlesSlug",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "PUT:/articles/:slug"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "deleteArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "deleteArticlesSlug",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/articles/:slug"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "getCommentsByArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "getArticlesSlugComments",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/articles/:slug/comments"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "addComment",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "createArticlesSlugComments",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/articles/:slug/comments"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "deleteComment",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "deleteArticlesSlugCommentsId",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/articles/:slug/comments/:id"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "favoriteArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "createArticlesSlugFavorite",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/articles/:slug/favorite"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "unfavoriteArticle",
-      "file": "\\src\\app\\routes\\article\\article.service.ts",
-      "language": "typescript"
+      "name": "deleteArticlesSlugFavorite",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/articles/:slug/favorite"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "createUser",
-      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
-      "language": "typescript"
+      "name": "createUsers",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/users"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "login",
-      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
-      "language": "typescript"
+      "name": "createUsersLogin",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/users/login"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "getCurrentUser",
-      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
-      "language": "typescript"
+      "name": "getUser",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/user"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "updateUser",
-      "file": "\\src\\app\\routes\\auth\\auth.service.ts",
-      "language": "typescript"
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "PUT:/user"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "getProfile",
-      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
-      "language": "typescript"
+      "name": "getProfilesUsername",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/profiles/:username"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "followUser",
-      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
-      "language": "typescript"
+      "name": "createProfilesUsernameFollow",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/profiles/:username/follow"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "unfollowUser",
-      "file": "\\src\\app\\routes\\profile\\profile.service.ts",
-      "language": "typescript"
+      "name": "deleteProfilesUsernameFollow",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/profiles/:username/follow"
+      ],
+      "sfp_hint": "elementary_process"
     },
     {
-      "name": "generateUser",
-      "file": "\\src\\prisma\\seed.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "generateArticle",
-      "file": "\\src\\prisma\\seed.ts",
-      "language": "typescript"
-    },
-    {
-      "name": "generateComment",
-      "file": "\\src\\prisma\\seed.ts",
-      "language": "typescript"
+      "name": "getTags",
+      "file": "\\src\\app\\routes\\tag\\tag.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/tags"
+      ],
+      "sfp_hint": "elementary_process"
     }
   ]
 }

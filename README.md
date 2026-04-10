@@ -67,6 +67,39 @@ Contagem SFP final
   preliminar dos resultados antes do envio à LLM
 - Resultados salvos em JSON por repositório e consolidado
 
+#### Melhorias de pré-processamento (v2.5 → v3.0)
+
+- **Java Spring** — adicionados decorators GraphQL DGS (`@DgsQuery`, `@DgsMutation`,
+  `@DgsData`), filtro de `@Override`, sufixos de DTOs e infraestrutura (`Param`,
+  `Response`, `Serializer`, `Cursor`, `Validator`, etc.), separação de sufixos
+  de classe vs. método, e inferência de `file_role: model` para pacotes `core/`
+- **TypeScript / NestJS** — corrigido bug crítico em `extract_decorators_ts`:
+  a função parava ao encontrar `export` antes de alcançar o decorator pai;
+  decorators como `@Module`, `@Injectable`, `@Entity` agora são capturados
+- **React / Frontend** — adicionado `file_role: ui` para pastas `components/`,
+  `pages/`, `screens/`; lifecycle methods React (`render`, `componentDidMount`,
+  etc.) adicionados ao filtro de métodos padrão; resultado: 0 FD / 0 EP para
+  repositórios frontend (comportamento correto para SFP)
+- **Express / Node.js** — adicionada detecção de rotas funcionais via
+  `call_expression` (`router.get(path, handler)`), padrão não capturado
+  pelo extrator de declarações de método; nome derivado do método HTTP + path
+
+#### Melhorias de pré-processamento (v3.0 → v3.1)
+
+- **C# .NET / Clean Arch** — filtro de construtores C# (`constructor_declaration`)
+  adicionado ao `walk()`, análogo ao filtro já existente para Java
+- **C# .NET / Clean Arch** — artefato `Task<T>` (parser C# lia tipo de retorno como
+  nome de método) corrigido: `IGNORE_METHOD_NAMES["csharp"]` agora verificado
+  **antes** da regra de `file_role: feature`, garantindo filtragem mesmo em
+  arquivos da pasta `Features/`
+- **C# .NET** — `ServicesExtensions` e similares agora corretamente classificados
+  como `file_role: config`; corrigido o bug de prioridade de roles onde `"service"`
+  (substring de `ServicesExtensions`) prevalecia sobre `"config"`
+- **Infraestrutura de roles** — `infer_file_role` refatorado com lista de
+  `HIGH_PRIORITY_ROLES` verificada antes do loop geral; garante que `test`,
+  `migration`, `config`, `infrastructure`, `ui` e `feature` sempre têm
+  precedência sobre `model`, `service` e `controller`
+
 ### 🔄 Etapa 3 — Integração com LLM (Próxima)
 
 - Conectar à Azure OpenAI
@@ -132,15 +165,32 @@ Contagem SFP final
 
 ---
 
-## Resultados da Extração (com filtro de testes aplicado)
+## Conjunto de Validação
 
-| Repositório              | Linguagem  | Arquivos | Funções de Dados | Processos Elementares |
-| ------------------------ | ---------- | -------- | ---------------- | --------------------- |
-| realworld-java-spring    | Java       | 93       | 79               | 217                   |
-| realworld-csharp-dotnet  | C#         | 64       | 124              | 85                    |
-| realworld-python-django  | Python     | 44       | 49               | 66                    |
-| realworld-react-js       | JavaScript | 38       | 13               | 97                    |
-| realworld-nodejs-express | TypeScript | 31       | 11               | 22                    |
+### Repositórios Principais (RealWorld)
+
+Mesma aplicação implementada em múltiplas linguagens — permite comparação
+direta entre tecnologias e validação cruzada dos resultados SFP.
+
+| Repositório              | Linguagem  | Arquivos | FD total | FD → LLM | EP total | EP → LLM |
+| ------------------------ | ---------- | -------- | -------- | -------- | -------- | -------- |
+| realworld-java-spring    | Java       | 93       | 11       | 1 (9%)   | 94       | 10 (11%) |
+| realworld-csharp-dotnet  | C#         | 64       | 7        | 0 (0%)   | 38       | 0 (0%)   |
+| realworld-python-django  | Python     | 34       | 8        | 0 (0%)   | 30       | 10 (33%) |
+| realworld-nodejs-express | TypeScript | 28       | 3        | 2 (67%)  | 20       | 0 (0%)   |
+| csharp-clean-arch        | C#         | 130      | 22       | 7 (32%)  | 42       | 12 (29%) |
+| nestjs-framework         | TypeScript | 327      | 38       | 25 (66%) | 212      | 99 (47%) |
+
+> **FD → LLM** e **EP → LLM**: elementos que o pré-processador não conseguiu
+> classificar deterministicamente e serão enviados à LLM na Etapa 3.
+
+### Casos de Borda (fora do conjunto de validação principal)
+
+| Repositório       | Motivo da exclusão |
+| ----------------- | ------------------ |
+| realworld-react-js | **Frontend puro** — componentes UI não mapeiam para SFP. O extrator filtra corretamente (0 FD / 0 EP), mas o repositório não representa uma aplicação backend mensurável. |
+| edge-express-lib  | **Repositório de framework**, não de aplicação. Contém o código-fonte do Express.js e demos de exemplo. O extrator captura rotas corretamente, mas os números não têm significado de negócio. **Limitação conhecida:** a ferramenta não distingue automaticamente código de framework de código de aplicação — requer triagem manual do repositório de entrada. |
+| edge-only-markdown | **Sem código-fonte** — valida que o extrator não quebra com repositórios não suportados (resultado 0 esperado e obtido). |
 
 ---
 

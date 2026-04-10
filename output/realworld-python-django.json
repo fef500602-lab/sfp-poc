@@ -1,583 +1,371 @@
 {
   "repository": "realworld-python-django",
-  "files_analyzed": 44,
+  "files_analyzed": 34,
   "data_functions": [
     {
       "name": "Article",
       "file": "\\conduit\\apps\\articles\\models.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "TimestampedModel"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "Comment",
       "file": "\\conduit\\apps\\articles\\models.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "TimestampedModel"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "Tag",
       "file": "\\conduit\\apps\\articles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "TagRelatedField",
-      "file": "\\conduit\\apps\\articles\\relations.py",
-      "language": "python"
-    },
-    {
-      "name": "ArticleJSONRenderer",
-      "file": "\\conduit\\apps\\articles\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "CommentJSONRenderer",
-      "file": "\\conduit\\apps\\articles\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "ArticleSerializer",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "CommentSerializer",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "TagSerializer",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "TimestampedModel"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "ArticleViewSet",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "CommentsListCreateAPIView",
-      "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "CommentsDestroyAPIView",
-      "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "ArticlesFavoriteAPIView",
-      "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "TagListAPIView",
-      "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "ArticlesFeedAPIView",
-      "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "ArticlesAppConfig",
-      "file": "\\conduit\\apps\\articles\\__init__.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\articles\\migrations\\0001_initial.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\articles\\migrations\\0002_comment.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\articles\\migrations\\0003_auto_20160828_1656.py",
-      "language": "python"
-    },
-    {
-      "name": "JWTAuthentication",
-      "file": "\\conduit\\apps\\authentication\\backends.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [
+        "mixins.CreateModelMixin",
+        "mixins.ListModelMixin",
+        "mixins.RetrieveModelMixin",
+        "viewsets.GenericViewSet"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "UserManager",
       "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "User",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "UserJSONRenderer",
-      "file": "\\conduit\\apps\\authentication\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "RegistrationSerializer",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "LoginSerializer",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "UserSerializer",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "RegistrationAPIView",
-      "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "LoginAPIView",
-      "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "UserRetrieveUpdateAPIView",
-      "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "AuthenticationAppConfig",
-      "file": "\\conduit\\apps\\authentication\\__init__.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\authentication\\migrations\\0001_initial.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "BaseUserManager"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "TimestampedModel",
       "file": "\\conduit\\apps\\core\\models.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "models.Model"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "Meta",
       "file": "\\conduit\\apps\\core\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "ConduitJSONRenderer",
-      "file": "\\conduit\\apps\\core\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "ProfileDoesNotExist",
-      "file": "\\conduit\\apps\\profiles\\exceptions.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
     },
     {
       "name": "Profile",
       "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "ProfileJSONRenderer",
-      "file": "\\conduit\\apps\\profiles\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "ProfileSerializer",
-      "file": "\\conduit\\apps\\profiles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "Meta",
-      "file": "\\conduit\\apps\\profiles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "ProfileRetrieveAPIView",
-      "file": "\\conduit\\apps\\profiles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "ProfileFollowAPIView",
-      "file": "\\conduit\\apps\\profiles\\views.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\profiles\\migrations\\0001_initial.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\profiles\\migrations\\0002_profile_follows.py",
-      "language": "python"
-    },
-    {
-      "name": "Migration",
-      "file": "\\conduit\\apps\\profiles\\migrations\\0003_profile_favorites.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "TimestampedModel"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
     }
   ],
   "elementary_processes": [
     {
-      "name": "__str__",
-      "file": "\\conduit\\apps\\articles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "__str__",
-      "file": "\\conduit\\apps\\articles\\models.py",
-      "language": "python"
-    },
-    {
       "name": "get_queryset",
       "file": "\\conduit\\apps\\articles\\relations.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "to_internal_value",
       "file": "\\conduit\\apps\\articles\\relations.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "to_representation",
       "file": "\\conduit\\apps\\articles\\relations.py",
-      "language": "python"
-    },
-    {
-      "name": "create",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_created_at",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_favorited",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_favorites_count",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_updated_at",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "create",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_created_at",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_updated_at",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "to_representation",
-      "file": "\\conduit\\apps\\articles\\serializers.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "add_slug_to_article_if_not_exists",
       "file": "\\conduit\\apps\\articles\\signals.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [
+        "receiver"
+      ],
+      "sfp_hint": "llm"
     },
     {
       "name": "get_queryset",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "create",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "list",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "retrieve",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "update",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "filter_queryset",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "create",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "destroy",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "delete",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "post",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "list",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "get_queryset",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "list",
       "file": "\\conduit\\apps\\articles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "ready",
       "file": "\\conduit\\apps\\articles\\__init__.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "authenticate",
       "file": "\\conduit\\apps\\authentication\\backends.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "_authenticate_credentials",
       "file": "\\conduit\\apps\\authentication\\backends.py",
-      "language": "python"
-    },
-    {
-      "name": "create_user",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "create_superuser",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "__str__",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "token",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "get_full_name",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "get_short_name",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "_generate_jwt_token",
-      "file": "\\conduit\\apps\\authentication\\models.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "render",
       "file": "\\conduit\\apps\\authentication\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "create",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "validate",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "update",
-      "file": "\\conduit\\apps\\authentication\\serializers.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "create_related_profile",
       "file": "\\conduit\\apps\\authentication\\signals.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [
+        "receiver"
+      ],
+      "sfp_hint": "llm"
     },
     {
       "name": "post",
       "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "post",
       "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "retrieve",
       "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "update",
       "file": "\\conduit\\apps\\authentication\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "ready",
       "file": "\\conduit\\apps\\authentication\\__init__.py",
-      "language": "python"
-    },
-    {
-      "name": "core_exception_handler",
-      "file": "\\conduit\\apps\\core\\exceptions.py",
-      "language": "python"
-    },
-    {
-      "name": "_handle_generic_error",
-      "file": "\\conduit\\apps\\core\\exceptions.py",
-      "language": "python"
-    },
-    {
-      "name": "_handle_not_found_error",
-      "file": "\\conduit\\apps\\core\\exceptions.py",
-      "language": "python"
-    },
-    {
-      "name": "render",
-      "file": "\\conduit\\apps\\core\\renderers.py",
-      "language": "python"
-    },
-    {
-      "name": "generate_random_string",
-      "file": "\\conduit\\apps\\core\\utils.py",
-      "language": "python"
-    },
-    {
-      "name": "__str__",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "follow",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "unfollow",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "is_following",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "is_followed_by",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "favorite",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "unfavorite",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "has_favorited",
-      "file": "\\conduit\\apps\\profiles\\models.py",
-      "language": "python"
-    },
-    {
-      "name": "get_image",
-      "file": "\\conduit\\apps\\profiles\\serializers.py",
-      "language": "python"
-    },
-    {
-      "name": "get_following",
-      "file": "\\conduit\\apps\\profiles\\serializers.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "retrieve",
       "file": "\\conduit\\apps\\profiles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "delete",
       "file": "\\conduit\\apps\\profiles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     },
     {
       "name": "post",
       "file": "\\conduit\\apps\\profiles\\views.py",
-      "language": "python"
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
     }
   ]
 }
