@@ -162,8 +162,45 @@ Cada elemento extraído agora carrega:
 
 ### ⏳ Etapas Futuras
 
-- Melhorias adicionais de pré-classificação em Python Django e NestJS
-  (identificadas, ainda não implementadas)
+#### Melhorias de pré-classificação identificadas (backlog v3.2)
+
+Itens identificados na análise diagnóstica, prontos para implementação:
+
+**Python Django** — reduz 10 EPs enviados à LLM para ~0%
+- Adicionar `to_internal_value`, `to_representation` ao `IGNORE_METHOD_NAMES["python"]`
+  (métodos padrão do DRF Serializer — nunca são EPs)
+- Adicionar `get_queryset` ao `IGNORE_METHOD_NAMES["python"]`
+  (override de filtro, não operação de negócio)
+- Adicionar `receiver` ao `IGNORE_DECORATORS["python"]`
+  (Django signal handlers não são EPs)
+- Adicionar `BaseUserManager` ao `IGNORE_BASE_CLASSES["python"]`
+  (`UserManager` é utilitário de acesso, não entidade de domínio)
+- Filtrar classes internas `Meta` (padrão Django — sempre filha de models,
+  nunca uma FD independente)
+- Corrigir `ArticleViewSet` classificada como FD: bases com `Mixin` indicam
+  controller/EP, não Função de Dados
+
+**TypeScript / NestJS** — reduz ~50 EPs e ~15 FDs enviados à LLM
+- Adicionar `catch`, `canActivate`, `intercept`, `bootstrap` ao
+  `IGNORE_METHOD_NAMES["typescript"]` (métodos de interface de framework)
+- Adicionar `WebSocketGateway`, `Catch` ao `IGNORE_DECORATORS["typescript"]`
+- Adicionar `ExceptionFilter`, `IoAdapter` ao `IGNORE_BASE_CLASSES["typescript"]`
+
+**Java Spring** — impacto menor (~1 item)
+- Adicionar `isEmpty` ao `IGNORE_METHOD_NAMES["java"]`
+
+**JavaScript / Node.js** — impacto menor (~1 FD)
+- Adicionar `"error"` ao `IGNORE_BASE_CLASSES["javascript"]`
+  (`HttpException extends Error` deve ser ignorado, assim como já ocorre em Java)
+
+**Falso positivo conhecido — React (caso de borda)**
+- O detector de rotas Express captura chamadas HTTP *client-side* do superagent
+  (`agent.get('/user', ...)`) como se fossem rotas de servidor. Não afeta o
+  conjunto de validação principal pois `realworld-react-js` está fora dele,
+  mas deve ser corrigido antes de expandir para repositórios frontend
+
+#### Roadmap geral
+
 - Suporte a repositórios internos via Azure DevOps
 - Análise histórica por commits (evolução ao longo do tempo)
 - Dashboard executivo de métricas
