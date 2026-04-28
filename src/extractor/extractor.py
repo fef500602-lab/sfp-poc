@@ -6,6 +6,7 @@ import tree_sitter_javascript as tsjavascript
 import tree_sitter_java as tsjava
 import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
+import tree_sitter_kotlin as tskotlin
 
 # =============================================================================
 # SFP Extractor v4.1 — Redução de ruído residual (backlog v4.1 + v3.2)
@@ -45,6 +46,7 @@ LANGUAGES = {
     "java":       {"language": Language(tsjava.language()),                  "extensions": [".java"]},
     "typescript": {"language": Language(tstypescript.language_typescript()), "extensions": [".ts"]},
     "tsx":        {"language": Language(tstypescript.language_tsx()),        "extensions": [".tsx"]},
+    "kotlin":     {"language": Language(tskotlin.language()),                "extensions": [".kt"]},
 }
 
 
@@ -818,8 +820,7 @@ def extract_decorators_ts(node):
 def analyze_file(filepath, lang_name, relative_path):
     config   = LANGUAGES[lang_name]
     language = config["language"]
-    parser   = Parser()
-    parser.language = language
+    parser   = Parser(language)
 
     with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
         source_code = f.read()
