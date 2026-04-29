@@ -4,7 +4,7 @@
   "data_functions": [
     {
       "name": "DependencyInjection",
-      "file": "\\src\\Application\\DependencyInjection.cs",
+      "file": "/src/Application/DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -13,7 +13,7 @@
     },
     {
       "name": "IApplicationDbContext",
-      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "file": "/src/Application/Common/Interfaces/IApplicationDbContext.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -21,17 +21,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "IIdentityService",
-      "file": "\\src\\Application\\Common\\Interfaces\\IIdentityService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
       "name": "IUser",
-      "file": "\\src\\Application\\Common\\Interfaces\\IUser.cs",
+      "file": "/src/Application/Common/Interfaces/IUser.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -40,7 +31,7 @@
     },
     {
       "name": "PaginatedList",
-      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "file": "/src/Application/Common/Models/PaginatedList.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -49,7 +40,7 @@
     },
     {
       "name": "Result",
-      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "file": "/src/Application/Common/Models/Result.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -58,7 +49,7 @@
     },
     {
       "name": "AuthorizeAttribute",
-      "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+      "file": "/src/Application/Common/Security/AuthorizeAttribute.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [
@@ -69,7 +60,7 @@
     },
     {
       "name": "WeatherForecast",
-      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\WeatherForecast.cs",
+      "file": "/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/WeatherForecast.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -78,7 +69,7 @@
     },
     {
       "name": "BaseAuditableEntity",
-      "file": "\\src\\Domain\\Common\\BaseAuditableEntity.cs",
+      "file": "/src/Domain/Common/BaseAuditableEntity.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -89,7 +80,7 @@
     },
     {
       "name": "BaseEntity",
-      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "file": "/src/Domain/Common/BaseEntity.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -98,7 +89,7 @@
     },
     {
       "name": "BaseEvent",
-      "file": "\\src\\Domain\\Common\\BaseEvent.cs",
+      "file": "/src/Domain/Common/BaseEvent.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -109,7 +100,7 @@
     },
     {
       "name": "ValueObject",
-      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "file": "/src/Domain/Common/ValueObject.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -118,7 +109,7 @@
     },
     {
       "name": "Policies",
-      "file": "\\src\\Domain\\Constants\\Policies.cs",
+      "file": "/src/Domain/Constants/Policies.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -127,7 +118,7 @@
     },
     {
       "name": "Roles",
-      "file": "\\src\\Domain\\Constants\\Roles.cs",
+      "file": "/src/Domain/Constants/Roles.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -136,7 +127,7 @@
     },
     {
       "name": "TodoItem",
-      "file": "\\src\\Domain\\Entities\\TodoItem.cs",
+      "file": "/src/Domain/Entities/TodoItem.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -147,7 +138,7 @@
     },
     {
       "name": "TodoList",
-      "file": "\\src\\Domain\\Entities\\TodoList.cs",
+      "file": "/src/Domain/Entities/TodoList.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -158,7 +149,7 @@
     },
     {
       "name": "TodoItemCompletedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemCompletedEvent.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -169,7 +160,7 @@
     },
     {
       "name": "TodoItemCreatedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemCreatedEvent.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -180,7 +171,7 @@
     },
     {
       "name": "TodoItemDeletedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemDeletedEvent.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -191,7 +182,7 @@
     },
     {
       "name": "Colour",
-      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "file": "/src/Domain/ValueObjects/Colour.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
@@ -202,7 +193,7 @@
     },
     {
       "name": "DependencyInjection",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -211,7 +202,7 @@
     },
     {
       "name": "App",
-      "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+      "file": "/src/Web/ClientApp-React/src/App.jsx",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -222,7 +213,7 @@
   "elementary_processes": [
     {
       "name": "AddApplicationServices",
-      "file": "\\src\\Application\\DependencyInjection.cs",
+      "file": "/src/Application/DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -231,7 +222,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/AuthorizationBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -240,7 +231,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/PerformanceBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -249,7 +240,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -258,7 +249,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/ValidationBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -267,7 +258,7 @@
     },
     {
       "name": "SaveChangesAsync",
-      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "file": "/src/Application/Common/Interfaces/IApplicationDbContext.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -276,16 +267,16 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "file": "/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItem.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "file": "/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPagination.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -294,34 +285,34 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "file": "/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoList.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "BeUniqueTitle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+      "file": "/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommandValidator.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "BeUniqueTitle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+      "file": "/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommandValidator.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "file": "/src/Application/TodoLists/Queries/GetTodos/GetTodos.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -330,16 +321,16 @@
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "file": "/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/GetWeatherForecastsQuery.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "AddWebServices",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -348,7 +339,7 @@
     },
     {
       "name": "AddKeyVaultIfConfigured",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -357,7 +348,7 @@
     },
     {
       "name": "getBaseUrl",
-      "file": "\\src\\Web\\ClientApp\\src\\main.ts",
+      "file": "/src/Web/ClientApp/src/main.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -366,7 +357,7 @@
     },
     {
       "name": "canActivate",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.guard.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.guard.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -375,7 +366,7 @@
     },
     {
       "name": "initialize",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -384,7 +375,7 @@
     },
     {
       "name": "login",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -393,7 +384,7 @@
     },
     {
       "name": "register",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -402,7 +393,7 @@
     },
     {
       "name": "logout",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -411,7 +402,7 @@
     },
     {
       "name": "intercept",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\authorize.interceptor.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/authorize.interceptor.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -420,7 +411,7 @@
     },
     {
       "name": "getApiBaseUrl",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+      "file": "/src/Web/ClientApp/src/app/app.module.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -429,25 +420,25 @@
     },
     {
       "name": "setTheme",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "file": "/src/Web/ClientApp/src/app/theme.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "applyTheme",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "file": "/src/Web/ClientApp/src/app/theme.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -456,7 +447,7 @@
     },
     {
       "name": "GetTodoItemsWithPagination",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -465,7 +456,7 @@
     },
     {
       "name": "CreateTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -474,7 +465,7 @@
     },
     {
       "name": "UpdateTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -483,7 +474,7 @@
     },
     {
       "name": "UpdateTodoItemDetail",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -492,7 +483,7 @@
     },
     {
       "name": "DeleteTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -501,7 +492,7 @@
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -510,7 +501,7 @@
     },
     {
       "name": "GetTodoLists",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -519,7 +510,7 @@
     },
     {
       "name": "CreateTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -528,7 +519,7 @@
     },
     {
       "name": "UpdateTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -537,7 +528,7 @@
     },
     {
       "name": "DeleteTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -546,7 +537,7 @@
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "file": "/src/Web/Endpoints/Users.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -555,7 +546,7 @@
     },
     {
       "name": "Logout",
-      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "file": "/src/Web/Endpoints/Users.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -564,7 +555,7 @@
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "file": "/src/Web/Endpoints/WeatherForecasts.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -573,7 +564,7 @@
     },
     {
       "name": "GetWeatherForecasts",
-      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "file": "/src/Web/Endpoints/WeatherForecasts.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -582,7 +573,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "file": "/templates/ca-use-case/FeatureName/Commands/CleanArchitectureUseCase/CleanArchitectureUseCase.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
@@ -591,7 +582,7 @@
     },
     {
       "name": "Handle",
-      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "file": "/templates/ca-use-case/FeatureName/Queries/CleanArchitectureUseCase/CleanArchitectureUseCase.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],

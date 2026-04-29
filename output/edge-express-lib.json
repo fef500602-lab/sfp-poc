@@ -5,7 +5,7 @@
   "elementary_processes": [
     {
       "name": "authenticate",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -14,7 +14,7 @@
     },
     {
       "name": "restrict",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -23,7 +23,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -34,7 +34,7 @@
     },
     {
       "name": "getRestricted",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -45,7 +45,7 @@
     },
     {
       "name": "getLogout",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -56,7 +56,7 @@
     },
     {
       "name": "getLogin",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -67,7 +67,7 @@
     },
     {
       "name": "createLogin",
-      "file": "\\examples\\auth\\index.js",
+      "file": "/examples/auth/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -78,7 +78,7 @@
     },
     {
       "name": "format",
-      "file": "\\examples\\content-negotiation\\index.js",
+      "file": "/examples/content-negotiation/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -87,7 +87,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\content-negotiation\\index.js",
+      "file": "/examples/content-negotiation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -98,7 +98,7 @@
     },
     {
       "name": "getUsers",
-      "file": "\\examples\\content-negotiation\\index.js",
+      "file": "/examples/content-negotiation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -109,7 +109,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\cookie-sessions\\index.js",
+      "file": "/examples/cookie-sessions/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -120,7 +120,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\cookies\\index.js",
+      "file": "/examples/cookies/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -131,7 +131,7 @@
     },
     {
       "name": "getForget",
-      "file": "\\examples\\cookies\\index.js",
+      "file": "/examples/cookies/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -142,7 +142,7 @@
     },
     {
       "name": "CREATE",
-      "file": "\\examples\\cookies\\index.js",
+      "file": "/examples/cookies/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -153,7 +153,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\downloads\\index.js",
+      "file": "/examples/downloads/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -164,7 +164,7 @@
     },
     {
       "name": "getFiles*file",
-      "file": "\\examples\\downloads\\index.js",
+      "file": "/examples/downloads/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -175,7 +175,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\ejs\\index.js",
+      "file": "/examples/ejs/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -186,7 +186,7 @@
     },
     {
       "name": "error",
-      "file": "\\examples\\error\\index.js",
+      "file": "/examples/error/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -195,7 +195,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\error\\index.js",
+      "file": "/examples/error/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -206,7 +206,7 @@
     },
     {
       "name": "getNext",
-      "file": "\\examples\\error\\index.js",
+      "file": "/examples/error/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -217,7 +217,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\error-pages\\index.js",
+      "file": "/examples/error-pages/index.js",
       "language": "javascript",
       "file_role": "ui",
       "base_classes": [],
@@ -228,7 +228,7 @@
     },
     {
       "name": "get404",
-      "file": "\\examples\\error-pages\\index.js",
+      "file": "/examples/error-pages/index.js",
       "language": "javascript",
       "file_role": "ui",
       "base_classes": [],
@@ -239,7 +239,7 @@
     },
     {
       "name": "get403",
-      "file": "\\examples\\error-pages\\index.js",
+      "file": "/examples/error-pages/index.js",
       "language": "javascript",
       "file_role": "ui",
       "base_classes": [],
@@ -250,7 +250,7 @@
     },
     {
       "name": "get500",
-      "file": "\\examples\\error-pages\\index.js",
+      "file": "/examples/error-pages/index.js",
       "language": "javascript",
       "file_role": "ui",
       "base_classes": [],
@@ -261,7 +261,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\hello-world\\index.js",
+      "file": "/examples/hello-world/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -272,7 +272,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\markdown\\index.js",
+      "file": "/examples/markdown/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -283,7 +283,7 @@
     },
     {
       "name": "getFail",
-      "file": "\\examples\\markdown\\index.js",
+      "file": "/examples/markdown/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -294,7 +294,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\multi-router\\index.js",
+      "file": "/examples/multi-router/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -305,7 +305,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\multi-router\\controllers\\api_v1.js",
+      "file": "/examples/multi-router/controllers/api_v1.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -316,7 +316,7 @@
     },
     {
       "name": "getUsers",
-      "file": "\\examples\\multi-router\\controllers\\api_v1.js",
+      "file": "/examples/multi-router/controllers/api_v1.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -327,7 +327,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\multi-router\\controllers\\api_v2.js",
+      "file": "/examples/multi-router/controllers/api_v2.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -338,7 +338,7 @@
     },
     {
       "name": "getUsers",
-      "file": "\\examples\\multi-router\\controllers\\api_v2.js",
+      "file": "/examples/multi-router/controllers/api_v2.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -349,7 +349,7 @@
     },
     {
       "name": "list",
-      "file": "\\examples\\online\\index.js",
+      "file": "/examples/online/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -358,7 +358,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\online\\index.js",
+      "file": "/examples/online/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -369,7 +369,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\params\\index.js",
+      "file": "/examples/params/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -380,7 +380,7 @@
     },
     {
       "name": "getUserUser",
-      "file": "\\examples\\params\\index.js",
+      "file": "/examples/params/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -391,7 +391,7 @@
     },
     {
       "name": "getUsersFrom-to",
-      "file": "\\examples\\params\\index.js",
+      "file": "/examples/params/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -402,7 +402,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\resource\\index.js",
+      "file": "/examples/resource/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -413,7 +413,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -424,7 +424,7 @@
     },
     {
       "name": "getUsers",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -435,7 +435,7 @@
     },
     {
       "name": "getUserId",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -446,7 +446,7 @@
     },
     {
       "name": "getUserIdView",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -457,7 +457,7 @@
     },
     {
       "name": "getUserIdEdit",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -468,7 +468,7 @@
     },
     {
       "name": "updateUserIdEdit",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -479,7 +479,7 @@
     },
     {
       "name": "getPosts",
-      "file": "\\examples\\route-separation\\index.js",
+      "file": "/examples/route-separation/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -490,7 +490,7 @@
     },
     {
       "name": "initializeRedis",
-      "file": "\\examples\\search\\index.js",
+      "file": "/examples/search/index.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -499,7 +499,7 @@
     },
     {
       "name": "getSearch{query}",
-      "file": "\\examples\\search\\index.js",
+      "file": "/examples/search/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -510,7 +510,7 @@
     },
     {
       "name": "getClient.js",
-      "file": "\\examples\\search\\index.js",
+      "file": "/examples/search/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -521,7 +521,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\session\\index.js",
+      "file": "/examples/session/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -532,7 +532,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\session\\redis.js",
+      "file": "/examples/session/redis.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -543,7 +543,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\vhost\\index.js",
+      "file": "/examples/vhost/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -554,7 +554,7 @@
     },
     {
       "name": "getSub",
-      "file": "\\examples\\vhost\\index.js",
+      "file": "/examples/vhost/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -565,7 +565,7 @@
     },
     {
       "name": "GithubView",
-      "file": "\\examples\\view-constructor\\github-view.js",
+      "file": "/examples/view-constructor/github-view.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -574,7 +574,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\view-constructor\\index.js",
+      "file": "/examples/view-constructor/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -585,7 +585,7 @@
     },
     {
       "name": "getReadme.md",
-      "file": "\\examples\\view-constructor\\index.js",
+      "file": "/examples/view-constructor/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -596,7 +596,7 @@
     },
     {
       "name": "ferrets",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -605,7 +605,7 @@
     },
     {
       "name": "count",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -614,7 +614,7 @@
     },
     {
       "name": "users",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -623,7 +623,7 @@
     },
     {
       "name": "count2",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -632,7 +632,7 @@
     },
     {
       "name": "users2",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -641,7 +641,7 @@
     },
     {
       "name": "GET",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -652,7 +652,7 @@
     },
     {
       "name": "getMiddleware",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -663,7 +663,7 @@
     },
     {
       "name": "getMiddleware-locals",
-      "file": "\\examples\\view-locals\\index.js",
+      "file": "/examples/view-locals/index.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -674,7 +674,7 @@
     },
     {
       "name": "User",
-      "file": "\\examples\\view-locals\\user.js",
+      "file": "/examples/view-locals/user.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -683,16 +683,16 @@
     },
     {
       "name": "error",
-      "file": "\\examples\\web-service\\index.js",
+      "file": "/examples/web-service/index.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "getApiUsers",
-      "file": "\\examples\\web-service\\index.js",
+      "file": "/examples/web-service/index.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
@@ -703,7 +703,7 @@
     },
     {
       "name": "getApiRepos",
-      "file": "\\examples\\web-service\\index.js",
+      "file": "/examples/web-service/index.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
@@ -714,7 +714,7 @@
     },
     {
       "name": "getApiUserNameRepos",
-      "file": "\\examples\\web-service\\index.js",
+      "file": "/examples/web-service/index.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
@@ -725,7 +725,7 @@
     },
     {
       "name": "logerror",
-      "file": "\\lib\\application.js",
+      "file": "/lib/application.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -734,7 +734,7 @@
     },
     {
       "name": "tryRender",
-      "file": "\\lib\\application.js",
+      "file": "/lib/application.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -743,7 +743,7 @@
     },
     {
       "name": "createApplication",
-      "file": "\\lib\\express.js",
+      "file": "/lib/express.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -752,7 +752,7 @@
     },
     {
       "name": "defineGetter",
-      "file": "\\lib\\request.js",
+      "file": "/lib/request.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -761,7 +761,7 @@
     },
     {
       "name": "sendfile",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -770,7 +770,7 @@
     },
     {
       "name": "onaborted",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -779,7 +779,7 @@
     },
     {
       "name": "ondirectory",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -788,7 +788,7 @@
     },
     {
       "name": "onerror",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -797,7 +797,7 @@
     },
     {
       "name": "onend",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -806,7 +806,7 @@
     },
     {
       "name": "onfile",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -815,7 +815,7 @@
     },
     {
       "name": "onfinish",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -824,7 +824,7 @@
     },
     {
       "name": "onstream",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -833,7 +833,7 @@
     },
     {
       "name": "stringify",
-      "file": "\\lib\\response.js",
+      "file": "/lib/response.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -842,7 +842,7 @@
     },
     {
       "name": "acceptParams",
-      "file": "\\lib\\utils.js",
+      "file": "/lib/utils.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -851,7 +851,7 @@
     },
     {
       "name": "createETagGenerator",
-      "file": "\\lib\\utils.js",
+      "file": "/lib/utils.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -860,7 +860,7 @@
     },
     {
       "name": "parseExtendedQueryString",
-      "file": "\\lib\\utils.js",
+      "file": "/lib/utils.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -869,7 +869,7 @@
     },
     {
       "name": "View",
-      "file": "\\lib\\view.js",
+      "file": "/lib/view.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -878,7 +878,7 @@
     },
     {
       "name": "tryStat",
-      "file": "\\lib\\view.js",
+      "file": "/lib/view.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],

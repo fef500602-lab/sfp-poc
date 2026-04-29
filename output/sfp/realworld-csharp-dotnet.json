@@ -1,198 +1,248 @@
 {
   "repository": "realworld-csharp-dotnet",
+  "pre_classification": {
+    "data_functions": 7,
+    "elementary_processes": 38
+  },
+  "llm_classification": {
+    "sent": 0,
+    "data_functions": 0,
+    "elementary_processes": 0,
+    "ignored": 0
+  },
+  "sfp_count": {
+    "data_functions": 7,
+    "elementary_processes": 38,
+    "total": 45
+  },
   "data_functions": [
-    "ArticlesEnvelope",
-    "IPasswordHasher (IPasswordHasher.cs)",
-    "CommentsEnvelope",
-    "CommentEnvelope",
-    "JwtIssuerOptions (JwtIssuerOptions.cs)",
-    "FollowedPeople",
-    "CommentData",
-    "Command (Login.cs)",
-    "UserEnvelope (User.cs)",
-    "Article",
-    "TagsEnvelope",
-    "ArticleTag",
-    "Comment",
-    "UserData (Edit.cs)",
-    "User (User.cs)",
-    "UserData (Create.cs)",
-    "Person",
-    "IJwtTokenGenerator (IJwtTokenGenerator.cs)",
-    "ArticleData (Edit.cs)",
-    "ArticleEnvelope",
-    "ArticleFavorite",
-    "Tag",
-    "ConduitContext (ConduitContext.cs)",
-    "ArticleData (Create.cs)",
-    "Profile",
-    "ProfileEnvelope",
-    "ICurrentUserAccessor (ICurrentUserAccessor.cs)",
-    "UserData (Login.cs)"
+    {
+      "name": "Article",
+      "file": "/src/Conduit/Domain/Article.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "ArticleFavorite",
+      "file": "/src/Conduit/Domain/ArticleFavorite.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "ArticleTag",
+      "file": "/src/Conduit/Domain/ArticleTag.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Comment",
+      "file": "/src/Conduit/Domain/Comment.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "FollowedPeople",
+      "file": "/src/Conduit/Domain/FollowedPeople.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Person",
+      "file": "/src/Conduit/Domain/Person.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Tag",
+      "file": "/src/Conduit/Domain/Tag.cs",
+      "source": "pre_classifier"
+    }
   ],
   "elementary_processes": [
-    "Create (ArticlesController.cs)",
-    "Get (ArticlesController.cs)",
-    "ReadProfile (IProfileReader.cs)",
-    "CreateToken (IJwtTokenGenerator.cs)",
-    "FavoriteDelete (FavoritesController.cs)",
-    "Unfollow (FollowersController.cs)",
-    "GetFeed (ArticlesController.cs)",
-    "Create (UsersController.cs)",
-    "UpdateUser (UserController.cs)",
-    "Hash (PasswordHasher.cs)",
-    "CreateToken (JwtTokenGenerator.cs)",
-    "Get (ProfilesController.cs)",
-    "Handle (Edit.cs)",
-    "ReadProfile (ProfileReader.cs)",
-    "Handle (Details.cs)",
-    "Get (TagsController.cs)",
-    "Handle (Login.cs)",
-    "Handle (Create.cs)",
-    "Handle (Delete.cs)",
-    "Delete (ArticlesController.cs)",
-    "Create (CommentsController.cs)",
-    "Login (UsersController.cs)",
-    "Delete (CommentsController.cs)",
-    "Get (CommentsController.cs)",
-    "Edit (ArticlesController.cs)",
-    "GetCurrent (UserController.cs)",
-    "Hash (IPasswordHasher.cs)",
-    "Handle (Add.cs)",
-    "Follow (FollowersController.cs)",
-    "FavoriteAdd (FavoritesController.cs)",
-    "Handle (List.cs)"
+    {
+      "name": "GetAllData",
+      "file": "/src/Conduit/Features/Articles/ArticleExtensions.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Get",
+      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "GetFeed",
+      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Get",
+      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Create",
+      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Edit",
+      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Articles/Create.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Articles/Details.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "GetArticleTagsToCreate",
+      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "GetArticleTagsToDelete",
+      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Articles/List.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Create",
+      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Get",
+      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Comments/Create.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Comments/List.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Favorites/Add.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Favorites/Delete.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "FavoriteAdd",
+      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "FavoriteDelete",
+      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Followers/Add.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Followers/Delete.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Follow",
+      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Unfollow",
+      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Profiles/Details.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "ReadProfile",
+      "file": "/src/Conduit/Features/Profiles/IProfileReader.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "ReadProfile",
+      "file": "/src/Conduit/Features/Profiles/ProfileReader.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Get",
+      "file": "/src/Conduit/Features/Profiles/ProfilesController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Tags/List.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Get",
+      "file": "/src/Conduit/Features/Tags/TagsController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Users/Create.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Users/Details.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Users/Edit.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Handle",
+      "file": "/src/Conduit/Features/Users/Login.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "GetCurrent",
+      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "UpdateUser",
+      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Create",
+      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Login",
+      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "source": "pre_classifier"
+    }
   ],
-  "ignored": [
-    "Delete (Delete.cs - Favorites)",
-    "Command (Create.cs - Articles)",
-    "AddJwt (ServicesExtensions.cs)",
-    "GetCurrentUsername (StubCurrentUserAccessor.cs)",
-    "CommitTransaction (ConduitContext.cs)",
-    "RollbackTransaction (ConduitContext.cs)",
-    "SendAsync (SliceFixture.cs)",
-    "OnActionExecuted (ValidatorActionFilter.cs)",
-    "CommandValidator (Add.cs)",
-    "CreateTests (CreateTests.cs)",
-    "CommandValidator (Delete.cs)",
-    "Delete (Delete.cs - Articles)",
-    "GetCurrentUsername (ICurrentUserAccessor.cs)",
-    "Command (Add.cs - Favorites)",
-    "Delete (Delete.cs - Followers)",
-    "MappingProfile",
-    "ValidatorActionFilter (ValidatorActionFilter.cs)",
-    "QueryValidator (Details.cs)",
-    "BeginTransaction (ConduitContext.cs)",
-    "Command (Delete.cs - Articles)",
-    "Command (Delete.cs - Comments)",
-    "InsertAsync (SliceFixture.cs)",
-    "CreateDefaultUser",
-    "GetAllData (ArticleExtensions.cs)",
-    "InvalidCharsRegex (Slug.cs)",
-    "Command (Create.cs - Comments)",
-    "MultipleSpacesRegex (Slug.cs)",
-    "CommandValidator (Create.cs - Articles)",
-    "DBContextTransactionPipelineBehavior (DBContextTransactionPipelineBehavior.cs)",
-    "List (List.cs - Comments)",
-    "EditTests (EditTests.cs)",
-    "OnActionExecuting (ValidatorActionFilter.cs)",
-    "CreateComment",
-    "MappingProfile (MappingProfile.cs)",
-    "Handle (ValidationPipelineBehavior.cs)",
-    "Add (Add.cs - Favorites)",
-    "ValidationPipelineBehavior (ValidationPipelineBehavior.cs)",
-    "Query (List.cs - Comments)",
-    "ExecuteScopeAsync (SliceFixture.cs)",
-    "Details (Details.cs - Profiles)",
-    "GroupByApiRootConvention (GroupByApiRootConvention.cs)",
-    "Expect_Delete_Article_With_Comments",
-    "Apply (GroupByApiRootConvention.cs)",
-    "Delete (Delete.cs - Comments)",
-    "OnModelCreating (ConduitContext.cs)",
-    "CommandValidator (Create.cs - Users)",
-    "JwtTokenGenerator (JwtTokenGenerator.cs)",
-    "Create (Create.cs - Users)",
-    "CommandValidator (Delete.cs - Comments)",
-    "CommandValidator (Login.cs)",
-    "CommandValidator (Delete.cs - Articles)",
-    "ServicesExtensions",
-    "Constants (Constants.cs)",
-    "Expect_Login",
-    "Command (Delete.cs - Favorites)",
-    "Query (Details.cs - Users)",
-    "GetDbContext (SliceFixture.cs)",
-    "PasswordHasher (PasswordHasher.cs)",
-    "CommandValidator (Edit.cs - Users)",
-    "GetArticleTagsToCreate (Edit.cs)",
-    "Command (Edit.cs - Articles)",
-    "Expect_Delete_Article (DeleteTests.cs)",
-    "Login (Login.cs)",
-    "CreateArticle (ArticleHelpers.cs)",
-    "AddConduit (ServicesExtensions.cs)",
-    "QueryValidator (Details.cs - Profiles)",
-    "Expect_Delete_Article_With_Tags (DeleteTests.cs)",
-    "QueryValidator (Details.cs - Users)",
-    "ExecuteDbContextAsync (SliceFixture.cs)",
-    "ArticleExtensions",
-    "Command (Delete.cs - Followers)",
-    "GetCurrentUsername (CurrentUserAccessor.cs)",
-    "Edit (Edit.cs - Articles)",
-    "Expect_Create_Article (CreateTests.cs)",
-    "AddSerilogLogging (ServicesExtensions.cs)",
-    "Model (Edit.cs)",
-    "QueryValidator (Details.cs - Articles)",
-    "CurrentUserAccessor (CurrentUserAccessor.cs)",
-    "CommandValidator (Edit.cs)",
-    "ErrorHandlingMiddleware (ErrorHandlingMiddleware.cs)",
-    "CommandValidator (Edit.cs - Articles)",
-    "Dispose (PasswordHasher.cs)",
-    "CommandValidator (Delete.cs - Followers)",
-    "CommandValidator (Create.cs)",
-    "Model (Create.cs - Comments)",
-    "Create (Create.cs - Comments)",
-    "RestException (RestException.cs)",
-    "CommandValidator (Create.cs - Comments)",
-    "Command (Create.cs - Users)",
-    "Query (List.cs - Tags)",
-    "GenerateSlug (Slug.cs)",
-    "GetArticleTagsToDelete (Edit.cs)",
-    "UserHelpers (UserHelpers.cs)",
-    "List (List.cs - Articles)",
-    "Details (Details.cs - Articles)",
-    "Details (Details.cs - Users)",
-    "CommandValidator (Add.cs - Favorites)",
-    "HandleExceptionAsync (ErrorHandlingMiddleware.cs)",
-    "SliceFixture (SliceFixture.cs)",
-    "Query (List.cs - Articles)",
-    "TrimRegex (Slug.cs)",
-    "Dispose (SliceFixture.cs)",
-    "ArticleDataValidator (Create.cs)",
-    "Query (Details.cs - Profiles)",
-    "LoginTests (LoginTests.cs)",
-    "StubCurrentUserAccessor (StubCurrentUserAccessor.cs)",
-    "Handle (DBContextTransactionPipelineBehavior.cs)",
-    "IProfileReader",
-    "CommandValidator (Add.cs - Followers)",
-    "Edit (Edit.cs - Users)",
-    "ArticleHelpers (ArticleHelpers.cs)",
-    "DeleteTests (DeleteTests.cs)",
-    "Add (Add.cs - Followers)",
-    "Invoke (ErrorHandlingMiddleware.cs)",
-    "List (List.cs - Tags)",
-    "Create (Create.cs - Articles)",
-    "Command (Add.cs - Followers)",
-    "Slug (Slug.cs)",
-    "Expect_Edit_Article",
-    "Query (Details.cs - Articles)",
-    "CommandValidator (Delete.cs - Favorites)",
-    "Command (Edit.cs - Users)",
-    "Expect_Create_User",
-    "CommentHelpers (CommentHelpers.cs)"
-  ],
-  "sfp_count": {
-    "data_functions": 28,
-    "elementary_processes": 31,
-    "total": 59
-  },
-  "notes": "Processado em 4 lotes de até 100 itens."
+  "ignored_by_llm": []
 }
