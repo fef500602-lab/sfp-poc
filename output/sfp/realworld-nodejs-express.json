@@ -1,48 +1,141 @@
 {
   "repository": "realworld-nodejs-express",
+  "pre_classification": {
+    "data_functions": 1,
+    "elementary_processes": 20
+  },
+  "llm_classification": {
+    "sent": 2,
+    "data_functions": 0,
+    "elementary_processes": 0,
+    "ignored": 2
+  },
+  "sfp_count": {
+    "data_functions": 1,
+    "elementary_processes": 20,
+    "total": 21
+  },
   "data_functions": [
-    "Article",
-    "Comment",
-    "RegisterInput",
-    "RegisteredUser",
-    "Request",
-    "User",
-    "Profile",
-    "Tag"
+    {
+      "name": "HttpException",
+      "file": "/src/app/models/http-exception.model.ts",
+      "source": "pre_classifier"
+    }
   ],
   "elementary_processes": [
-    "getArticles",
-    "getFeed",
-    "createArticle",
-    "getArticle",
-    "updateArticle",
-    "deleteArticle",
-    "getCommentsByArticle",
-    "addComment",
-    "deleteComment",
-    "favoriteArticle",
-    "unfavoriteArticle",
-    "createUser",
-    "login",
-    "getCurrentUser",
-    "updateUser",
-    "getProfile",
-    "followUser",
-    "unfollowUser"
+    {
+      "name": "GET",
+      "file": "/src/main.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticlesFeed",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticles",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticlesSlug",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateArticlesSlug",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticlesSlug",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticlesSlugComments",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticlesSlugComments",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticlesSlugCommentsId",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticlesSlugFavorite",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticlesSlugFavorite",
+      "file": "/src/app/routes/article/article.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUsers",
+      "file": "/src/app/routes/auth/auth.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUsersLogin",
+      "file": "/src/app/routes/auth/auth.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getUser",
+      "file": "/src/app/routes/auth/auth.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateUser",
+      "file": "/src/app/routes/auth/auth.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getProfilesUsername",
+      "file": "/src/app/routes/profile/profile.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createProfilesUsernameFollow",
+      "file": "/src/app/routes/profile/profile.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteProfilesUsernameFollow",
+      "file": "/src/app/routes/profile/profile.controller.ts",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getTags",
+      "file": "/src/app/routes/tag/tag.controller.ts",
+      "source": "pre_classifier"
+    }
   ],
-  "ignored": [
-    "HttpException",
-    "Global",
-    "CustomNodeJsGlobal",
-    "constructor",
-    "generateUser",
-    "generateArticle",
-    "generateComment"
-  ],
-  "sfp_count": {
-    "data_functions": 8,
-    "elementary_processes": 18,
-    "total": 26
-  },
-  "notes": "Foram consideradas como Funções de Dados as entidades e DTOs/interfaces de domínio expostas pelo sistema: Article, Comment, User, Profile, Tag, RegisterInput, RegisteredUser e Request. HttpException foi ignorada por ser classe de exceção/infraestrutura. Global e CustomNodeJsGlobal foram ignoradas por representarem tipagem técnica de infraestrutura. Foram considerados Processos Elementares apenas os métodos de serviço que implementam operações de negócio observáveis de leitura/escrita. O constructor foi ignorado por não ser processo elementar. As funções generateUser, generateArticle e generateComment, presentes em seed.ts, foram ignoradas por serem rotinas de carga/semeadura de dados, não operações funcionais da aplicação."
+  "ignored_by_llm": [
+    {
+      "name": "Global",
+      "file": "/src/prisma/prisma-client.ts",
+      "source": "llm",
+      "reason": "É uma interface/tipo global de ambiente Node/TypeScript usada para tipagem e infraestrutura do cliente Prisma, sem representar entidade ou contrato de dados de negócio."
+    },
+    {
+      "name": "CustomNodeJsGlobal",
+      "file": "/src/prisma/prisma-client.ts",
+      "source": "llm",
+      "reason": "É um tipo/interface técnica para estender o objeto global do Node e armazenar infraestrutura compartilhada; não representa função de dados do domínio nem processo elementar na fronteira do sistema."
+    }
+  ]
 }

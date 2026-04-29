@@ -1,395 +1,564 @@
 {
   "repository": "realworld-java-spring",
+  "pre_classification": {
+    "data_functions": 6,
+    "elementary_processes": 60
+  },
+  "llm_classification": {
+    "sent": 35,
+    "data_functions": 0,
+    "elementary_processes": 1,
+    "ignored": 34
+  },
+  "sfp_count": {
+    "data_functions": 6,
+    "elementary_processes": 61,
+    "total": 67
+  },
   "data_functions": [
-    "FieldErrorResource",
-    "UpdateUserCommand",
-    "FollowRelation",
-    "CommentData",
-    "NewCommentParam",
-    "User",
-    "NewArticleParam",
-    "CursorPageParameter",
-    "Article",
-    "DateTimeCursor",
-    "ProfileData",
-    "RegisterParam",
-    "LoginParam",
-    "ErrorResource",
-    "Comment",
-    "ArticleData",
-    "UpdateArticleParam",
-    "ArticleFavoriteCount",
-    "UpdateUserParam",
-    "Tag",
-    "ArticleDataList",
-    "PageCursor",
-    "ArticleFavorite",
-    "Page",
-    "UserData",
-    "UserWithToken"
+    {
+      "name": "Article",
+      "file": "/src/main/java/io/spring/core/article/Article.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Tag",
+      "file": "/src/main/java/io/spring/core/article/Tag.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "Comment",
+      "file": "/src/main/java/io/spring/core/comment/Comment.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "ArticleFavorite",
+      "file": "/src/main/java/io/spring/core/favorite/ArticleFavorite.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "FollowRelation",
+      "file": "/src/main/java/io/spring/core/user/FollowRelation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "User",
+      "file": "/src/main/java/io/spring/core/user/User.java",
+      "source": "pre_classifier"
+    }
   ],
   "elementary_processes": [
-    "createArticle (ArticleCommandService.java)",
-    "currentUser (CurrentUserApi.java)",
-    "getCommentArticle (ArticleDatafetcher.java)",
-    "delete (CommentMapper.java)",
-    "login (UserMutation.java)",
-    "createUser (UserMutation.java)",
-    "insert (ArticleMapper.java)",
-    "updateArticle (ArticleApi.java)",
-    "getTags (TagsApi.java)",
-    "isUserFollowing (UserRelationshipQueryService.java)",
-    "isUserFavorite (ArticleFavoritesReadService.java)",
-    "getArticle (ArticleDatafetcher.java)",
-    "removeRelation (MyBatisUserRepository.java)",
-    "findByArticleId (CommentQueryService.java)",
-    "findBySlug (ArticleRepository.java)",
-    "getUserPayloadUser (MeDatafetcher.java)",
-    "findByUsername (ProfileQueryService.java)",
-    "createComment (CommentMutation.java)",
-    "all (TagReadService.java)",
-    "articlesFavoriteCount (ArticleFavoritesReadService.java)",
-    "save (ArticleFavoriteRepository.java)",
-    "deleteArticle (ArticleApi.java)",
-    "getArticles (ArticlesApi.java)",
-    "save (CommentRepository.java)",
-    "insertTag (ArticleMapper.java)",
-    "findById (CommentMapper.java)",
-    "allTags (TagsQueryService.java)",
-    "insert (CommentMapper.java)",
-    "countArticle (ArticleReadService.java)",
-    "getTags (TagDatafetcher.java)",
-    "createNew (MyBatisArticleRepository.java)",
-    "findById (MyBatisArticleRepository.java)",
-    "findById (CommentRepository.java)",
-    "articleComments (CommentDatafetcher.java)",
-    "findBySlug (ArticleQueryService.java)",
-    "findById (ArticleReadService.java)",
-    "findRelation (MyBatisUserRepository.java)",
-    "countFeedSize (ArticleReadService.java)",
-    "findByUsername (MyBatisUserRepository.java)",
-    "queryProfile (ProfileDatafetcher.java)",
-    "createUser (UserService.java)",
-    "findById (CommentReadService.java)",
-    "findByEmail (UserRepository.java)",
-    "findUserFeed (ArticleQueryService.java)",
-    "createUser (UsersApi.java)",
-    "remove (MyBatisArticleFavoriteRepository.java)",
-    "follow (ProfileApi.java)",
-    "removeRelation (UserRepository.java)",
-    "findByArticleId (CommentReadService.java)",
-    "insertArticleTagRelation (ArticleMapper.java)",
-    "findArticlesOfAuthorsWithCursor (ArticleReadService.java)",
-    "createArticle (ArticleMutation.java)",
-    "find (ArticleFavoriteRepository.java)",
-    "update (User.java)",
-    "remove (MyBatisArticleRepository.java)",
-    "findTag (ArticleMapper.java)",
-    "follow (RelationMutation.java)",
-    "findRecentArticles (ArticleQueryService.java)",
-    "getArticles (ArticleDatafetcher.java)",
-    "removeComment (CommentMutation.java)",
-    "unfollow (ProfileApi.java)",
-    "getMe (MeDatafetcher.java)",
-    "userFeed (ArticleDatafetcher.java)",
-    "remove (MyBatisCommentRepository.java)",
-    "findBySlug (ArticleMapper.java)",
-    "queryArticles (ArticleReadService.java)",
-    "findById (ArticleMapper.java)",
-    "findById (UserRepository.java)",
-    "favoriteArticle (ArticleFavoriteApi.java)",
-    "save (MyBatisArticleFavoriteRepository.java)",
-    "find (ArticleFavoriteMapper.java)",
-    "unfavoriteArticle (ArticleFavoriteApi.java)",
-    "save (MyBatisUserRepository.java)",
-    "article (ArticleApi.java)",
-    "findByArticleIdWithCursor (CommentQueryService.java)",
-    "unfavoriteArticle (ArticleMutation.java)",
-    "remove (CommentRepository.java)",
-    "favoriteArticle (ArticleMutation.java)",
-    "insert (UserMapper.java)",
-    "getFeed (ArticleDatafetcher.java)",
-    "findRelation (UserRepository.java)",
-    "findByUsername (UserReadService.java)",
-    "saveRelation (MyBatisUserRepository.java)",
-    "delete (ArticleMapper.java)",
-    "getAuthor (ProfileDatafetcher.java)",
-    "findBySlug (MyBatisArticleRepository.java)",
-    "saveRelation (UserRepository.java)",
-    "findRelation (UserMapper.java)",
-    "saveRelation (UserMapper.java)",
-    "findByEmail (MyBatisUserRepository.java)",
-    "findByEmail (UserMapper.java)",
-    "deleteArticle (ArticleMutation.java)",
-    "findRecentArticlesWithCursor (ArticleQueryService.java)",
-    "update (UserMapper.java)",
-    "getComments (CommentsApi.java)",
-    "deleteComment (CommentsApi.java)",
-    "getProfile (ProfileApi.java)",
-    "deleteRelation (UserMapper.java)",
-    "findByUsername (UserMapper.java)",
-    "updateUser (UserMutation.java)",
-    "getCommentAuthor (ProfileDatafetcher.java)",
-    "userFavorites (ArticleFavoritesReadService.java)",
-    "updateArticle (ArticleCommandService.java)",
-    "remove (ArticleFavoriteRepository.java)",
-    "findByUsername (UserRepository.java)",
-    "findArticles (ArticleReadService.java)",
-    "updateArticle (ArticleMutation.java)",
-    "find (MyBatisArticleFavoriteRepository.java)",
-    "save (MyBatisArticleRepository.java)",
-    "followedUsers (UserRelationshipQueryService.java)",
-    "findByArticleIdWithCursor (CommentReadService.java)",
-    "save (MyBatisCommentRepository.java)",
-    "createComment (CommentsApi.java)",
-    "update (ArticleMapper.java)",
-    "save (UserRepository.java)",
-    "findById (UserReadService.java)",
-    "remove (ArticleRepository.java)",
-    "findById (MyBatisUserRepository.java)",
-    "findArticleBySlug (ArticleDatafetcher.java)",
-    "userArticles (ArticleDatafetcher.java)",
-    "updateProfile (CurrentUserApi.java)",
-    "findById (MyBatisCommentRepository.java)",
-    "findById (ArticleRepository.java)",
-    "findById (UserMapper.java)",
-    "updateUser (UserService.java)",
-    "userLogin (UsersApi.java)",
-    "delete (ArticleFavoriteMapper.java)",
-    "createArticle (ArticlesApi.java)",
-    "followingAuthors (UserRelationshipQueryService.java)",
-    "insert (ArticleFavoriteMapper.java)",
-    "getComment (CommentDatafetcher.java)",
-    "findArticlesOfAuthors (ArticleReadService.java)",
-    "unfollow (RelationMutation.java)",
-    "userFavorites (ArticleDatafetcher.java)",
-    "getUserProfile (ProfileDatafetcher.java)",
-    "articleFavoriteCount (ArticleFavoritesReadService.java)",
-    "getFeed (ArticlesApi.java)",
-    "save (ArticleRepository.java)",
-    "findById (UserQueryService.java)",
-    "findBySlug (ArticleReadService.java)",
-    "findArticlesWithCursor (ArticleReadService.java)",
-    "findById (ArticleQueryService.java)",
-    "findById (CommentQueryService.java)",
-    "findUserFeedWithCursor (ArticleQueryService.java)"
+    {
+      "name": "article",
+      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateArticle",
+      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticle",
+      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "articleResponse",
+      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "favoriteArticle",
+      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "unfavoriteArticle",
+      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "responseArticleData",
+      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticle",
+      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getFeed",
+      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles",
+      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createComment",
+      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getComments",
+      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteComment",
+      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "commentResponse",
+      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "currentUser",
+      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateProfile",
+      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userResponse",
+      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getProfile",
+      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "follow",
+      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "unfollow",
+      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "profileResponse",
+      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getTags",
+      "file": "/src/main/java/io/spring/api/TagsApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUser",
+      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userLogin",
+      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userResponse",
+      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "handleInvalidRequest",
+      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "handleInvalidAuthentication",
+      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "handleConstraintViolation",
+      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getParam",
+      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getErrors",
+      "file": "/src/main/java/io/spring/api/exception/InvalidRequestException.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getTokenString",
+      "file": "/src/main/java/io/spring/api/security/JwtTokenFilter.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getFeed",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userFeed",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userFavorites",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "userArticles",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getCommentArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "findArticleBySlug",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "favoriteArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "unfavoriteArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticle",
+      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getComment",
+      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "articleComments",
+      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createComment",
+      "file": "/src/main/java/io/spring/graphql/CommentMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "removeComment",
+      "file": "/src/main/java/io/spring/graphql/CommentMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getMe",
+      "file": "/src/main/java/io/spring/graphql/MeDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getUserPayloadUser",
+      "file": "/src/main/java/io/spring/graphql/MeDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getUserProfile",
+      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getAuthor",
+      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getCommentAuthor",
+      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "queryProfile",
+      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "follow",
+      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "unfollow",
+      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getTags",
+      "file": "/src/main/java/io/spring/graphql/TagDatafetcher.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUser",
+      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "login",
+      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateUser",
+      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "queryProfile",
+      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "source": "llm",
+      "reason": "Método de datafetcher GraphQL que atua como fronteira do sistema para consulta de perfil; representa uma operação elementar distinta."
+    }
   ],
-  "ignored": [
-    "should_query_article_by_tag (ArticleQueryServiceTest.java)",
-    "DuplicatedEmailValidator",
-    "handleMethodArgumentNotValid (CustomizeExceptionHandler.java)",
-    "ListArticleApiTest",
-    "setIsFollowingAuthor (ArticleQueryService.java)",
-    "hasNext (CursorPager.java)",
-    "should_create_user_success (UsersApiTest.java)",
-    "getCursor (Node.java)",
-    "CustomizeExceptionHandler",
-    "getErrorsAsData (GraphQLCustomizeExceptionHandler.java)",
-    "ProfileApiTest",
-    "should_unfollow_user_success (MyBatisUserRepositoryTest.java)",
-    "should_get_401_if_not_login (CurrentUserApiTest.java)",
-    "setUp (UsersApiTest.java)",
-    "ArticleFavoriteApiTest",
-    "WebSecurityConfig",
-    "CommentQueryServiceTest",
-    "should_get_default_article_list (ArticleQueryServiceTest.java)",
-    "isValid (DuplicatedEmailValidator.java)",
-    "toString (PageCursor.java)",
-    "RealworldApplicationTests",
-    "InvalidRequestException",
-    "ArticleRepositoryTransactionTest",
-    "ArticleQueryServiceTest",
-    "toString (DateTimeCursor.java)",
-    "should_get_403_if_not_author_to_update_article (ArticleApiTest.java)",
-    "MyBatisConfig",
-    "should_get_401_without_token (CurrentUserApiTest.java)",
-    "TestWithCurrentUser",
-    "getCursor (ArticleData.java)",
-    "MyBatisArticleFavoriteRepositoryTest",
-    "SecurityUtil",
-    "should_get_lower_case_slug (ArticleTest.java)",
-    "should_create_and_fetch_comment_success (MyBatisCommentRepositoryTest.java)",
-    "DuplicatedUsernameValidator",
-    "should_login_success (UsersApiTest.java)",
-    "ProfileQueryServiceTest",
-    "UsersApiTest",
-    "should_get_error_message_with_duplicated_title (ArticlesApiTest.java)",
-    "should_query_article_by_favorite (ArticleQueryServiceTest.java)",
-    "setFavoriteCount (ArticleQueryService.java)",
-    "DateTimeSerializer",
-    "setOffset (Page.java)",
-    "prepareParam (ArticlesApiTest.java)",
-    "should_show_error_message_for_blank_username (UsersApiTest.java)",
-    "getTokenString (JwtTokenFilter.java)",
-    "getQueryLimit (CursorPageParameter.java)",
-    "should_404_if_article_not_found (ArticleApiTest.java)",
-    "should_read_article_success (ArticleApiTest.java)",
-    "setUp (MyBatisUserRepositoryTest.java)",
-    "should_delete_comment_success (CommentsApiTest.java)",
-    "should_fetch_article_success (ArticleQueryServiceTest.java)",
-    "should_update_article_content_success (ArticleApiTest.java)",
-    "getResult (DateTimeHandler.java)",
-    "should_403_if_not_author_delete_article (ArticleApiTest.java)",
-    "prepareRegisterParameter (UsersApiTest.java)",
-    "should_show_error_for_duplicated_email (UsersApiTest.java)",
-    "should_get_article_with_right_favorite_and_favorite_count (ArticleQueryServiceTest.java)",
-    "should_handle_commas (ArticleTest.java)",
-    "setUp (ArticleFavoriteApiTest.java)",
-    "buildCommentResult (CommentDatafetcher.java)",
-    "MyBatisCommentRepository",
-    "should_get_401_with_invalid_token (CurrentUserApiTest.java)",
-    "userResponse (UsersApi.java)",
-    "buildCommentPageInfo (CommentDatafetcher.java)",
-    "should_generate_and_parse_token (DefaultJwtServiceTest.java)",
-    "setLimit (Page.java)",
-    "should_create_new_user_follow_success (MyBatisUserRepositoryTest.java)",
-    "InvalidAuthenticationException",
-    "getEndCursor (CursorPager.java)",
-    "should_update_user_success (MyBatisUserRepositoryTest.java)",
-    "CursorPager",
-    "DefaultJwtService",
-    "isEmpty (Util.java)",
-    "MyBatisUserRepository",
-    "setUp (CommentQueryServiceTest.java)",
-    "commentResponse (CommentsApi.java)",
-    "should_save_and_fetch_user_success (MyBatisUserRepositoryTest.java)",
-    "serialize (ErrorResourceSerializer.java)",
-    "should_save_and_fetch_articleFavorite_success (MyBatisArticleFavoriteRepositoryTest.java)",
-    "MyBatisArticleRepository",
-    "setUp (TestWithCurrentUser.java)",
-    "should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment (CommentsApiTest.java)",
-    "should_get_null_with_wrong_jwt (DefaultJwtServiceTest.java)",
-    "should_get_null_with_expired_jwt (DefaultJwtServiceTest.java)",
-    "setUp (CommentsApiTest.java)",
-    "errorsToMap (GraphQLCustomizeExceptionHandler.java)",
-    "setUp (CurrentUserApiTest.java)",
-    "should_query_article_by_author (ArticleQueryServiceTest.java)",
-    "should_get_all_tags (TagsQueryServiceTest.java)",
-    "should_unfavorite_an_article_success (ArticleFavoriteApiTest.java)",
-    "should_favorite_an_article_success (ArticleFavoriteApiTest.java)",
-    "should_get_right_slug (ArticleTest.java)",
-    "MyBatisArticleFavoriteRepository",
-    "isValid (DuplicatedUsernameValidator.java)",
-    "JacksonCustomizations",
-    "doFilterInternal (JwtTokenFilter.java)",
-    "getErrors (InvalidRequestException.java)",
-    "corsConfigurationSource (WebSecurityConfig.java)",
-    "toToken (DefaultJwtService.java)",
-    "handleInvalidAuthentication (CustomizeExceptionHandler.java)",
-    "Util",
-    "RealWorldModules",
-    "DateTimeHandler",
-    "MyBatisArticleRepositoryTest",
-    "getParam (CustomizeExceptionHandler.java)",
-    "userResponse (CurrentUserApi.java)",
-    "should_get_user_profile_success (ProfileApiTest.java)",
-    "contextLoads (RealworldApplicationTests.java)",
-    "handleConstraintViolation (CustomizeExceptionHandler.java)",
-    "should_create_and_fetch_article_success (MyBatisArticleRepositoryTest.java)",
-    "isValid (UserService.java)",
-    "userFixture (TestWithCurrentUser.java)",
-    "update (Article.java)",
-    "transactional_test (ArticleRepositoryTransactionTest.java)",
-    "should_delete_article (MyBatisArticleRepositoryTest.java)",
-    "should_get_422_with_empty_body (CommentsApiTest.java)",
-    "should_get_current_user_with_token (CurrentUserApiTest.java)",
-    "getParam (GraphQLCustomizeExceptionHandler.java)",
-    "canWriteComment (AuthorizationService.java)",
-    "should_get_user_feed (ArticleQueryServiceTest.java)",
-    "buildArticleResult (ArticleDatafetcher.java)",
-    "should_follow_user_success (ProfileApiTest.java)",
-    "getArticleDataFromArticleAndUser (TestHelper.java)",
-    "serialize (JacksonCustomizations.java)",
-    "MyBatisCommentRepositoryTest",
-    "JwtTokenFilter",
-    "should_update_current_user_profile (CurrentUserApiTest.java)",
-    "canWriteArticle (AuthorizationService.java)",
-    "should_get_default_article_list_by_cursor (ArticleQueryServiceTest.java)",
-    "toToken (JwtService.java)",
-    "GraphQLCustomizeExceptionHandler",
-    "setUp (ArticleApiTest.java)",
-    "setUp (ProfileApiTest.java)",
-    "RealWorldApplication",
-    "setIsFavorite (ArticleQueryService.java)",
-    "prepareUpdateParam (ArticleApiTest.java)",
-    "setParameter (DateTimeHandler.java)",
-    "passwordEncoder (WebSecurityConfig.java)",
-    "DuplicatedArticleValidator",
-    "DbTestBase",
-    "ResourceNotFoundException",
-    "should_unfollow_user_success (ProfileApiTest.java)",
-    "expireTimeFromNow (DefaultJwtService.java)",
-    "articleDataFixture (TestHelper.java)",
-    "should_show_following_if_user_followed_author (ArticleQueryServiceTest.java)",
-    "buildArticlePageInfo (ArticleDatafetcher.java)",
-    "getSubFromToken (DefaultJwtService.java)",
-    "setUp (ListArticleApiTest.java)",
-    "should_get_error_message_with_wrong_parameter (ArticlesApiTest.java)",
-    "setUp (DefaultJwtServiceTest.java)",
-    "getSubFromToken (JwtService.java)",
-    "should_read_comment_success (CommentQueryServiceTest.java)",
-    "should_update_and_fetch_article_success (MyBatisArticleRepositoryTest.java)",
-    "should_get_default_article_list (ListArticleApiTest.java)",
-    "setUp (ArticleQueryServiceTest.java)",
-    "responseArticleData (ArticleFavoriteApi.java)",
-    "NoAuthorizationException",
-    "toSlug (Article.java)",
-    "setUp (ArticlesApiTest.java)",
-    "should_create_article_success (ArticlesApiTest.java)",
-    "should_remove_favorite_success (MyBatisArticleFavoriteRepositoryTest.java)",
-    "ArticlesApiTest",
-    "TestHelper",
-    "configure (WebSecurityConfig.java)",
-    "should_get_feeds_success (ListArticleApiTest.java)",
-    "UpdateUserValidator",
-    "parse (DateTimeCursor.java)",
-    "CommentsApiTest",
-    "articleResponse (ArticleApi.java)",
-    "profileResponse (ProfileApi.java)",
-    "should_create_comment_success (CommentsApiTest.java)",
-    "setCursor (CursorPageParameter.java)",
-    "isValid (DuplicatedArticleValidator.java)",
-    "setUp (MyBatisArticleRepositoryTest.java)",
-    "isNext (CursorPageParameter.java)",
-    "AuthenticationException",
-    "realWorldModules (JacksonCustomizations.java)",
-    "main (RealWorldApplication.java)",
-    "hasPrevious (CursorPager.java)",
-    "getCurrentUser (SecurityUtil.java)",
-    "should_get_feeds_401_without_login (ListArticleApiTest.java)",
-    "ArticleApiTest",
-    "should_show_error_for_duplicated_username (UsersApiTest.java)",
-    "DefaultJwtServiceTest",
-    "should_delete_article_success (ArticleApiTest.java)",
-    "ErrorResourceSerializer",
-    "should_read_comments_of_article (CommentQueryServiceTest.java)",
-    "should_get_error_if_email_exists_when_update_user_profile (CurrentUserApiTest.java)",
-    "getStartCursor (CursorPager.java)",
-    "MyBatisUserRepositoryTest",
-    "should_show_error_message_for_invalid_email (UsersApiTest.java)",
-    "should_get_comments_of_article_success (CommentsApiTest.java)",
-    "should_fetch_profile_success (ProfileQueryServiceTest.java)",
-    "getCursor (CommentData.java)",
-    "should_fail_login_with_wrong_password (UsersApiTest.java)",
-    "handleInvalidRequest (CustomizeExceptionHandler.java)",
-    "fillExtraInfo (ArticleQueryService.java)",
-    "getData (PageCursor.java)",
-    "CurrentUserApiTest",
-    "buildProfile (RelationMutation.java)",
-    "prepareUpdateParam (CurrentUserApiTest.java)",
-    "should_handle_other_language (ArticleTest.java)",
-    "TagsQueryServiceTest",
-    "ArticleTest",
-    "onException (GraphQLCustomizeExceptionHandler.java)",
-    "setLimit (CursorPageParameter.java)",
-    "jwtTokenFilter (WebSecurityConfig.java)",
-    "AuthorizationService",
-    "should_get_right_slug_with_number_in_title (ArticleTest.java)"
-  ],
-  "sfp_count": {
-    "data_functions": 26,
-    "elementary_processes": 144,
-    "total": 170
-  },
-  "notes": "Processado em 6 lotes de até 100 itens."
+  "ignored_by_llm": [
+    {
+      "name": "Node",
+      "file": "/src/main/java/io/spring/application/Node.java",
+      "source": "llm",
+      "reason": "Classe de apoio para paginação/cursor na camada de aplicação; não representa entidade de negócio mantida ou referenciada como FD."
+    },
+    {
+      "name": "isEmpty",
+      "file": "/src/main/java/io/spring/Util.java",
+      "source": "llm",
+      "reason": "Função utilitária genérica sem operação de negócio na fronteira do sistema."
+    },
+    {
+      "name": "findById",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta; em arquitetura em camadas a contagem do EP ocorre na fronteira GraphQL/controller correspondente, não no service."
+    },
+    {
+      "name": "findBySlug",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta; não é fronteira externa distinta para contagem de EP."
+    },
+    {
+      "name": "findRecentArticlesWithCursor",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Lógica interna de consulta/paginação em service; a operação externa é contada no datafetcher/controller."
+    },
+    {
+      "name": "findUserFeedWithCursor",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método interno de service para feed paginado; não deve ser contado separadamente da fronteira externa."
+    },
+    {
+      "name": "findRecentArticles",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Consulta implementada em service; pela regra de fronteira não conta como EP quando há camada de entrada separada."
+    },
+    {
+      "name": "findUserFeed",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno para recuperar feed; não é EP autônomo na fronteira."
+    },
+    {
+      "name": "fillExtraInfo",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Helper interno para enriquecer dados de artigo; não é operação de fronteira nem FD."
+    },
+    {
+      "name": "setIsFollowingAuthor",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno para preencher atributo derivado; não caracteriza EP."
+    },
+    {
+      "name": "setFavoriteCount",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno de composição de resposta; não é contado em SFP."
+    },
+    {
+      "name": "setIsFavorite",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno para marcar favorito; não representa fronteira externa."
+    },
+    {
+      "name": "fillExtraInfo",
+      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Helper interno sobrecarregado/duplicado na mesma service; não é operação elementar na fronteira."
+    },
+    {
+      "name": "findById",
+      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "source": "llm",
+      "reason": "Método de consulta em service; a interação externa correspondente deve ser contada na camada GraphQL/controller."
+    },
+    {
+      "name": "findByArticleId",
+      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "source": "llm",
+      "reason": "Consulta interna de service para comentários por artigo; não é EP na fronteira."
+    },
+    {
+      "name": "findByArticleIdWithCursor",
+      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "source": "llm",
+      "reason": "Método interno de paginação/consulta em service; a fronteira externa é outra camada."
+    },
+    {
+      "name": "parse",
+      "file": "/src/main/java/io/spring/application/DateTimeCursor.java",
+      "source": "llm",
+      "reason": "Função técnica de parsing de cursor/data; não representa entidade de negócio nem operação de fronteira."
+    },
+    {
+      "name": "getCursor",
+      "file": "/src/main/java/io/spring/application/Node.java",
+      "source": "llm",
+      "reason": "Getter simples de objeto de apoio; getters/setters não são contados como EP."
+    },
+    {
+      "name": "findByUsername",
+      "file": "/src/main/java/io/spring/application/ProfileQueryService.java",
+      "source": "llm",
+      "reason": "Método de service para consulta de perfil; a operação externa é contada no datafetcher correspondente."
+    },
+    {
+      "name": "allTags",
+      "file": "/src/main/java/io/spring/application/TagsQueryService.java",
+      "source": "llm",
+      "reason": "Método de service de consulta; não é a fronteira do sistema para fins de EP."
+    },
+    {
+      "name": "findById",
+      "file": "/src/main/java/io/spring/application/UserQueryService.java",
+      "source": "llm",
+      "reason": "Consulta interna em service; não deve ser contada além da operação exposta na camada de entrada."
+    },
+    {
+      "name": "createArticle",
+      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
+      "source": "llm",
+      "reason": "Comando implementado em service; pela regra de fronteira, se exposto via controller/datafetcher, o EP é contado lá e não aqui."
+    },
+    {
+      "name": "updateArticle",
+      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
+      "source": "llm",
+      "reason": "Método de service para atualização; é implementação interna da operação exposta externamente."
+    },
+    {
+      "name": "createUser",
+      "file": "/src/main/java/io/spring/application/user/UserService.java",
+      "source": "llm",
+      "reason": "Método de service de cadastro; não conta como EP quando existe camada de entrada separada para a mesma operação."
+    },
+    {
+      "name": "updateUser",
+      "file": "/src/main/java/io/spring/application/user/UserService.java",
+      "source": "llm",
+      "reason": "Método de service de atualização de usuário; a contagem do EP pertence à fronteira externa."
+    },
+    {
+      "name": "buildArticlePageInfo",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar de montagem de resposta GraphQL; não é operação de entrada/saída distinta na fronteira."
+    },
+    {
+      "name": "buildArticleResult",
+      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "source": "llm",
+      "reason": "Helper interno do datafetcher para compor resultado; não constitui EP separado."
+    },
+    {
+      "name": "buildCommentPageInfo",
+      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar de paginação/resposta no datafetcher; não é uma operação elementar exposta."
+    },
+    {
+      "name": "buildCommentResult",
+      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "source": "llm",
+      "reason": "Helper interno para construir payload GraphQL; não conta como EP."
+    },
+    {
+      "name": "buildProfile",
+      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno de mutation para montar objeto de perfil; não é a operação de fronteira em si."
+    },
+    {
+      "name": "getCurrentUser",
+      "file": "/src/main/java/io/spring/graphql/SecurityUtil.java",
+      "source": "llm",
+      "reason": "Função técnica de segurança/contexto; não representa processo elementar de negócio nem FD."
+    },
+    {
+      "name": "getErrorsAsData",
+      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "source": "llm",
+      "reason": "Método técnico de tratamento de exceções GraphQL; handlers de framework não são contados como EP."
+    },
+    {
+      "name": "getParam",
+      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "source": "llm",
+      "reason": "Função auxiliar técnica para extrair parâmetro em tratamento de erro; não é operação de negócio."
+    },
+    {
+      "name": "errorsToMap",
+      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "source": "llm",
+      "reason": "Método técnico de conversão de erros para mapa; não é FD nem EP na fronteira do sistema."
+    }
+  ]
 }

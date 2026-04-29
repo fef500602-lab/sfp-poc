@@ -98,7 +98,7 @@ Cada elemento extraído agora carrega:
 | nestjs-framework         | TypeScript | 38       | 25 (66%) | 212      | 99 (47%) |
 
 > **FD → LLM** e **EP → LLM**: elementos que o pré-processador não classificou
-> com certeza e serão enviados à LLM na Etapa 3.
+> com certeza e foram enviados à LLM na Etapa 3.
 
 #### Principais melhorias implementadas (v2.5 → v3.1)
 
@@ -152,15 +152,85 @@ Cada elemento extraído agora carrega:
   `infrastructure`, `ui` e `feature` sempre têm precedência sobre `model`,
   `service` e `controller`, evitando false-matches por substring
 
-### 🔄 Etapa 3 — Integração com LLM (Próxima)
+### ✅ Etapa 3 — Integração com LLM (Concluída)
 
-- Conectar à Azure OpenAI
-- Enviar apenas os elementos com `sfp_hint: llm` para sanitização
-- Confirmar automaticamente os elementos com `sfp_hint: data_function`
-  ou `sfp_hint: elementary_process`
-- Gerar contagem SFP final por repositório
+Implementado `sfp_analyzer.py` com arquitetura de duas etapas:
+
+- **Etapa A (automática):** itens com `sfp_hint: "data_function"` ou
+  `"elementary_process"` são contados diretamente, sem custo de API
+- **Etapa B (LLM):** apenas itens `sfp_hint: "llm"` são enviados à Azure
+  OpenAI, com contexto estrutural completo (decorators, herança, file_role,
+  linguagem) e prompt especializado em metodologia SFP
+
+#### Contagem SFP — v3.1 (antes da correção metodológica)
+
+| Repositório              | Linguagem  | Auto | LLM env. | FD | EP  | Total SFP |
+| ------------------------ | ---------- | ---- | -------- | -- | --- | --------- |
+| realworld-csharp-dotnet  | C#         | 45   | 0        | 7  | 38  | **45**    |
+| realworld-java-spring    | Java       | 94   | 11       | 11 | 85  | **96**    |
+| realworld-python-django  | Python     | 28   | 10       | 8  | 21  | **29**    |
+| realworld-nodejs-express | TypeScript | 21   | 2        | 1  | 20  | **21**    |
+| csharp-clean-arch        | C#         | 45   | 19       | 17 | 32  | **49**    |
+| nestjs-framework         | TypeScript | 126  | 124      | 20 | 149 | **169**   |
+| **TOTAL**                |            |      |          | **64** | **345** | **409** |
+
+> ⚠️ Os números acima apresentavam dupla contagem: métodos de Service
+> eram classificados como EP além dos métodos de Controller correspondentes,
+> inflando a contagem e quebrando a comparabilidade entre linguagens.
+
+### ✅ Etapa 3.1 — Revalidação metodológica (Concluída — branch `fix/sfp-ep-boundary-revalidation`)
+
+Identificado e corrigido defeito metodológico crítico: o extrator contava
+métodos em **todas as camadas arquiteturais** como EPs, enquanto a metodologia
+SFP define EP exclusivamente na **fronteira do sistema** com o usuário.
+
+Em arquiteturas MVC em camadas (Spring Boot), tanto o Controller quanto o
+Service implementavam a mesma operação — gerando dupla contagem sistemática.
+
+**Correções implementadas (v4.0):**
+
+- `classify_hint` separado para `controller` e `service`: métodos de controller
+  continuam como `elementary_process`; métodos de service passam para `llm`
+  para a LLM decidir se são fronteira real ou implementação interna
+- Sufixos `repository`, `service` e `controller` adicionados a
+  `IGNORE_CLASS_NAME_SUFFIXES` (Java e C#): repositórios e services não são
+  Funções de Dados, mesmo em pacotes de domínio como `core/`
+- System prompt do `sfp_analyzer` atualizado com regra de fronteira explícita
+  e instrução de deduplicação controller vs. service
+
+#### Contagem SFP — v4.0 (após correção metodológica)
+
+| Repositório              | Linguagem  | Auto | LLM env. | FD | EP  | Total SFP |
+| ------------------------ | ---------- | ---- | -------- | -- | --- | --------- |
+| realworld-csharp-dotnet  | C#         | 45   | 0        | 7  | 38  | **45**    |
+| realworld-java-spring    | Java       | 66   | 35       | 6  | 61  | **67**    |
+| realworld-python-django  | Python     | 28   | 10       | 8  | 20  | **28**    |
+| realworld-nodejs-express | TypeScript | 21   | 2        | 1  | 20  | **21**    |
+| csharp-clean-arch        | C#         | 37   | 26       | 15 | 28  | **43**    |
+| nestjs-framework         | TypeScript | 65   | 185      | 18 | 87  | **105**   |
+| **TOTAL**                |            |      |          | **55** | **254** | **309** |
+
+> **Convergência RealWorld:** Python Django (28) e Node.js Express (21)
+> já convergem para a faixa esperada de ~20-25 SFP. Java Spring (67)
+> ainda apresenta ruído residual de ~20 field resolvers `@DgsData` e
+> métodos auxiliares de controller — endereçados no backlog v4.1.
 
 ### ⏳ Etapas Futuras
+
+#### Melhorias de pré-classificação identificadas (backlog v4.1)
+
+Ruído residual identificado após a correção metodológica v4.0.
+Objetivo: fazer Java Spring convergir para ~25-30 EPs (alinhado com Python e Node.js).
+
+**Java Spring** — ~30 EPs de ruído nos 60 auto-classificados
+- Adicionar `exceptionhandler` ao `IGNORE_DECORATORS["java"]`
+  (`@ExceptionHandler` é cross-cutting, não operação de negócio)
+- Mover `dgsdata` de `ELEMENTARY_PROCESS_DECORATORS` para `IGNORE_DECORATORS["java"]`
+  (`@DgsData` são field resolvers internos; apenas `@DgsQuery`/`@DgsMutation` são fronteira)
+- Filtrar response builders sem decorator HTTP (`articleResponse`, `userResponse`, etc.)
+  em arquivos controller: adicionar ao `IGNORE_METHOD_NAMES["java"]` ou criar
+  regra de sufixo `response` apenas para métodos (não classes)
+- Aguardar suporte Kotlin para completar comparação entre linguagens
 
 #### Melhorias de pré-classificação identificadas (backlog v3.2)
 

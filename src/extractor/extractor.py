@@ -8,16 +8,28 @@ import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
 
 # =============================================================================
-# SFP Extractor v2.5 — Extração enriquecida com contexto estrutural
+# SFP Extractor v4.0 — Correção metodológica: fronteira do sistema
+#
+# Correção crítica em relação às versões anteriores:
+#
+#   Versões anteriores contavam métodos de TODAS as camadas arquiteturais
+#   (controller + service + repository) como Processos Elementares,
+#   inflando a contagem e quebrando a comparabilidade entre linguagens.
+#
+#   A metodologia SFP define EP como operação na FRONTEIRA DO SISTEMA —
+#   não em cada camada interna de implementação.
+#
+#   Mudanças v4.0:
+#   - Métodos em file_role "service" → sfp_hint "llm" (não mais auto-EP)
+#   - Sufixos "repository" e "service" adicionados a IGNORE_CLASS_NAME_SUFFIXES
+#     para Java e C# (repositórios e services não são Funções de Dados)
+#   - system prompt do sfp_analyzer atualizado com regra de fronteira explícita
 #
 # Além de extrair nomes, captura:
 #   - base_classes : herança da classe
 #   - decorators   : anotações/decorators aplicados
 #   - file_role    : papel inferido pelo caminho do arquivo
 #   - sfp_hint     : pré-classificação determinística
-#
-# O sfp_hint reduz a ambiguidade enviada à LLM, aumentando a precisão
-# da contagem SFP e reduzindo custo de tokens.
 #
 # Compatibilidade: tree-sitter==0.22.3
 # =============================================================================
@@ -77,6 +89,11 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "data", "datalist",
         "count",                        # contadores/agregados
         "withtoken",                    # wrappers de auth
+        # Camadas arquiteturais — não são entidades de domínio SFP
+        # (correção v4.0: evita que classes em pacote core/ sejam contadas como FD)
+        "repository", "repositoryimpl", # Spring Data / JDBC repositories
+        "service", "serviceimpl",       # camada de serviço não é FD
+        "controller", "controllerimpl", # controllers são EPs, não FDs
     ],
     "python":     [],
     "csharp":     [
@@ -100,6 +117,10 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "initialiser", "initializer",   # DbInitialiser, etc.
         "transformer",                  # OpenAPI transformers
         "constants",                    # classes de constantes
+        # Camadas arquiteturais — não são entidades de domínio SFP
+        "repository", "repositoryimpl", # repositórios não são FD
+        "service", "serviceimpl",       # camada de serviço não é FD
+        "controller", "controllerimpl", # controllers são EPs, não FDs
     ],
     "typescript": [],
     "javascript": [],
@@ -472,9 +493,20 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     if file_role == "model":
         return "data_function"
 
-    # 10. Arquivo é controller/service + método → provável EP
-    if file_role in ("controller", "service"):
-        return "elementary_process"
+    # 10. Arquivo é controller → EP na fronteira do sistema (apenas métodos)
+    #     Correção v4.0: service separado de controller.
+    #     Controller = fronteira com o usuário → métodos são EPs com certeza.
+    #     Classes controller (ex: ArticlesController) não são FDs → ignore.
+    if file_role == "controller":
+        return "elementary_process" if is_method else "ignore"
+
+    # 10b. Arquivo é service → AMBÍGUO para EP.
+    #      Em arquiteturas em camadas (MVC), o service é implementação interna —
+    #      o EP já foi contado no controller. Enviar à LLM para decidir se é
+    #      fronteira real (ex: Application Service sem controller) ou redundante.
+    #      Classes service não são FDs → ignore.
+    if file_role == "service":
+        return "llm" if is_method else "ignore"
 
     # 11. Arquivo é serializer/repository → ignorar
     if file_role in ("serializer", "repository"):
