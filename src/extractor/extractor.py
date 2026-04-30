@@ -96,7 +96,14 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "controller", "controllerimpl", # controllers são EPs, não FDs
     ],
     "python":     [
-        "meta",     # classe interna Meta do Django — nunca é uma FD independente
+        "meta",              # classe interna Meta do Django — nunca é FD independente
+        # Classes base abstratas de timestamp/auditoria — são infraestrutura,
+        # não entidades de domínio. Filtrar pelo NOME da classe, não por herança:
+        # Article que herda TimestampedModel CONTINUA sendo FD; TimestampedModel
+        # em si não é.
+        "timestampedmodel",  # base abstrata de auditoria — padrão Django
+        "abstractmodel",     # outros padrões de base abstrata
+        "basemodel",
     ],
     "csharp":     [
         "exception", "middleware", "extensions",
@@ -503,9 +510,18 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
                 return "ignore"
 
     # 1b. Vertical Slice (feature/): classes são containers ignoráveis;
-    #     métodos são as operações reais → elementary_process
+    #     métodos são potenciais EPs — mas só os que têm decorator HTTP explícito
+    #     são auto-classificados. Sem decorator, vão à LLM para evitar dupla
+    #     contagem entre controller (ex: ArticlesController.Get) e handler
+    #     (ex: Details.Handle) que representam a mesma operação de negócio.
     if file_role == "feature":
-        return "elementary_process" if is_method else "ignore"
+        if not is_method:
+            return "ignore"
+        has_http_dec = any(
+            any(p in dec for p in ELEMENTARY_PROCESS_DECORATORS.get(lang, []))
+            for dec in decorators_lower
+        )
+        return "elementary_process" if has_http_dec else "llm"
 
     # 3. Sufixo de nome de CLASSE indica ignorar (não se aplica a métodos)
     if not is_method:

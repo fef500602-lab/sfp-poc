@@ -1,224 +1,164 @@
 {
   "repository": "realworld-python-django",
   "pre_classification": {
-    "data_functions": 8,
-    "elementary_processes": 20
+    "data_functions": 4,
+    "elementary_processes": 18
   },
   "llm_classification": {
-    "sent": 10,
+    "sent": 5,
     "data_functions": 0,
     "elementary_processes": 0,
-    "ignored": 10
+    "ignored": 5
   },
   "sfp_count": {
-    "data_functions": 8,
-    "elementary_processes": 20,
-    "total": 28
+    "data_functions": 4,
+    "elementary_processes": 18,
+    "total": 22
   },
   "data_functions": [
     {
       "name": "Article",
-      "file": "/conduit/apps/articles/models.py",
+      "file": "\\conduit\\apps\\articles\\models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Comment",
-      "file": "/conduit/apps/articles/models.py",
+      "file": "\\conduit\\apps\\articles\\models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Tag",
-      "file": "/conduit/apps/articles/models.py",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "ArticleViewSet",
-      "file": "/conduit/apps/articles/views.py",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "UserManager",
-      "file": "/conduit/apps/authentication/models.py",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "TimestampedModel",
-      "file": "/conduit/apps/core/models.py",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Meta",
-      "file": "/conduit/apps/core/models.py",
+      "file": "\\conduit\\apps\\articles\\models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Profile",
-      "file": "/conduit/apps/profiles/models.py",
+      "file": "\\conduit\\apps\\profiles\\models.py",
       "source": "pre_classifier"
     }
   ],
   "elementary_processes": [
     {
-      "name": "get_queryset",
-      "file": "/conduit/apps/articles/views.py",
-      "source": "pre_classifier"
-    },
-    {
       "name": "create",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "update",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "filter_queryset",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "destroy",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "delete",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "/conduit/apps/articles/views.py",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "get_queryset",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "/conduit/apps/articles/views.py",
+      "file": "\\conduit\\apps\\articles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "/conduit/apps/authentication/views.py",
+      "file": "\\conduit\\apps\\authentication\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "/conduit/apps/authentication/views.py",
+      "file": "\\conduit\\apps\\authentication\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "/conduit/apps/authentication/views.py",
+      "file": "\\conduit\\apps\\authentication\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "update",
-      "file": "/conduit/apps/authentication/views.py",
+      "file": "\\conduit\\apps\\authentication\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "/conduit/apps/profiles/views.py",
+      "file": "\\conduit\\apps\\profiles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "delete",
-      "file": "/conduit/apps/profiles/views.py",
+      "file": "\\conduit\\apps\\profiles\\views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "/conduit/apps/profiles/views.py",
+      "file": "\\conduit\\apps\\profiles\\views.py",
       "source": "pre_classifier"
     }
   ],
   "ignored_by_llm": [
     {
-      "name": "get_queryset",
-      "file": "/conduit/apps/articles/relations.py",
-      "source": "llm",
-      "reason": "Método interno de framework/serialização para obter queryset de relacionamento; não é entidade de negócio nem operação na fronteira do sistema."
-    },
-    {
-      "name": "to_internal_value",
-      "file": "/conduit/apps/articles/relations.py",
-      "source": "llm",
-      "reason": "Método técnico de conversão/validação de serializer/field do Django REST Framework; não representa EP na fronteira nem FD de domínio."
-    },
-    {
-      "name": "to_representation",
-      "file": "/conduit/apps/articles/relations.py",
-      "source": "llm",
-      "reason": "Método técnico de renderização/serialização de saída; pertence à camada de transporte e não deve ser contado como EP ou FD."
-    },
-    {
-      "name": "add_slug_to_article_if_not_exists",
-      "file": "/conduit/apps/articles/signals.py",
-      "source": "llm",
-      "reason": "Handler de signal executado internamente pelo framework para completar dados do modelo; não é ponto de entrada na fronteira do sistema."
-    },
-    {
       "name": "ready",
-      "file": "/conduit/apps/articles/__init__.py",
+      "file": "\\conduit\\apps\\articles\\__init__.py",
       "source": "llm",
-      "reason": "Método de inicialização/registro da aplicação, característico de bootstrap/configuração; explicitamente não contado pela metodologia."
+      "reason": "Método de inicialização/registro da aplicação Django (bootstrap), sem representar entidade de negócio nem operação na fronteira do sistema."
     },
     {
       "name": "authenticate",
-      "file": "/conduit/apps/authentication/backends.py",
+      "file": "\\conduit\\apps\\authentication\\backends.py",
       "source": "llm",
-      "reason": "Método de backend de autenticação do framework, usado como mecanismo interno de segurança; não é a fronteira funcional contável, que estaria no endpoint/controller."
+      "reason": "Método interno de backend de autenticação do framework, usado como mecanismo técnico de segurança; não é endpoint/controller nem fronteira direta contável como EP."
     },
     {
       "name": "_authenticate_credentials",
-      "file": "/conduit/apps/authentication/backends.py",
+      "file": "\\conduit\\apps\\authentication\\backends.py",
       "source": "llm",
-      "reason": "Método auxiliar interno de autenticação, inclusive privado pelo nome; não é operação exposta na fronteira do sistema."
+      "reason": "Função auxiliar interna de autenticação, indicada inclusive por nome privado; trata lógica técnica interna e não uma operação de fronteira do sistema."
     },
     {
       "name": "render",
-      "file": "/conduit/apps/authentication/renderers.py",
+      "file": "\\conduit\\apps\\authentication\\renderers.py",
       "source": "llm",
-      "reason": "Método técnico de renderer para formatar resposta HTTP; pertence à infraestrutura/transporte e não configura EP nem FD."
-    },
-    {
-      "name": "create_related_profile",
-      "file": "/conduit/apps/authentication/signals.py",
-      "source": "llm",
-      "reason": "Handler de signal para criação automática de perfil relacionado após evento interno; não é operação atômica exposta ao usuário ou sistema externo."
+      "reason": "Método de renderer para formatação/transporte da resposta HTTP; é infraestrutura de apresentação, não entidade de domínio nem processo elementar na fronteira."
     },
     {
       "name": "ready",
-      "file": "/conduit/apps/authentication/__init__.py",
+      "file": "\\conduit\\apps\\authentication\\__init__.py",
       "source": "llm",
-      "reason": "Método de bootstrap da aplicação para registro/configuração; não representa função de dados nem processo elementar."
+      "reason": "Método de setup/boot da aplicação Django, classificado como configuração/bootstrap técnico e portanto fora da contagem SFP."
     }
   ]
 }

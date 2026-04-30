@@ -47,8 +47,10 @@ client = AzureOpenAI(
 DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT")
 
 # Máximo de itens por chamada à LLM.
-# Valores acima de 80 aumentam o risco de truncamento da resposta.
-BATCH_SIZE = 80
+# Cada item gera ~200 chars de JSON de resposta (name + file + classification + reason).
+# Com 50 itens → ~10.000 chars → ~2.500 tokens de saída → margem segura para 8.192.
+# Reduzido de 80 para 50 após truncamento observado no NestJS (lote de 80 → 16.683 chars).
+BATCH_SIZE = 50
 
 
 # ─────────────────────────────────────────
@@ -114,6 +116,10 @@ REGRA DE FRONTEIRA (crítica):
   implementação concreta como EP/FD e a interface como "ignore"
 - Quando receber métodos de Controller E Service da mesma operação:
   classifique o Controller como EP e o Service como "ignore"
+- Em Vertical Slice Architecture (VSA), cada "feature" tem um controller
+  method (Get, Create, Edit) E um handler method (Handle). São a MESMA
+  operação de negócio. Classifique o controller method como EP e o Handle
+  correspondente como "ignore". Se não houver controller, o Handle é EP.
 - Métodos com nome genérico (Handle, Execute, Run) em arquivos de feature
   CQRS sem controller correspondente: contar como EP
 - Em caso de dúvida genuína, prefira "ignore" a inflar a contagem
@@ -259,7 +265,7 @@ def call_llm(repo_name, llm_classes, llm_methods):
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user",   "content": prompt},
             ],
-            max_completion_tokens = 4096,
+            max_completion_tokens = 8192,   # aumentado de 4096: evita truncamento em lotes
             temperature           = 0,   # determinístico — essencial para contagem
         )
 
@@ -274,7 +280,17 @@ def call_llm(repo_name, llm_classes, llm_methods):
         return result.get("classifications", [])
 
     except json.JSONDecodeError as e:
-        print(f"   ❌ Erro ao parsear JSON da LLM: {e}")
+        # Resposta truncada — divide o lote ao meio e tenta novamente
+        total = len(llm_classes) + len(llm_methods)
+        if total > 10:
+            half = total // 2
+            print(f"   ⚠️  JSON truncado ({e}) — re-tentando com lotes de {half} itens")
+            mid_c = len(llm_classes) // 2 or len(llm_classes)
+            mid_m = len(llm_methods) // 2 or len(llm_methods)
+            part1 = call_llm(repo_name + " (A)", llm_classes[:mid_c], llm_methods[:mid_m])
+            part2 = call_llm(repo_name + " (B)", llm_classes[mid_c:], llm_methods[mid_m:])
+            return part1 + part2
+        print(f"   ❌ JSON inválido mesmo com lote pequeno: {e}")
         return []
     except Exception as e:
         print(f"   ❌ Erro na chamada à LLM: {e}")

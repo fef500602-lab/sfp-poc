@@ -18,124 +18,124 @@
   "data_functions": [
     {
       "name": "HttpException",
-      "file": "/src/app/models/http-exception.model.ts",
+      "file": "\\src\\app\\models\\http-exception.model.ts",
       "source": "pre_classifier"
     }
   ],
   "elementary_processes": [
     {
       "name": "GET",
-      "file": "/src/main.ts",
+      "file": "\\src\\main.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getArticles",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getArticlesFeed",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createArticles",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getArticlesSlug",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "updateArticlesSlug",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "deleteArticlesSlug",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getArticlesSlugComments",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createArticlesSlugComments",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "deleteArticlesSlugCommentsId",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createArticlesSlugFavorite",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "deleteArticlesSlugFavorite",
-      "file": "/src/app/routes/article/article.controller.ts",
+      "file": "\\src\\app\\routes\\article\\article.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createUsers",
-      "file": "/src/app/routes/auth/auth.controller.ts",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createUsersLogin",
-      "file": "/src/app/routes/auth/auth.controller.ts",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getUser",
-      "file": "/src/app/routes/auth/auth.controller.ts",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "updateUser",
-      "file": "/src/app/routes/auth/auth.controller.ts",
+      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getProfilesUsername",
-      "file": "/src/app/routes/profile/profile.controller.ts",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "createProfilesUsernameFollow",
-      "file": "/src/app/routes/profile/profile.controller.ts",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "deleteProfilesUsernameFollow",
-      "file": "/src/app/routes/profile/profile.controller.ts",
+      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getTags",
-      "file": "/src/app/routes/tag/tag.controller.ts",
+      "file": "\\src\\app\\routes\\tag\\tag.controller.ts",
       "source": "pre_classifier"
     }
   ],
   "ignored_by_llm": [
     {
       "name": "Global",
-      "file": "/src/prisma/prisma-client.ts",
+      "file": "\\src\\prisma\\prisma-client.ts",
       "source": "llm",
-      "reason": "É uma interface/tipo global de ambiente Node/TypeScript usada para tipagem e infraestrutura do cliente Prisma, sem representar entidade ou contrato de dados de negócio."
+      "reason": "É um tipo/interface global do ambiente Node/TypeScript usado para tipagem e infraestrutura do cliente Prisma, sem representar entidade de negócio nem operação na fronteira do sistema."
     },
     {
       "name": "CustomNodeJsGlobal",
-      "file": "/src/prisma/prisma-client.ts",
+      "file": "\\src\\prisma\\prisma-client.ts",
       "source": "llm",
-      "reason": "É um tipo/interface técnica para estender o objeto global do Node e armazenar infraestrutura compartilhada; não representa função de dados do domínio nem processo elementar na fronteira do sistema."
+      "reason": "É uma interface/tipo técnico para estender o objeto global do Node.js e suportar reutilização do Prisma client; não é dado de domínio nem processo elementar."
     }
   ]
 }
