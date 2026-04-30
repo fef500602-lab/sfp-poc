@@ -8,7 +8,7 @@ import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
 
 # =============================================================================
-# SFP Extractor v4.0 — Correção metodológica: fronteira do sistema
+# SFP Extractor v4.1 — Redução de ruído residual (backlog v4.1 + v3.2)
 #
 # Correção crítica em relação às versões anteriores:
 #
@@ -95,7 +95,9 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "service", "serviceimpl",       # camada de serviço não é FD
         "controller", "controllerimpl", # controllers são EPs, não FDs
     ],
-    "python":     [],
+    "python":     [
+        "meta",     # classe interna Meta do Django — nunca é uma FD independente
+    ],
     "csharp":     [
         "exception", "middleware", "extensions",
         "behaviour", "behavior",        # MediatR pipeline behaviors
@@ -133,15 +135,22 @@ IGNORE_METHOD_NAMES = {
         "main",           # entry point da JVM
         "getclass",       # reflexão
         "notify", "notifyall", "wait",  # sincronização Object
+        "isempty",        # utilitário genérico — nunca é EP de negócio
     },
-    "python":     set(),
-    "csharp":     {
+    "python": {
+        # Django REST Framework — overrides de Serializer, nunca são EPs
+        "to_internal_value", "to_representation",
+        # Django — override de queryset, não é operação de negócio
+        "get_queryset",
+    },
+    "csharp": {
         "tostring", "gethashcode", "equals", "gettype",
         "task",           # artefato: parser C# lê Task<T> como nome de método
         "onmodelcreating", "onconfiguring",  # EF Core overrides
         "configureservices", "configure",    # Startup overrides
     },
     # Lifecycle methods React/JS — não são lógica de negócio SFP
+    # Métodos de interface NestJS — guard, interceptor, exception filter
     "typescript": {
         "render", "constructor",
         "componentdidmount", "componentdidupdate",
@@ -150,6 +159,11 @@ IGNORE_METHOD_NAMES = {
         "shouldcomponentupdate", "getsnapshotbeforeupdate",
         "getderivedstatefromprops", "getderivedstatefromerror",
         "componentdidcatch",
+        # NestJS framework interface methods — nunca são EPs de negócio
+        "canactivate",    # Guard interface
+        "intercept",      # Interceptor interface
+        "catch",          # ExceptionFilter interface
+        "bootstrap",      # entry point de main.ts
     },
     "javascript": {
         "render", "constructor",
@@ -200,8 +214,9 @@ ELEMENTARY_PROCESS_DECORATORS = {
     "java":       [
         "getmapping", "postmapping", "putmapping",
         "deletemapping", "patchmapping", "requestmapping",
-        "dgsquery", "dgsmutation", "dgssubscription",  # Netflix DGS (GraphQL)
-        "dgsdata",                                      # Netflix DGS: data loaders / field resolvers
+        "dgsquery", "dgsmutation", "dgssubscription",  # Netflix DGS: entry points GraphQL
+        # dgsdata removido v4.1: @DgsData são field resolvers internos,
+        # não operações de fronteira — movido para IGNORE_DECORATORS
         "graphqlquery", "graphqlmutation",              # Spring GraphQL
         "queryhandler", "commandhandler",               # CQRS
     ],
@@ -225,6 +240,9 @@ IGNORE_BASE_CLASSES = {
         "pagination", "basepagination",
         "renderer", "baserenderer",
         "throttle", "basethrottle",
+        # v4.1: utilitários de acesso a dados — não são FD de domínio
+        "baseusermanager",  # UserManager herda BaseUserManager → utilitário de auth
+        "mixin",            # qualquer Mixin (CreateModelMixin, etc.) → não é entidade
     ],
     "java": [
         "runtimeexception", "exception", "error",  # hierarquia de exceções
@@ -235,22 +253,51 @@ IGNORE_BASE_CLASSES = {
         "exception", "middleware",
         "profile",  # AutoMapper
     ],
-    "typescript": [],
+    "typescript": [
+        # v4.1: classes de infraestrutura NestJS — não são FD de domínio
+        "exceptionfilter",  # filtros de exceção
+        "ioadapter",        # adaptadores de socket/IO (ex: RedisIoAdapter)
+    ],
     "javascript": [],
 }
 
 # Decorators que indicam elementos a IGNORAR
 IGNORE_DECORATORS = {
-    "python":     [],
-    "java":       [
+    "python": [
+        "receiver",  # Django signal handler — não é EP de negócio SFP
+    ],
+    "java": [
         "repository", "mapper", "configuration",
         "component", "bean", "test", "service",
         "springbootapplication", "controller", "restcontroller",
         "controlleradvice", "restcontrolleradvice",
-        "override",         # implementação de interface — não é EP independente
+        "override",           # implementação de interface — não é EP independente
+        # v4.1: cross-cutting técnico — não são operações de fronteira SFP
+        "exceptionhandler",   # handler de exceção HTTP, não operação de negócio
+        "dgsdata",            # field resolver GraphQL DGS — interno, não é fronteira
     ],
     "csharp":     [],
-    "typescript": ["injectable", "module", "guard", "interceptor", "pipe"],
+    "typescript": [
+        "injectable", "module", "guard", "interceptor", "pipe",
+        # v4.1: infraestrutura NestJS — não são EPs de negócio
+        "websocketgateway",   # gateway WebSocket — infra de comunicação
+        "catch",              # decorator @Catch de ExceptionFilter
+    ],
+    "javascript": [],
+}
+
+
+# Sufixos de nome de MÉTODO que indicam helper interno (nunca EP)
+#
+# Diferente de IGNORE_CLASS_NAME_SUFFIXES (para classes), este filtro
+# se aplica apenas a métodos (is_method=True).
+# Exemplo: articleResponse(), userResponse() em controllers Java são
+# helpers que montam o objeto de resposta — não são EPs SFP.
+IGNORE_METHOD_NAME_SUFFIXES = {
+    "java":       ["response"],  # response builders em controllers (ex: articleResponse)
+    "python":     [],
+    "csharp":     [],
+    "typescript": [],
     "javascript": [],
 }
 
@@ -448,6 +495,13 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     if is_method and name_lower in IGNORE_METHOD_NAMES.get(lang, set()):
         return "ignore"
 
+    # 2b. Sufixo de nome de MÉTODO indica helper interno → ignorar
+    #     Exemplo: articleResponse(), userResponse() em Java controllers
+    if is_method:
+        for suffix in IGNORE_METHOD_NAME_SUFFIXES.get(lang, []):
+            if name_lower.endswith(suffix):
+                return "ignore"
+
     # 1b. Vertical Slice (feature/): classes são containers ignoráveis;
     #     métodos são as operações reais → elementary_process
     if file_role == "feature":
@@ -497,8 +551,18 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     #     Correção v4.0: service separado de controller.
     #     Controller = fronteira com o usuário → métodos são EPs com certeza.
     #     Classes controller (ex: ArticlesController) não são FDs → ignore.
+    #
+    #     Refinamento v4.1 (Java): métodos de controller SEM decorator explícito
+    #     são frequentemente helpers internos (response builders, utilitários).
+    #     Em Java, todo EP real tem ao menos um decorator HTTP ou CQRS.
+    #     Em outras linguagens (Python ViewSets, TS), EPs legítimos não usam
+    #     decorators individuais — o padrão arquitetural garante o papel.
     if file_role == "controller":
-        return "elementary_process" if is_method else "ignore"
+        if not is_method:
+            return "ignore"
+        if lang == "java" and not decorators_lower:
+            return "llm"   # método sem decorator em Java → ambíguo
+        return "elementary_process"
 
     # 10b. Arquivo é service → AMBÍGUO para EP.
     #      Em arquiteturas em camadas (MVC), o service é implementação interna —
