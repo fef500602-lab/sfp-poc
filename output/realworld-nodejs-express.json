@@ -3,19 +3,62 @@
   "files_analyzed": 28,
   "data_functions": [
     {
-      "name": "HttpException",
-      "file": "\\src\\app\\models\\http-exception.model.ts",
+      "name": "Article",
+      "file": "/src/app/routes/article/article.model.ts",
       "language": "typescript",
       "file_role": "model",
-      "base_classes": [
-        "Error"
-      ],
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Comment",
+      "file": "/src/app/routes/article/comment.model.ts",
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "RegisteredUser",
+      "file": "/src/app/routes/auth/registered-user.model.ts",
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "User",
+      "file": "/src/app/routes/auth/user.model.ts",
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Profile",
+      "file": "/src/app/routes/profile/profile.model.ts",
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Tag",
+      "file": "/src/app/routes/tag/tag.model.ts",
+      "language": "typescript",
+      "file_role": "model",
+      "base_classes": [],
       "decorators": [],
       "sfp_hint": "data_function"
     },
     {
       "name": "Global",
-      "file": "\\src\\prisma\\prisma-client.ts",
+      "file": "/src/prisma/prisma-client.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -24,7 +67,7 @@
     },
     {
       "name": "CustomNodeJsGlobal",
-      "file": "\\src\\prisma\\prisma-client.ts",
+      "file": "/src/prisma/prisma-client.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -35,7 +78,7 @@
   "elementary_processes": [
     {
       "name": "GET",
-      "file": "\\src\\main.ts",
+      "file": "/src/main.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -46,7 +89,7 @@
     },
     {
       "name": "getArticles",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -57,7 +100,7 @@
     },
     {
       "name": "getArticlesFeed",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -68,7 +111,7 @@
     },
     {
       "name": "createArticles",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -79,7 +122,7 @@
     },
     {
       "name": "getArticlesSlug",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -90,7 +133,7 @@
     },
     {
       "name": "updateArticlesSlug",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -101,7 +144,7 @@
     },
     {
       "name": "deleteArticlesSlug",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -112,7 +155,7 @@
     },
     {
       "name": "getArticlesSlugComments",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -123,7 +166,7 @@
     },
     {
       "name": "createArticlesSlugComments",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -134,7 +177,7 @@
     },
     {
       "name": "deleteArticlesSlugCommentsId",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -145,7 +188,7 @@
     },
     {
       "name": "createArticlesSlugFavorite",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -156,7 +199,7 @@
     },
     {
       "name": "deleteArticlesSlugFavorite",
-      "file": "\\src\\app\\routes\\article\\article.controller.ts",
+      "file": "/src/app/routes/article/article.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -167,7 +210,7 @@
     },
     {
       "name": "createUsers",
-      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "file": "/src/app/routes/auth/auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -178,7 +221,7 @@
     },
     {
       "name": "createUsersLogin",
-      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "file": "/src/app/routes/auth/auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -189,7 +232,7 @@
     },
     {
       "name": "getUser",
-      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "file": "/src/app/routes/auth/auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -200,7 +243,7 @@
     },
     {
       "name": "updateUser",
-      "file": "\\src\\app\\routes\\auth\\auth.controller.ts",
+      "file": "/src/app/routes/auth/auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -211,7 +254,7 @@
     },
     {
       "name": "getProfilesUsername",
-      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "file": "/src/app/routes/profile/profile.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -222,7 +265,7 @@
     },
     {
       "name": "createProfilesUsernameFollow",
-      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "file": "/src/app/routes/profile/profile.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -233,7 +276,7 @@
     },
     {
       "name": "deleteProfilesUsernameFollow",
-      "file": "\\src\\app\\routes\\profile\\profile.controller.ts",
+      "file": "/src/app/routes/profile/profile.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -244,7 +287,7 @@
     },
     {
       "name": "getTags",
-      "file": "\\src\\app\\routes\\tag\\tag.controller.ts",
+      "file": "/src/app/routes/tag/tag.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],

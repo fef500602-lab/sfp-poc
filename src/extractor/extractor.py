@@ -131,7 +131,14 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "service", "serviceimpl",       # camada de serviço não é FD
         "controller", "controllerimpl", # controllers são EPs, não FDs
     ],
-    "typescript": [],
+    "typescript": [
+        # DTOs de entrada/saída em *.model.ts — não são entidades de domínio
+        "input",       # RegisterInput, CreateInput, etc.
+        "registered",  # RegisteredUser → resposta de registro, não entidade
+        "response",    # *Response → wrappers de resposta
+        "request",     # *Request → wrappers de requisição
+        "dto",
+    ],
     "javascript": [],
 }
 
@@ -264,8 +271,11 @@ IGNORE_BASE_CLASSES = {
         # v4.1: classes de infraestrutura NestJS — não são FD de domínio
         "exceptionfilter",  # filtros de exceção
         "ioadapter",        # adaptadores de socket/IO (ex: RedisIoAdapter)
+        "error",            # HttpException extends Error → exceção, não FD
     ],
-    "javascript": [],
+    "javascript": [
+        "error",            # mesmo padrão para JS puro
+    ],
 }
 
 # Decorators que indicam elementos a IGNORAR
@@ -359,6 +369,14 @@ def infer_file_role(filepath):
         ("ui",             ["component", "components", "page", "pages",
                             "screen", "screens", "layout", "layouts", "widget", "widgets"]),
         ("feature",        ["feature", "features"]),
+        # "model" entra no HIGH_PRIORITY_ROLES para cobrir dois casos:
+        #   1. Pastas de domínio: domain/, core/, entity/, aggregate/ → já cobertas antes
+        #   2. Convenção TypeScript: *.model.ts em pastas "routes/" → ".model" no filename
+        # Como o loop de fallback PULA roles presentes aqui, todos os patterns
+        # do FILE_ROLE_PATTERNS["model"] devem estar listados abaixo.
+        ("model",          ["model", "models", "entity", "entities", "domain",
+                            "core", "aggregate", "valueobject",
+                            ".model"]),  # ← TypeScript: article.model.ts
     ]
     for part in parts + [filename]:
         for role, patterns in HIGH_PRIORITY_ROLES:
