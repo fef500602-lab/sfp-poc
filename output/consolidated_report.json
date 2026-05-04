@@ -2388,6 +2388,392 @@
     ]
   },
   {
+    "repository": "realworld-kotlin-ktor",
+    "files_analyzed": 25,
+    "data_functions": [
+      {
+        "name": "Article",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Comment.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Profile",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Profile.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Tags",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TagRepository",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Users",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Follows",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UserRepository",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TagService",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\TagService.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UserService",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\UserService.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Cipher",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "JwtProvider",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "main",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\App.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "isEmailValid",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\ext\\String.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "encrypt",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "decodeJWT",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "createJWT",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "users",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "profiles",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "articles",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "tags",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findBy",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "feed",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "get",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "delete",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "favorite",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "unfavorite",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "add",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findBySlug",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "delete",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "get",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "follow",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "unfollow",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "get",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\TagController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "login",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "register",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getUserByEmail",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getCurrent",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "update",
+        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      }
+    ]
+  },
+  {
     "repository": "realworld-nodejs-express",
     "files_analyzed": 28,
     "data_functions": [
