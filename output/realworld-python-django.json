@@ -4,7 +4,7 @@
   "data_functions": [
     {
       "name": "Article",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "language": "python",
       "file_role": "model",
       "base_classes": [
@@ -15,7 +15,7 @@
     },
     {
       "name": "Comment",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "language": "python",
       "file_role": "model",
       "base_classes": [
@@ -26,7 +26,7 @@
     },
     {
       "name": "Tag",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "language": "python",
       "file_role": "model",
       "base_classes": [
@@ -37,7 +37,7 @@
     },
     {
       "name": "Profile",
-      "file": "\\conduit\\apps\\profiles\\models.py",
+      "file": "/conduit/apps/profiles/models.py",
       "language": "python",
       "file_role": "model",
       "base_classes": [
@@ -50,7 +50,7 @@
   "elementary_processes": [
     {
       "name": "create",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -59,7 +59,7 @@
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -68,7 +68,7 @@
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -77,7 +77,7 @@
     },
     {
       "name": "update",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -86,7 +86,7 @@
     },
     {
       "name": "filter_queryset",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -95,7 +95,7 @@
     },
     {
       "name": "create",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -104,7 +104,7 @@
     },
     {
       "name": "destroy",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -113,7 +113,7 @@
     },
     {
       "name": "delete",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -122,7 +122,7 @@
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -131,7 +131,7 @@
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -140,7 +140,7 @@
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -149,7 +149,7 @@
     },
     {
       "name": "ready",
-      "file": "\\conduit\\apps\\articles\\__init__.py",
+      "file": "/conduit/apps/articles/__init__.py",
       "language": "python",
       "file_role": "unknown",
       "base_classes": [],
@@ -158,7 +158,7 @@
     },
     {
       "name": "authenticate",
-      "file": "\\conduit\\apps\\authentication\\backends.py",
+      "file": "/conduit/apps/authentication/backends.py",
       "language": "python",
       "file_role": "unknown",
       "base_classes": [],
@@ -167,7 +167,7 @@
     },
     {
       "name": "_authenticate_credentials",
-      "file": "\\conduit\\apps\\authentication\\backends.py",
+      "file": "/conduit/apps/authentication/backends.py",
       "language": "python",
       "file_role": "unknown",
       "base_classes": [],
@@ -176,7 +176,7 @@
     },
     {
       "name": "render",
-      "file": "\\conduit\\apps\\authentication\\renderers.py",
+      "file": "/conduit/apps/authentication/renderers.py",
       "language": "python",
       "file_role": "unknown",
       "base_classes": [],
@@ -185,7 +185,7 @@
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -194,7 +194,7 @@
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -203,7 +203,7 @@
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -212,7 +212,7 @@
     },
     {
       "name": "update",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -221,7 +221,7 @@
     },
     {
       "name": "ready",
-      "file": "\\conduit\\apps\\authentication\\__init__.py",
+      "file": "/conduit/apps/authentication/__init__.py",
       "language": "python",
       "file_role": "unknown",
       "base_classes": [],
@@ -230,7 +230,7 @@
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -239,7 +239,7 @@
     },
     {
       "name": "delete",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
@@ -248,7 +248,7 @@
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "language": "python",
       "file_role": "controller",
       "base_classes": [],
