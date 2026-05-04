@@ -4,7 +4,7 @@
   "data_functions": [
     {
       "name": "Article",
-      "file": "/src/Conduit/Domain/Article.cs",
+      "file": "\\src\\Conduit\\Domain\\Article.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -13,7 +13,7 @@
     },
     {
       "name": "ArticleFavorite",
-      "file": "/src/Conduit/Domain/ArticleFavorite.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleFavorite.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -22,7 +22,7 @@
     },
     {
       "name": "ArticleTag",
-      "file": "/src/Conduit/Domain/ArticleTag.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleTag.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -31,7 +31,7 @@
     },
     {
       "name": "Comment",
-      "file": "/src/Conduit/Domain/Comment.cs",
+      "file": "\\src\\Conduit\\Domain\\Comment.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -40,7 +40,7 @@
     },
     {
       "name": "FollowedPeople",
-      "file": "/src/Conduit/Domain/FollowedPeople.cs",
+      "file": "\\src\\Conduit\\Domain\\FollowedPeople.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -49,7 +49,7 @@
     },
     {
       "name": "Person",
-      "file": "/src/Conduit/Domain/Person.cs",
+      "file": "\\src\\Conduit\\Domain\\Person.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -58,7 +58,7 @@
     },
     {
       "name": "Tag",
-      "file": "/src/Conduit/Domain/Tag.cs",
+      "file": "\\src\\Conduit\\Domain\\Tag.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -69,345 +69,345 @@
   "elementary_processes": [
     {
       "name": "GetAllData",
-      "file": "/src/Conduit/Features/Articles/ArticleExtensions.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleExtensions.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "GetFeed",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Edit",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "GetArticleTagsToCreate",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "GetArticleTagsToDelete",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/List.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/List.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Add.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Delete.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "FavoriteAdd",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "FavoriteDelete",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Add.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Delete.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Follow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Unfollow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Profiles/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/IProfileReader.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\IProfileReader.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/ProfileReader.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileReader.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Profiles/ProfilesController.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfilesController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Tags/List.cs",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Tags/TagsController.cs",
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Login.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "GetCurrent",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "UpdateUser",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "Login",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
       "language": "csharp",
       "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     }
   ]
 }

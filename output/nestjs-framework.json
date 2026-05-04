@@ -4,7 +4,7 @@
   "data_functions": [
     {
       "name": "Cat",
-      "file": "/sample/01-cats-app/src/cats/interfaces/cat.interface.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\interfaces\\cat.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -12,21 +12,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "HttpExceptionFilter",
-      "file": "/sample/01-cats-app/src/common/filters/http-exception.filter.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [
-        "ExceptionFilter<HttpException>"
-      ],
-      "decorators": [
-        "Catch"
-      ],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "Response",
-      "file": "/sample/01-cats-app/src/core/interceptors/transform.interceptor.ts",
+      "file": "\\sample\\01-cats-app\\src\\core\\interceptors\\transform.interceptor.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -34,30 +21,8 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "RedisIoAdapter",
-      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [
-        "IoAdapter"
-      ],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "EventsGateway",
-      "file": "/sample/02-gateways/src/events/events.gateway.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [
-        "WebSocketGateway"
-      ],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "HeroById",
-      "file": "/sample/04-grpc/src/hero/interfaces/hero-by-id.interface.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero-by-id.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -66,7 +31,7 @@
     },
     {
       "name": "Hero",
-      "file": "/sample/04-grpc/src/hero/interfaces/hero.interface.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -75,7 +40,7 @@
     },
     {
       "name": "User",
-      "file": "/sample/05-sql-typeorm/src/users/user.entity.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\user.entity.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -86,7 +51,7 @@
     },
     {
       "name": "User",
-      "file": "/sample/07-sequelize/src/users/models/user.model.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\models\\user.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [
@@ -99,7 +64,7 @@
     },
     {
       "name": "AppModule",
-      "file": "/sample/09-babel-example/src/app.module.js",
+      "file": "\\sample\\09-babel-example\\src\\app.module.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -110,7 +75,7 @@
     },
     {
       "name": "CatsModule",
-      "file": "/sample/09-babel-example/src/cats/cats.module.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.module.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -121,7 +86,7 @@
     },
     {
       "name": "Cat",
-      "file": "/sample/10-fastify/src/cats/interfaces/cat.interface.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\interfaces\\cat.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -130,7 +95,7 @@
     },
     {
       "name": "Response",
-      "file": "/sample/10-fastify/src/core/interceptors/transform.interceptor.ts",
+      "file": "\\sample\\10-fastify\\src\\core\\interceptors\\transform.interceptor.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -139,7 +104,7 @@
     },
     {
       "name": "Cat",
-      "file": "/sample/11-swagger/src/cats/entities/cat.entity.ts",
+      "file": "\\sample\\11-swagger\\src\\cats\\entities\\cat.entity.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -148,7 +113,7 @@
     },
     {
       "name": "Photo",
-      "file": "/sample/13-mongo-typeorm/src/photo/photo.entity.ts",
+      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.entity.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -159,7 +124,7 @@
     },
     {
       "name": "Cat",
-      "file": "/sample/14-mongoose-base/src/cats/interfaces/cat.interface.ts",
+      "file": "\\sample\\14-mongoose-base\\src\\cats\\interfaces\\cat.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -167,19 +132,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "EventsGateway",
-      "file": "/sample/16-gateways-ws/src/events/events.gateway.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [
-        "WebSocketGateway"
-      ],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "PostsResolvers",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -190,7 +144,7 @@
     },
     {
       "name": "ComplexityPlugin",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [
@@ -203,7 +157,7 @@
     },
     {
       "name": "LoggingPlugin",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [
@@ -216,7 +170,7 @@
     },
     {
       "name": "DateScalar",
-      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [
@@ -229,7 +183,7 @@
     },
     {
       "name": "RecipesResolver",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -240,7 +194,7 @@
     },
     {
       "name": "Recipe",
-      "file": "/sample/23-graphql-code-first/src/recipes/models/recipe.model.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\models\\recipe.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -251,7 +205,7 @@
     },
     {
       "name": "AudioProcessor",
-      "file": "/sample/26-queues/src/audio/audio.processor.ts",
+      "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -262,7 +216,7 @@
     },
     {
       "name": "Order",
-      "file": "/sample/30-event-emitter/src/orders/entities/order.entity.ts",
+      "file": "\\sample\\30-event-emitter\\src\\orders\\entities\\order.entity.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -271,7 +225,7 @@
     },
     {
       "name": "OrderCreatedEvent",
-      "file": "/sample/30-event-emitter/src/orders/events/order-created.event.ts",
+      "file": "\\sample\\30-event-emitter\\src\\orders\\events\\order-created.event.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -280,7 +234,7 @@
     },
     {
       "name": "PostsResolver",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -291,7 +245,7 @@
     },
     {
       "name": "UsersResolver",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -302,7 +256,7 @@
     },
     {
       "name": "Post",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/models/post.model.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\post.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -314,7 +268,7 @@
     },
     {
       "name": "User",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/models/user.model.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\user.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -327,7 +281,7 @@
     },
     {
       "name": "UsersResolver",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -338,7 +292,7 @@
     },
     {
       "name": "User",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/models/user.model.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\models\\user.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -350,7 +304,7 @@
     },
     {
       "name": "DateScalar",
-      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [
@@ -363,7 +317,7 @@
     },
     {
       "name": "RecipesResolver",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -374,7 +328,7 @@
     },
     {
       "name": "Recipe",
-      "file": "/sample/33-graphql-mercurius/src/recipes/models/recipe.model.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\models\\recipe.model.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -385,7 +339,7 @@
     },
     {
       "name": "Cat",
-      "file": "/sample/36-hmr-esm/src/cats/interfaces/cat.interface.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\interfaces\\cat.interface.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -393,21 +347,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "HttpExceptionFilter",
-      "file": "/sample/36-hmr-esm/src/common/filters/http-exception.filter.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [
-        "ExceptionFilter<HttpException>"
-      ],
-      "decorators": [
-        "Catch"
-      ],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "Response",
-      "file": "/sample/36-hmr-esm/src/core/interceptors/transform.interceptor.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\core\\interceptors\\transform.interceptor.ts",
       "language": "typescript",
       "file_role": "model",
       "base_classes": [],
@@ -417,17 +358,8 @@
   ],
   "elementary_processes": [
     {
-      "name": "bootstrap",
-      "file": "/sample/01-cats-app/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -439,7 +371,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -450,7 +382,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -461,7 +393,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/01-cats-app/src/cats/cats.service.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -470,7 +402,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/01-cats-app/src/cats/cats.service.ts",
+      "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -478,35 +410,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "catch",
-      "file": "/sample/01-cats-app/src/common/filters/http-exception.filter.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "canActivate",
-      "file": "/sample/01-cats-app/src/common/guards/roles.guard.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/01-cats-app/src/common/interceptors/exception.interceptor.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/01-cats-app/src/common/interceptors/timeout.interceptor.ts",
+      "name": "transform",
+      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\parse-int.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -515,16 +420,7 @@
     },
     {
       "name": "transform",
-      "file": "/sample/01-cats-app/src/common/pipes/parse-int.pipe.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "transform",
-      "file": "/sample/01-cats-app/src/common/pipes/validation.pipe.ts",
+      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -533,16 +429,7 @@
     },
     {
       "name": "toValidate",
-      "file": "/sample/01-cats-app/src/common/pipes/validation.pipe.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/02-gateways/src/main.ts",
+      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -551,7 +438,7 @@
     },
     {
       "name": "connectToRedis",
-      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
+      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -560,7 +447,7 @@
     },
     {
       "name": "createIOServer",
-      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
+      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -569,7 +456,7 @@
     },
     {
       "name": "getClientInfoTag",
-      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
+      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -578,7 +465,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/02-gateways/src/events/events.gateway.ts",
+      "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -589,7 +476,7 @@
     },
     {
       "name": "identity",
-      "file": "/sample/02-gateways/src/events/events.gateway.ts",
+      "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -599,35 +486,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/03-microservices/src/main.ts",
-      "language": "typescript",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "catch",
-      "file": "/sample/03-microservices/src/common/filters/rpc-exception.filter.ts",
-      "language": "typescript",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/03-microservices/src/common/interceptors/logging.interceptor.ts",
-      "language": "typescript",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "bindEvents",
-      "file": "/sample/03-microservices/src/common/strategies/nats.strategy.ts",
+      "file": "\\sample\\03-microservices\\src\\common\\strategies\\nats.strategy.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -636,7 +496,7 @@
     },
     {
       "name": "execute",
-      "file": "/sample/03-microservices/src/math/math.controller.ts",
+      "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -647,7 +507,7 @@
     },
     {
       "name": "sum",
-      "file": "/sample/03-microservices/src/math/math.controller.ts",
+      "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -657,17 +517,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/04-grpc/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "onModuleInit",
-      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -676,7 +527,7 @@
     },
     {
       "name": "getMany",
-      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -687,7 +538,7 @@
     },
     {
       "name": "getById",
-      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -698,7 +549,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -709,7 +560,7 @@
     },
     {
       "name": "findMany",
-      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
+      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -719,17 +570,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/05-sql-typeorm/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -740,7 +582,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -751,7 +593,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -762,7 +604,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -773,7 +615,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -782,7 +624,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -791,7 +633,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -800,7 +642,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
+      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -808,17 +650,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/06-mongoose/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -829,7 +662,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -840,7 +673,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -851,7 +684,7 @@
     },
     {
       "name": "update",
-      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -862,7 +695,7 @@
     },
     {
       "name": "delete",
-      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -873,7 +706,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -882,7 +715,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -891,7 +724,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -900,7 +733,7 @@
     },
     {
       "name": "update",
-      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -909,7 +742,7 @@
     },
     {
       "name": "delete",
-      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
+      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -917,17 +750,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/07-sequelize/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/07-sequelize/src/users/users.controller.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -938,7 +762,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/07-sequelize/src/users/users.controller.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -949,7 +773,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/07-sequelize/src/users/users.controller.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -960,7 +784,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/07-sequelize/src/users/users.controller.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -971,7 +795,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/07-sequelize/src/users/users.service.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -980,7 +804,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/07-sequelize/src/users/users.service.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -989,7 +813,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/07-sequelize/src/users/users.service.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -998,7 +822,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/07-sequelize/src/users/users.service.ts",
+      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1007,7 +831,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/08-webpack/src/app.controller.ts",
+      "file": "\\sample\\08-webpack\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1018,7 +842,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/08-webpack/src/app.service.ts",
+      "file": "\\sample\\08-webpack\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1027,16 +851,7 @@
     },
     {
       "name": "bootstrap",
-      "file": "/sample/08-webpack/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/09-babel-example/src/main.js",
+      "file": "\\sample\\09-babel-example\\src\\main.js",
       "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1045,7 +860,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -1054,7 +869,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -1063,7 +878,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -1072,7 +887,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/09-babel-example/src/cats/cats.service.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
@@ -1081,7 +896,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/09-babel-example/src/cats/cats.service.js",
+      "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
       "language": "javascript",
       "file_role": "service",
       "base_classes": [],
@@ -1089,17 +904,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/10-fastify/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1111,7 +917,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1122,7 +928,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1133,7 +939,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/10-fastify/src/cats/cats.service.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1142,7 +948,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/10-fastify/src/cats/cats.service.ts",
+      "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1150,17 +956,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "canActivate",
-      "file": "/sample/10-fastify/src/common/guards/roles.guard.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/10-fastify/src/common/interceptors/exception.interceptor.ts",
+      "name": "transform",
+      "file": "\\sample\\10-fastify\\src\\common\\pipes\\parse-int.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1169,16 +966,7 @@
     },
     {
       "name": "transform",
-      "file": "/sample/10-fastify/src/common/pipes/parse-int.pipe.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "transform",
-      "file": "/sample/10-fastify/src/common/pipes/validation.pipe.ts",
+      "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1187,16 +975,7 @@
     },
     {
       "name": "toValidate",
-      "file": "/sample/10-fastify/src/common/pipes/validation.pipe.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/11-swagger/src/main.ts",
+      "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1205,7 +984,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/11-swagger/src/cats/cats.controller.ts",
+      "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1218,7 +997,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/11-swagger/src/cats/cats.controller.ts",
+      "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1230,7 +1009,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/11-swagger/src/cats/cats.service.ts",
+      "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1239,7 +1018,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/11-swagger/src/cats/cats.service.ts",
+      "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1247,17 +1026,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/13-mongo-typeorm/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "findAll",
-      "file": "/sample/13-mongo-typeorm/src/photo/photo.controller.ts",
+      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1268,7 +1038,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/13-mongo-typeorm/src/photo/photo.service.ts",
+      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1276,17 +1046,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/14-mongoose-base/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/14-mongoose-base/src/cats/cats.controller.ts",
+      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1297,7 +1058,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/14-mongoose-base/src/cats/cats.controller.ts",
+      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1308,7 +1069,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/14-mongoose-base/src/cats/cats.service.ts",
+      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1317,7 +1078,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/14-mongoose-base/src/cats/cats.service.ts",
+      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1326,7 +1087,7 @@
     },
     {
       "name": "root",
-      "file": "/sample/15-mvc/src/app.controller.ts",
+      "file": "\\sample\\15-mvc\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1337,26 +1098,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/15-mvc/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/16-gateways-ws/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "onEvent",
-      "file": "/sample/16-gateways-ws/src/events/events.gateway.ts",
+      "file": "\\sample\\16-gateways-ws\\src\\events\\events.gateway.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1367,7 +1110,7 @@
     },
     {
       "name": "root",
-      "file": "/sample/17-mvc-fastify/src/app.controller.ts",
+      "file": "\\sample\\17-mvc-fastify\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1378,17 +1121,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/17-mvc-fastify/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "getHello",
-      "file": "/sample/18-context/src/app.service.ts",
+      "file": "\\sample\\18-context\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1396,26 +1130,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/18-context/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "register",
-      "file": "/sample/18-context/src/my-dynamic.module.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/19-auth-jwt/src/main.ts",
+      "file": "\\sample\\18-context\\src\\my-dynamic.module.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1424,7 +1140,7 @@
     },
     {
       "name": "signIn",
-      "file": "/sample/19-auth-jwt/src/auth/auth.controller.ts",
+      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1437,7 +1153,7 @@
     },
     {
       "name": "getProfile",
-      "file": "/sample/19-auth-jwt/src/auth/auth.controller.ts",
+      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1447,17 +1163,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "canActivate",
-      "file": "/sample/19-auth-jwt/src/auth/auth.guard.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "extractTokenFromHeader",
-      "file": "/sample/19-auth-jwt/src/auth/auth.guard.ts",
+      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.guard.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1466,7 +1173,7 @@
     },
     {
       "name": "signIn",
-      "file": "/sample/19-auth-jwt/src/auth/auth.service.ts",
+      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1475,7 +1182,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/19-auth-jwt/src/users/users.service.ts",
+      "file": "\\sample\\19-auth-jwt\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1484,7 +1191,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/20-cache/src/app.controller.ts",
+      "file": "\\sample\\20-cache\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1494,17 +1201,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/20-cache/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "trackBy",
-      "file": "/sample/20-cache/src/common/http-cache.interceptor.ts",
+      "file": "\\sample\\20-cache\\src\\common\\http-cache.interceptor.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1513,7 +1211,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/21-serializer/src/app.controller.ts",
+      "file": "\\sample\\21-serializer\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "serializer",
       "base_classes": [],
@@ -1523,17 +1221,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/22-graphql-prisma/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "posts",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1544,7 +1233,7 @@
     },
     {
       "name": "post",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1555,7 +1244,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1566,7 +1255,7 @@
     },
     {
       "name": "update",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1577,7 +1266,7 @@
     },
     {
       "name": "delete",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1588,7 +1277,7 @@
     },
     {
       "name": "postCreated",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1599,7 +1288,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1608,7 +1297,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1617,7 +1306,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1626,7 +1315,7 @@
     },
     {
       "name": "update",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1635,7 +1324,7 @@
     },
     {
       "name": "delete",
-      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1644,7 +1333,7 @@
     },
     {
       "name": "onModuleInit",
-      "file": "/sample/22-graphql-prisma/src/prisma/prisma.service.ts",
+      "file": "\\sample\\22-graphql-prisma\\src\\prisma\\prisma.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1652,17 +1341,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/23-graphql-code-first/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "upperDirectiveTransformer",
-      "file": "/sample/23-graphql-code-first/src/common/directives/upper-case.directive.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\directives\\upper-case.directive.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1671,7 +1351,7 @@
     },
     {
       "name": "requestDidStart",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1680,7 +1360,7 @@
     },
     {
       "name": "didResolveOperation",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1689,7 +1369,7 @@
     },
     {
       "name": "requestDidStart",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1698,7 +1378,7 @@
     },
     {
       "name": "willSendResponse",
-      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1707,7 +1387,7 @@
     },
     {
       "name": "parseValue",
-      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1716,7 +1396,7 @@
     },
     {
       "name": "serialize",
-      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1725,7 +1405,7 @@
     },
     {
       "name": "parseLiteral",
-      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1734,7 +1414,7 @@
     },
     {
       "name": "recipe",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1745,7 +1425,7 @@
     },
     {
       "name": "recipes",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1756,7 +1436,7 @@
     },
     {
       "name": "addRecipe",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1767,7 +1447,7 @@
     },
     {
       "name": "removeRecipe",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1778,7 +1458,7 @@
     },
     {
       "name": "recipeAdded",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1789,7 +1469,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1798,7 +1478,7 @@
     },
     {
       "name": "findOneById",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1807,7 +1487,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1816,7 +1496,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
+      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1825,27 +1505,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/24-serve-static/src/app.controller.ts",
-      "language": "typescript",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [
-        "Get"
-      ],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/24-serve-static/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "getHello",
-      "file": "/sample/25-dynamic-modules/src/app.controller.ts",
+      "file": "\\sample\\24-serve-static\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1856,34 +1516,27 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/25-dynamic-modules/src/app.service.ts",
+      "file": "\\sample\\25-dynamic-modules\\src\\app.controller.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "Get"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "getHello",
+      "file": "\\sample\\25-dynamic-modules\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/25-dynamic-modules/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/26-queues/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
       "name": "transcode",
-      "file": "/sample/26-queues/src/audio/audio.controller.ts",
+      "file": "\\sample\\26-queues\\src\\audio\\audio.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1894,7 +1547,7 @@
     },
     {
       "name": "handleTranscode",
-      "file": "/sample/26-queues/src/audio/audio.processor.ts",
+      "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -1904,17 +1557,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/27-scheduling/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "handleCron",
-      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
+      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1925,7 +1569,7 @@
     },
     {
       "name": "handleInterval",
-      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
+      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1936,7 +1580,7 @@
     },
     {
       "name": "handleTimeout",
-      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
+      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1947,7 +1591,7 @@
     },
     {
       "name": "index",
-      "file": "/sample/28-sse/src/app.controller.ts",
+      "file": "\\sample\\28-sse\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1958,7 +1602,7 @@
     },
     {
       "name": "sse",
-      "file": "/sample/28-sse/src/app.controller.ts",
+      "file": "\\sample\\28-sse\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1968,17 +1612,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/28-sse/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "sayHello",
-      "file": "/sample/29-file-upload/src/app.controller.ts",
+      "file": "\\sample\\29-file-upload\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -1989,7 +1624,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/29-file-upload/src/app.service.ts",
+      "file": "\\sample\\29-file-upload\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -1997,26 +1632,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/29-file-upload/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/30-event-emitter/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/30-event-emitter/src/orders/orders.controller.ts",
+      "file": "\\sample\\30-event-emitter\\src\\orders\\orders.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2027,7 +1644,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/30-event-emitter/src/orders/orders.service.ts",
+      "file": "\\sample\\30-event-emitter\\src\\orders\\orders.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2036,7 +1653,7 @@
     },
     {
       "name": "handleOrderCreatedEvent",
-      "file": "/sample/30-event-emitter/src/orders/listeners/order-created.listener.ts",
+      "file": "\\sample\\30-event-emitter\\src\\orders\\listeners\\order-created.listener.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2046,26 +1663,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/31-graphql-federation-code-first/gateway/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "post",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2076,7 +1675,7 @@
     },
     {
       "name": "posts",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2087,7 +1686,7 @@
     },
     {
       "name": "user",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2098,7 +1697,7 @@
     },
     {
       "name": "findAllByAuthorId",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2107,7 +1706,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2116,7 +1715,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2125,7 +1724,7 @@
     },
     {
       "name": "posts",
-      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2135,17 +1734,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "getUser",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2156,7 +1746,7 @@
     },
     {
       "name": "resolveReference",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2167,7 +1757,7 @@
     },
     {
       "name": "findById",
-      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.service.ts",
+      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2175,17 +1765,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/33-graphql-mercurius/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "parseValue",
-      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2194,7 +1775,7 @@
     },
     {
       "name": "serialize",
-      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2203,7 +1784,7 @@
     },
     {
       "name": "parseLiteral",
-      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2212,7 +1793,7 @@
     },
     {
       "name": "recipe",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2223,7 +1804,7 @@
     },
     {
       "name": "recipes",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2234,7 +1815,7 @@
     },
     {
       "name": "addRecipe",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2245,7 +1826,7 @@
     },
     {
       "name": "removeRecipe",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2256,7 +1837,7 @@
     },
     {
       "name": "recipeAdded",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2267,7 +1848,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2276,7 +1857,7 @@
     },
     {
       "name": "findOneById",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2285,7 +1866,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2294,7 +1875,7 @@
     },
     {
       "name": "remove",
-      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
+      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2303,7 +1884,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/34-using-esm-packages/src/app.controller.ts",
+      "file": "\\sample\\34-using-esm-packages\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2314,7 +1895,7 @@
     },
     {
       "name": "onModuleInit",
-      "file": "/sample/34-using-esm-packages/src/app.module.ts",
+      "file": "\\sample\\34-using-esm-packages\\src\\app.module.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2323,7 +1904,7 @@
     },
     {
       "name": "getHello",
-      "file": "/sample/34-using-esm-packages/src/app.service.ts",
+      "file": "\\sample\\34-using-esm-packages\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2331,17 +1912,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/34-using-esm-packages/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "getHello",
-      "file": "/sample/35-use-esm-package-after-node22/src/app.controller.ts",
+      "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2352,7 +1924,7 @@
     },
     {
       "name": "getJsonStringExample",
-      "file": "/sample/35-use-esm-package-after-node22/src/app.service.ts",
+      "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2360,26 +1932,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "bootstrap",
-      "file": "/sample/35-use-esm-package-after-node22/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "bootstrap",
-      "file": "/sample/36-hmr-esm/src/main.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
       "name": "create",
-      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2391,7 +1945,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2402,7 +1956,7 @@
     },
     {
       "name": "findOne",
-      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
       "language": "typescript",
       "file_role": "controller",
       "base_classes": [],
@@ -2413,7 +1967,7 @@
     },
     {
       "name": "create",
-      "file": "/sample/36-hmr-esm/src/cats/cats.service.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2422,7 +1976,7 @@
     },
     {
       "name": "findAll",
-      "file": "/sample/36-hmr-esm/src/cats/cats.service.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
       "language": "typescript",
       "file_role": "service",
       "base_classes": [],
@@ -2430,35 +1984,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "catch",
-      "file": "/sample/36-hmr-esm/src/common/filters/http-exception.filter.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "canActivate",
-      "file": "/sample/36-hmr-esm/src/common/guards/roles.guard.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/36-hmr-esm/src/common/interceptors/exception.interceptor.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "intercept",
-      "file": "/sample/36-hmr-esm/src/common/interceptors/timeout.interceptor.ts",
+      "name": "transform",
+      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\parse-int.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2467,16 +1994,7 @@
     },
     {
       "name": "transform",
-      "file": "/sample/36-hmr-esm/src/common/pipes/parse-int.pipe.ts",
-      "language": "typescript",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "transform",
-      "file": "/sample/36-hmr-esm/src/common/pipes/validation.pipe.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],
@@ -2485,7 +2003,7 @@
     },
     {
       "name": "toValidate",
-      "file": "/sample/36-hmr-esm/src/common/pipes/validation.pipe.ts",
+      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
       "language": "typescript",
       "file_role": "unknown",
       "base_classes": [],

@@ -2,563 +2,411 @@
   "repository": "realworld-java-spring",
   "pre_classification": {
     "data_functions": 6,
-    "elementary_processes": 60
+    "elementary_processes": 26
   },
   "llm_classification": {
-    "sent": 35,
-    "data_functions": 0,
+    "sent": 38,
+    "data_functions": 1,
     "elementary_processes": 1,
-    "ignored": 34
+    "ignored": 36
   },
   "sfp_count": {
-    "data_functions": 6,
-    "elementary_processes": 61,
-    "total": 67
+    "data_functions": 7,
+    "elementary_processes": 27,
+    "total": 34
   },
   "data_functions": [
     {
       "name": "Article",
-      "file": "/src/main/java/io/spring/core/article/Article.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\article\\Article.java",
       "source": "pre_classifier"
     },
     {
       "name": "Tag",
-      "file": "/src/main/java/io/spring/core/article/Tag.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\article\\Tag.java",
       "source": "pre_classifier"
     },
     {
       "name": "Comment",
-      "file": "/src/main/java/io/spring/core/comment/Comment.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\comment\\Comment.java",
       "source": "pre_classifier"
     },
     {
       "name": "ArticleFavorite",
-      "file": "/src/main/java/io/spring/core/favorite/ArticleFavorite.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavorite.java",
       "source": "pre_classifier"
     },
     {
       "name": "FollowRelation",
-      "file": "/src/main/java/io/spring/core/user/FollowRelation.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\user\\FollowRelation.java",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "/src/main/java/io/spring/core/user/User.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\user\\User.java",
       "source": "pre_classifier"
+    },
+    {
+      "name": "Node",
+      "file": "\\src\\main\\java\\io\\spring\\application\\Node.java",
+      "source": "llm",
+      "reason": "Representa uma estrutura de dados de negócio para paginação/cursor usada nas respostas da aplicação, com significado funcional e não meramente técnico."
     }
   ],
   "elementary_processes": [
     {
       "name": "article",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "updateArticle",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "deleteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "articleResponse",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "favoriteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "unfavoriteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "responseArticleData",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "createArticle",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getFeed",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getArticles",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "createComment",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getComments",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "deleteComment",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "commentResponse",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "currentUser",
-      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "updateProfile",
-      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "userResponse",
-      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getProfile",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "follow",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "unfollow",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "profileResponse",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getTags",
-      "file": "/src/main/java/io/spring/api/TagsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\TagsApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "createUser",
-      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "userLogin",
-      "file": "/src/main/java/io/spring/api/UsersApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "userResponse",
-      "file": "/src/main/java/io/spring/api/UsersApi.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "handleInvalidRequest",
-      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "handleInvalidAuthentication",
-      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "handleConstraintViolation",
-      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getParam",
-      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getErrors",
-      "file": "/src/main/java/io/spring/api/exception/InvalidRequestException.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getTokenString",
-      "file": "/src/main/java/io/spring/api/security/JwtTokenFilter.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
       "source": "pre_classifier"
     },
     {
       "name": "getFeed",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "userFeed",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "userFavorites",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "userArticles",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getArticles",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getCommentArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "source": "pre_classifier"
     },
     {
       "name": "findArticleBySlug",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "source": "pre_classifier"
     },
     {
       "name": "createArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "source": "pre_classifier"
     },
     {
       "name": "updateArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "source": "pre_classifier"
     },
     {
       "name": "favoriteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "source": "pre_classifier"
     },
     {
       "name": "unfavoriteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "source": "pre_classifier"
     },
     {
       "name": "deleteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getComment",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "articleComments",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "createComment",
-      "file": "/src/main/java/io/spring/graphql/CommentMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "removeComment",
-      "file": "/src/main/java/io/spring/graphql/CommentMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getMe",
-      "file": "/src/main/java/io/spring/graphql/MeDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getUserPayloadUser",
-      "file": "/src/main/java/io/spring/graphql/MeDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getUserProfile",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getAuthor",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getCommentAuthor",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "source": "pre_classifier"
     },
     {
       "name": "queryProfile",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "follow",
-      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "unfollow",
-      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "getTags",
-      "file": "/src/main/java/io/spring/graphql/TagDatafetcher.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "createUser",
-      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "login",
-      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "updateUser",
-      "file": "/src/main/java/io/spring/graphql/UserMutation.java",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "queryProfile",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
       "source": "llm",
-      "reason": "Método de datafetcher GraphQL que atua como fronteira do sistema para consulta de perfil; representa uma operação elementar distinta."
+      "reason": "Método de datafetcher GraphQL que atua como ponto de entrada da consulta de perfil na fronteira do sistema."
     }
   ],
   "ignored_by_llm": [
     {
-      "name": "Node",
-      "file": "/src/main/java/io/spring/application/Node.java",
+      "name": "responseArticleData",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "source": "llm",
-      "reason": "Classe de apoio para paginação/cursor na camada de aplicação; não representa entidade de negócio mantida ou referenciada como FD."
-    },
-    {
-      "name": "isEmpty",
-      "file": "/src/main/java/io/spring/Util.java",
-      "source": "llm",
-      "reason": "Função utilitária genérica sem operação de negócio na fronteira do sistema."
-    },
-    {
-      "name": "findById",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método de service interno de consulta; em arquitetura em camadas a contagem do EP ocorre na fronteira GraphQL/controller correspondente, não no service."
-    },
-    {
-      "name": "findBySlug",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método de service interno de consulta; não é fronteira externa distinta para contagem de EP."
-    },
-    {
-      "name": "findRecentArticlesWithCursor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Lógica interna de consulta/paginação em service; a operação externa é contada no datafetcher/controller."
-    },
-    {
-      "name": "findUserFeedWithCursor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método interno de service para feed paginado; não deve ser contado separadamente da fronteira externa."
-    },
-    {
-      "name": "findRecentArticles",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Consulta implementada em service; pela regra de fronteira não conta como EP quando há camada de entrada separada."
-    },
-    {
-      "name": "findUserFeed",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método de service interno para recuperar feed; não é EP autônomo na fronteira."
-    },
-    {
-      "name": "fillExtraInfo",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Helper interno para enriquecer dados de artigo; não é operação de fronteira nem FD."
-    },
-    {
-      "name": "setIsFollowingAuthor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método auxiliar interno para preencher atributo derivado; não caracteriza EP."
-    },
-    {
-      "name": "setFavoriteCount",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método auxiliar interno de composição de resposta; não é contado em SFP."
-    },
-    {
-      "name": "setIsFavorite",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Método auxiliar interno para marcar favorito; não representa fronteira externa."
-    },
-    {
-      "name": "fillExtraInfo",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
-      "source": "llm",
-      "reason": "Helper interno sobrecarregado/duplicado na mesma service; não é operação elementar na fronteira."
-    },
-    {
-      "name": "findById",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
-      "source": "llm",
-      "reason": "Método de consulta em service; a interação externa correspondente deve ser contada na camada GraphQL/controller."
-    },
-    {
-      "name": "findByArticleId",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
-      "source": "llm",
-      "reason": "Consulta interna de service para comentários por artigo; não é EP na fronteira."
-    },
-    {
-      "name": "findByArticleIdWithCursor",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
-      "source": "llm",
-      "reason": "Método interno de paginação/consulta em service; a fronteira externa é outra camada."
-    },
-    {
-      "name": "parse",
-      "file": "/src/main/java/io/spring/application/DateTimeCursor.java",
-      "source": "llm",
-      "reason": "Função técnica de parsing de cursor/data; não representa entidade de negócio nem operação de fronteira."
-    },
-    {
-      "name": "getCursor",
-      "file": "/src/main/java/io/spring/application/Node.java",
-      "source": "llm",
-      "reason": "Getter simples de objeto de apoio; getters/setters não são contados como EP."
-    },
-    {
-      "name": "findByUsername",
-      "file": "/src/main/java/io/spring/application/ProfileQueryService.java",
-      "source": "llm",
-      "reason": "Método de service para consulta de perfil; a operação externa é contada no datafetcher correspondente."
-    },
-    {
-      "name": "allTags",
-      "file": "/src/main/java/io/spring/application/TagsQueryService.java",
-      "source": "llm",
-      "reason": "Método de service de consulta; não é a fronteira do sistema para fins de EP."
-    },
-    {
-      "name": "findById",
-      "file": "/src/main/java/io/spring/application/UserQueryService.java",
-      "source": "llm",
-      "reason": "Consulta interna em service; não deve ser contada além da operação exposta na camada de entrada."
-    },
-    {
-      "name": "createArticle",
-      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
-      "source": "llm",
-      "reason": "Comando implementado em service; pela regra de fronteira, se exposto via controller/datafetcher, o EP é contado lá e não aqui."
-    },
-    {
-      "name": "updateArticle",
-      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
-      "source": "llm",
-      "reason": "Método de service para atualização; é implementação interna da operação exposta externamente."
-    },
-    {
-      "name": "createUser",
-      "file": "/src/main/java/io/spring/application/user/UserService.java",
-      "source": "llm",
-      "reason": "Método de service de cadastro; não conta como EP quando existe camada de entrada separada para a mesma operação."
-    },
-    {
-      "name": "updateUser",
-      "file": "/src/main/java/io/spring/application/user/UserService.java",
-      "source": "llm",
-      "reason": "Método de service de atualização de usuário; a contagem do EP pertence à fronteira externa."
-    },
-    {
-      "name": "buildArticlePageInfo",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "llm",
-      "reason": "Método auxiliar de montagem de resposta GraphQL; não é operação de entrada/saída distinta na fronteira."
-    },
-    {
-      "name": "buildArticleResult",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
-      "source": "llm",
-      "reason": "Helper interno do datafetcher para compor resultado; não constitui EP separado."
-    },
-    {
-      "name": "buildCommentPageInfo",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
-      "source": "llm",
-      "reason": "Método auxiliar de paginação/resposta no datafetcher; não é uma operação elementar exposta."
-    },
-    {
-      "name": "buildCommentResult",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
-      "source": "llm",
-      "reason": "Helper interno para construir payload GraphQL; não conta como EP."
-    },
-    {
-      "name": "buildProfile",
-      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
-      "source": "llm",
-      "reason": "Método auxiliar interno de mutation para montar objeto de perfil; não é a operação de fronteira em si."
-    },
-    {
-      "name": "getCurrentUser",
-      "file": "/src/main/java/io/spring/graphql/SecurityUtil.java",
-      "source": "llm",
-      "reason": "Função técnica de segurança/contexto; não representa processo elementar de negócio nem FD."
-    },
-    {
-      "name": "getErrorsAsData",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
-      "source": "llm",
-      "reason": "Método técnico de tratamento de exceções GraphQL; handlers de framework não são contados como EP."
+      "reason": "Método auxiliar de controller para montar resposta; não representa uma operação distinta na fronteira do sistema."
     },
     {
       "name": "getParam",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
       "source": "llm",
-      "reason": "Função auxiliar técnica para extrair parâmetro em tratamento de erro; não é operação de negócio."
+      "reason": "Método utilitário de tratamento de exceção; não é operação de negócio na fronteira."
+    },
+    {
+      "name": "getErrors",
+      "file": "\\src\\main\\java\\io\\spring\\api\\exception\\InvalidRequestException.java",
+      "source": "llm",
+      "reason": "Getter de exceção/objeto técnico; getters simples não são EP nem FD."
+    },
+    {
+      "name": "getTokenString",
+      "file": "\\src\\main\\java\\io\\spring\\api\\security\\JwtTokenFilter.java",
+      "source": "llm",
+      "reason": "Método de infraestrutura de segurança/filtro JWT; fora do domínio funcional de negócio."
+    },
+    {
+      "name": "findById",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno; em arquitetura em camadas a operação é contada no controller/endpoint correspondente, não no service."
+    },
+    {
+      "name": "findBySlug",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta; não conta como EP quando há controller expondo a operação."
+    },
+    {
+      "name": "findRecentArticlesWithCursor",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno para listagem paginada; a fronteira funcional está no controller ou datafetcher correspondente."
+    },
+    {
+      "name": "findUserFeedWithCursor",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno; não é contado separadamente da operação exposta na fronteira."
+    },
+    {
+      "name": "findRecentArticles",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta; pela regra de fronteira não é EP adicional."
+    },
+    {
+      "name": "findUserFeed",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de feed; a operação funcional deve ser contada na camada de entrada."
+    },
+    {
+      "name": "fillExtraInfo",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno para enriquecimento de dados; não é operação de fronteira nem entidade de negócio."
+    },
+    {
+      "name": "setIsFollowingAuthor",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar/setter interno para composição de resposta; não é EP."
+    },
+    {
+      "name": "setFavoriteCount",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar/setter interno; não representa transação funcional na fronteira."
+    },
+    {
+      "name": "setIsFavorite",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar/setter interno; não representa operação funcional distinta."
+    },
+    {
+      "name": "fillExtraInfo",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno para enriquecimento de dados; não é operação de fronteira nem entidade de negócio."
+    },
+    {
+      "name": "findById",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta; a contagem funcional ocorre na fronteira exposta."
+    },
+    {
+      "name": "findByArticleId",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno para listar comentários; não é EP separado do endpoint correspondente."
+    },
+    {
+      "name": "findByArticleIdWithCursor",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno para paginação; não conta como processo elementar na camada de aplicação."
+    },
+    {
+      "name": "parse",
+      "file": "\\src\\main\\java\\io\\spring\\application\\DateTimeCursor.java",
+      "source": "llm",
+      "reason": "Método utilitário de parsing de cursor/data; trata mecanismo técnico de paginação, não função de negócio."
+    },
+    {
+      "name": "getCursor",
+      "file": "\\src\\main\\java\\io\\spring\\application\\Node.java",
+      "source": "llm",
+      "reason": "Getter simples de atributo; getters não são contados como EP."
+    },
+    {
+      "name": "findByUsername",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ProfileQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno de consulta de perfil; a operação funcional é contada na fronteira."
+    },
+    {
+      "name": "allTags",
+      "file": "\\src\\main\\java\\io\\spring\\application\\TagsQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno para consulta de tags; não é EP quando existe camada de entrada correspondente."
+    },
+    {
+      "name": "findById",
+      "file": "\\src\\main\\java\\io\\spring\\application\\UserQueryService.java",
+      "source": "llm",
+      "reason": "Método de service interno; não deve ser contado além do endpoint/query exposto."
+    },
+    {
+      "name": "createArticle",
+      "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
+      "source": "llm",
+      "reason": "Método de service de comando; em arquitetura em camadas a criação é contada no controller/mutation correspondente, não no service."
+    },
+    {
+      "name": "updateArticle",
+      "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
+      "source": "llm",
+      "reason": "Método de service de atualização; não é EP adicional quando há fronteira externa correspondente."
+    },
+    {
+      "name": "createUser",
+      "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+      "source": "llm",
+      "reason": "Método de service interno de cadastro; a operação funcional deve ser contada no endpoint/mutation de entrada."
+    },
+    {
+      "name": "updateUser",
+      "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
+      "source": "llm",
+      "reason": "Método de service interno de atualização; não conta separadamente da fronteira exposta."
+    },
+    {
+      "name": "buildArticlePageInfo",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar de montagem de resposta GraphQL; não é operação de fronteira distinta."
+    },
+    {
+      "name": "buildArticleResult",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar para compor resultado GraphQL; não representa processo elementar."
+    },
+    {
+      "name": "buildCommentPageInfo",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar de paginação/resposta GraphQL; não é operação funcional na fronteira."
+    },
+    {
+      "name": "buildCommentResult",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
+      "source": "llm",
+      "reason": "Método auxiliar de composição de resultado; não é EP."
+    },
+    {
+      "name": "buildProfile",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
+      "source": "llm",
+      "reason": "Método auxiliar interno de mutation para montar objeto de resposta; não é a operação de fronteira em si."
+    },
+    {
+      "name": "getCurrentUser",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\SecurityUtil.java",
+      "source": "llm",
+      "reason": "Método utilitário de segurança/autenticação; infraestrutura técnica, sem função de negócio autônoma."
+    },
+    {
+      "name": "getErrorsAsData",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+      "source": "llm",
+      "reason": "Método de tratamento de exceção GraphQL; mecanismo técnico, não processo elementar."
+    },
+    {
+      "name": "getParam",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
+      "source": "llm",
+      "reason": "Método utilitário interno de exception handler; não é operação funcional."
     },
     {
       "name": "errorsToMap",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
       "source": "llm",
-      "reason": "Método técnico de conversão de erros para mapa; não é FD nem EP na fronteira do sistema."
+      "reason": "Método auxiliar de conversão de erros; técnico e sem interação funcional na fronteira."
     }
   ]
 }

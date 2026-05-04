@@ -2,247 +2,286 @@
   "repository": "realworld-csharp-dotnet",
   "pre_classification": {
     "data_functions": 7,
-    "elementary_processes": 38
+    "elementary_processes": 0
   },
   "llm_classification": {
-    "sent": 0,
+    "sent": 38,
     "data_functions": 0,
-    "elementary_processes": 0,
-    "ignored": 0
+    "elementary_processes": 17,
+    "ignored": 21
   },
   "sfp_count": {
     "data_functions": 7,
-    "elementary_processes": 38,
-    "total": 45
+    "elementary_processes": 17,
+    "total": 24
   },
   "data_functions": [
     {
       "name": "Article",
-      "file": "/src/Conduit/Domain/Article.cs",
+      "file": "\\src\\Conduit\\Domain\\Article.cs",
       "source": "pre_classifier"
     },
     {
       "name": "ArticleFavorite",
-      "file": "/src/Conduit/Domain/ArticleFavorite.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleFavorite.cs",
       "source": "pre_classifier"
     },
     {
       "name": "ArticleTag",
-      "file": "/src/Conduit/Domain/ArticleTag.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleTag.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Comment",
-      "file": "/src/Conduit/Domain/Comment.cs",
+      "file": "\\src\\Conduit\\Domain\\Comment.cs",
       "source": "pre_classifier"
     },
     {
       "name": "FollowedPeople",
-      "file": "/src/Conduit/Domain/FollowedPeople.cs",
+      "file": "\\src\\Conduit\\Domain\\FollowedPeople.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Person",
-      "file": "/src/Conduit/Domain/Person.cs",
+      "file": "\\src\\Conduit\\Domain\\Person.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Tag",
-      "file": "/src/Conduit/Domain/Tag.cs",
+      "file": "\\src\\Conduit\\Domain\\Tag.cs",
       "source": "pre_classifier"
     }
   ],
   "elementary_processes": [
     {
-      "name": "GetAllData",
-      "file": "/src/Conduit/Features/Articles/ArticleExtensions.cs",
-      "source": "pre_classifier"
-    },
-    {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para operação de consulta de artigos."
     },
     {
       "name": "GetFeed",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta do feed de artigos."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta de artigo individual."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para criação de artigo."
     },
     {
       "name": "Edit",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Create.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Details.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "GetArticleTagsToCreate",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "GetArticleTagsToDelete",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/List.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para edição de artigo."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para criação de comentário."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/Create.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/List.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Add.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Delete.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta de comentários."
     },
     {
       "name": "FavoriteAdd",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para favoritar artigo."
     },
     {
       "name": "FavoriteDelete",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Add.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Delete.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para desfavoritar artigo."
     },
     {
       "name": "Follow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para seguir perfil."
     },
     {
       "name": "Unfollow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Profiles/Details.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/IProfileReader.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/ProfileReader.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para deixar de seguir perfil."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Profiles/ProfilesController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Tags/List.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfilesController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta de perfil."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Tags/TagsController.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Create.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Details.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Edit.cs",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Login.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta de tags."
     },
     {
       "name": "GetCurrent",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para consulta do usuário corrente."
     },
     {
       "name": "UpdateUser",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para atualização do usuário."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para cadastro de usuário."
     },
     {
       "name": "Login",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
-      "source": "pre_classifier"
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
+      "source": "llm",
+      "reason": "Método de controller exposto na fronteira HTTP para autenticação de usuário."
     }
   ],
-  "ignored_by_llm": []
+  "ignored_by_llm": [
+    {
+      "name": "GetAllData",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleExtensions.cs",
+      "source": "llm",
+      "reason": "Método auxiliar em classe de extensão, sem ser fronteira direta do sistema nem entidade de negócio."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
+      "source": "llm",
+      "reason": "Handler interno de feature CQRS correspondente ao controller Create; contar ambos geraria dupla contagem."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
+      "source": "llm",
+      "reason": "Handler interno de feature CQRS correspondente ao controller Get de artigo; a fronteira já é o controller."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "source": "llm",
+      "reason": "Handler interno de feature CQRS correspondente ao controller Edit; não é EP adicional."
+    },
+    {
+      "name": "GetArticleTagsToCreate",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "source": "llm",
+      "reason": "Método auxiliar interno de lógica de edição, sem contato direto com a fronteira do sistema."
+    },
+    {
+      "name": "GetArticleTagsToDelete",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
+      "source": "llm",
+      "reason": "Método auxiliar interno de lógica de edição, sem contato direto com a fronteira do sistema."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Get de listagem de artigos; a operação já foi contada na fronteira HTTP."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Create de comentários; não conta separadamente."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Get de comentários; a fronteira já é o controller."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao endpoint FavoriteAdd no controller; não é EP adicional."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao endpoint FavoriteDelete no controller; não é EP adicional."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao endpoint Follow no controller; a operação já é contada na fronteira."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao endpoint Unfollow no controller; a operação já é contada na fronteira."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Get de perfil; não deve ser contado além da fronteira."
+    },
+    {
+      "name": "ReadProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\IProfileReader.cs",
+      "source": "llm",
+      "reason": "Método em interface de serviço/leitura; interface e implementação não são EP quando há controller para a mesma operação."
+    },
+    {
+      "name": "ReadProfile",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileReader.cs",
+      "source": "llm",
+      "reason": "Método de serviço interno usado para implementar leitura de perfil; a operação já é contada no controller."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Get de tags; não conta separadamente."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Create de usuários; a fronteira já é o controller."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller GetCurrent; não é EP adicional."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller UpdateUser; não deve ser contado em duplicidade."
+    },
+    {
+      "name": "Handle",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
+      "source": "llm",
+      "reason": "Handler interno correspondente ao controller Login; a operação já é contada na fronteira HTTP."
+    }
+  ]
 }
