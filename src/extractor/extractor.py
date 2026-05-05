@@ -32,7 +32,7 @@ import tree_sitter_kotlin as tskotlin
 #   - file_role    : papel inferido pelo caminho do arquivo
 #   - sfp_hint     : pré-classificação determinística
 #
-# Compatibilidade: tree-sitter==0.22.3
+# Compatibilidade: tree-sitter==0.25.2
 # =============================================================================
 
 
