@@ -18,147 +18,147 @@
   "data_functions": [
     {
       "name": "Article",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Comment",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Tag",
-      "file": "\\conduit\\apps\\articles\\models.py",
+      "file": "/conduit/apps/articles/models.py",
       "source": "pre_classifier"
     },
     {
       "name": "Profile",
-      "file": "\\conduit\\apps\\profiles\\models.py",
+      "file": "/conduit/apps/profiles/models.py",
       "source": "pre_classifier"
     }
   ],
   "elementary_processes": [
     {
       "name": "create",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "update",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "filter_queryset",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "destroy",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "delete",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "list",
-      "file": "\\conduit\\apps\\articles\\views.py",
+      "file": "/conduit/apps/articles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "update",
-      "file": "\\conduit\\apps\\authentication\\views.py",
+      "file": "/conduit/apps/authentication/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "retrieve",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "delete",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "source": "pre_classifier"
     },
     {
       "name": "post",
-      "file": "\\conduit\\apps\\profiles\\views.py",
+      "file": "/conduit/apps/profiles/views.py",
       "source": "pre_classifier"
     }
   ],
   "ignored_by_llm": [
     {
       "name": "ready",
-      "file": "\\conduit\\apps\\articles\\__init__.py",
+      "file": "/conduit/apps/articles/__init__.py",
       "source": "llm",
-      "reason": "Método de inicialização/registro da aplicação Django, ligado a bootstrap e configuração do framework, sem representar entidade de negócio nem operação na fronteira do sistema."
+      "reason": "Método de inicialização do app Django executado no bootstrap da aplicação; é configuração/ciclo de vida do framework e não uma operação na fronteira do sistema."
     },
     {
       "name": "authenticate",
-      "file": "\\conduit\\apps\\authentication\\backends.py",
+      "file": "/conduit/apps/authentication/backends.py",
       "source": "llm",
-      "reason": "Método interno de backend de autenticação do Django. Embora participe da segurança, não é endpoint/controller nem fronteira direta com usuário ou sistema externo; é mecanismo técnico de infraestrutura."
+      "reason": "Método de backend de autenticação do Django chamado internamente pelo framework; implementa mecanismo técnico de segurança e não um endpoint/controlador na fronteira contado como EP."
     },
     {
       "name": "_authenticate_credentials",
-      "file": "\\conduit\\apps\\authentication\\backends.py",
+      "file": "/conduit/apps/authentication/backends.py",
       "source": "llm",
-      "reason": "Função auxiliar interna de autenticação, indicada inclusive por nome privado. Implementa lógica técnica de suporte e não uma operação elementar exposta na fronteira do sistema."
+      "reason": "Função auxiliar interna de autenticação, indicada inclusive pelo prefixo privado; não representa operação exposta ao usuário nem entidade de negócio."
     },
     {
       "name": "render",
-      "file": "\\conduit\\apps\\authentication\\renderers.py",
+      "file": "/conduit/apps/authentication/renderers.py",
       "source": "llm",
-      "reason": "Método de renderer responsável por formatação/serialização de resposta HTTP. Trata-se de mecanismo de transporte/apresentação, não de entidade de domínio nem processo elementar de negócio."
+      "reason": "Método de renderer responsável por formatação/serialização de resposta HTTP; é componente de transporte/apresentação, não função de dados nem processo elementar de negócio."
     },
     {
       "name": "ready",
-      "file": "\\conduit\\apps\\authentication\\__init__.py",
+      "file": "/conduit/apps/authentication/__init__.py",
       "source": "llm",
-      "reason": "Método de ciclo de vida da aplicação Django usado para configuração ao subir o módulo. É bootstrap técnico e não deve ser contado como FD ou EP."
+      "reason": "Método de bootstrap do app Django usado para registrar/configurar comportamento na inicialização; não é operação funcional na fronteira nem entidade de domínio."
     }
   ]
 }

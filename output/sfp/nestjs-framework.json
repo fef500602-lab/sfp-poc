@@ -7,1151 +7,1151 @@
   "llm_classification": {
     "sent": 133,
     "data_functions": 5,
-    "elementary_processes": 28,
-    "ignored": 100
+    "elementary_processes": 33,
+    "ignored": 95
   },
   "sfp_count": {
     "data_functions": 20,
-    "elementary_processes": 80,
-    "total": 100
+    "elementary_processes": 85,
+    "total": 105
   },
   "data_functions": [
     {
       "name": "User",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\user.entity.ts",
+      "file": "/sample/05-sql-typeorm/src/users/user.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "\\sample\\07-sequelize\\src\\users\\models\\user.model.ts",
+      "file": "/sample/07-sequelize/src/users/models/user.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Cat",
-      "file": "\\sample\\11-swagger\\src\\cats\\entities\\cat.entity.ts",
+      "file": "/sample/11-swagger/src/cats/entities/cat.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Photo",
-      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.entity.ts",
+      "file": "/sample/13-mongo-typeorm/src/photo/photo.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "RoleEntity",
-      "file": "\\sample\\21-serializer\\src\\entities\\role.entity.ts",
+      "file": "/sample/21-serializer/src/entities/role.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "UserEntity",
-      "file": "\\sample\\21-serializer\\src\\entities\\user.entity.ts",
+      "file": "/sample/21-serializer/src/entities/user.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Recipe",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\models\\recipe.model.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/models/recipe.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Order",
-      "file": "\\sample\\30-event-emitter\\src\\orders\\entities\\order.entity.ts",
+      "file": "/sample/30-event-emitter/src/orders/entities/order.entity.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Post",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\post.model.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/models/post.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\user.model.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/models/user.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\models\\user.model.ts",
+      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/models/user.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Post",
-      "file": "\\sample\\32-graphql-federation-schema-first\\posts-application\\src\\posts\\models\\post.model.ts",
+      "file": "/sample/32-graphql-federation-schema-first/posts-application/src/posts/models/post.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "\\sample\\32-graphql-federation-schema-first\\posts-application\\src\\posts\\models\\user.model.ts",
+      "file": "/sample/32-graphql-federation-schema-first/posts-application/src/posts/models/user.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "User",
-      "file": "\\sample\\32-graphql-federation-schema-first\\users-application\\src\\users\\models\\user.model.ts",
+      "file": "/sample/32-graphql-federation-schema-first/users-application/src/users/models/user.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Recipe",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\models\\recipe.model.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/models/recipe.model.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Cat",
-      "file": "\\sample\\01-cats-app\\src\\cats\\interfaces\\cat.interface.ts",
+      "file": "/sample/01-cats-app/src/cats/interfaces/cat.interface.ts",
       "source": "llm",
-      "reason": "Interface de domínio que representa a entidade de negócio Cat; interfaces de domínio com significado de negócio contam como função de dados."
+      "reason": "Interface de domínio que representa a entidade de negócio Cat; pela SFP, interfaces de domínio com significado de negócio contam como função de dados."
     },
     {
       "name": "Hero",
-      "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero.interface.ts",
+      "file": "/sample/04-grpc/src/hero/interfaces/hero.interface.ts",
       "source": "llm",
       "reason": "Interface de domínio que representa a entidade Hero, com significado de negócio; deve ser contada como função de dados."
     },
     {
       "name": "Cat",
-      "file": "\\sample\\10-fastify\\src\\cats\\interfaces\\cat.interface.ts",
+      "file": "/sample/10-fastify/src/cats/interfaces/cat.interface.ts",
       "source": "llm",
-      "reason": "Interface de domínio para a entidade Cat; representa dados de negócio e deve ser contada como função de dados."
+      "reason": "Interface de domínio da entidade Cat; representa dados de negócio e deve ser contada como função de dados."
     },
     {
       "name": "Cat",
-      "file": "\\sample\\14-mongoose-base\\src\\cats\\interfaces\\cat.interface.ts",
+      "file": "/sample/14-mongoose-base/src/cats/interfaces/cat.interface.ts",
       "source": "llm",
-      "reason": "Interface de domínio da entidade Cat; apesar do contexto com Mongoose, a interface representa o conceito de negócio e conta como função de dados."
+      "reason": "Interface que modela a entidade de negócio Cat; apesar do uso com Mongoose, o elemento em si representa dado de domínio."
     },
     {
       "name": "Cat",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\interfaces\\cat.interface.ts",
+      "file": "/sample/36-hmr-esm/src/cats/interfaces/cat.interface.ts",
       "source": "llm",
-      "reason": "Interface de domínio da entidade Cat; possui significado de negócio e deve ser contada como função de dados."
+      "reason": "Interface de domínio da entidade Cat, representando dados de negócio; deve ser classificada como função de dados."
     }
   ],
   "elementary_processes": [
     {
       "name": "create",
-      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+      "file": "/sample/01-cats-app/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "execute",
-      "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
+      "file": "/sample/03-microservices/src/math/math.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "onModuleInit",
-      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getMany",
-      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getById",
-      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findMany",
-      "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+      "file": "/sample/04-grpc/src/hero/hero.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "remove",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "update",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "delete",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+      "file": "/sample/07-sequelize/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+      "file": "/sample/07-sequelize/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+      "file": "/sample/07-sequelize/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "remove",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+      "file": "/sample/07-sequelize/src/users/users.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getHello",
-      "file": "\\sample\\08-webpack\\src\\app.controller.ts",
+      "file": "/sample/08-webpack/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+      "file": "/sample/09-babel-example/src/cats/cats.controller.js",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+      "file": "/sample/10-fastify/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
+      "file": "/sample/11-swagger/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
+      "file": "/sample/11-swagger/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.controller.ts",
+      "file": "/sample/13-mongo-typeorm/src/photo/photo.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
+      "file": "/sample/14-mongoose-base/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
+      "file": "/sample/14-mongoose-base/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "root",
-      "file": "\\sample\\15-mvc\\src\\app.controller.ts",
+      "file": "/sample/15-mvc/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "root",
-      "file": "\\sample\\17-mvc-fastify\\src\\app.controller.ts",
+      "file": "/sample/17-mvc-fastify/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "signIn",
-      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
+      "file": "/sample/19-auth-jwt/src/auth/auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getProfile",
-      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
+      "file": "/sample/19-auth-jwt/src/auth/auth.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\20-cache\\src\\app.controller.ts",
+      "file": "/sample/20-cache/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\21-serializer\\src\\app.controller.ts",
+      "file": "/sample/21-serializer/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getHello",
-      "file": "\\sample\\24-serve-static\\src\\app.controller.ts",
+      "file": "/sample/24-serve-static/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getHello",
-      "file": "\\sample\\25-dynamic-modules\\src\\app.controller.ts",
+      "file": "/sample/25-dynamic-modules/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "transcode",
-      "file": "\\sample\\26-queues\\src\\audio\\audio.controller.ts",
+      "file": "/sample/26-queues/src/audio/audio.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "index",
-      "file": "\\sample\\28-sse\\src\\app.controller.ts",
+      "file": "/sample/28-sse/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "sse",
-      "file": "\\sample\\28-sse\\src\\app.controller.ts",
+      "file": "/sample/28-sse/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "sayHello",
-      "file": "\\sample\\29-file-upload\\src\\app.controller.ts",
+      "file": "/sample/29-file-upload/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\30-event-emitter\\src\\orders\\orders.controller.ts",
+      "file": "/sample/30-event-emitter/src/orders/orders.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getHello",
-      "file": "\\sample\\34-using-esm-packages\\src\\app.controller.ts",
+      "file": "/sample/34-using-esm-packages/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "getHello",
-      "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.controller.ts",
+      "file": "/sample/35-use-esm-package-after-node22/src/app.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "create",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findAll",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
       "name": "findOne",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+      "file": "/sample/36-hmr-esm/src/cats/cats.controller.ts",
       "source": "pre_classifier"
     },
     {
-      "name": "findAll",
-      "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
+      "name": "PostsResolvers",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Método de gateway com decorator SubscribeMessage, atuando como ponto de entrada na fronteira do sistema via WebSocket."
+      "reason": "Resolver GraphQL atua como fronteira do sistema para operações expostas ao cliente; na ausência de controller, a classe de resolver representa processos elementares."
+    },
+    {
+      "name": "RecipesResolver",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+      "source": "llm",
+      "reason": "Resolver GraphQL expõe operações de negócio na fronteira do sistema; sem controller separado, deve ser contado como processo elementar."
+    },
+    {
+      "name": "AudioProcessor",
+      "file": "/sample/26-queues/src/audio/audio.processor.ts",
+      "source": "llm",
+      "reason": "Processor de fila é o ponto de entrada exclusivo de mensagens externas para processamento assíncrono; caracteriza operação atômica na fronteira com sistema externo."
+    },
+    {
+      "name": "PostsResolver",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+      "source": "llm",
+      "reason": "Resolver GraphQL federado expõe consultas/mutações na fronteira do sistema; conta como processo elementar por ser a interface funcional externa."
+    },
+    {
+      "name": "UsersResolver",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.ts",
+      "source": "llm",
+      "reason": "Resolver GraphQL para referência de usuários em federação continua sendo fronteira funcional exposta externamente; deve ser contado como processo elementar."
+    },
+    {
+      "name": "UsersResolver",
+      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
+      "source": "llm",
+      "reason": "Resolver GraphQL do domínio de usuários expõe operações ao consumidor externo; na SFP isso caracteriza processo elementar."
+    },
+    {
+      "name": "RecipesResolver",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+      "source": "llm",
+      "reason": "Resolver Mercurius/GraphQL é a fronteira funcional das operações de receitas; portanto conta como processo elementar."
+    },
+    {
+      "name": "findAll",
+      "file": "/sample/02-gateways/src/events/events.gateway.ts",
+      "source": "llm",
+      "reason": "Método exposto por gateway com decorator SubscribeMessage; é ponto de entrada na fronteira do sistema para operação distinta."
     },
     {
       "name": "identity",
-      "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
+      "file": "/sample/02-gateways/src/events/events.gateway.ts",
       "source": "llm",
-      "reason": "Método de gateway com SubscribeMessage; representa operação distinta recebida de cliente externo na fronteira."
+      "reason": "Método exposto por gateway com SubscribeMessage; representa operação atômica acessível externamente na fronteira."
     },
     {
       "name": "sum",
-      "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
+      "file": "/sample/03-microservices/src/math/math.controller.ts",
       "source": "llm",
-      "reason": "Método exposto na fronteira por MessagePattern em controller de microserviço; conta como operação elementar."
+      "reason": "Método com MessagePattern em controller, atuando como fronteira de entrada de microserviço para uma operação distinta."
     },
     {
       "name": "onEvent",
-      "file": "\\sample\\16-gateways-ws\\src\\events\\events.gateway.ts",
+      "file": "/sample/16-gateways-ws/src/events/events.gateway.ts",
       "source": "llm",
-      "reason": "Método de gateway com SubscribeMessage; representa entrada distinta de evento WebSocket na fronteira do sistema."
+      "reason": "Método com SubscribeMessage em gateway WebSocket; é operação distinta exposta na fronteira do sistema."
     },
     {
       "name": "posts",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Resolver GraphQL com decorator Query; atua como operação de entrada na fronteira do sistema."
+      "reason": "Resolver GraphQL com decorator Query; atua como ponto de entrada na fronteira para consulta distinta."
     },
     {
       "name": "post",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Resolver GraphQL com Query; representa consulta distinta exposta ao consumidor externo."
+      "reason": "Resolver GraphQL com decorator Query; representa operação atômica exposta externamente."
     },
     {
       "name": "create",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Resolver GraphQL com Mutation; representa operação elementar distinta de criação na fronteira."
+      "reason": "Resolver GraphQL com decorator Mutation; é operação de entrada distinta na fronteira do sistema."
     },
     {
       "name": "update",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Resolver GraphQL com Mutation; representa operação elementar distinta de atualização na fronteira do sistema."
+      "reason": "Resolver GraphQL com decorator Mutation; representa operação funcional distinta exposta na fronteira."
     },
     {
       "name": "delete",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Mutation em resolver GraphQL é operação exposta na fronteira do sistema para excluir post."
+      "reason": "Mutation em resolver GraphQL é operação exposta na fronteira do sistema para excluir Post; conta como processo elementar."
     },
     {
       "name": "postCreated",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
       "source": "llm",
-      "reason": "Subscription em resolver GraphQL é ponto de interação externo distinto na fronteira do sistema."
+      "reason": "Subscription em resolver GraphQL é ponto de interação exposto a cliente externo para receber evento de negócio; conta como processo elementar."
     },
     {
       "name": "recipe",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL exposta ao usuário para consultar uma receita; é operação distinta na fronteira."
+      "reason": "Query em resolver GraphQL expõe consulta de Recipe na fronteira do sistema; conta como processo elementar."
     },
     {
       "name": "recipes",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL para listar receitas, caracterizando processo elementar na fronteira."
+      "reason": "Query em resolver GraphQL expõe listagem de Recipe na fronteira do sistema; conta como processo elementar."
     },
     {
       "name": "addRecipe",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Mutation GraphQL de inclusão de receita, uma operação atômica exposta externamente."
+      "reason": "Mutation em resolver GraphQL expõe criação de Recipe ao usuário/sistema externo; conta como processo elementar."
     },
     {
       "name": "removeRecipe",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Mutation GraphQL de remoção de receita, contada como processo elementar."
+      "reason": "Mutation em resolver GraphQL expõe remoção de Recipe na fronteira; conta como processo elementar."
     },
     {
       "name": "recipeAdded",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Subscription GraphQL é interação externa distinta para receber evento de receita adicionada."
-    },
-    {
-      "name": "handleTranscode",
-      "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
-      "source": "llm",
-      "reason": "Handler @Process é ponto de entrada de sistema externo/fila para processamento assíncrono distinto."
-    },
-    {
-      "name": "handleOrderCreatedEvent",
-      "file": "\\sample\\30-event-emitter\\src\\orders\\listeners\\order-created.listener.ts",
-      "source": "llm",
-      "reason": "Listener @OnEvent recebe evento externo ao componente como entrada assíncrona distinta, caracterizando processo elementar."
+      "reason": "Subscription em resolver GraphQL é interação distinta exposta a cliente externo para acompanhar evento de negócio; conta como processo elementar."
     },
     {
       "name": "post",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL federada para consultar um post; operação exposta na fronteira."
+      "reason": "Query em resolver GraphQL expõe consulta de Post na fronteira do sistema; conta como processo elementar."
     },
     {
       "name": "posts",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL para listar posts, contada como processo elementar distinto."
+      "reason": "Query em resolver GraphQL expõe listagem de Posts na fronteira; conta como processo elementar."
     },
     {
       "name": "user",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
       "source": "llm",
-      "reason": "ResolveField expõe resolução de campo federado para consumidor externo, sendo operação distinta na fronteira GraphQL."
+      "reason": "ResolveField expõe resolução de campo federado para cliente GraphQL como operação distinta na fronteira; conta como processo elementar."
     },
     {
       "name": "posts",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.ts",
       "source": "llm",
-      "reason": "ResolveField federado para obter posts de usuário é operação externa distinta no schema GraphQL."
+      "reason": "ResolveField em resolver GraphQL federado expõe obtenção de posts relacionados ao usuário na fronteira; conta como processo elementar."
     },
     {
       "name": "getUser",
-      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL para obter usuário, caracterizando processo elementar na fronteira."
+      "reason": "Query em resolver GraphQL expõe consulta de User na fronteira do sistema; conta como processo elementar."
     },
     {
       "name": "resolveReference",
-      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
+      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
       "source": "llm",
-      "reason": "ResolveReference em GraphQL Federation atende resolução externa de entidade referenciada, sendo operação de fronteira."
+      "reason": "ResolveReference em GraphQL Federation é operação exposta para resolução de entidade referenciada entre serviços; conta como processo elementar."
     },
     {
       "name": "recipe",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL para consultar uma receita; operação distinta na fronteira do sistema."
+      "reason": "Query em resolver GraphQL expõe consulta de Recipe na fronteira do sistema; conta como processo elementar."
     },
     {
       "name": "recipes",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Query GraphQL para listar receitas, contada como processo elementar."
+      "reason": "Query em resolver GraphQL expõe listagem de Recipes na fronteira; conta como processo elementar."
     },
     {
       "name": "addRecipe",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Mutation GraphQL de criação de receita, uma operação atômica exposta externamente."
+      "reason": "Mutation em resolver GraphQL expõe criação de Recipe ao usuário/sistema externo; conta como processo elementar."
     },
     {
       "name": "removeRecipe",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Mutation GraphQL de remoção de receita, caracterizando processo elementar."
+      "reason": "Mutation em resolver GraphQL expõe remoção de Recipe na fronteira; conta como processo elementar."
     },
     {
       "name": "recipeAdded",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
       "source": "llm",
-      "reason": "Método de resolver GraphQL com decorator Subscription, exposto na fronteira do sistema como operação distinta para clientes externos."
+      "reason": "Método de resolver GraphQL com decorator Subscription, exposto na fronteira do sistema para interação com cliente externo; conta como processo elementar."
     }
   ],
   "ignored_by_llm": [
     {
       "name": "HeroById",
-      "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero-by-id.interface.ts",
+      "file": "/sample/04-grpc/src/hero/interfaces/hero-by-id.interface.ts",
       "source": "llm",
-      "reason": "Representa estrutura de transporte/consulta por identificador, não uma entidade de domínio mantida ou referenciada como grupo lógico de dados."
+      "reason": "Interface voltada a transporte/contrato de entrada para consulta por id, não representa entidade de negócio mantida ou referenciada como grupo lógico de dados."
     },
     {
       "name": "AppModule",
-      "file": "\\sample\\09-babel-example\\src\\app.module.js",
+      "file": "/sample/09-babel-example/src/app.module.js",
       "source": "llm",
       "reason": "Módulo de configuração/bootstrap da aplicação; elementos de infraestrutura e composição não são contados em SFP."
     },
     {
       "name": "CatsModule",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.module.js",
+      "file": "/sample/09-babel-example/src/cats/cats.module.js",
       "source": "llm",
-      "reason": "Módulo NestJS de organização/configuração técnica; não representa entidade de negócio nem operação na fronteira."
-    },
-    {
-      "name": "PostsResolvers",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
-      "source": "llm",
-      "reason": "Classe resolver GraphQL é adaptador de fronteira, mas a contagem de EP deve ocorrer nos métodos expostos e não na classe em si; como o item é a classe, deve ser ignorado."
+      "reason": "Módulo NestJS de organização e injeção de dependências; é estrutura técnica, não função de dados nem processo elementar."
     },
     {
       "name": "ComplexityPlugin",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
       "source": "llm",
-      "reason": "Plugin técnico de infraestrutura para Apollo/GraphQL; não representa entidade de negócio nem processo elementar de usuário."
+      "reason": "Plugin técnico do Apollo Server para controle de complexidade; é infraestrutura/framework, sem representar operação de negócio na fronteira."
     },
     {
       "name": "LoggingPlugin",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
       "source": "llm",
-      "reason": "Plugin técnico de logging; trata preocupação transversal de infraestrutura e não deve ser contado."
+      "reason": "Plugin técnico de logging do servidor GraphQL; não é entidade de negócio nem processo elementar funcional."
     },
     {
       "name": "DateScalar",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Scalar customizado é mecanismo técnico de serialização/conversão de tipos na camada GraphQL, sem significado funcional de negócio próprio."
-    },
-    {
-      "name": "RecipesResolver",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
-      "source": "llm",
-      "reason": "Resolver GraphQL é classe de fronteira; os processos elementares seriam seus métodos específicos, não a classe agregadora."
-    },
-    {
-      "name": "AudioProcessor",
-      "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
-      "source": "llm",
-      "reason": "Processor de fila é componente técnico assíncrono de infraestrutura; sem evidência de ser a fronteira exclusiva de operação de usuário, deve ser ignorado."
+      "reason": "Scalar customizado é mecanismo técnico de serialização/conversão de tipos na API GraphQL, não uma função de dados nem um processo elementar."
     },
     {
       "name": "OrderCreatedEvent",
-      "file": "\\sample\\30-event-emitter\\src\\orders\\events\\order-created.event.ts",
+      "file": "/sample/30-event-emitter/src/orders/events/order-created.event.ts",
       "source": "llm",
-      "reason": "Evento é mensagem interna de integração/publicação, não entidade de domínio persistida nem operação na fronteira do sistema."
-    },
-    {
-      "name": "PostsResolver",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
-      "source": "llm",
-      "reason": "Classe resolver GraphQL; a contagem funcional deve ocorrer nos métodos expostos na fronteira, não na classe em si."
-    },
-    {
-      "name": "UsersResolver",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
-      "source": "llm",
-      "reason": "Resolver GraphQL como classe adaptadora de fronteira; sem método específico listado, não deve ser contado como EP."
-    },
-    {
-      "name": "UsersResolver",
-      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
-      "source": "llm",
-      "reason": "Classe resolver GraphQL; processos elementares são os métodos de consulta/mutação, não a classe container."
+      "reason": "Classe de evento representa mensagem interna de infraestrutura/aplicação, não entidade de negócio persistida nem operação de fronteira."
     },
     {
       "name": "DateScalar",
-      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Scalar GraphQL é artefato técnico de conversão de dados, sem representar função de dados nem processo elementar."
-    },
-    {
-      "name": "RecipesResolver",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
-      "source": "llm",
-      "reason": "Resolver GraphQL é classe de adaptação; sem os métodos individuais, a classe não deve ser contada como processo elementar."
+      "reason": "Scalar GraphQL é componente técnico de conversão de tipos, sem significado funcional de negócio para contagem SFP."
     },
     {
       "name": "create",
-      "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
+      "file": "/sample/01-cats-app/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; em arquitetura em camadas a operação é contada na fronteira do controller correspondente, evitando dupla contagem."
+      "reason": "Método de service interno; em arquitetura em camadas a operação é contada na fronteira (controller), não no service."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
+      "file": "/sample/01-cats-app/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a consulta é contada no controller/endoint correspondente, não no service."
+      "reason": "Método de service interno; se houver controller correspondente, este service não conta como EP para evitar dupla contagem."
     },
     {
       "name": "transform",
-      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\parse-int.pipe.ts",
+      "file": "/sample/01-cats-app/src/common/pipes/parse-int.pipe.ts",
       "source": "llm",
-      "reason": "Método técnico de pipe para transformação/validação de entrada; não representa processo elementar de negócio nem função de dados."
+      "reason": "Método técnico de pipe de framework para transformação/validação; não representa operação de negócio na fronteira."
     },
     {
       "name": "transform",
-      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/01-cats-app/src/common/pipes/validation.pipe.ts",
       "source": "llm",
-      "reason": "Método técnico de pipe de validação; é infraestrutura de framework, fora da contagem funcional SFP."
+      "reason": "Método técnico de pipe de validação; não é processo elementar nem função de dados."
     },
     {
       "name": "toValidate",
-      "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/01-cats-app/src/common/pipes/validation.pipe.ts",
       "source": "llm",
-      "reason": "Helper interno de validação; não é fronteira do sistema nem entidade de negócio."
+      "reason": "Helper interno de validação, sem contato direto com usuário ou sistema externo como operação de negócio."
     },
     {
       "name": "connectToRedis",
-      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
       "source": "llm",
-      "reason": "Função técnica de infraestrutura para conexão Redis; não representa operação funcional na fronteira."
+      "reason": "Método de infraestrutura para conexão com Redis; não representa entidade de negócio nem operação funcional na fronteira."
     },
     {
       "name": "createIOServer",
-      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
       "source": "llm",
-      "reason": "Método técnico de criação/configuração de servidor IO; é infraestrutura, não processo elementar."
+      "reason": "Método técnico de criação de servidor/adaptador; pertence à infraestrutura."
     },
     {
       "name": "getClientInfoTag",
-      "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+      "file": "/sample/02-gateways/src/adapters/redis-io.adapter.ts",
       "source": "llm",
-      "reason": "Helper técnico para identificação de cliente; não é operação de negócio exposta na fronteira."
+      "reason": "Helper técnico de adapter para identificação de cliente; sem significado funcional de negócio."
     },
     {
       "name": "bindEvents",
-      "file": "\\sample\\03-microservices\\src\\common\\strategies\\nats.strategy.ts",
+      "file": "/sample/03-microservices/src/common/strategies/nats.strategy.ts",
       "source": "llm",
-      "reason": "Método técnico de strategy para binding de eventos do framework/microservice; não é processo elementar de negócio."
+      "reason": "Método técnico de strategy/framework para binding de eventos; não é operação funcional de negócio."
     },
     {
       "name": "create",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a criação de usuário deve ser contada no controller correspondente."
+      "reason": "Método de service interno; a criação deve ser contada no controller correspondente, não aqui."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a listagem é contada na fronteira HTTP/controller, não no service."
+      "reason": "Método de service interno em aplicação em camadas; não contar como EP separado da fronteira."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a consulta unitária é implementação da operação exposta pelo controller."
+      "reason": "Método de service interno; a consulta é contada na camada de controller se exposta externamente."
     },
     {
       "name": "remove",
-      "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+      "file": "/sample/05-sql-typeorm/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a remoção é contada no endpoint/controller correspondente."
+      "reason": "Método de service interno; remoção na mesma operação de negócio já deve ser contada na fronteira."
     },
     {
       "name": "create",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a operação funcional deve ser contada no controller correspondente."
+      "reason": "Método de service interno; não contar como processo elementar quando há controller correspondente."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; não conta separadamente do controller que expõe a listagem."
+      "reason": "Método de service interno; a listagem é contada na fronteira externa, não na implementação."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a leitura individual é contada na fronteira do sistema, não na camada de serviço."
+      "reason": "Método de service interno; consulta individual não é EP adicional ao endpoint correspondente."
     },
     {
       "name": "update",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; atualização já é representada pelo endpoint/controller correspondente."
+      "reason": "Método de service interno; atualização deve ser contada apenas na fronteira do sistema."
     },
     {
       "name": "delete",
-      "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+      "file": "/sample/06-mongoose/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; exclusão é implementação interna da operação de fronteira."
+      "reason": "Método de service interno; exclusão não conta separadamente do controller/endereço externo."
     },
     {
       "name": "create",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+      "file": "/sample/07-sequelize/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; criação deve ser contada apenas no controller correspondente."
+      "reason": "Método de service interno; criação é implementação da operação de fronteira."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+      "file": "/sample/07-sequelize/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; listagem não conta como EP separado do controller."
+      "reason": "Método de service interno; listagem deve ser contada no controller correspondente."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+      "file": "/sample/07-sequelize/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; consulta unitária é implementação da operação de fronteira."
+      "reason": "Método de service interno; consulta individual não é EP adicional."
     },
     {
       "name": "remove",
-      "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+      "file": "/sample/07-sequelize/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; remoção deve ser contada no endpoint/controller, não no service."
+      "reason": "Método de service interno; remoção já pertence à mesma operação contada na fronteira."
     },
     {
       "name": "getHello",
-      "file": "\\sample\\08-webpack\\src\\app.service.ts",
+      "file": "/sample/08-webpack/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; mesmo em exemplo simples, a operação é contada na camada de controller se existir."
+      "reason": "Método de service interno; mesmo que simples, não é a fronteira da operação."
     },
     {
       "name": "bootstrap",
-      "file": "\\sample\\09-babel-example\\src\\main.js",
+      "file": "/sample/09-babel-example/src/main.js",
       "source": "llm",
-      "reason": "Função de bootstrap/inicialização da aplicação; explicitamente fora da contagem funcional."
+      "reason": "Função de bootstrap/inicialização da aplicação; explicitamente fora da contagem SFP."
     },
     {
       "name": "create",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
+      "file": "/sample/09-babel-example/src/cats/cats.service.js",
       "source": "llm",
-      "reason": "Método de service interno; a criação é contada na fronteira do controller correspondente."
+      "reason": "Método de service interno; criação deve ser contada no controller correspondente."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
+      "file": "/sample/09-babel-example/src/cats/cats.service.js",
       "source": "llm",
-      "reason": "Método de service interno; listagem não conta separadamente do controller."
+      "reason": "Método de service interno; listagem não conta como EP separado da fronteira."
     },
     {
       "name": "create",
-      "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
+      "file": "/sample/10-fastify/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a operação funcional deve ser contada no controller correspondente."
+      "reason": "Método de service interno; a operação funcional deve ser contada no controller."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
+      "file": "/sample/10-fastify/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; consulta/listagem é contada na fronteira HTTP, não no service."
+      "reason": "Método de service interno; não representa nova fronteira funcional."
     },
     {
       "name": "transform",
-      "file": "\\sample\\10-fastify\\src\\common\\pipes\\parse-int.pipe.ts",
+      "file": "/sample/10-fastify/src/common/pipes/parse-int.pipe.ts",
       "source": "llm",
-      "reason": "Método técnico de pipe para parsing; não representa processo elementar de negócio."
+      "reason": "Método técnico de pipe para parsing; não é operação de negócio."
     },
     {
       "name": "transform",
-      "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/10-fastify/src/common/pipes/validation.pipe.ts",
       "source": "llm",
-      "reason": "Método técnico de validação do framework; não é operação funcional na fronteira."
+      "reason": "Método técnico de validação do framework; sem significado funcional de negócio."
     },
     {
       "name": "toValidate",
-      "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/10-fastify/src/common/pipes/validation.pipe.ts",
       "source": "llm",
       "reason": "Helper interno de validação; não é EP nem FD."
     },
     {
       "name": "create",
-      "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
+      "file": "/sample/11-swagger/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a criação deve ser contada apenas no controller correspondente."
+      "reason": "Método de service interno; criação deve ser contada apenas na fronteira externa."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
+      "file": "/sample/11-swagger/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; consulta unitária é implementação da operação exposta na fronteira."
+      "reason": "Método de service interno; consulta individual não conta separadamente do controller."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.service.ts",
+      "file": "/sample/13-mongo-typeorm/src/photo/photo.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; listagem deve ser contada no controller correspondente, não no service."
+      "reason": "Método de service interno; listagem deve ser contada na camada de fronteira, não na implementação."
     },
     {
       "name": "create",
-      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
+      "file": "/sample/14-mongoose-base/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; criação é contada na fronteira do controller correspondente."
+      "reason": "Método de service interno; criação não é EP adicional quando há controller correspondente."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
+      "file": "/sample/14-mongoose-base/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; listagem não conta como EP adicional."
+      "reason": "Método de service interno; listagem é implementação da operação de fronteira."
     },
     {
       "name": "getHello",
-      "file": "\\sample\\18-context\\src\\app.service.ts",
+      "file": "/sample/18-context/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a operação correspondente deve ser contada no controller, não na implementação."
+      "reason": "Método de service interno; não é a fronteira da operação funcional."
     },
     {
       "name": "register",
-      "file": "\\sample\\18-context\\src\\my-dynamic.module.ts",
+      "file": "/sample/18-context/src/my-dynamic.module.ts",
       "source": "llm",
-      "reason": "Método técnico de módulo dinâmico/configuração; faz parte do bootstrap/DI e não da funcionalidade de negócio."
+      "reason": "Método de configuração de módulo dinâmico; é bootstrap/configuração técnica, fora da contagem."
     },
     {
       "name": "extractTokenFromHeader",
-      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.guard.ts",
+      "file": "/sample/19-auth-jwt/src/auth/auth.guard.ts",
       "source": "llm",
-      "reason": "Helper técnico de autenticação em guard; não é processo elementar nem função de dados."
+      "reason": "Método técnico de guard para autenticação; não representa operação funcional de negócio na fronteira."
     },
     {
       "name": "signIn",
-      "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.service.ts",
+      "file": "/sample/19-auth-jwt/src/auth/auth.service.ts",
       "source": "llm",
-      "reason": "Método de service interno de autenticação; a operação de login deve ser contada na fronteira exposta pelo controller correspondente."
+      "reason": "Método de service interno; autenticação deve ser contada na fronteira externa se houver controller correspondente, e na dúvida prefere-se ignore."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\19-auth-jwt\\src\\users\\users.service.ts",
+      "file": "/sample/19-auth-jwt/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; busca de usuário é implementação interna da operação exposta na fronteira."
+      "reason": "Método de service interno para busca de usuário; não contar como EP separado da fronteira."
     },
     {
       "name": "trackBy",
-      "file": "\\sample\\20-cache\\src\\common\\http-cache.interceptor.ts",
+      "file": "/sample/20-cache/src/common/http-cache.interceptor.ts",
       "source": "llm",
-      "reason": "Método técnico de interceptor para cache; infraestrutura de framework, sem significado funcional de negócio."
+      "reason": "Método técnico de interceptor/cache; sem significado funcional de negócio."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método de service que implementa operação já exposta pelo resolver/controller; contar aqui geraria dupla contagem."
+      "reason": "Método de service interno; a operação correspondente é exposta pelo resolver/controller e não deve ser contada em duplicidade."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método interno de service, não é fronteira do sistema quando há resolver correspondente."
+      "reason": "Método de service interno implementando consulta já exposta na fronteira pelo resolver; não conta como EP adicional."
     },
     {
       "name": "create",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método de service por trás de operação GraphQL de criação; a contagem deve ocorrer no resolver."
+      "reason": "Método de service interno para operação já representada por mutation/resolver na fronteira; contar aqui geraria dupla contagem."
     },
     {
       "name": "update",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Implementação interna de operação de atualização já representada na fronteira GraphQL."
+      "reason": "Método de service interno de operação de negócio já exposta pelo resolver GraphQL; deve ser ignorado para evitar dupla contagem."
     },
     {
       "name": "delete",
-      "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+      "file": "/sample/22-graphql-prisma/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método de service correspondente à exclusão exposta no resolver; não conta como EP adicional."
+      "reason": "Método de service interno correspondente à mutation delete no resolver; não é processo elementar separado."
     },
     {
       "name": "onModuleInit",
-      "file": "\\sample\\22-graphql-prisma\\src\\prisma\\prisma.service.ts",
+      "file": "/sample/22-graphql-prisma/src/prisma/prisma.service.ts",
       "source": "llm",
-      "reason": "Hook técnico de ciclo de vida do framework/inicialização de infraestrutura, sem significado funcional de negócio."
+      "reason": "Hook técnico de ciclo de vida do framework para inicialização de infraestrutura; não representa função de dados nem processo elementar."
     },
     {
       "name": "upperDirectiveTransformer",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\directives\\upper-case.directive.ts",
+      "file": "/sample/23-graphql-code-first/src/common/directives/upper-case.directive.ts",
       "source": "llm",
-      "reason": "Função técnica de transformação de schema/directive GraphQL, não representa entidade nem operação de negócio."
+      "reason": "Função técnica de diretiva GraphQL para transformação de schema/comportamento; não é entidade de negócio nem operação de fronteira de negócio."
     },
     {
       "name": "requestDidStart",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
       "source": "llm",
-      "reason": "Hook técnico de plugin GraphQL para observabilidade/complexidade, não é processo elementar de negócio."
+      "reason": "Hook técnico de plugin GraphQL executado pelo framework; não é operação de negócio exposta na fronteira."
     },
     {
       "name": "didResolveOperation",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
       "source": "llm",
-      "reason": "Callback interno de plugin do framework, sem interação funcional direta na fronteira de negócio."
+      "reason": "Callback técnico de plugin para análise de complexidade; não representa processo elementar de negócio."
     },
     {
       "name": "requestDidStart",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
       "source": "llm",
-      "reason": "Hook técnico de logging do framework, não conta como EP nem FD."
+      "reason": "Hook técnico de logging do framework GraphQL; não é operação funcional de usuário."
     },
     {
       "name": "willSendResponse",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+      "file": "/sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
       "source": "llm",
-      "reason": "Hook técnico de plugin para logging/resposta, sem função de negócio."
+      "reason": "Hook técnico de resposta do plugin de logging; não representa processo elementar nem função de dados."
     },
     {
       "name": "parseValue",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de scalar GraphQL para serialização/parsing de tipo, não é operação de negócio."
+      "reason": "Método técnico de scalar GraphQL para conversão de tipo Date; não é operação de negócio na fronteira."
     },
     {
       "name": "serialize",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de conversão de scalar GraphQL, sem significado funcional de negócio."
+      "reason": "Método técnico de serialização de scalar GraphQL; não representa processo elementar de negócio."
     },
     {
       "name": "parseLiteral",
-      "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de parsing de AST/scalar GraphQL, não representa EP nem FD."
+      "reason": "Método técnico de parsing de literal GraphQL; não é função funcional de negócio."
     },
     {
       "name": "create",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service implementa a criação já exposta pelo resolver addRecipe; evitar dupla contagem."
+      "reason": "Método de service interno correspondente à mutation addRecipe no resolver; não deve ser contado separadamente."
     },
     {
       "name": "findOneById",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método interno de service correspondente à consulta recipe no resolver."
+      "reason": "Método de service interno implementando query já exposta pelo resolver GraphQL; evitar dupla contagem."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service por trás da query recipes; não é fronteira do sistema."
+      "reason": "Método de service interno para listagem já exposta na fronteira pelo resolver; não é EP adicional."
     },
     {
       "name": "remove",
-      "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/23-graphql-code-first/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Implementação interna da remoção já contada no resolver removeRecipe."
+      "reason": "Método de service interno correspondente à mutation removeRecipe; não conta separadamente."
     },
     {
       "name": "getHello",
-      "file": "\\sample\\25-dynamic-modules\\src\\app.service.ts",
+      "file": "/sample/25-dynamic-modules/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service sem evidência de ser fronteira exclusiva; em arquitetura Nest típica a fronteira fica no controller."
+      "reason": "Método de service interno; sem ser a fronteira exclusiva da operação, deve ser ignorado conforme regra de controller/resolver na fronteira."
+    },
+    {
+      "name": "handleTranscode",
+      "file": "/sample/26-queues/src/audio/audio.processor.ts",
+      "source": "llm",
+      "reason": "Método de processor acionado por fila/background com decorator Process; é processamento interno assíncrono, não operação atômica iniciada na fronteira do sistema pelo usuário."
     },
     {
       "name": "handleCron",
-      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
       "source": "llm",
-      "reason": "Tarefa agendada por infraestrutura (@Cron), disparada internamente e não por usuário/sistema externo na fronteira funcional."
+      "reason": "Tarefa agendada por Cron é execução automática de infraestrutura/aplicação, não processo elementar na fronteira com usuário ou sistema externo."
     },
     {
       "name": "handleInterval",
-      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
       "source": "llm",
-      "reason": "Rotina técnica agendada por intervalo, sem representar operação funcional solicitada na fronteira."
+      "reason": "Rotina periódica com Interval é processamento interno agendado, sem interação de fronteira; não conta como EP."
     },
     {
       "name": "handleTimeout",
-      "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+      "file": "/sample/27-scheduling/src/tasks/tasks.service.ts",
       "source": "llm",
-      "reason": "Execução temporizada interna do framework, não é processo elementar de negócio."
+      "reason": "Rotina temporizada com Timeout é execução interna do framework, não operação funcional exposta."
     },
     {
       "name": "getHello",
-      "file": "\\sample\\29-file-upload\\src\\app.service.ts",
+      "file": "/sample/29-file-upload/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service típico de suporte ao controller; sem ser fronteira exclusiva deve ser ignorado."
+      "reason": "Método de service interno; a fronteira funcional, se existir, está no controller e não no service."
     },
     {
       "name": "create",
-      "file": "\\sample\\30-event-emitter\\src\\orders\\orders.service.ts",
+      "file": "/sample/30-event-emitter/src/orders/orders.service.ts",
       "source": "llm",
-      "reason": "Método de service de criação de pedido; na ausência de evidência de fronteira exclusiva, presume-se implementação interna."
+      "reason": "Método de service interno de criação de pedido; sem evidência de ser fronteira exclusiva, deve ser ignorado para evitar inflar contagem."
+    },
+    {
+      "name": "handleOrderCreatedEvent",
+      "file": "/sample/30-event-emitter/src/orders/listeners/order-created.listener.ts",
+      "source": "llm",
+      "reason": "Listener de evento com OnEvent é reação interna assíncrona da aplicação, não operação de fronteira com usuário/sistema externo."
     },
     {
       "name": "findAllByAuthorId",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método de service usado pelo resolver de campo/query; não deve ser contado separadamente."
+      "reason": "Método de service interno usado pelo resolver/resolve field; não é processo elementar separado."
     },
     {
       "name": "findOne",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Implementação interna da query post já contada no resolver."
+      "reason": "Método de service interno correspondente à query exposta pelo resolver; deve ser ignorado."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+      "file": "/sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
       "source": "llm",
-      "reason": "Método de service correspondente à query posts; evitar dupla contagem."
+      "reason": "Método de service interno correspondente à query posts no resolver; não conta como EP adicional."
     },
     {
       "name": "findById",
-      "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.service.ts",
+      "file": "/sample/31-graphql-federation-code-first/users-application/src/users/users.service.ts",
       "source": "llm",
-      "reason": "Método de service usado pelos resolvers getUser/resolveReference; não conta como EP adicional."
+      "reason": "Método de service interno utilizado pelo resolver/query federada; não deve ser contado separadamente."
     },
     {
       "name": "parseValue",
-      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de scalar GraphQL para parsing de data, sem função de negócio."
+      "reason": "Método técnico de scalar GraphQL para conversão de Date; não representa funcionalidade de negócio na fronteira."
     },
     {
       "name": "serialize",
-      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de serialização de scalar GraphQL, não é EP nem FD."
+      "reason": "Método técnico de serialização de scalar GraphQL; não é processo elementar nem função de dados."
     },
     {
       "name": "parseLiteral",
-      "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+      "file": "/sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
       "source": "llm",
-      "reason": "Método técnico de parsing literal de scalar GraphQL, sem significado funcional."
+      "reason": "Método técnico de parsing de literal GraphQL; não corresponde a operação funcional de negócio."
     },
     {
       "name": "create",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; em arquitetura em camadas a operação é contada na fronteira (resolver/controller), não na implementação interna."
+      "reason": "Método de service interno; em arquitetura em camadas a operação deve ser contada na fronteira (resolver/controller) correspondente, evitando dupla contagem."
     },
     {
       "name": "findOneById",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service interno usado para implementar consulta já exposta na fronteira do sistema; contar aqui geraria dupla contagem."
+      "reason": "Método de service interno que implementa consulta de negócio, mas não é a fronteira do sistema; a contagem deve ocorrer no resolver/controller correspondente."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; a consulta funcional deve ser contada no resolver/controller correspondente, não no service."
+      "reason": "Método de service interno em camada de aplicação/domínio; não representa processo elementar distinto na fronteira quando há resolver/controller correspondente."
     },
     {
       "name": "remove",
-      "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+      "file": "/sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
       "source": "llm",
-      "reason": "Método de service interno para remoção; pela regra de fronteira não é EP quando existe camada de entrada separada."
+      "reason": "Método de service usado como implementação interna da operação de remoção; pela regra de fronteira não deve ser contado como EP adicional."
     },
     {
       "name": "onModuleInit",
-      "file": "\\sample\\34-using-esm-packages\\src\\app.module.ts",
+      "file": "/sample/34-using-esm-packages/src/app.module.ts",
       "source": "llm",
-      "reason": "Hook de ciclo de vida do framework/module, de natureza técnica e sem operação funcional na fronteira do sistema."
+      "reason": "Hook de ciclo de vida do framework para inicialização de módulo; é infraestrutura/bootstrap, sem operação funcional na fronteira do sistema."
     },
     {
       "name": "getHello",
-      "file": "\\sample\\34-using-esm-packages\\src\\app.service.ts",
+      "file": "/sample/34-using-esm-packages/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; mesmo que suporte um endpoint, a contagem do EP deve ocorrer no controller correspondente."
+      "reason": "Método de service interno; se houver endpoint/resolver chamando esta operação, a contagem pertence à camada de fronteira e não ao service."
     },
     {
       "name": "getJsonStringExample",
-      "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.service.ts",
+      "file": "/sample/35-use-esm-package-after-node22/src/app.service.ts",
       "source": "llm",
-      "reason": "Método de service interno e técnico/demonstrativo; não representa por si só uma fronteira funcional distinta."
+      "reason": "Método localizado em service, caracterizando implementação interna; não deve ser contado como processo elementar sem ser a fronteira exclusiva da operação."
     },
     {
       "name": "create",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
+      "file": "/sample/36-hmr-esm/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno; em NestJS com controller separado, a criação é contada no endpoint da camada de entrada."
+      "reason": "Método de service em aplicação Nest com camadas; a operação de criação deve ser contada no controller correspondente, não no service."
     },
     {
       "name": "findAll",
-      "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
+      "file": "/sample/36-hmr-esm/src/cats/cats.service.ts",
       "source": "llm",
-      "reason": "Método de service interno para listagem; a operação funcional deve ser contada no controller correspondente."
+      "reason": "Método de service que implementa listagem internamente; pela regra de fronteira, não conta como EP quando existe controller para a mesma operação."
     },
     {
       "name": "transform",
-      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\parse-int.pipe.ts",
+      "file": "/sample/36-hmr-esm/src/common/pipes/parse-int.pipe.ts",
       "source": "llm",
-      "reason": "Método de pipe do framework para transformação/validação técnica de entrada; não é processo elementar de negócio."
+      "reason": "Método de pipe do framework para transformação/validação técnica de entrada; é mecanismo técnico, não processo elementar de negócio."
     },
     {
       "name": "transform",
-      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/36-hmr-esm/src/common/pipes/validation.pipe.ts",
       "source": "llm",
-      "reason": "Método de pipe do framework para validação técnica; não constitui operação funcional na fronteira do sistema."
+      "reason": "Método de pipe de validação do framework; trata aspecto técnico de entrada e não representa operação funcional na fronteira do sistema."
     },
     {
       "name": "toValidate",
-      "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
+      "file": "/sample/36-hmr-esm/src/common/pipes/validation.pipe.ts",
       "source": "llm",
-      "reason": "Método auxiliar interno de validação técnica, sem contato direto com usuário ou sistema externo e sem significado de negócio."
+      "reason": "Função auxiliar interna de validação técnica usada por pipe; não é entidade de negócio nem operação exposta na fronteira."
     }
   ]
 }

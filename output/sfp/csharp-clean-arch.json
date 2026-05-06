@@ -6,352 +6,352 @@
   },
   "llm_classification": {
     "sent": 28,
-    "data_functions": 2,
+    "data_functions": 1,
     "elementary_processes": 5,
-    "ignored": 21
+    "ignored": 22
   },
   "sfp_count": {
-    "data_functions": 16,
+    "data_functions": 15,
     "elementary_processes": 24,
-    "total": 40
+    "total": 39
   },
   "data_functions": [
     {
       "name": "PaginatedList",
-      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "file": "/src/Application/Common/Models/PaginatedList.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Result",
-      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "file": "/src/Application/Common/Models/Result.cs",
       "source": "pre_classifier"
     },
     {
       "name": "BaseAuditableEntity",
-      "file": "\\src\\Domain\\Common\\BaseAuditableEntity.cs",
+      "file": "/src/Domain/Common/BaseAuditableEntity.cs",
       "source": "pre_classifier"
     },
     {
       "name": "BaseEntity",
-      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+      "file": "/src/Domain/Common/BaseEntity.cs",
       "source": "pre_classifier"
     },
     {
       "name": "BaseEvent",
-      "file": "\\src\\Domain\\Common\\BaseEvent.cs",
+      "file": "/src/Domain/Common/BaseEvent.cs",
       "source": "pre_classifier"
     },
     {
       "name": "ValueObject",
-      "file": "\\src\\Domain\\Common\\ValueObject.cs",
+      "file": "/src/Domain/Common/ValueObject.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Policies",
-      "file": "\\src\\Domain\\Constants\\Policies.cs",
+      "file": "/src/Domain/Constants/Policies.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Roles",
-      "file": "\\src\\Domain\\Constants\\Roles.cs",
+      "file": "/src/Domain/Constants/Roles.cs",
       "source": "pre_classifier"
     },
     {
       "name": "TodoItem",
-      "file": "\\src\\Domain\\Entities\\TodoItem.cs",
+      "file": "/src/Domain/Entities/TodoItem.cs",
       "source": "pre_classifier"
     },
     {
       "name": "TodoList",
-      "file": "\\src\\Domain\\Entities\\TodoList.cs",
+      "file": "/src/Domain/Entities/TodoList.cs",
       "source": "pre_classifier"
     },
     {
       "name": "TodoItemCompletedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemCompletedEvent.cs",
       "source": "pre_classifier"
     },
     {
       "name": "TodoItemCreatedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemCreatedEvent.cs",
       "source": "pre_classifier"
     },
     {
       "name": "TodoItemDeletedEvent",
-      "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+      "file": "/src/Domain/Events/TodoItemDeletedEvent.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Colour",
-      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "file": "/src/Domain/ValueObjects/Colour.cs",
       "source": "pre_classifier"
     },
     {
-      "name": "IUser",
-      "file": "\\src\\Application\\Common\\Interfaces\\IUser.cs",
-      "source": "llm",
-      "reason": "Interface de domínio que representa o contrato de dados do usuário autenticado, com significado de negócio; interfaces de domínio podem ser contadas como FD."
-    },
-    {
       "name": "WeatherForecast",
-      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\WeatherForecast.cs",
+      "file": "/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/WeatherForecast.cs",
       "source": "llm",
-      "reason": "Estrutura de dados com significado funcional exposta pela aplicação para previsão do tempo; representa um grupo lógico de dados do domínio tratado pelo sistema."
+      "reason": "Estrutura com significado de negócio exposta pela aplicação para previsão do tempo; representa grupo lógico de dados do domínio consultado."
     }
   ],
   "elementary_processes": [
     {
       "name": "initialize",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "source": "pre_classifier"
     },
     {
       "name": "login",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "source": "pre_classifier"
     },
     {
       "name": "register",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "source": "pre_classifier"
     },
     {
       "name": "logout",
-      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "file": "/src/Web/ClientApp/src/api-authorization/auth.service.ts",
       "source": "pre_classifier"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "GetTodoItemsWithPagination",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "CreateTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "UpdateTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "UpdateTodoItemDetail",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "DeleteTodoItem",
-      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+      "file": "/src/Web/Endpoints/TodoItems.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "source": "pre_classifier"
     },
     {
       "name": "GetTodoLists",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "source": "pre_classifier"
     },
     {
       "name": "CreateTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "source": "pre_classifier"
     },
     {
       "name": "UpdateTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "source": "pre_classifier"
     },
     {
       "name": "DeleteTodoList",
-      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+      "file": "/src/Web/Endpoints/TodoLists.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "file": "/src/Web/Endpoints/Users.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Logout",
-      "file": "\\src\\Web\\Endpoints\\Users.cs",
+      "file": "/src/Web/Endpoints/Users.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "file": "/src/Web/Endpoints/WeatherForecasts.cs",
       "source": "pre_classifier"
     },
     {
       "name": "GetWeatherForecasts",
-      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+      "file": "/src/Web/Endpoints/WeatherForecasts.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+      "file": "/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItem.cs",
       "source": "llm",
-      "reason": "Handler de caso de uso em arquitetura CQRS/feature, representando operação funcional atômica de criar item de tarefa; na ausência de controller correspondente no contexto fornecido, conta como EP."
+      "reason": "Handler CQRS de caso de uso CreateTodoItem na camada Application; na ausência de controller correspondente no contexto fornecido, atua como fronteira exclusiva da operação."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+      "file": "/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPagination.cs",
       "source": "llm",
-      "reason": "Handler CQRS de consulta paginada de itens de tarefa; é uma operação funcional distinta na fronteira e conta como EP."
+      "reason": "Handler CQRS de consulta paginada de itens; sem controller correspondente informado, conta como operação atômica na fronteira."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+      "file": "/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoList.cs",
       "source": "llm",
-      "reason": "Handler de caso de uso para criar lista de tarefas; operação funcional atômica exposta pela aplicação, contada como EP."
+      "reason": "Handler CQRS de criação de lista de tarefas; sem controller correspondente no contexto fornecido, é a fronteira funcional da operação."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+      "file": "/src/Application/TodoLists/Queries/GetTodos/GetTodos.cs",
       "source": "llm",
-      "reason": "Handler CQRS para consultar listas/tarefas; representa uma operação funcional distinta de consulta e conta como EP."
+      "reason": "Handler CQRS de consulta GetTodos; sem controller correspondente apresentado, conta como processo elementar na fronteira."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "file": "/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/GetWeatherForecastsQuery.cs",
       "source": "llm",
-      "reason": "Handler de query para obter previsões do tempo; é uma operação funcional de consulta na fronteira da aplicação, contada como EP."
+      "reason": "Handler CQRS de consulta de previsões do tempo; sem controller correspondente no contexto fornecido, é a fronteira funcional da operação."
     }
   ],
   "ignored_by_llm": [
     {
       "name": "DependencyInjection",
-      "file": "\\src\\Application\\DependencyInjection.cs",
+      "file": "/src/Application/DependencyInjection.cs",
       "source": "llm",
       "reason": "Classe de bootstrap/configuração de injeção de dependência da camada Application; não representa entidade de negócio nem fronteira funcional."
     },
     {
       "name": "IApplicationDbContext",
-      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "file": "/src/Application/Common/Interfaces/IApplicationDbContext.cs",
       "source": "llm",
-      "reason": "Interface técnica de persistência/infraestrutura (DbContext); pelas regras SFP não é função de dados de negócio."
+      "reason": "Interface técnica de acesso a persistência/DbContext; infraestrutura, não contrato de dados de negócio."
+    },
+    {
+      "name": "IUser",
+      "file": "/src/Application/Common/Interfaces/IUser.cs",
+      "source": "llm",
+      "reason": "Interface técnica para contexto do usuário autenticado; não representa entidade de domínio mantida/referenciada como grupo lógico de dados."
     },
     {
       "name": "AuthorizeAttribute",
-      "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+      "file": "/src/Application/Common/Security/AuthorizeAttribute.cs",
       "source": "llm",
-      "reason": "Attribute de segurança/autorização é mecanismo técnico de framework, não entidade de negócio nem operação na fronteira."
+      "reason": "Atributo de segurança/autorização é mecanismo técnico de framework, não função de dados nem processo elementar."
     },
     {
       "name": "DependencyInjection",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "source": "llm",
-      "reason": "Classe de configuração da camada Web para registrar serviços; é bootstrap técnico e não deve ser contada."
+      "reason": "Classe de configuração da camada Web para registrar serviços; bootstrap técnico sem significado funcional de negócio."
     },
     {
       "name": "App",
-      "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+      "file": "/src/Web/ClientApp-React/src/App.jsx",
       "source": "llm",
-      "reason": "Componente raiz de UI React; representa composição/apresentação da interface e não uma entidade de negócio nem um processo elementar na fronteira do backend."
+      "reason": "Componente raiz da aplicação React; artefato de composição de UI, não entidade de domínio nem operação atômica na fronteira do sistema."
     },
     {
       "name": "AddApplicationServices",
-      "file": "\\src\\Application\\DependencyInjection.cs",
+      "file": "/src/Application/DependencyInjection.cs",
       "source": "llm",
-      "reason": "Método de configuração de serviços da aplicação; bootstrap técnico explicitamente não contado em SFP."
+      "reason": "Método de configuração/registro de dependências; regra SFP exclui bootstrap e configuração."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/AuthorizationBehaviour.cs",
       "source": "llm",
-      "reason": "Pipeline behaviour transversal de autorização; método de framework/interceptação, não operação funcional distinta na fronteira."
+      "reason": "Método de pipeline/comportamento interno do MediatR para autorização; não é fronteira exclusiva com usuário ou sistema externo."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/PerformanceBehaviour.cs",
       "source": "llm",
-      "reason": "Pipeline behaviour técnico para medição de performance; não representa processo elementar de negócio."
+      "reason": "Método técnico de comportamento interno para medição de performance; não representa processo elementar."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs",
       "source": "llm",
-      "reason": "Pipeline behaviour técnico para tratamento de exceções; não é fronteira funcional nem operação de negócio."
+      "reason": "Método técnico de tratamento de exceções em pipeline; infraestrutura interna sem contato direto na fronteira."
     },
     {
       "name": "Handle",
-      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+      "file": "/src/Application/Common/Behaviours/ValidationBehaviour.cs",
       "source": "llm",
-      "reason": "Pipeline behaviour técnico de validação transversal; não conta como EP por ser mecanismo interno/framework."
+      "reason": "Método técnico de validação em pipeline MediatR; implementação transversal, não operação funcional distinta."
     },
     {
       "name": "SaveChangesAsync",
-      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "file": "/src/Application/Common/Interfaces/IApplicationDbContext.cs",
       "source": "llm",
-      "reason": "Operação técnica de persistência do contexto de dados; não é processo elementar na fronteira do sistema."
+      "reason": "Operação técnica de persistência do DbContext; infraestrutura, não processo elementar de negócio."
     },
     {
       "name": "BeUniqueTitle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+      "file": "/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommandValidator.cs",
       "source": "llm",
-      "reason": "Método auxiliar de validação interna do validator; não é fronteira do sistema nem operação funcional independente."
+      "reason": "Método auxiliar de validação de regra interna; não é ponto de entrada do sistema nem função de dados."
     },
     {
       "name": "BeUniqueTitle",
-      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+      "file": "/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommandValidator.cs",
       "source": "llm",
-      "reason": "Método auxiliar de validação interna para regra de unicidade; não deve ser contado como EP."
+      "reason": "Método auxiliar de validação usado internamente no validator; não configura processo elementar."
     },
     {
       "name": "AddWebServices",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "source": "llm",
-      "reason": "Método de registro/configuração de serviços web; bootstrap técnico, explicitamente fora da contagem."
+      "reason": "Método de configuração de serviços da camada Web; bootstrap técnico explicitamente não contado."
     },
     {
       "name": "AddKeyVaultIfConfigured",
-      "file": "\\src\\Web\\DependencyInjection.cs",
+      "file": "/src/Web/DependencyInjection.cs",
       "source": "llm",
-      "reason": "Método técnico de configuração de infraestrutura/segredos; não representa função de dados nem processo elementar."
+      "reason": "Método de configuração de infraestrutura/KeyVault; não representa operação funcional de negócio."
     },
     {
       "name": "getBaseUrl",
-      "file": "\\src\\Web\\ClientApp\\src\\main.ts",
+      "file": "/src/Web/ClientApp/src/main.ts",
       "source": "llm",
-      "reason": "Função utilitária de frontend para resolver URL base; é detalhe técnico de cliente, sem significado funcional de negócio."
+      "reason": "Função utilitária de frontend para obter URL base; detalhe técnico de cliente, sem fronteira funcional do sistema servidor."
     },
     {
       "name": "getApiBaseUrl",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+      "file": "/src/Web/ClientApp/src/app/app.module.ts",
       "source": "llm",
-      "reason": "Função utilitária/configuração de frontend para URL da API; não é operação funcional na fronteira do sistema."
+      "reason": "Função utilitária/configuração de frontend para URL da API; não é processo elementar de negócio."
     },
     {
       "name": "setTheme",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "file": "/src/Web/ClientApp/src/app/theme.service.ts",
       "source": "llm",
-      "reason": "Método de serviço de UI para tema visual; comportamento de apresentação, sem relevância funcional de negócio para SFP."
+      "reason": "Método de serviço de UI para tema visual; comportamento de apresentação, não operação funcional de negócio na fronteira SFP."
     },
     {
       "name": "applyTheme",
-      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "file": "/src/Web/ClientApp/src/app/theme.service.ts",
       "source": "llm",
-      "reason": "Método interno de aplicação de tema na interface; utilitário de frontend, não processo elementar de negócio."
+      "reason": "Método interno de aplicação de tema na interface; utilitário de apresentação sem significado funcional de negócio."
     },
     {
       "name": "Handle",
-      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "file": "/templates/ca-use-case/FeatureName/Commands/CleanArchitectureUseCase/CleanArchitectureUseCase.cs",
       "source": "llm",
-      "reason": "Arquivo de template de geração de código, não faz parte da funcionalidade implementada do sistema em produção; deve ser ignorado."
+      "reason": "Arquivo em diretório de template/scaffold, não parte funcional efetiva do sistema implementado; não deve ser contado."
     },
     {
       "name": "Handle",
-      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+      "file": "/templates/ca-use-case/FeatureName/Queries/CleanArchitectureUseCase/CleanArchitectureUseCase.cs",
       "source": "llm",
-      "reason": "Arquivo de template de geração de código, não representa operação funcional real do sistema; deve ser ignorado."
+      "reason": "Arquivo de template de caso de uso, usado para geração de código e não como funcionalidade real do sistema; deve ser ignorado."
     }
   ]
 }

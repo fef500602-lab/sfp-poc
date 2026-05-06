@@ -367,6 +367,10 @@ IGNORE_BASE_CLASSES = {
         "viewmodel", "androidviewmodel",
         # Room
         "roomdatabase",
+        # Exposed ORM — definições de tabela, não entidades de domínio SFP
+        # Ex: object Articles : UUIDTable() → mapeamento de tabela, não FD
+        "table", "uuidtable", "inttable", "longtable",
+        "intidtable", "uuididentityclass",
     ],
 }
 
@@ -542,6 +546,81 @@ def _route_to_name(method: str, path: str) -> str:
     return f"{prefix}{body[0].upper()}{body[1:]}"
 
 
+# ─────────────────────────────────────────
+# Detecção de rotas Ktor (Kotlin)
+#
+# Ktor usa routing funcional sem objeto receptor:
+#   get("/articles/feed") { ... }
+#   post("/articles") { handler }
+#
+# AST: call_expression
+#        call_expression             ← get("/articles/feed")
+#          identifier: "get"         ← verbo HTTP
+#          value_arguments           ← ("/articles/feed")
+#            value_argument
+#              string_literal        ← "/articles/feed"
+#        annotated_lambda            ← { handler }
+# ─────────────────────────────────────────
+def extract_ktor_routes(root_node, relative_path):
+    """
+    Percorre a AST Kotlin procurando chamadas Ktor:
+      get("/path") { ... }  post("/path") { ... }  etc.
+
+    Retorna lista de Elementary Processes com sfp_hint: "elementary_process".
+    """
+    routes = []
+    file_role = infer_file_role(relative_path)
+
+    if file_role in ("test", "migration", "config"):
+        return routes
+
+    def walk(node):
+        if node.type == "call_expression" and len(node.children) >= 2:
+            inner    = node.children[0]
+            last     = node.children[-1]
+
+            # Padrão: call_expression(identifier + value_arguments) + annotated_lambda
+            if (inner.type == "call_expression" and
+                    last.type == "annotated_lambda"):
+
+                fn_node   = inner.children[0] if inner.children else None
+                args_node = next((c for c in inner.children
+                                  if c.type == "value_arguments"), None)
+
+                if (fn_node and fn_node.type == "identifier" and args_node):
+                    method = fn_node.text.decode("utf-8", errors="ignore").lower()
+
+                    if method in HTTP_ROUTE_METHODS:
+                        path = ""
+                        for arg in args_node.children:
+                            if arg.type == "value_argument":
+                                for a in arg.children:
+                                    if a.type == "string_literal":
+                                        for sc in a.children:
+                                            if sc.type == "string_content":
+                                                path = sc.text.decode("utf-8", errors="ignore")
+                                                break
+
+                        if path and path.startswith("/"):
+                            name = _route_to_name(method, path)
+                            routes.append({
+                                "name":         name,
+                                "file":         relative_path,
+                                "language":     "kotlin",
+                                "file_role":    file_role if file_role != "unknown"
+                                                else "controller",
+                                "base_classes": [],
+                                "decorators":   [f"{method.upper()}:{path}"],
+                                "sfp_hint":     "elementary_process",
+                            })
+
+        for child in node.children:
+            walk(child)
+
+    walk(root_node)
+    return routes
+
+
 def extract_express_routes(root_node, relative_path, lang_name):
     """
     Percorre a AST de um arquivo JS/TS procurando call_expression
@@ -682,7 +761,11 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
                 return "elementary_process"
 
     # 9. Arquivo é model → provável Data Function
+    #    Exceção Kotlin: projetos Kotlin frequentemente colocam DTOs e entidades
+    #    no mesmo pacote models/. Sem herança de entidade confirmada, vai à LLM.
     if file_role == "model":
+        if lang == "kotlin":
+            return "llm"
         return "data_function"
 
     # 10. Arquivo é controller → EP na fronteira do sistema (apenas métodos)
@@ -698,8 +781,8 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     if file_role == "controller":
         if not is_method:
             return "ignore"
-        if lang == "java" and not decorators_lower:
-            return "llm"   # método sem decorator em Java → ambíguo
+        if lang in ("java", "kotlin") and not decorators_lower:
+            return "llm"   # método sem decorator → ambíguo (container functions, helpers)
         return "elementary_process"
 
     # 10b. Arquivo é service → AMBÍGUO para EP.
@@ -1072,6 +1155,11 @@ def analyze_file(filepath, lang_name, relative_path):
     if lang_name in ("javascript", "typescript", "tsx"):
         express_routes = extract_express_routes(root, relative_path, lang_name)
         elementary_processes.extend(express_routes)
+
+    # Para Kotlin, detecta rotas Ktor: get("/path") { ... }
+    if lang_name == "kotlin":
+        ktor_routes = extract_ktor_routes(root, relative_path)
+        elementary_processes.extend(ktor_routes)
 
     return {
         "data_functions":       data_functions,
