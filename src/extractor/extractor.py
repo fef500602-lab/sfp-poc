@@ -154,6 +154,10 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "listener",
         "adapter",
         "extensions",       # funções de extensão Kotlin
+        # Camadas arquiteturais — não são entidades de domínio SFP
+        "repository", "repositoryimpl",  # repositórios Ktor/Exposed/Room
+        "service", "serviceimpl",        # camada de serviço não é FD
+        "controller", "controllerimpl",  # controllers não são FDs
         # DTOs e transporte
         "dto", "request", "response",
         "params", "param",
@@ -232,6 +236,12 @@ IGNORE_METHOD_NAMES = {
         # RecyclerView
         "onbindviewholder", "oncreateviewholder",
         "getitemcount", "getitemviewtype",
+        # Queries de repositório — acesso a dados, não operação de fronteira SFP
+        "findby", "findall", "findbyid", "findbyslug",
+        "findbyemail", "findbyusername",
+        "save", "delete", "update", "insert",
+        # Entry point
+        "main",
     },
 }
 
@@ -358,7 +368,7 @@ IGNORE_BASE_CLASSES = {
         # Room
         "roomdatabase",
     ],
-},
+}
 
 
 # Decorators que indicam elementos a IGNORAR
@@ -1122,7 +1132,6 @@ def analyze_repository(repo_path, repo_name):
             except Exception as e:
                 print(f"   ⚠️  Erro em {filename}: {e}")
 
-    # Resumo por sfp_hint
     hints_df = {}
     for item in report["data_functions"]:
         h = item["sfp_hint"]
@@ -1134,10 +1143,8 @@ def analyze_repository(repo_path, repo_name):
         hints_ep[h] = hints_ep.get(h, 0) + 1
 
     print(f"   ✅ Arquivos analisados    : {report['files_analyzed']}")
-    print(f"   📦 Funções de Dados       : {len(report['data_functions'])} "
-          f"{hints_df}")
-    print(f"   ⚙️  Processos Elementares  : {len(report['elementary_processes'])} "
-          f"{hints_ep}")
+    print(f"   📦 Funções de Dados       : {len(report['data_functions'])} {hints_df}")
+    print(f"   ⚙️  Processos Elementares  : {len(report['elementary_processes'])} {hints_ep}")
 
     return report
 
