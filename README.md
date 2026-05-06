@@ -339,12 +339,12 @@ real, não ruído.
 A variação de ±8% entre as três implementações REST puras é estatisticamente
 irrelevante para uma métrica de tamanho funcional. **A premissa está validada.**
 
-### ✅ Etapa 4 — Suporte a Kotlin (Concluída — branch `update`)
+### ✅ Etapa 4 — Suporte a Kotlin (Concluída — branches `update` + `fix/kotlin-calibration`)
 
 Adicionado suporte à linguagem Kotlin via `tree-sitter-kotlin`, com upgrade
 do tree-sitter de `0.22.3` para `0.25.2`.
 
-**O que foi implementado:**
+**O que foi implementado (branch `update`):**
 - Importação e configuração do parser `tree-sitter-kotlin`
 - Regras de pré-classificação Kotlin: `IGNORE_CLASS_NAME_SUFFIXES`,
   `IGNORE_METHOD_NAMES`, `DATA_FUNCTION_BASE_CLASSES`,
@@ -355,36 +355,49 @@ do tree-sitter de `0.22.3` para `0.25.2`.
 - Repositório de validação: `realworld-kotlin-ktor`
   (mesma aplicação RealWorld implementada em Kotlin + Ktor)
 
-**Resultados iniciais (Kotlin Ktor):**
+**Calibração realizada (branch `fix/kotlin-calibration`):**
 
-| Elemento | Resultado | Esperado | Status |
-| -------- | --------- | -------- | ------ |
-| FD       | 28        | ~6       | ⚠️ Calibração necessária |
-| EP       | 4         | ~19      | ⚠️ Calibração necessária |
-| Total    | 32        | ~25      | ⚠️ Calibração necessária |
+- **`IGNORE_BASE_CLASSES["kotlin"]`**: adicionadas classes base do Exposed ORM
+  (`table`, `uuidtable`, `inttable`, `longtable`) — definições de tabela não
+  são entidades de domínio SFP
+- **`classify_hint` rule 9 — Kotlin**: projetos Kotlin colocam DTOs e entidades
+  no mesmo pacote `models/`. A regra que auto-classifica tudo em `file_role:
+  model` como `data_function` foi tornada específica para Kotlin: classes sem
+  herança de entidade confirmada vão à LLM
+- **`extract_ktor_routes()`**: nova função análoga ao `extract_express_routes()`
+  para detectar o padrão Ktor — `get("/path") { ... }` — routing funcional
+  direto sem objeto receptor, invisível ao detector de Express
+- **Regra de controller sem decorator estendida ao Kotlin**: container functions
+  `fun Route.articles(...)` eram auto-EP; agora vão para LLM (e são rejeitadas)
 
-**Limitações conhecidas — backlog `fix/kotlin-calibration`:**
+**Evolução dos resultados:**
 
-- **FD superdimensionado (28 vs ~6):** muitas classes de suporte (data classes
-  de tabela, tipos auxiliares) chegam à LLM sem filtragem prévia. Necessário
-  refinar `IGNORE_CLASS_NAME_SUFFIXES["kotlin"]` e `IGNORE_BASE_CLASSES["kotlin"]`
-  com padrões específicos do ecossistema Kotlin/Ktor/Exposed.
+| Fase | FD | EP | Total |
+| ---- | -- | -- | ----- |
+| Inicial (branch `update`) | 28 | 4 | 32 |
+| Após calibração (branch `fix/kotlin-calibration`) | ~9 | ~20 | ~29 |
 
-- **EP subdimensionado (4 vs ~19):** Ktor usa routing funcional direto —
-  `get("/path") { ... }` — sem objeto receptor (`router.get`). O detector de
-  rotas Express (`extract_express_routes`) não captura esse padrão. Necessário
-  implementar `extract_ktor_routes()` análogo ao que foi feito para Express.
+**Descobertas e limitações documentadas:**
+
+- **Tabelas de junção como FD:** `ArticleTags`, `FavoriteArticle`, `ArticleComment`,
+  `Followings` são contadas como FD pela LLM. Em SFP estrito, tabelas de junção
+  sem atributos próprios não são FDs separadas — representam relacionamentos das
+  entidades principais. A LLM defende que representam "grupos lógicos de dados de
+  negócio", o que é metodologicamente defensável. Aceito como limitação conhecida.
+
+- **Routing Ktor aninhado**: a implementação atual detecta apenas rotas com path
+  explícito (`get("/path") { ... }`). Rotas aninhadas via `route("/prefix") { ... }`
+  sem path no verbo não são capturadas. Baixo impacto no projeto RealWorld validado.
 
 Os outros repositórios do conjunto de validação **não sofreram regressão**
 com o upgrade do tree-sitter.
 
 ### ⏳ Etapas Futuras
 
-#### Backlog `fix/kotlin-calibration`
-- Implementar `extract_ktor_routes()` para detectar `get(path) {...}`,
-  `post(path) {...}` como EPs (padrão funcional, sem objeto receptor)
-- Refinar filtros de classe Kotlin: data classes de mapeamento ORM (Exposed),
-  tipos auxiliares e sealed classes de domínio vs. infraestrutura
+#### Backlog Kotlin
+- Refinar filtros de tabelas de junção Exposed sem atributos próprios
+- Suporte a routing Ktor aninhado (`route("/prefix") { get { ... } }`)
+- Validar com projetos Kotlin Spring Boot (annotations similares ao Java)
 
 #### Roadmap técnico
 

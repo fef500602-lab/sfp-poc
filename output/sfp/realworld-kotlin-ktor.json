@@ -1,598 +1,742 @@
 {
   "repository": "realworld-kotlin-ktor",
   "pre_classification": {
-    "data_functions": 28,
-    "elementary_processes": 4
+    "data_functions": 0,
+    "elementary_processes": 20
   },
   "llm_classification": {
-    "sent": 69,
-    "data_functions": 0,
-    "elementary_processes": 0,
-    "ignored": 69
+    "sent": 103,
+    "data_functions": 9,
+    "elementary_processes": 4,
+    "ignored": 90
   },
   "sfp_count": {
-    "data_functions": 28,
-    "elementary_processes": 4,
-    "total": 32
+    "data_functions": 9,
+    "elementary_processes": 24,
+    "total": 33
   },
   "data_functions": [
     {
-      "name": "Articles",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Tags",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
       "name": "ArticleTags",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Representa associação de domínio entre artigo e tag, com significado de negócio como entidade relacional/agregado."
     },
     {
       "name": "FavoriteArticle",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Representa relação de negócio de favoritamento de artigo por usuário, com significado funcional no domínio."
     },
     {
       "name": "Tag",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Entidade de domínio do negócio usada para categorizar artigos."
     },
     {
       "name": "Article",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "NewArticle",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Article",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "UpdateArticle",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Article",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Article",
-      "file": "\\src\\main\\kotlin\\models\\Article.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Comments",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Entidade central de domínio do negócio representando um artigo."
     },
     {
       "name": "ArticleComment",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Representa comentário associado a artigo, com significado funcional no domínio."
     },
     {
       "name": "Comment",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Comment",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "PostComment",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Comment",
-      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Entidade de domínio do negócio representando comentário."
     },
     {
       "name": "Profile",
-      "file": "\\src\\main\\kotlin\\models\\Profile.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "Users",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/Profile.kt",
+      "source": "llm",
+      "reason": "Representa perfil de usuário, uma entidade/value object de negócio com significado funcional."
     },
     {
       "name": "Followings",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Representa relação de negócio de seguimento entre usuários, com significado funcional no domínio."
     },
     {
       "name": "User",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "RegisterUser",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "LoginUser",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "UpdateUser",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\main\\kotlin\\models\\User.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Entidade central de domínio representando usuário."
     }
   ],
   "elementary_processes": [
     {
-      "name": "article",
-      "file": "\\src\\main\\kotlin\\api\\ArticleResource.kt",
+      "name": "getArticlesFeed",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
       "source": "pre_classifier"
+    },
+    {
+      "name": "createArticles",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateArticles{slug}",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticles{slug}Favorite",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticles{slug}Favorite",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticles{slug}",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles{slug}",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getTags",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUsers",
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createUsersLogin",
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getUser",
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "updateUser",
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getUsers",
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createArticles{slug}Comments",
+      "file": "/src/main/kotlin/api/CommentResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteArticles{slug}Comments{id}",
+      "file": "/src/main/kotlin/api/CommentResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getArticles{slug}Comments",
+      "file": "/src/main/kotlin/api/CommentResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "getProfiles{username}",
+      "file": "/src/main/kotlin/api/ProfileResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "createProfiles{username}Follow",
+      "file": "/src/main/kotlin/api/ProfileResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "deleteProfiles{username}Follow",
+      "file": "/src/main/kotlin/api/ProfileResource.kt",
+      "source": "pre_classifier"
+    },
+    {
+      "name": "article",
+      "file": "/src/main/kotlin/api/ArticleResource.kt",
+      "source": "llm",
+      "reason": "Método em controller/resource, portanto representa operação na fronteira do sistema e deve ser contado como EP."
     },
     {
       "name": "auth",
-      "file": "\\src\\main\\kotlin\\api\\AuthResource.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/api/AuthResource.kt",
+      "source": "llm",
+      "reason": "Método em controller/resource, portanto representa operação na fronteira do sistema e deve ser contado como EP."
     },
     {
       "name": "comment",
-      "file": "\\src\\main\\kotlin\\api\\CommentResource.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/api/CommentResource.kt",
+      "source": "llm",
+      "reason": "Método em controller/resource, portanto representa operação na fronteira do sistema e deve ser contado como EP."
     },
     {
       "name": "profile",
-      "file": "\\src\\main\\kotlin\\api\\ProfileResource.kt",
-      "source": "pre_classifier"
+      "file": "/src/main/kotlin/api/ProfileResource.kt",
+      "source": "llm",
+      "reason": "Método em controller/resource, portanto representa operação na fronteira do sistema e deve ser contado como EP."
     }
   ],
   "ignored_by_llm": [
     {
-      "name": "SimpleJWT",
-      "file": "\\src\\main\\kotlin\\util\\auth.kt",
+      "name": "Articles",
+      "file": "/src/main/kotlin/models/Article.kt",
       "source": "llm",
-      "reason": "Componente utilitário de autenticação/JWT, caracterizando infraestrutura e mecanismo técnico, não uma entidade de negócio nem uma operação na fronteira do sistema."
+      "reason": "Nome no plural em arquivo de model sugere envelope/lista de transporte para resposta, não uma entidade de negócio distinta."
+    },
+    {
+      "name": "Tags",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Representa coleção/envelope de tags, não uma entidade de domínio autônoma; a entidade de negócio é Tag."
+    },
+    {
+      "name": "NewArticle",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Nome indica estrutura de entrada para criação de artigo, caracterizando DTO/request body e não entidade de domínio."
+    },
+    {
+      "name": "Article",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; para SFP a entidade Article deve ser contada uma única vez."
+    },
+    {
+      "name": "UpdateArticle",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Nome indica estrutura de atualização/transporte, não uma entidade de negócio distinta."
+    },
+    {
+      "name": "Article",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem da mesma função de dados."
+    },
+    {
+      "name": "Article",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem da mesma função de dados."
+    },
+    {
+      "name": "Comments",
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Nome no plural sugere coleção/envelope de resposta para comentários, não entidade de domínio independente."
+    },
+    {
+      "name": "Comment",
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; Comment já foi contado como função de dados."
+    },
+    {
+      "name": "PostComment",
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Nome indica estrutura de entrada para postagem de comentário, caracterizando request/DTO."
+    },
+    {
+      "name": "Comment",
+      "file": "/src/main/kotlin/models/Comments.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem."
+    },
+    {
+      "name": "Users",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Nome no plural sugere coleção/envelope de usuários, não entidade de domínio distinta."
+    },
+    {
+      "name": "RegisterUser",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Estrutura de entrada para cadastro de usuário; trata-se de request/DTO e não entidade de domínio."
+    },
+    {
+      "name": "User",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; User já foi contado como função de dados."
+    },
+    {
+      "name": "LoginUser",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Estrutura de autenticação/login, típica de transporte de entrada e não entidade de negócio."
+    },
+    {
+      "name": "User",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem."
+    },
+    {
+      "name": "UpdateUser",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Estrutura de atualização de usuário, caracterizando DTO/request body e não entidade de domínio distinta."
+    },
+    {
+      "name": "User",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem."
+    },
+    {
+      "name": "User",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Ocorrência duplicada do mesmo nome no mesmo arquivo; evitar dupla contagem."
+    },
+    {
+      "name": "SimpleJWT",
+      "file": "/src/main/kotlin/util/auth.kt",
+      "source": "llm",
+      "reason": "Componente técnico de autenticação/JWT em utilitário de infraestrutura, sem representar entidade de negócio."
     },
     {
       "name": "UserExists",
-      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "file": "/src/main/kotlin/util/errors.kt",
       "source": "llm",
-      "reason": "Classe de erro/exceção técnica para sinalização de regra ou falha, não representa grupo lógico de dados do negócio nem processo elementar."
+      "reason": "Classe de erro/exceção técnica de validação, explicitamente fora do escopo de funções de dados e processos elementares."
     },
     {
       "name": "UserDoesNotExists",
-      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "file": "/src/main/kotlin/util/errors.kt",
       "source": "llm",
-      "reason": "Classe de erro/exceção técnica usada para tratamento de fluxo, sem representar entidade de domínio mantida/referenciada nem operação de entrada/saída na fronteira."
+      "reason": "Classe de erro/exceção técnica, não representa entidade de domínio nem operação na fronteira."
     },
     {
       "name": "ArticleDoesNotExist",
-      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "file": "/src/main/kotlin/util/errors.kt",
       "source": "llm",
-      "reason": "Classe de erro/exceção técnica; apesar de mencionar Article, não é a entidade de negócio em si, mas apenas um artefato de tratamento de erro."
+      "reason": "Classe de erro/exceção técnica, fora do escopo de contagem SFP."
     },
     {
       "name": "CommentNotFound",
-      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "file": "/src/main/kotlin/util/errors.kt",
       "source": "llm",
-      "reason": "Classe de erro/exceção técnica para ausência de comentário, não configurando função de dados nem processo elementar segundo a SFP."
+      "reason": "Classe de erro/exceção técnica, não é função de dados nem processo elementar."
+    },
+    {
+      "name": "generateSlug",
+      "file": "/src/main/kotlin/models/Article.kt",
+      "source": "llm",
+      "reason": "Função interna de modelo para derivação de valor; não é entidade de dados nem operação de fronteira."
+    },
+    {
+      "name": "fromUser",
+      "file": "/src/main/kotlin/models/User.kt",
+      "source": "llm",
+      "reason": "Factory/conversão em modelo; não representa FD e não é operação exposta na fronteira do sistema."
     },
     {
       "name": "createArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de service em arquitetura em camadas; a operação na fronteira deve ser contada no controller correspondente, evitando dupla contagem."
+      "reason": "Método de service em arquitetura em camadas; a operação deve ser contada na camada controller/resource correspondente para evitar dupla contagem."
     },
     {
       "name": "updateArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de service que implementa operação de negócio já exposta na fronteira pelo controller; não conta como EP separado."
+      "reason": "Método de service que implementa operação já exposta na fronteira pelo controller/resource; não conta como EP adicional."
     },
     {
       "name": "getArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Consulta interna de service; em arquitetura em camadas a contagem do processo elementar ocorre no endpoint/controller."
+      "reason": "Método interno de service para operação de consulta já representada na fronteira; deve ser ignorado para evitar dupla contagem."
     },
     {
       "name": "getArticles",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de service para listagem; deve ser ignorado quando há controller para a mesma operação externa."
+      "reason": "Método de service em suporte a endpoint de listagem; pela regra de fronteira não é EP adicional."
     },
     {
       "name": "getFeedArticles",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Operação implementada na camada de serviço, não na fronteira do sistema; evitar dupla contagem com endpoint correspondente."
+      "reason": "Método de service associado a operação funcional exposta externamente; conta-se no controller/resource, não no service."
     },
     {
       "name": "changeFavorite",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de service interno para favoritar/desfavoritar artigo; a operação funcional deve ser contada apenas na fronteira."
+      "reason": "Método de service que implementa favoritar/desfavoritar artigo; não é fronteira do sistema."
     },
     {
       "name": "deleteArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Exclusão implementada na camada de serviço; não é EP adicional quando existe controller para a mesma ação."
+      "reason": "Método de service para exclusão já coberta por endpoint/controller; deve ser ignorado."
     },
     {
       "name": "getAllTags",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de service para consulta de tags; a contagem funcional deve ocorrer no endpoint externo, não no service."
+      "reason": "Método de service para consulta de tags; em arquitetura em camadas a contagem ocorre no controller/resource."
     },
     {
       "name": "createArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de método de service; além de ser implementação interna, não deve gerar contagem funcional."
+      "reason": "Duplicata de método de service; além de não ser fronteira, não deve gerar contagem adicional."
     },
     {
       "name": "updateArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de método de service em camada interna; não representa nova fronteira funcional."
+      "reason": "Duplicata de método de service; a operação já é contada na fronteira e não deve ser duplicada."
     },
     {
       "name": "getArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de consulta em service; não é processo elementar por não estar na fronteira do sistema."
+      "reason": "Duplicata de método de service para consulta; não é EP e não representa FD."
     },
     {
       "name": "getArticles",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de listagem em service; deve ser ignorada pela regra de fronteira."
+      "reason": "Duplicata de método de service de listagem; deve ser ignorada pela regra de fronteira."
     },
     {
       "name": "getFeedArticles",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de operação interna de service; não conta como EP independente."
+      "reason": "Duplicata de método de service; operação funcional deve ser contada apenas na fronteira externa."
     },
     {
       "name": "changeFavorite",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de método de service para mesma operação de negócio; não contar para evitar inflação."
+      "reason": "Duplicata de método de service interno; não conta como EP adicional."
     },
     {
       "name": "deleteArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de exclusão em service; a fronteira funcional deve ser contada apenas uma vez no controller."
+      "reason": "Duplicata de método de service para exclusão; deve ser ignorada."
     },
     {
       "name": "getAllTags",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Duplicata de consulta em service; não representa função de dados nem processo elementar na fronteira."
+      "reason": "Duplicata de método de service para consulta; não é fronteira do sistema."
     },
     {
       "name": "getAllArticles",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método auxiliar/interno de service para recuperação de artigos; não é contado como EP fora da fronteira."
+      "reason": "Método auxiliar/interno de service para recuperação de artigos; sem ser fronteira externa, não conta como EP."
     },
     {
       "name": "favoriteArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método interno de service que compõe a operação externa de favoritar; não contar separadamente."
+      "reason": "Método interno de service relacionado a operação exposta externamente; deve ser contado apenas no controller/resource correspondente."
     },
     {
       "name": "unfavoriteArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método interno de service para desfavoritar artigo; a operação funcional pertence ao endpoint/controller."
+      "reason": "Método interno de service para desfavoritar; não é operação na fronteira do sistema."
     },
     {
       "name": "isFavoritedArticle",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de verificação/regra interna, sem contato direto com usuário ou sistema externo na fronteira."
+      "reason": "Função de apoio/regra interna de negócio; não é entidade de dados nem EP de fronteira."
     },
     {
       "name": "getArticleBySlug",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Busca interna por identificador de domínio usada pela implementação; não é EP nem FD."
+      "reason": "Método interno de busca por identificador de negócio; não é contado separadamente da operação de fronteira."
     },
     {
       "name": "getOrCreateTag",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método interno de apoio para persistência/recuperação de tag; não representa operação atômica na fronteira."
+      "reason": "Método interno de manutenção/apoio de dados; não representa operação atômica exposta ao usuário."
     },
     {
       "name": "getArticleResponse",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Método de montagem de resposta/DTO, classificado como transporte/apresentação, não como função funcional SFP."
+      "reason": "Método de montagem de resposta/DTO; transporte e composição não são FD nem EP."
     },
     {
       "name": "isArticleAuthor",
-      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "file": "/src/main/kotlin/service/ArticleService.kt",
       "source": "llm",
-      "reason": "Regra de autorização/verificação interna; não é processo elementar exposto nem função de dados."
+      "reason": "Função de validação/regra interna; não é fronteira do sistema nem grupo lógico de dados."
     },
     {
       "name": "register",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Método de service para cadastro; em arquitetura em camadas a operação deve ser contada no controller correspondente."
+      "reason": "Método de service para cadastro/autenticação; em arquitetura em camadas a operação deve ser contada no controller/resource correspondente."
     },
     {
       "name": "getAllUsers",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Listagem implementada na camada de serviço; não é EP separado da fronteira externa."
+      "reason": "Método de service de consulta; não é EP adicional quando existe camada de entrada separada."
     },
     {
       "name": "getUserByEmail",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Busca interna por email usada pela lógica de autenticação; não representa operação na fronteira."
+      "reason": "Método interno de recuperação por email; não representa operação de fronteira."
     },
     {
       "name": "getUserById",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Método interno de recuperação de usuário por id; não é contado como EP fora do controller."
+      "reason": "Método interno de consulta por id; deve ser ignorado na contagem funcional."
     },
     {
       "name": "loginAndGetUser",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Método de service para login; a interação funcional com o usuário deve ser contada apenas no endpoint correspondente."
+      "reason": "Método de service para login; a operação funcional é contada na fronteira externa, não na implementação interna."
     },
     {
       "name": "updateUser",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Atualização de usuário implementada em service; não conta como processo elementar adicional."
+      "reason": "Método de service para atualização de usuário já representada por endpoint/controller; não conta como EP adicional."
     },
     {
       "name": "register",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de método de cadastro em service; não representa nova fronteira funcional."
+      "reason": "Duplicata de método de service; além de interno, não deve gerar dupla contagem."
     },
     {
       "name": "getAllUsers",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de listagem em service; deve ser ignorada pela regra de fronteira e duplicidade."
+      "reason": "Duplicata de método de service de consulta; não é fronteira do sistema."
     },
     {
       "name": "getUserByEmail",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de busca interna por email; não é função funcional contável em SFP."
+      "reason": "Duplicata de método interno de busca; não conta como EP nem FD."
     },
     {
       "name": "getUserById",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de recuperação interna por id; não ocorre na fronteira do sistema."
+      "reason": "Duplicata de método interno de consulta; deve ser ignorada."
     },
     {
       "name": "loginAndGetUser",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de operação de login em service; a contagem deve ocorrer somente no controller."
+      "reason": "Duplicata de método de service para autenticação; a contagem ocorre apenas na fronteira."
     },
     {
       "name": "updateUser",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Duplicata de atualização em service; não contar para evitar dupla contagem."
+      "reason": "Duplicata de método de service para atualização; não deve ser contada novamente."
     },
     {
       "name": "getUser",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Método de service para obter usuário atual; a operação funcional deve ser contada na camada de entrada, não aqui."
+      "reason": "Método interno de obtenção de usuário; sem evidência de ser fronteira exclusiva, deve ser ignorado."
     },
     {
       "name": "getUserByUsername",
-      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "file": "/src/main/kotlin/service/AuthService.kt",
       "source": "llm",
-      "reason": "Busca interna por username para suporte a outras operações; não é EP nem FD."
+      "reason": "Método interno de consulta por username; não é operação de fronteira do sistema."
     },
     {
       "name": "addComment",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Método de service para adicionar comentário; em camadas, a operação é contada no controller correspondente."
+      "reason": "Método de service para inclusão de comentário; a operação funcional deve ser contada no controller/resource correspondente."
     },
     {
       "name": "getComments",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Consulta/listagem implementada em service; não é processo elementar separado da fronteira."
+      "reason": "Método de service de listagem de comentários; não é EP adicional em arquitetura em camadas."
     },
     {
       "name": "deleteComment",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Exclusão de comentário na camada de serviço; deve ser ignorada quando há endpoint para a mesma ação."
+      "reason": "Método de service para exclusão de comentário já coberta por operação de fronteira; deve ser ignorado."
     },
     {
       "name": "addComment",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Duplicata de método de service para inclusão de comentário; não representa nova operação funcional."
+      "reason": "Duplicata de método de service; não é fronteira e não deve gerar dupla contagem."
     },
     {
       "name": "getComments",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Duplicata de listagem em service; não contar pela regra de fronteira e duplicidade."
+      "reason": "Duplicata de método de service de consulta; deve ser ignorada pela regra de fronteira."
     },
     {
       "name": "deleteComment",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Duplicata de exclusão em service; não é EP adicional."
+      "reason": "Duplicata de método de service para exclusão; não conta como EP adicional."
     },
     {
       "name": "getCommentResponse",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Método de montagem de response/DTO de comentário; elemento de transporte, não função funcional SFP."
+      "reason": "Método de service interno e com indício de montagem de resposta/DTO; não representa fronteira do sistema nem entidade de negócio."
     },
     {
       "name": "getCommentById",
-      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "file": "/src/main/kotlin/service/CommentService.kt",
       "source": "llm",
-      "reason": "Busca interna por identificador para suporte à lógica de comentário; não ocorre na fronteira."
+      "reason": "Método de service interno; em arquitetura em camadas a operação é contada no controller correspondente, não no service."
     },
     {
       "name": "init",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Método técnico de inicialização de infraestrutura de banco; explicitamente fora do escopo funcional SFP."
+      "reason": "Função de infraestrutura para inicialização de banco; configuração técnica não é EP nem FD."
     },
     {
       "name": "dbQuery",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Helper técnico de acesso a banco de dados; infraestrutura interna sem significado funcional de negócio."
+      "reason": "Helper técnico de acesso a banco de dados; não é operação de fronteira nem dado de negócio."
     },
     {
       "name": "drop",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Operação técnica de infraestrutura/banco, não uma operação de negócio na fronteira do sistema."
+      "reason": "Rotina técnica de infraestrutura para banco; não representa processo elementar de usuário nem função de dados."
     },
     {
       "name": "init",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Duplicata de inicialização técnica de infraestrutura; não é FD nem EP."
+      "reason": "Função de infraestrutura para inicialização de banco; configuração técnica não é EP nem FD."
     },
     {
       "name": "hikari",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Função de infraestrutura para configuração de conexão/pool de banco (Hikari); não representa entidade de negócio nem operação na fronteira do sistema."
+      "reason": "Função/propriedade técnica de configuração de pool/conexão; item de infraestrutura fora do escopo funcional SFP."
     },
     {
       "name": "dbQuery",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Helper técnico de acesso a banco de dados; é implementação interna de persistência, sem interação direta com usuário ou sistema externo na fronteira."
+      "reason": "Helper técnico de acesso a banco de dados; não é operação de fronteira nem dado de negócio."
     },
     {
       "name": "drop",
-      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "file": "/src/main/kotlin/service/DatabaseFactory.kt",
       "source": "llm",
-      "reason": "Rotina técnica de banco/schema para suporte ou manutenção; não é função de dados de negócio nem processo elementar exposto na fronteira."
+      "reason": "Rotina técnica de infraestrutura para banco; não representa processo elementar de usuário nem função de dados."
     },
     {
       "name": "getProfile",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método de service em arquitetura em camadas; a operação de obter perfil deve ser contada na fronteira (route/controller), não na implementação interna."
+      "reason": "Método de service interno; se houver endpoint/controller para obter perfil, ele é a fronteira e este método não conta separadamente."
     },
     {
       "name": "changeFollowStatus",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método de service que implementa a lógica de seguir/deixar de seguir; se houver endpoint correspondente, o EP é contado na fronteira e este método não conta separadamente."
+      "reason": "Método de service que implementa lógica interna de seguir/deixar de seguir; pela regra de fronteira não é EP quando existe controller correspondente."
     },
     {
       "name": "getProfile",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método de service duplicado na extração; continua sendo implementação interna e não deve ser contado como EP para evitar dupla contagem."
+      "reason": "Método de service interno; se houver endpoint/controller para obter perfil, ele é a fronteira e este método não conta separadamente."
     },
     {
       "name": "changeFollowStatus",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método de service duplicado na extração; permanece como implementação interna da mesma operação de fronteira, portanto deve ser ignorado."
+      "reason": "Método de service que implementa lógica interna de seguir/deixar de seguir; pela regra de fronteira não é EP quando existe controller correspondente."
     },
     {
       "name": "addFollower",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Função auxiliar interna de domínio/persistência para relacionamento de seguidores; não é operação atômica exposta na fronteira do sistema."
+      "reason": "Helper/regra interna de domínio aplicada pelo service; não é ponto de entrada do sistema."
     },
     {
       "name": "removeFollower",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Função auxiliar interna para remover relacionamento de seguidores; não constitui EP independente na fronteira."
+      "reason": "Helper/regra interna de domínio aplicada pelo service; não é ponto de entrada do sistema."
     },
     {
       "name": "isFollower",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método interno de consulta/validação usado pela lógica de serviço; não é endpoint nem fronteira exclusiva com ator externo."
+      "reason": "Método auxiliar de verificação interna usado na lógica de negócio; não caracteriza EP nem FD."
     },
     {
       "name": "getProfileByUser",
-      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "file": "/src/main/kotlin/service/ProfileService.kt",
       "source": "llm",
-      "reason": "Método interno de apoio para montar/recuperar perfil a partir de usuário; não representa processo elementar distinto na fronteira."
+      "reason": "Método interno de service para recuperação de dados de perfil; a contagem funcional ocorre na fronteira externa, não aqui."
     },
     {
       "name": "sign",
-      "file": "\\src\\main\\kotlin\\util\\auth.kt",
+      "file": "/src/main/kotlin/util/auth.kt",
       "source": "llm",
-      "reason": "Função utilitária de autenticação/token; é mecanismo técnico de segurança, não entidade de negócio nem operação funcional contada na fronteira."
+      "reason": "Função utilitária de autenticação/token; mecanismo técnico de segurança, não função de dados nem processo elementar na fronteira."
     },
     {
       "name": "userId",
-      "file": "\\src\\main\\kotlin\\util\\web.kt",
+      "file": "/src/main/kotlin/util/web.kt",
       "source": "llm",
-      "reason": "Função utilitária para extrair identificador do contexto web/request; trata-se de suporte técnico de transporte, não EP nem FD."
+      "reason": "Função utilitária para extrair informação da requisição/contexto web; apoio técnico sem significado funcional autônomo."
     },
     {
       "name": "param",
-      "file": "\\src\\main\\kotlin\\util\\web.kt",
+      "file": "/src/main/kotlin/util/web.kt",
       "source": "llm",
-      "reason": "Helper genérico para leitura de parâmetros HTTP; é utilitário de camada web/transporte e não deve ser contado como função funcional."
+      "reason": "Função utilitária para leitura de parâmetros web; helper técnico e não operação de fronteira distinta."
     }
   ]
 }
