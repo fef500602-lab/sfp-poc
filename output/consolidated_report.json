@@ -1,5 +1,580 @@
 [
   {
+    "repository": "csharp-clean-arch",
+    "files_analyzed": 130,
+    "data_functions": [
+      {
+        "name": "DependencyInjection",
+        "file": "\\src\\Application\\DependencyInjection.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "IApplicationDbContext",
+        "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "IUser",
+        "file": "\\src\\Application\\Common\\Interfaces\\IUser.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "PaginatedList",
+        "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Result",
+        "file": "\\src\\Application\\Common\\Models\\Result.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "AuthorizeAttribute",
+        "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [
+          "Attribute"
+        ],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "WeatherForecast",
+        "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\WeatherForecast.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "BaseAuditableEntity",
+        "file": "\\src\\Domain\\Common\\BaseAuditableEntity.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseEntity"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "BaseEntity",
+        "file": "\\src\\Domain\\Common\\BaseEntity.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "BaseEvent",
+        "file": "\\src\\Domain\\Common\\BaseEvent.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "INotification"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "ValueObject",
+        "file": "\\src\\Domain\\Common\\ValueObject.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Policies",
+        "file": "\\src\\Domain\\Constants\\Policies.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Roles",
+        "file": "\\src\\Domain\\Constants\\Roles.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TodoItem",
+        "file": "\\src\\Domain\\Entities\\TodoItem.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseAuditableEntity"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TodoList",
+        "file": "\\src\\Domain\\Entities\\TodoList.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseAuditableEntity"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TodoItemCompletedEvent",
+        "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseEvent"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TodoItemCreatedEvent",
+        "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseEvent"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "TodoItemDeletedEvent",
+        "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "BaseEvent"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Colour",
+        "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+        "language": "csharp",
+        "file_role": "model",
+        "base_classes": [
+          "ValueObject"
+        ],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "DependencyInjection",
+        "file": "\\src\\Web\\DependencyInjection.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "App",
+        "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+        "language": "javascript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "AddApplicationServices",
+        "file": "\\src\\Application\\DependencyInjection.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "SaveChangesAsync",
+        "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
+        "language": "csharp",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
+        "language": "csharp",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "BeUniqueTitle",
+        "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
+        "language": "csharp",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "BeUniqueTitle",
+        "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
+        "language": "csharp",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+        "language": "csharp",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "AddWebServices",
+        "file": "\\src\\Web\\DependencyInjection.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "AddKeyVaultIfConfigured",
+        "file": "\\src\\Web\\DependencyInjection.cs",
+        "language": "csharp",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getBaseUrl",
+        "file": "\\src\\Web\\ClientApp\\src\\main.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "initialize",
+        "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "login",
+        "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "register",
+        "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "logout",
+        "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getApiBaseUrl",
+        "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "setTheme",
+        "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "applyTheme",
+        "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Map",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "GetTodoItemsWithPagination",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "CreateTodoItem",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "UpdateTodoItem",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "UpdateTodoItemDetail",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "DeleteTodoItem",
+        "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "Map",
+        "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "GetTodoLists",
+        "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "CreateTodoList",
+        "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "UpdateTodoList",
+        "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "DeleteTodoList",
+        "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "Map",
+        "file": "\\src\\Web\\Endpoints\\Users.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "Logout",
+        "file": "\\src\\Web\\Endpoints\\Users.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "Map",
+        "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "GetWeatherForecasts",
+        "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
+        "language": "csharp",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "Handle",
+        "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+        "language": "csharp",
+        "file_role": "feature",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Handle",
+        "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
+        "language": "csharp",
+        "file_role": "feature",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      }
+    ]
+  },
+  {
     "repository": "edge-express-lib",
     "files_analyzed": 50,
     "data_functions": [],
@@ -689,7 +1264,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "getApiUsers",
@@ -895,6 +1470,2048 @@
     "elementary_processes": []
   },
   {
+    "repository": "nestjs-framework",
+    "files_analyzed": 327,
+    "data_functions": [
+      {
+        "name": "Cat",
+        "file": "\\sample\\01-cats-app\\src\\cats\\interfaces\\cat.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "HeroById",
+        "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero-by-id.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Hero",
+        "file": "\\sample\\04-grpc\\src\\hero\\interfaces\\hero.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\user.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Entity"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\07-sequelize\\src\\users\\models\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [
+          "Model"
+        ],
+        "decorators": [
+          "Table"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "AppModule",
+        "file": "\\sample\\09-babel-example\\src\\app.module.js",
+        "language": "javascript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Module"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "CatsModule",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.module.js",
+        "language": "javascript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Module"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Cat",
+        "file": "\\sample\\10-fastify\\src\\cats\\interfaces\\cat.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Cat",
+        "file": "\\sample\\11-swagger\\src\\cats\\entities\\cat.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Photo",
+        "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Entity"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Cat",
+        "file": "\\sample\\14-mongoose-base\\src\\cats\\interfaces\\cat.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "RoleEntity",
+        "file": "\\sample\\21-serializer\\src\\entities\\role.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UserEntity",
+        "file": "\\sample\\21-serializer\\src\\entities\\user.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "PostsResolvers",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "ComplexityPlugin",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [
+          "ApolloServerPlugin"
+        ],
+        "decorators": [
+          "Plugin"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "LoggingPlugin",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [
+          "ApolloServerPlugin"
+        ],
+        "decorators": [
+          "Plugin"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "DateScalar",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [
+          "CustomScalar<number, Date>"
+        ],
+        "decorators": [
+          "Scalar"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "RecipesResolver",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Recipe",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\models\\recipe.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "AudioProcessor",
+        "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Processor"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Order",
+        "file": "\\sample\\30-event-emitter\\src\\orders\\entities\\order.entity.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "OrderCreatedEvent",
+        "file": "\\sample\\30-event-emitter\\src\\orders\\events\\order-created.event.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "PostsResolver",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "UsersResolver",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Post",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\post.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\models\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UsersResolver",
+        "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\models\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Post",
+        "file": "\\sample\\32-graphql-federation-schema-first\\posts-application\\src\\posts\\models\\post.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\32-graphql-federation-schema-first\\posts-application\\src\\posts\\models\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\sample\\32-graphql-federation-schema-first\\users-application\\src\\users\\models\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "Directive",
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "DateScalar",
+        "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [
+          "CustomScalar<number, Date>"
+        ],
+        "decorators": [
+          "Scalar"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "RecipesResolver",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Resolver"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "Recipe",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\models\\recipe.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [
+          "ObjectType"
+        ],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Cat",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\interfaces\\cat.interface.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      }
+    ],
+    "elementary_processes": [
+      {
+        "name": "create",
+        "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Roles",
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\01-cats-app\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\01-cats-app\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\01-cats-app\\src\\common\\pipes\\parse-int.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "toValidate",
+        "file": "\\sample\\01-cats-app\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "connectToRedis",
+        "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "createIOServer",
+        "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getClientInfoTag",
+        "file": "\\sample\\02-gateways\\src\\adapters\\redis-io.adapter.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "SubscribeMessage"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "identity",
+        "file": "\\sample\\02-gateways\\src\\events\\events.gateway.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "SubscribeMessage"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "bindEvents",
+        "file": "\\sample\\03-microservices\\src\\common\\strategies\\nats.strategy.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "execute",
+        "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "sum",
+        "file": "\\sample\\03-microservices\\src\\math\\math.controller.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [
+          "MessagePattern"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "onModuleInit",
+        "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getMany",
+        "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getById",
+        "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "GrpcMethod"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findMany",
+        "file": "\\sample\\04-grpc\\src\\hero\\hero.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "GrpcStreamMethod"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Delete"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\05-sql-typeorm\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "update",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "delete",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Delete"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "update",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "delete",
+        "file": "\\sample\\06-mongoose\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Delete"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\07-sequelize\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\08-webpack\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\08-webpack\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "bootstrap",
+        "file": "\\sample\\09-babel-example\\src\\main.js",
+        "language": "javascript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+        "language": "javascript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+        "language": "javascript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.controller.js",
+        "language": "javascript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
+        "language": "javascript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\09-babel-example\\src\\cats\\cats.service.js",
+        "language": "javascript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Roles",
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\10-fastify\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\10-fastify\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\10-fastify\\src\\common\\pipes\\parse-int.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "toValidate",
+        "file": "\\sample\\10-fastify\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "ApiResponse",
+          "ApiOperation",
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\11-swagger\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "ApiResponse",
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\11-swagger\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\13-mongo-typeorm\\src\\photo\\photo.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\14-mongoose-base\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "root",
+        "file": "\\sample\\15-mvc\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Render",
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "onEvent",
+        "file": "\\sample\\16-gateways-ws\\src\\events\\events.gateway.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "SubscribeMessage"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "root",
+        "file": "\\sample\\17-mvc-fastify\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Render",
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\18-context\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "register",
+        "file": "\\sample\\18-context\\src\\my-dynamic.module.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "signIn",
+        "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post",
+          "HttpCode",
+          "Public"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getProfile",
+        "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "extractTokenFromHeader",
+        "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.guard.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "signIn",
+        "file": "\\sample\\19-auth-jwt\\src\\auth\\auth.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\19-auth-jwt\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\20-cache\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "trackBy",
+        "file": "\\sample\\20-cache\\src\\common\\http-cache.interceptor.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\21-serializer\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "serializer",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "posts",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "post",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "update",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "delete",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "postCreated",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.resolvers.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Subscription"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "update",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "delete",
+        "file": "\\sample\\22-graphql-prisma\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "onModuleInit",
+        "file": "\\sample\\22-graphql-prisma\\src\\prisma\\prisma.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "upperDirectiveTransformer",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\directives\\upper-case.directive.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "requestDidStart",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "didResolveOperation",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\complexity.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "requestDidStart",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "willSendResponse",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\plugins\\logging.plugin.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "parseValue",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "serialize",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "parseLiteral",
+        "file": "\\sample\\23-graphql-code-first\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipe",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipes",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "addRecipe",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "removeRecipe",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipeAdded",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Subscription"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOneById",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\23-graphql-code-first\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\24-serve-static\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\25-dynamic-modules\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\25-dynamic-modules\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transcode",
+        "file": "\\sample\\26-queues\\src\\audio\\audio.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "handleTranscode",
+        "file": "\\sample\\26-queues\\src\\audio\\audio.processor.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Process"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "handleCron",
+        "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [
+          "Cron"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "handleInterval",
+        "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [
+          "Interval"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "handleTimeout",
+        "file": "\\sample\\27-scheduling\\src\\tasks\\tasks.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [
+          "Timeout"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "index",
+        "file": "\\sample\\28-sse\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "sse",
+        "file": "\\sample\\28-sse\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Sse"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "sayHello",
+        "file": "\\sample\\29-file-upload\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\29-file-upload\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\30-event-emitter\\src\\orders\\orders.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\30-event-emitter\\src\\orders\\orders.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "handleOrderCreatedEvent",
+        "file": "\\sample\\30-event-emitter\\src\\orders\\listeners\\order-created.listener.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "OnEvent"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "post",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "posts",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "user",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "ResolveField"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAllByAuthorId",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\posts.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "posts",
+        "file": "\\sample\\31-graphql-federation-code-first\\posts-application\\src\\posts\\users.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "ResolveField"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getUser",
+        "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "resolveReference",
+        "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "ResolveReference"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findById",
+        "file": "\\sample\\31-graphql-federation-code-first\\users-application\\src\\users\\users.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "parseValue",
+        "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "serialize",
+        "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "parseLiteral",
+        "file": "\\sample\\33-graphql-mercurius\\src\\common\\scalars\\date.scalar.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipe",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipes",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Query"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "addRecipe",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "removeRecipe",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Mutation"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "recipeAdded",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.resolver.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [
+          "Subscription"
+        ],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findOneById",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "remove",
+        "file": "\\sample\\33-graphql-mercurius\\src\\recipes\\recipes.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\34-using-esm-packages\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "onModuleInit",
+        "file": "\\sample\\34-using-esm-packages\\src\\app.module.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\34-using-esm-packages\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getHello",
+        "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "getJsonStringExample",
+        "file": "\\sample\\35-use-esm-package-after-node22\\src\\app.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Roles",
+          "Post"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "findOne",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.controller.ts",
+        "language": "typescript",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [
+          "Get"
+        ],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "create",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "findAll",
+        "file": "\\sample\\36-hmr-esm\\src\\cats\\cats.service.ts",
+        "language": "typescript",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\parse-int.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "transform",
+        "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "toValidate",
+        "file": "\\sample\\36-hmr-esm\\src\\common\\pipes\\validation.pipe.ts",
+        "language": "typescript",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      }
+    ]
+  },
+  {
     "repository": "realworld-csharp-dotnet",
     "files_analyzed": 64,
     "data_functions": [
@@ -970,7 +3587,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Get",
@@ -979,7 +3596,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "GetFeed",
@@ -988,7 +3605,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Get",
@@ -997,7 +3614,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Create",
@@ -1006,7 +3623,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Edit",
@@ -1015,7 +3632,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1024,7 +3641,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1033,7 +3650,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1042,7 +3659,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "GetArticleTagsToCreate",
@@ -1051,7 +3668,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "GetArticleTagsToDelete",
@@ -1060,7 +3677,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1069,7 +3686,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Create",
@@ -1078,7 +3695,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Get",
@@ -1087,7 +3704,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1096,7 +3713,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1105,7 +3722,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1114,7 +3731,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1123,7 +3740,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "FavoriteAdd",
@@ -1132,7 +3749,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "FavoriteDelete",
@@ -1141,7 +3758,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1150,7 +3767,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1159,7 +3776,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Follow",
@@ -1168,7 +3785,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Unfollow",
@@ -1177,7 +3794,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1186,7 +3803,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "ReadProfile",
@@ -1195,7 +3812,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "ReadProfile",
@@ -1204,7 +3821,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Get",
@@ -1213,7 +3830,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1222,7 +3839,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Get",
@@ -1231,7 +3848,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1240,7 +3857,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1249,7 +3866,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1258,7 +3875,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Handle",
@@ -1267,7 +3884,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "GetCurrent",
@@ -1276,7 +3893,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "UpdateUser",
@@ -1285,7 +3902,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Create",
@@ -1294,7 +3911,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "Login",
@@ -1303,7 +3920,7 @@
         "file_role": "feature",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       }
     ]
   },
@@ -1334,15 +3951,6 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "ArticleRepository",
-        "file": "\\src\\main\\java\\io\\spring\\core\\article\\ArticleRepository.java",
-        "language": "java",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
         "name": "Tag",
         "file": "\\src\\main\\java\\io\\spring\\core\\article\\Tag.java",
         "language": "java",
@@ -1369,15 +3977,6 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "CommentRepository",
-        "file": "\\src\\main\\java\\io\\spring\\core\\comment\\CommentRepository.java",
-        "language": "java",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
         "name": "ArticleFavorite",
         "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavorite.java",
         "language": "java",
@@ -1388,24 +3987,6 @@
           "getter",
           "equalsandhashcode"
         ],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "ArticleFavoriteRepository",
-        "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavoriteRepository.java",
-        "language": "java",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "AuthorizationService",
-        "file": "\\src\\main\\java\\io\\spring\\core\\service\\AuthorizationService.java",
-        "language": "java",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
         "sfp_hint": "data_function"
       },
       {
@@ -1435,15 +4016,6 @@
       }
     ],
     "elementary_processes": [
-      {
-        "name": "isEmpty",
-        "file": "\\src\\main\\java\\io\\spring\\Util.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "llm"
-      },
       {
         "name": "article",
         "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
@@ -1478,15 +4050,6 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "articleResponse",
-        "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "favoriteArticle",
         "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
         "language": "java",
@@ -1515,7 +4078,7 @@
         "file_role": "controller",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "createArticle",
@@ -1584,15 +4147,6 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "commentResponse",
-        "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "currentUser",
         "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
         "language": "java",
@@ -1612,15 +4166,6 @@
         "decorators": [
           "putmapping"
         ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "userResponse",
-        "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
         "sfp_hint": "elementary_process"
       },
       {
@@ -1657,15 +4202,6 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "profileResponse",
-        "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "getTags",
         "file": "\\src\\main\\java\\io\\spring\\api\\TagsApi.java",
         "language": "java",
@@ -1699,57 +4235,13 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "userResponse",
-        "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "handleInvalidRequest",
-        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [
-          "exceptionhandler"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "handleInvalidAuthentication",
-        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [
-          "exceptionhandler"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "handleConstraintViolation",
-        "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
-        "language": "java",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [
-          "exceptionhandler",
-          "responsestatus",
-          "responsebody"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "getParam",
         "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
         "language": "java",
         "file_role": "controller",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "getErrors",
@@ -1758,7 +4250,7 @@
         "file_role": "controller",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "getTokenString",
@@ -1767,7 +4259,7 @@
         "file_role": "controller",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findById",
@@ -1776,7 +4268,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findBySlug",
@@ -1785,7 +4277,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findRecentArticlesWithCursor",
@@ -1794,7 +4286,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findUserFeedWithCursor",
@@ -1803,7 +4295,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findRecentArticles",
@@ -1812,7 +4304,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findUserFeed",
@@ -1821,7 +4313,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "fillExtraInfo",
@@ -1830,7 +4322,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "setIsFollowingAuthor",
@@ -1839,7 +4331,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "setFavoriteCount",
@@ -1848,7 +4340,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "setIsFavorite",
@@ -1857,7 +4349,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "fillExtraInfo",
@@ -1866,7 +4358,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findById",
@@ -1875,7 +4367,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findByArticleId",
@@ -1884,7 +4376,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findByArticleIdWithCursor",
@@ -1893,7 +4385,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "parse",
@@ -1920,7 +4412,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "allTags",
@@ -1929,7 +4421,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "findById",
@@ -1938,7 +4430,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "createArticle",
@@ -1947,7 +4439,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "updateArticle",
@@ -1956,7 +4448,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "createUser",
@@ -1965,7 +4457,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "updateUser",
@@ -1974,7 +4466,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "getFeed",
@@ -1984,72 +4476,6 @@
         "base_classes": [],
         "decorators": [
           "dgsquery"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "userFeed",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "userFavorites",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "userArticles",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getArticles",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getArticle",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getCommentArticle",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
         ],
         "sfp_hint": "elementary_process"
       },
@@ -2138,28 +4564,6 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "getComment",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "articleComments",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "buildCommentPageInfo",
         "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
         "language": "java",
@@ -2178,94 +4582,6 @@
         "sfp_hint": "llm"
       },
       {
-        "name": "createComment",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "removeComment",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getMe",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\MeDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getUserPayloadUser",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\MeDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getUserProfile",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getAuthor",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "getCommentAuthor",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "queryProfile",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "queryProfile",
         "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
         "language": "java",
@@ -2273,28 +4589,6 @@
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
-      },
-      {
-        "name": "follow",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "unfollow",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
       },
       {
         "name": "buildProfile",
@@ -2315,57 +4609,13 @@
         "sfp_hint": "llm"
       },
       {
-        "name": "getTags",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\TagDatafetcher.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "createUser",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "login",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "updateUser",
-        "file": "\\src\\main\\java\\io\\spring\\graphql\\UserMutation.java",
-        "language": "java",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "dgsdata"
-        ],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "getErrorsAsData",
         "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
         "language": "java",
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "getParam",
@@ -2374,7 +4624,7 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "errorsToMap",
@@ -2383,44 +4633,17 @@
         "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       }
     ]
   },
   {
     "repository": "realworld-kotlin-ktor",
-    "files_analyzed": 25,
+    "files_analyzed": 22,
     "data_functions": [
       {
-        "name": "Article",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Article.kt",
-        "language": "kotlin",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "Comment",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Comment.kt",
-        "language": "kotlin",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "Profile",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Profile.kt",
-        "language": "kotlin",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "User",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\User.kt",
+        "name": "Articles",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2429,7 +4652,7 @@
       },
       {
         "name": "Tags",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2437,8 +4660,143 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "TagRepository",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+        "name": "ArticleTags",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "FavoriteArticle",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Tag",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "NewArticle",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UpdateArticle",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Article",
+        "file": "\\src\\main\\kotlin\\models\\Article.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comments",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "ArticleComment",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "PostComment",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Profile",
+        "file": "\\src\\main\\kotlin\\models\\Profile.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2447,7 +4805,7 @@
       },
       {
         "name": "Users",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2455,8 +4813,8 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "Follows",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "name": "Followings",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2464,8 +4822,8 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "UserRepository",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2473,8 +4831,8 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "TagService",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\TagService.kt",
+        "name": "RegisterUser",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2482,8 +4840,8 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "UserService",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\UserService.kt",
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
         "language": "kotlin",
         "file_role": "model",
         "base_classes": [],
@@ -2491,8 +4849,53 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "Cipher",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+        "name": "LoginUser",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "UpdateUser",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\main\\kotlin\\models\\User.kt",
+        "language": "kotlin",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "SimpleJWT",
+        "file": "\\src\\main\\kotlin\\util\\auth.kt",
         "language": "kotlin",
         "file_role": "unknown",
         "base_classes": [],
@@ -2500,8 +4903,35 @@
         "sfp_hint": "llm"
       },
       {
-        "name": "JwtProvider",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "name": "UserExists",
+        "file": "\\src\\main\\kotlin\\util\\errors.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "UserDoesNotExists",
+        "file": "\\src\\main\\kotlin\\util\\errors.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "ArticleDoesNotExist",
+        "file": "\\src\\main\\kotlin\\util\\errors.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "CommentNotFound",
+        "file": "\\src\\main\\kotlin\\util\\errors.kt",
         "language": "kotlin",
         "file_role": "unknown",
         "base_classes": [],
@@ -2511,265 +4941,616 @@
     ],
     "elementary_processes": [
       {
-        "name": "main",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\App.kt",
+        "name": "article",
+        "file": "\\src\\main\\kotlin\\api\\ArticleResource.kt",
         "language": "kotlin",
-        "file_role": "unknown",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "auth",
+        "file": "\\src\\main\\kotlin\\api\\AuthResource.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "comment",
+        "file": "\\src\\main\\kotlin\\api\\CommentResource.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "profile",
+        "file": "\\src\\main\\kotlin\\api\\ProfileResource.kt",
+        "language": "kotlin",
+        "file_role": "controller",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "elementary_process"
+      },
+      {
+        "name": "createArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+        "language": "kotlin",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
       },
       {
-        "name": "isEmailValid",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\ext\\String.kt",
+        "name": "updateArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "unknown",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
       },
       {
-        "name": "encrypt",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+        "name": "getArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "unknown",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
       },
       {
-        "name": "decodeJWT",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "name": "getArticles",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "unknown",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
       },
       {
-        "name": "createJWT",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+        "name": "getFeedArticles",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "unknown",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
         "sfp_hint": "llm"
       },
       {
-        "name": "users",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "name": "changeFavorite",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "profiles",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "name": "deleteArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "articles",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "name": "getAllTags",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "tags",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+        "name": "createArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "findBy",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "updateArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "feed",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "getArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "get",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "getArticles",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "create",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "getFeedArticles",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "update",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "changeFavorite",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "delete",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "deleteArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "favorite",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "getAllTags",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "unfavorite",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+        "name": "getAllArticles",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "add",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "name": "favoriteArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "findBySlug",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "name": "unfavoriteArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "delete",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+        "name": "isFavoritedArticle",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "get",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "name": "getArticleBySlug",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "follow",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "name": "getOrCreateTag",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "unfollow",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+        "name": "getArticleResponse",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "get",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\TagController.kt",
+        "name": "isArticleAuthor",
+        "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
-        "name": "login",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
-        "language": "kotlin",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
         "name": "register",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getAllUsers",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
       },
       {
         "name": "getUserByEmail",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "getCurrent",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "name": "getUserById",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
       },
       {
-        "name": "update",
-        "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+        "name": "loginAndGetUser",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
         "language": "kotlin",
-        "file_role": "controller",
+        "file_role": "service",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "elementary_process"
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "updateUser",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "register",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getAllUsers",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getUserByEmail",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getUserById",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "loginAndGetUser",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "updateUser",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getUser",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getUserByUsername",
+        "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "addComment",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getComments",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "deleteComment",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "addComment",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getComments",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "deleteComment",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getCommentResponse",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getCommentById",
+        "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "init",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "dbQuery",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "drop",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "init",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "hikari",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "dbQuery",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "drop",
+        "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getProfile",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "changeFollowStatus",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getProfile",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "changeFollowStatus",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "addFollower",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "removeFollower",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "isFollower",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "getProfileByUser",
+        "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+        "language": "kotlin",
+        "file_role": "service",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "sign",
+        "file": "\\src\\main\\kotlin\\util\\auth.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "userId",
+        "file": "\\src\\main\\kotlin\\util\\web.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
+      },
+      {
+        "name": "param",
+        "file": "\\src\\main\\kotlin\\util\\web.kt",
+        "language": "kotlin",
+        "file_role": "unknown",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "llm"
       }
     ]
   },
@@ -2778,13 +5559,56 @@
     "files_analyzed": 28,
     "data_functions": [
       {
-        "name": "HttpException",
-        "file": "\\src\\app\\models\\http-exception.model.ts",
+        "name": "Article",
+        "file": "\\src\\app\\routes\\article\\article.model.ts",
         "language": "typescript",
         "file_role": "model",
-        "base_classes": [
-          "Error"
-        ],
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Comment",
+        "file": "\\src\\app\\routes\\article\\comment.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "RegisteredUser",
+        "file": "\\src\\app\\routes\\auth\\registered-user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "User",
+        "file": "\\src\\app\\routes\\auth\\user.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Profile",
+        "file": "\\src\\app\\routes\\profile\\profile.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
+        "decorators": [],
+        "sfp_hint": "data_function"
+      },
+      {
+        "name": "Tag",
+        "file": "\\src\\app\\routes\\tag\\tag.model.ts",
+        "language": "typescript",
+        "file_role": "model",
+        "base_classes": [],
         "decorators": [],
         "sfp_hint": "data_function"
       },
@@ -3068,51 +5892,6 @@
         "sfp_hint": "data_function"
       },
       {
-        "name": "ArticleViewSet",
-        "file": "\\conduit\\apps\\articles\\views.py",
-        "language": "python",
-        "file_role": "controller",
-        "base_classes": [
-          "mixins.CreateModelMixin",
-          "mixins.ListModelMixin",
-          "mixins.RetrieveModelMixin",
-          "viewsets.GenericViewSet"
-        ],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "UserManager",
-        "file": "\\conduit\\apps\\authentication\\models.py",
-        "language": "python",
-        "file_role": "model",
-        "base_classes": [
-          "BaseUserManager"
-        ],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "TimestampedModel",
-        "file": "\\conduit\\apps\\core\\models.py",
-        "language": "python",
-        "file_role": "model",
-        "base_classes": [
-          "models.Model"
-        ],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
-        "name": "Meta",
-        "file": "\\conduit\\apps\\core\\models.py",
-        "language": "python",
-        "file_role": "model",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "data_function"
-      },
-      {
         "name": "Profile",
         "file": "\\conduit\\apps\\profiles\\models.py",
         "language": "python",
@@ -3125,53 +5904,6 @@
       }
     ],
     "elementary_processes": [
-      {
-        "name": "get_queryset",
-        "file": "\\conduit\\apps\\articles\\relations.py",
-        "language": "python",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "llm"
-      },
-      {
-        "name": "to_internal_value",
-        "file": "\\conduit\\apps\\articles\\relations.py",
-        "language": "python",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "llm"
-      },
-      {
-        "name": "to_representation",
-        "file": "\\conduit\\apps\\articles\\relations.py",
-        "language": "python",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "llm"
-      },
-      {
-        "name": "add_slug_to_article_if_not_exists",
-        "file": "\\conduit\\apps\\articles\\signals.py",
-        "language": "python",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "receiver"
-        ],
-        "sfp_hint": "llm"
-      },
-      {
-        "name": "get_queryset",
-        "file": "\\conduit\\apps\\articles\\views.py",
-        "language": "python",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
       {
         "name": "create",
         "file": "\\conduit\\apps\\articles\\views.py",
@@ -3263,15 +5995,6 @@
         "sfp_hint": "elementary_process"
       },
       {
-        "name": "get_queryset",
-        "file": "\\conduit\\apps\\articles\\views.py",
-        "language": "python",
-        "file_role": "controller",
-        "base_classes": [],
-        "decorators": [],
-        "sfp_hint": "elementary_process"
-      },
-      {
         "name": "list",
         "file": "\\conduit\\apps\\articles\\views.py",
         "language": "python",
@@ -3314,17 +6037,6 @@
         "file_role": "unknown",
         "base_classes": [],
         "decorators": [],
-        "sfp_hint": "llm"
-      },
-      {
-        "name": "create_related_profile",
-        "file": "\\conduit\\apps\\authentication\\signals.py",
-        "language": "python",
-        "file_role": "unknown",
-        "base_classes": [],
-        "decorators": [
-          "receiver"
-        ],
         "sfp_hint": "llm"
       },
       {

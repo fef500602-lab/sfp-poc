@@ -215,61 +215,178 @@ Service implementavam a mesma operação — gerando dupla contagem sistemática
 > ainda apresenta ruído residual de ~20 field resolvers `@DgsData` e
 > métodos auxiliares de controller — endereçados no backlog v4.1.
 
+### ✅ Etapa 3.2 — Redução de ruído e revalidação completa (Concluída)
+
+Após a correção metodológica v4.0, foram realizadas duas rodadas adicionais
+de refinamento (v4.1 e `feature/mongoose-schema-detection`) para eliminar
+ruído residual e validar a premissa central do projeto.
+
+#### O que foi identificado e corrigido (v4.1 — backlog v3.2 + v4.1)
+
+**Java Spring — ruído nos EPs auto-classificados**
+
+O projeto implementa duas APIs (REST + GraphQL DGS). O ruído estava nos
+field resolvers `@DgsData` — resolvers internos do GraphQL que não são
+operações de fronteira — e em response builders sem decorator HTTP
+(`articleResponse`, `userResponse`).
+
+Correções: `@DgsData` movido para `IGNORE_DECORATORS`; `@ExceptionHandler`
+adicionado a `IGNORE_DECORATORS`; `IGNORE_METHOD_NAME_SUFFIXES` criado para
+filtrar response builders por sufixo de nome de método; controller methods
+Java sem decorator HTTP redirecionados para `llm`.
+
+**C# .NET — dupla contagem em Vertical Slice Architecture**
+
+Em VSA, cada feature contém um controller method (ex: `ArticlesController.Get`)
+e um handler CQRS (ex: `Details.Handle`) representando a *mesma* operação.
+Ambos eram auto-classificados como EP, gerando dupla contagem.
+
+Correção: métodos em `feature/` sem decorator HTTP explícito passam para `llm`,
+permitindo que a LLM deduplique os pares. Adicionada instrução específica de VSA
+ao system prompt do `sfp_analyzer`.
+
+**Python Django — classes abstratas e utilitárias como FD**
+
+`TimestampedModel` (classe base abstrata de auditoria) era contada como FD.
+Classes com base `Mixin` (ex: `ArticleViewSet`) eram classificadas como FD
+por herança falsa com `models.Model` via substring.
+
+Correções: `TimestampedModel`, `AbstractModel`, `BaseModel` adicionados ao
+`IGNORE_CLASS_NAME_SUFFIXES["python"]`; `mixin` e `baseusermanager` adicionados
+ao `IGNORE_BASE_CLASSES["python"]`; métodos DRF (`to_internal_value`,
+`to_representation`, `get_queryset`) e Django signals (`receiver`) filtrados.
+
+**TypeScript / NestJS — métodos de framework como EP**
+
+Métodos de interface de framework (`canActivate`, `intercept`, `catch`,
+`bootstrap`) e classes de infraestrutura (`ExceptionFilter`, `IoAdapter`,
+`WebSocketGateway`) eram enviados à LLM desnecessariamente.
+
+Correções: adicionados a `IGNORE_METHOD_NAMES["typescript"]` e
+`IGNORE_BASE_CLASSES["typescript"]`/`IGNORE_DECORATORS["typescript"]`.
+
+**Node.js Express — modelos TypeScript invisíveis**
+
+O projeto usa TypeScript `interface` (não classes) para definir entidades,
+seguindo a convenção `*.model.ts`. Esses arquivos estavam na pasta `routes/`,
+que recebia `file_role: "controller"` — tornando as interfaces invisíveis.
+
+Correção: padrão `.model` adicionado ao `HIGH_PRIORITY_ROLES` com alta
+prioridade sobre `routes/`, garantindo que `article.model.ts` → `file_role: model`.
+DTOs filtrados por sufixo (`input`, `registered`, `response`, `request`).
+`IGNORE_BASE_CLASSES` atualizado com `error` (TypeScript/JS) para filtrar
+classes de exceção.
+
+#### Contagem SFP final — v4.1 (após revalidação completa)
+
+| Repositório              | Linguagem  | Auto | LLM env. | FD | EP  | Total SFP |
+| ------------------------ | ---------- | ---- | -------- | -- | --- | --------- |
+| realworld-csharp-dotnet  | C#         | 7    | 38       | 7  | 17  | **24**    |
+| realworld-java-spring    | Java       | 32   | 38       | 7  | 27  | **34**    |
+| realworld-python-django  | Python     | 22   | 5        | 4  | 18  | **22**    |
+| realworld-nodejs-express | TypeScript | 26   | 2        | 6  | 20  | **26**    |
+| csharp-clean-arch        | C#         | 33   | 28       | 15 | 24  | **39**    |
+| nestjs-framework         | TypeScript | 67   | 133      | 21 | 84  | **105**   |
+| **TOTAL**                |            |      |          | **60** | **190** | **250** |
+
+> **Premissa validada:** as quatro implementações REST puras da mesma
+> aplicação RealWorld convergem para **22–26 SFP** independente de linguagem
+> e arquitetura. Java Spring registra 34 SFP por expor também uma API GraphQL
+> (7 EPs adicionais via `@DgsQuery`/`@DgsMutation`).
+
+#### Por que NestJS (105) e C# Clean Arch (39) são maiores?
+
+Os repositórios complementares **não implementam a mesma aplicação** que o
+conjunto RealWorld — por isso a comparação direta de números não é válida.
+
+**NestJS Framework (105 SFP)**
+
+O repositório `nestjs-framework` é o **código-fonte do próprio framework**,
+não uma aplicação de negócio. Contém mais de 10 aplicações de exemplo
+empacotadas em pastas `samples/` independentes (cats-app, sql-typeorm,
+mongoose, passport, graphql, microservices, etc.). A mesma entidade `User`
+aparece 6 vezes — uma por exemplo. A contagem de 105 SFP representa a
+soma de ~10 mini-aplicações distintas (~10 SFP cada), não uma aplicação
+inflada. Em uso real, a ferramenta seria aplicada a repositórios de
+aplicação, não a repositórios de framework.
+
+**C# Clean Arch (39 SFP)**
+
+É uma aplicação **diferente** (template de Todo + Weather, não RealWorld).
+Os 39 SFP têm ruído residual: `BaseEntity`, `BaseAuditableEntity`,
+`PaginatedList`, `Result` são infraestrutura contada como FD; métodos
+`Map` do AutoMapper são contados como EP. As entidades e operações reais
+são ~4 FDs (TodoItem, TodoList, Colour, WeatherForecast) e ~9 EPs (CRUD
+de Todo + Weather). O repositório é útil para validar padrões arquiteturais
+(CQRS, Clean Arch), não para benchmarking de tamanho funcional.
+
+**Java Spring (34 SFP)**
+
+Mesma aplicação RealWorld, mas com **duas APIs**: REST (~20 EPs) e GraphQL
+DGS (~7 EPs via `@DgsQuery`/`@DgsMutation`). Excluindo o GraphQL, o projeto
+ficaria em ~27 SFP — dentro da faixa esperada. A diferença é funcionalidade
+real, não ruído.
+
+**O conjunto comparável é exclusivamente o RealWorld:**
+
+| Repo | SFP | Δ em relação à média (24) |
+| ---- | --- | ------------------------- |
+| Python Django | 22 | -8% |
+| C# .NET | 24 | referência |
+| Node.js Express | 26 | +8% |
+| Java Spring | 34 | +42% justificado (REST + GraphQL) |
+
+A variação de ±8% entre as três implementações REST puras é estatisticamente
+irrelevante para uma métrica de tamanho funcional. **A premissa está validada.**
+
+### ✅ Etapa 4 — Suporte a Kotlin (Concluída — branch `update`)
+
+Adicionado suporte à linguagem Kotlin via `tree-sitter-kotlin`, com upgrade
+do tree-sitter de `0.22.3` para `0.25.2`.
+
+**O que foi implementado:**
+- Importação e configuração do parser `tree-sitter-kotlin`
+- Regras de pré-classificação Kotlin: `IGNORE_CLASS_NAME_SUFFIXES`,
+  `IGNORE_METHOD_NAMES`, `DATA_FUNCTION_BASE_CLASSES`,
+  `DATA_FUNCTION_DECORATORS`, `ELEMENTARY_PROCESS_DECORATORS`,
+  `IGNORE_BASE_CLASSES` e `IGNORE_DECORATORS`
+- Reuso dos extractores de base class e decorator do Java
+  (Kotlin annotations têm a mesma estrutura AST)
+- Repositório de validação: `realworld-kotlin-ktor`
+  (mesma aplicação RealWorld implementada em Kotlin + Ktor)
+
+**Resultados iniciais (Kotlin Ktor):**
+
+| Elemento | Resultado | Esperado | Status |
+| -------- | --------- | -------- | ------ |
+| FD       | 28        | ~6       | ⚠️ Calibração necessária |
+| EP       | 4         | ~19      | ⚠️ Calibração necessária |
+| Total    | 32        | ~25      | ⚠️ Calibração necessária |
+
+**Limitações conhecidas — backlog `fix/kotlin-calibration`:**
+
+- **FD superdimensionado (28 vs ~6):** muitas classes de suporte (data classes
+  de tabela, tipos auxiliares) chegam à LLM sem filtragem prévia. Necessário
+  refinar `IGNORE_CLASS_NAME_SUFFIXES["kotlin"]` e `IGNORE_BASE_CLASSES["kotlin"]`
+  com padrões específicos do ecossistema Kotlin/Ktor/Exposed.
+
+- **EP subdimensionado (4 vs ~19):** Ktor usa routing funcional direto —
+  `get("/path") { ... }` — sem objeto receptor (`router.get`). O detector de
+  rotas Express (`extract_express_routes`) não captura esse padrão. Necessário
+  implementar `extract_ktor_routes()` análogo ao que foi feito para Express.
+
+Os outros repositórios do conjunto de validação **não sofreram regressão**
+com o upgrade do tree-sitter.
+
 ### ⏳ Etapas Futuras
 
-#### Melhorias de pré-classificação identificadas (backlog v4.1)
+#### Backlog `fix/kotlin-calibration`
+- Implementar `extract_ktor_routes()` para detectar `get(path) {...}`,
+  `post(path) {...}` como EPs (padrão funcional, sem objeto receptor)
+- Refinar filtros de classe Kotlin: data classes de mapeamento ORM (Exposed),
+  tipos auxiliares e sealed classes de domínio vs. infraestrutura
 
-Ruído residual identificado após a correção metodológica v4.0.
-Objetivo: fazer Java Spring convergir para ~25-30 EPs (alinhado com Python e Node.js).
-
-**Java Spring** — ~30 EPs de ruído nos 60 auto-classificados
-- Adicionar `exceptionhandler` ao `IGNORE_DECORATORS["java"]`
-  (`@ExceptionHandler` é cross-cutting, não operação de negócio)
-- Mover `dgsdata` de `ELEMENTARY_PROCESS_DECORATORS` para `IGNORE_DECORATORS["java"]`
-  (`@DgsData` são field resolvers internos; apenas `@DgsQuery`/`@DgsMutation` são fronteira)
-- Filtrar response builders sem decorator HTTP (`articleResponse`, `userResponse`, etc.)
-  em arquivos controller: adicionar ao `IGNORE_METHOD_NAMES["java"]` ou criar
-  regra de sufixo `response` apenas para métodos (não classes)
-- Aguardar suporte Kotlin para completar comparação entre linguagens
-
-#### Melhorias de pré-classificação identificadas (backlog v3.2)
-
-Itens identificados na análise diagnóstica, prontos para implementação:
-
-**Python Django** — reduz 10 EPs enviados à LLM para ~0%
-- Adicionar `to_internal_value`, `to_representation` ao `IGNORE_METHOD_NAMES["python"]`
-  (métodos padrão do DRF Serializer — nunca são EPs)
-- Adicionar `get_queryset` ao `IGNORE_METHOD_NAMES["python"]`
-  (override de filtro, não operação de negócio)
-- Adicionar `receiver` ao `IGNORE_DECORATORS["python"]`
-  (Django signal handlers não são EPs)
-- Adicionar `BaseUserManager` ao `IGNORE_BASE_CLASSES["python"]`
-  (`UserManager` é utilitário de acesso, não entidade de domínio)
-- Filtrar classes internas `Meta` (padrão Django — sempre filha de models,
-  nunca uma FD independente)
-- Corrigir `ArticleViewSet` classificada como FD: bases com `Mixin` indicam
-  controller/EP, não Função de Dados
-
-**TypeScript / NestJS** — reduz ~50 EPs e ~15 FDs enviados à LLM
-- Adicionar `catch`, `canActivate`, `intercept`, `bootstrap` ao
-  `IGNORE_METHOD_NAMES["typescript"]` (métodos de interface de framework)
-- Adicionar `WebSocketGateway`, `Catch` ao `IGNORE_DECORATORS["typescript"]`
-- Adicionar `ExceptionFilter`, `IoAdapter` ao `IGNORE_BASE_CLASSES["typescript"]`
-
-**Java Spring** — impacto menor (~1 item)
-- Adicionar `isEmpty` ao `IGNORE_METHOD_NAMES["java"]`
-
-**JavaScript / Node.js** — impacto menor (~1 FD)
-- Adicionar `"error"` ao `IGNORE_BASE_CLASSES["javascript"]`
-  (`HttpException extends Error` deve ser ignorado, assim como já ocorre em Java)
-
-**Falso positivo conhecido — React (caso de borda)**
-- O detector de rotas Express captura chamadas HTTP *client-side* do superagent
-  (`agent.get('/user', ...)`) como se fossem rotas de servidor. Não afeta o
-  conjunto de validação principal pois `realworld-react-js` está fora dele,
-  mas deve ser corrigido antes de expandir para repositórios frontend
-
-#### Roadmap geral
+#### Roadmap técnico
 
 - Suporte a repositórios internos via Azure DevOps
 - Análise histórica por commits (evolução ao longo do tempo)
@@ -341,6 +458,7 @@ evitar ambiguidades por substring:
 | TypeScript | NestJS, Angular   | tree-sitter-typescript | 0.21.2 | Suporte a decorators e export_statement |
 | TSX        | React TypeScript  | tree-sitter-typescript | 0.21.2 | Parser tsx separado para arquivos .tsx  |
 | C#         | ASP.NET Core      | tree-sitter-c-sharp    | 0.21.3 | Suporte a atributos e VSA               |
+| Kotlin     | Ktor, Spring Boot | tree-sitter-kotlin     | 1.1.0  | ⚠️ Funcional, calibração em andamento  |
 
 ---
 

@@ -1,10 +1,86 @@
 {
   "repository": "csharp-clean-arch",
-  "files_analyzed": 211,
+  "files_analyzed": 130,
   "data_functions": [
     {
+      "name": "DependencyInjection",
+      "file": "\\src\\Application\\DependencyInjection.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "IApplicationDbContext",
+      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "IUser",
+      "file": "\\src\\Application\\Common\\Interfaces\\IUser.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "PaginatedList",
+      "file": "\\src\\Application\\Common\\Models\\PaginatedList.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Result",
+      "file": "\\src\\Application\\Common\\Models\\Result.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "AuthorizeAttribute",
+      "file": "\\src\\Application\\Common\\Security\\AuthorizeAttribute.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [
+        "Attribute"
+      ],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "WeatherForecast",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\WeatherForecast.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "BaseAuditableEntity",
+      "file": "\\src\\Domain\\Common\\BaseAuditableEntity.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseEntity"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
       "name": "BaseEntity",
-      "file": "\\src\\ApplicationCore\\Entities\\BaseEntity.cs",
+      "file": "\\src\\Domain\\Common\\BaseEntity.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -12,32 +88,19 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "CatalogBrand",
-      "file": "\\src\\ApplicationCore\\Entities\\CatalogBrand.cs",
+      "name": "BaseEvent",
+      "file": "\\src\\Domain\\Common\\BaseEvent.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
+        "INotification"
       ],
       "decorators": [],
       "sfp_hint": "data_function"
     },
     {
-      "name": "CatalogItem",
-      "file": "\\src\\ApplicationCore\\Entities\\CatalogItem.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogItemDetails",
-      "file": "\\src\\ApplicationCore\\Entities\\CatalogItem.cs",
+      "name": "ValueObject",
+      "file": "\\src\\Domain\\Common\\ValueObject.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
@@ -45,292 +108,92 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "CatalogType",
-      "file": "\\src\\ApplicationCore\\Entities\\CatalogType.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Basket",
-      "file": "\\src\\ApplicationCore\\Entities\\BasketAggregate\\Basket.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "BasketItem",
-      "file": "\\src\\ApplicationCore\\Entities\\BasketAggregate\\BasketItem.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Buyer",
-      "file": "\\src\\ApplicationCore\\Entities\\BuyerAggregate\\Buyer.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "PaymentMethod",
-      "file": "\\src\\ApplicationCore\\Entities\\BuyerAggregate\\PaymentMethod.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Address",
-      "file": "\\src\\ApplicationCore\\Entities\\OrderAggregate\\Address.cs",
+      "name": "Policies",
+      "file": "\\src\\Domain\\Constants\\Policies.cs",
       "language": "csharp",
       "file_role": "model",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogItemOrdered",
-      "file": "\\src\\ApplicationCore\\Entities\\OrderAggregate\\CatalogItemOrdered.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Order",
-      "file": "\\src\\ApplicationCore\\Entities\\OrderAggregate\\Order.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity",
-        "IAggregateRoot"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "OrderItem",
-      "file": "\\src\\ApplicationCore\\Entities\\OrderAggregate\\OrderItem.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "BaseEntity"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IAggregateRoot",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IAggregateRoot.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IAppLogger",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IAppLogger.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IBasketQueryService",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IBasketQueryService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IBasketService",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IBasketService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IEmailSender",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IEmailSender.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IOrderService",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IOrderService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IReadRepository",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IReadRepository.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "IReadRepositoryBase<T>"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IRepository",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IRepository.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "IRepositoryBase<T>"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ITokenClaimsService",
-      "file": "\\src\\ApplicationCore\\Interfaces\\ITokenClaimsService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IUriComposer",
-      "file": "\\src\\ApplicationCore\\Interfaces\\IUriComposer.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "BasketService",
-      "file": "\\src\\ApplicationCore\\Services\\BasketService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "IBasketService"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "OrderService",
-      "file": "\\src\\ApplicationCore\\Services\\OrderService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "IOrderService"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "UriComposer",
-      "file": "\\src\\ApplicationCore\\Services\\UriComposer.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "IUriComposer"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CustomAuthStateProvider",
-      "file": "\\src\\BlazorAdmin\\CustomAuthStateProvider.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [
-        "AuthenticationStateProvider"
-      ],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "RefreshBroadcast",
-      "file": "\\src\\BlazorAdmin\\Helpers\\RefreshBroadcast.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "Cookies",
-      "file": "\\src\\BlazorAdmin\\JavaScript\\Cookies.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "Css",
-      "file": "\\src\\BlazorAdmin\\JavaScript\\Css.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "CustomInputSelect",
-      "file": "\\src\\BlazorAdmin\\Shared\\CustomInputSelect.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [
-        "InputSelect<TValue>"
-      ],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "ClaimValue",
-      "file": "\\src\\BlazorShared\\Authorization\\ClaimValue.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
     },
     {
       "name": "Roles",
-      "file": "\\src\\BlazorShared\\Authorization\\Constants.cs",
+      "file": "\\src\\Domain\\Constants\\Roles.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoItem",
+      "file": "\\src\\Domain\\Entities\\TodoItem.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseAuditableEntity"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoList",
+      "file": "\\src\\Domain\\Entities\\TodoList.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseAuditableEntity"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoItemCompletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCompletedEvent.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseEvent"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoItemCreatedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemCreatedEvent.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseEvent"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoItemDeletedEvent",
+      "file": "\\src\\Domain\\Events\\TodoItemDeletedEvent.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "BaseEvent"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Colour",
+      "file": "\\src\\Domain\\ValueObjects\\Colour.cs",
+      "language": "csharp",
+      "file_role": "model",
+      "base_classes": [
+        "ValueObject"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "DependencyInjection",
+      "file": "\\src\\Web\\DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -338,335 +201,19 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "UserInfo",
-      "file": "\\src\\BlazorShared\\Authorization\\UserInfo.cs",
-      "language": "csharp",
+      "name": "App",
+      "file": "\\src\\Web\\ClientApp-React\\src\\App.jsx",
+      "language": "javascript",
       "file_role": "unknown",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
-    },
-    {
-      "name": "ILookupDataResponse",
-      "file": "\\src\\BlazorShared\\Interfaces\\ILookupDataResponse.cs",
-      "language": "csharp",
-      "file_role": "unknown",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "llm"
-    },
-    {
-      "name": "CatalogBrand",
-      "file": "\\src\\BlazorShared\\Models\\CatalogBrand.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "LookupData"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogBrandResponse",
-      "file": "\\src\\BlazorShared\\Models\\CatalogBrandResponse.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "ILookupDataResponse<CatalogBrand>"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogItem",
-      "file": "\\src\\BlazorShared\\Models\\CatalogItem.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogType",
-      "file": "\\src\\BlazorShared\\Models\\CatalogType.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "LookupData"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogTypeResponse",
-      "file": "\\src\\BlazorShared\\Models\\CatalogTypeResponse.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "ILookupDataResponse<CatalogType>"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CreateCatalogItemRequest",
-      "file": "\\src\\BlazorShared\\Models\\CreateCatalogItemRequest.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CreateCatalogItemResponse",
-      "file": "\\src\\BlazorShared\\Models\\CreateCatalogItemResponse.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "DeleteCatalogItemResponse",
-      "file": "\\src\\BlazorShared\\Models\\DeleteCatalogItemResponse.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "EditCatalogItemResult",
-      "file": "\\src\\BlazorShared\\Models\\EditCatalogItemResponse.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ErrorDetails",
-      "file": "\\src\\BlazorShared\\Models\\ErrorDetails.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "LookupData",
-      "file": "\\src\\BlazorShared\\Models\\LookupData.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IBasketViewModelService",
-      "file": "\\src\\Web\\Interfaces\\IBasketViewModelService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ICatalogItemViewModelService",
-      "file": "\\src\\Web\\Interfaces\\ICatalogItemViewModelService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ICatalogViewModelService",
-      "file": "\\src\\Web\\Interfaces\\ICatalogViewModelService.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogIndexViewModel",
-      "file": "\\src\\Web\\ViewModels\\CatalogIndexViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "CatalogItemViewModel",
-      "file": "\\src\\Web\\ViewModels\\CatalogItemViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "OrderDetailViewModel",
-      "file": "\\src\\Web\\ViewModels\\OrderDetailViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [
-        "OrderViewModel"
-      ],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "OrderItemViewModel",
-      "file": "\\src\\Web\\ViewModels\\OrderItemViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "OrderViewModel",
-      "file": "\\src\\Web\\ViewModels\\OrderViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "PaginationInfoViewModel",
-      "file": "\\src\\Web\\ViewModels\\PaginationInfoViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "LoginViewModel",
-      "file": "\\src\\Web\\ViewModels\\Account\\LoginViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "LoginWith2faViewModel",
-      "file": "\\src\\Web\\ViewModels\\Account\\LoginWith2faViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "RegisterViewModel",
-      "file": "\\src\\Web\\ViewModels\\Account\\RegisterViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ResetPasswordViewModel",
-      "file": "\\src\\Web\\ViewModels\\Account\\ResetPasswordViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "FileViewModel",
-      "file": "\\src\\Web\\ViewModels\\File\\FileViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ChangePasswordViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\ChangePasswordViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "EnableAuthenticatorViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\EnableAuthenticatorViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ExternalLoginsViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\ExternalLoginsViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "IndexViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\IndexViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "RemoveLoginViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\RemoveLoginViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "SetPasswordViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\SetPasswordViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "ShowRecoveryCodesViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\ShowRecoveryCodesViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "TwoFactorAuthenticationViewModel",
-      "file": "\\src\\Web\\ViewModels\\Manage\\TwoFactorAuthenticationViewModel.cs",
-      "language": "csharp",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
     }
   ],
   "elementary_processes": [
     {
-      "name": "GetAuthenticationStateAsync",
-      "file": "\\src\\BlazorAdmin\\CustomAuthStateProvider.cs",
+      "name": "AddApplicationServices",
+      "file": "\\src\\Application\\DependencyInjection.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -674,8 +221,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "GetUser",
-      "file": "\\src\\BlazorAdmin\\CustomAuthStateProvider.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\AuthorizationBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -683,8 +230,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "FetchUser",
-      "file": "\\src\\BlazorAdmin\\CustomAuthStateProvider.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\PerformanceBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -692,8 +239,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "CallRequestRefresh",
-      "file": "\\src\\BlazorAdmin\\Helpers\\RefreshBroadcast.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\UnhandledExceptionBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -701,8 +248,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "GetCookie",
-      "file": "\\src\\BlazorAdmin\\JavaScript\\Cookies.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\Common\\Behaviours\\ValidationBehaviour.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -710,8 +257,8 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "HideBodyOverflow",
-      "file": "\\src\\BlazorAdmin\\JavaScript\\Css.cs",
+      "name": "SaveChangesAsync",
+      "file": "\\src\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -719,233 +266,17 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "ListPaged",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Commands\\CreateTodoItem\\CreateTodoItem.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "List",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetById",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Create",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Edit",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Delete",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogItemServiceDecorator.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "List",
-      "file": "\\src\\BlazorAdmin\\Services\\CachedCatalogLookupDataServiceDecorator .cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Create",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Edit",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Delete",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetById",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "ListPaged",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "List",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "List",
-      "file": "\\src\\BlazorAdmin\\Services\\CatalogLookupDataService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HttpGet",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HttpDelete",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HttpPost",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HttpPut",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "StringContent",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "FromHttpResponseMessage",
-      "file": "\\src\\BlazorAdmin\\Services\\HttpService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "ShowToast",
-      "file": "\\src\\BlazorAdmin\\Services\\ToastService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "StartCountdown",
-      "file": "\\src\\BlazorAdmin\\Services\\ToastService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "SetCountdown",
-      "file": "\\src\\BlazorAdmin\\Services\\ToastService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HideToast",
-      "file": "\\src\\BlazorAdmin\\Services\\ToastService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Dispose",
-      "file": "\\src\\BlazorAdmin\\Services\\ToastService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "TryParseValueFromString",
-      "file": "\\src\\BlazorAdmin\\Shared\\CustomInputSelect.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoItems\\Queries\\GetTodoItemsWithPagination\\GetTodoItemsWithPagination.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -953,224 +284,35 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "Create",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoList.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "Edit",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
+      "name": "BeUniqueTitle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\CreateTodoList\\CreateTodoListCommandValidator.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "Delete",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
+      "name": "BeUniqueTitle",
+      "file": "\\src\\Application\\TodoLists\\Commands\\UpdateTodoList\\UpdateTodoListCommandValidator.cs",
       "language": "csharp",
       "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "GetById",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "ListPaged",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "List",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogItemService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "List",
-      "file": "\\src\\BlazorShared\\Interfaces\\ICatalogLookupDataService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Guid",
-      "file": "\\src\\PublicApi\\BaseMessage.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Apply",
-      "file": "\\src\\PublicApi\\CustomSchemaFilters.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "IsValidImage",
-      "file": "\\src\\PublicApi\\ImageValidators.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "IsExtensionValid",
-      "file": "\\src\\PublicApi\\ImageValidators.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\AuthEndpoints\\AuthenticateEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogBrandEndpoints\\CatalogBrandListEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\CatalogItemGetByIdEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\CreateCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\DeleteCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogItemEndpoints\\UpdateCatalogItemEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddRoute",
-      "file": "\\src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "HandleAsync",
-      "file": "\\src\\PublicApi\\CatalogTypeEndpoints\\CatalogTypeListEndpoint.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "TransformOutbound",
-      "file": "\\src\\Web\\SlugifyParameterTransformer.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\TodoLists\\Queries\\GetTodos\\GetTodos.cs",
       "language": "csharp",
       "file_role": "unknown",
       "base_classes": [],
@@ -1178,8 +320,107 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "MyAccount",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "Handle",
+      "file": "\\src\\Application\\WeatherForecasts\\Queries\\GetWeatherForecasts\\GetWeatherForecastsQuery.cs",
+      "language": "csharp",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "AddWebServices",
+      "file": "\\src\\Web\\DependencyInjection.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "AddKeyVaultIfConfigured",
+      "file": "\\src\\Web\\DependencyInjection.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getBaseUrl",
+      "file": "\\src\\Web\\ClientApp\\src\\main.ts",
+      "language": "typescript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "initialize",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "login",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "register",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "logout",
+      "file": "\\src\\Web\\ClientApp\\src\\api-authorization\\auth.service.ts",
+      "language": "typescript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "getApiBaseUrl",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\app.module.ts",
+      "language": "typescript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "setTheme",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "applyTheme",
+      "file": "\\src\\Web\\ClientApp\\src\\app\\theme.service.ts",
+      "language": "typescript",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1187,8 +428,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "MyAccount",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "GetTodoItemsWithPagination",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1196,8 +437,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "SendVerificationEmail",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "CreateTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1205,8 +446,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "ChangePassword",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "UpdateTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1214,8 +455,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "ChangePassword",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "UpdateTodoItemDetail",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1223,8 +464,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "SetPassword",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "DeleteTodoItem",
+      "file": "\\src\\Web\\Endpoints\\TodoItems.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1232,8 +473,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "SetPassword",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1241,8 +482,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "ExternalLogins",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "GetTodoLists",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1250,8 +491,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "LinkLogin",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "CreateTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1259,8 +500,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "LinkLoginCallback",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "UpdateTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1268,8 +509,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "RemoveLogin",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
+      "name": "DeleteTodoList",
+      "file": "\\src\\Web\\Endpoints\\TodoLists.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1277,143 +518,8 @@
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "TwoFactorAuthentication",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Disable2faWarning",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Disable2fa",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "EnableAuthenticator",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "IActionResult",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "EnableAuthenticator",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "IActionResult",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "ResetAuthenticator",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GenerateRecoveryCodes",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GenerateRecoveryCodesWarning",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "AddErrors",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "FormatKey",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GenerateQrCodeUri",
-      "file": "\\src\\Web\\Controllers\\ManageController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "MyOrders",
-      "file": "\\src\\Web\\Controllers\\OrderController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Detail",
-      "file": "\\src\\Web\\Controllers\\OrderController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetCurrentUser",
-      "file": "\\src\\Web\\Controllers\\UserController.cs",
+      "name": "Map",
+      "file": "\\src\\Web\\Endpoints\\Users.cs",
       "language": "csharp",
       "file_role": "controller",
       "base_classes": [],
@@ -1422,147 +528,48 @@
     },
     {
       "name": "Logout",
-      "file": "\\src\\Web\\Controllers\\UserController.cs",
+      "file": "\\src\\Web\\Endpoints\\Users.cs",
       "language": "csharp",
       "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "CreateUserInfo",
-      "file": "\\src\\Web\\Controllers\\UserController.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Handle",
-      "file": "\\src\\Web\\Features\\MyOrders\\GetMyOrdersHandler.cs",
-      "language": "csharp",
-      "file_role": "feature",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "Handle",
-      "file": "\\src\\Web\\Features\\OrderDetails\\GetOrderDetailsHandler.cs",
-      "language": "csharp",
-      "file_role": "feature",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "CheckHealthAsync",
-      "file": "\\src\\Web\\HealthChecks\\ApiHealthCheck.cs",
-      "language": "csharp",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetOrCreateBasketForUser",
-      "file": "\\src\\Web\\Services\\BasketViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "CreateBasketForUser",
-      "file": "\\src\\Web\\Services\\BasketViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetBasketItems",
-      "file": "\\src\\Web\\Services\\BasketViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "elementary_process"
     },
     {
       "name": "Map",
-      "file": "\\src\\Web\\Services\\BasketViewModelService.cs",
+      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
       "language": "csharp",
-      "file_role": "service",
+      "file_role": "controller",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "CountTotalBasketItems",
-      "file": "\\src\\Web\\Services\\BasketViewModelService.cs",
+      "name": "GetWeatherForecasts",
+      "file": "\\src\\Web\\Endpoints\\WeatherForecasts.cs",
       "language": "csharp",
-      "file_role": "service",
+      "file_role": "controller",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "elementary_process"
     },
     {
-      "name": "GetBrands",
-      "file": "\\src\\Web\\Services\\CachedCatalogViewModelService.cs",
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Commands\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
       "language": "csharp",
-      "file_role": "service",
+      "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "GetCatalogItems",
-      "file": "\\src\\Web\\Services\\CachedCatalogViewModelService.cs",
+      "name": "Handle",
+      "file": "\\templates\\ca-use-case\\FeatureName\\Queries\\CleanArchitectureUseCase\\CleanArchitectureUseCase.cs",
       "language": "csharp",
-      "file_role": "service",
+      "file_role": "feature",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetTypes",
-      "file": "\\src\\Web\\Services\\CachedCatalogViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetCatalogItems",
-      "file": "\\src\\Web\\Services\\CatalogViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetBrands",
-      "file": "\\src\\Web\\Services\\CatalogViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "GetTypes",
-      "file": "\\src\\Web\\Services\\CatalogViewModelService.cs",
-      "language": "csharp",
-      "file_role": "service",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     }
   ]
 }

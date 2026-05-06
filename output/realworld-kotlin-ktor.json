@@ -1,37 +1,10 @@
 {
   "repository": "realworld-kotlin-ktor",
-  "files_analyzed": 25,
+  "files_analyzed": 22,
   "data_functions": [
     {
-      "name": "Article",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Article.kt",
-      "language": "kotlin",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Comment",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Comment.kt",
-      "language": "kotlin",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "Profile",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\Profile.kt",
-      "language": "kotlin",
-      "file_role": "model",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "data_function"
-    },
-    {
-      "name": "User",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\User.kt",
+      "name": "Articles",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -40,7 +13,7 @@
     },
     {
       "name": "Tags",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -48,8 +21,143 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "TagRepository",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\TagRepository.kt",
+      "name": "ArticleTags",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "FavoriteArticle",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Tag",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "NewArticle",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "UpdateArticle",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Article",
+      "file": "\\src\\main\\kotlin\\models\\Article.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Comments",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "ArticleComment",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Comment",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Comment",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "PostComment",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Comment",
+      "file": "\\src\\main\\kotlin\\models\\Comments.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "Profile",
+      "file": "\\src\\main\\kotlin\\models\\Profile.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -58,7 +166,7 @@
     },
     {
       "name": "Users",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -66,8 +174,8 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "Follows",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+      "name": "Followings",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -75,8 +183,8 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "UserRepository",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\repository\\UserRepository.kt",
+      "name": "User",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -84,8 +192,8 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "TagService",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\TagService.kt",
+      "name": "RegisterUser",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -93,8 +201,8 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "UserService",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\domain\\service\\UserService.kt",
+      "name": "User",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
       "language": "kotlin",
       "file_role": "model",
       "base_classes": [],
@@ -102,8 +210,53 @@
       "sfp_hint": "data_function"
     },
     {
-      "name": "Cipher",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+      "name": "LoginUser",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "User",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "UpdateUser",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "User",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "User",
+      "file": "\\src\\main\\kotlin\\models\\User.kt",
+      "language": "kotlin",
+      "file_role": "model",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "SimpleJWT",
+      "file": "\\src\\main\\kotlin\\util\\auth.kt",
       "language": "kotlin",
       "file_role": "unknown",
       "base_classes": [],
@@ -111,8 +264,35 @@
       "sfp_hint": "llm"
     },
     {
-      "name": "JwtProvider",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+      "name": "UserExists",
+      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "UserDoesNotExists",
+      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "ArticleDoesNotExist",
+      "file": "\\src\\main\\kotlin\\util\\errors.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "CommentNotFound",
+      "file": "\\src\\main\\kotlin\\util\\errors.kt",
       "language": "kotlin",
       "file_role": "unknown",
       "base_classes": [],
@@ -122,265 +302,616 @@
   ],
   "elementary_processes": [
     {
-      "name": "main",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\App.kt",
+      "name": "article",
+      "file": "\\src\\main\\kotlin\\api\\ArticleResource.kt",
       "language": "kotlin",
-      "file_role": "unknown",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "auth",
+      "file": "\\src\\main\\kotlin\\api\\AuthResource.kt",
+      "language": "kotlin",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "comment",
+      "file": "\\src\\main\\kotlin\\api\\CommentResource.kt",
+      "language": "kotlin",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "profile",
+      "file": "\\src\\main\\kotlin\\api\\ProfileResource.kt",
+      "language": "kotlin",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "createArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
+      "language": "kotlin",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
-      "name": "isEmailValid",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\ext\\String.kt",
+      "name": "updateArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "unknown",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
-      "name": "encrypt",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\Cipher.kt",
+      "name": "getArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "unknown",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
-      "name": "decodeJWT",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+      "name": "getArticles",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "unknown",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
-      "name": "createJWT",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\utils\\JwtProvider.kt",
+      "name": "getFeedArticles",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "unknown",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
       "sfp_hint": "llm"
     },
     {
-      "name": "users",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+      "name": "changeFavorite",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "profiles",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+      "name": "deleteArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "articles",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+      "name": "getAllTags",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "tags",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\Router.kt",
+      "name": "createArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "findBy",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "updateArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "feed",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "getArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "get",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "getArticles",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "create",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "getFeedArticles",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "update",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "changeFavorite",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "delete",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "deleteArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "favorite",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "getAllTags",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "unfavorite",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ArticleController.kt",
+      "name": "getAllArticles",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "add",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+      "name": "favoriteArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "findBySlug",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+      "name": "unfavoriteArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "delete",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\CommentController.kt",
+      "name": "isFavoritedArticle",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "get",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+      "name": "getArticleBySlug",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "follow",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+      "name": "getOrCreateTag",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "unfollow",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\ProfileController.kt",
+      "name": "getArticleResponse",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "get",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\TagController.kt",
+      "name": "isArticleAuthor",
+      "file": "\\src\\main\\kotlin\\service\\ArticleService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
-    },
-    {
-      "name": "login",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
-      "language": "kotlin",
-      "file_role": "controller",
-      "base_classes": [],
-      "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
       "name": "register",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getAllUsers",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     },
     {
       "name": "getUserByEmail",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "getCurrent",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+      "name": "getUserById",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
     },
     {
-      "name": "update",
-      "file": "\\src\\main\\kotlin\\io\\realworld\\app\\web\\controllers\\UserController.kt",
+      "name": "loginAndGetUser",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
       "language": "kotlin",
-      "file_role": "controller",
+      "file_role": "service",
       "base_classes": [],
       "decorators": [],
-      "sfp_hint": "elementary_process"
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "updateUser",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "register",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getAllUsers",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getUserByEmail",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getUserById",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "loginAndGetUser",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "updateUser",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getUser",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getUserByUsername",
+      "file": "\\src\\main\\kotlin\\service\\AuthService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "addComment",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getComments",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "deleteComment",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "addComment",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getComments",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "deleteComment",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getCommentResponse",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getCommentById",
+      "file": "\\src\\main\\kotlin\\service\\CommentService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "init",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "dbQuery",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "drop",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "init",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "hikari",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "dbQuery",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "drop",
+      "file": "\\src\\main\\kotlin\\service\\DatabaseFactory.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getProfile",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "changeFollowStatus",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getProfile",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "changeFollowStatus",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "addFollower",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "removeFollower",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "isFollower",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getProfileByUser",
+      "file": "\\src\\main\\kotlin\\service\\ProfileService.kt",
+      "language": "kotlin",
+      "file_role": "service",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "sign",
+      "file": "\\src\\main\\kotlin\\util\\auth.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "userId",
+      "file": "\\src\\main\\kotlin\\util\\web.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "param",
+      "file": "\\src\\main\\kotlin\\util\\web.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
     }
   ]
 }

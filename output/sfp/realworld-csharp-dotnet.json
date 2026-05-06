@@ -18,270 +18,270 @@
   "data_functions": [
     {
       "name": "Article",
-      "file": "/src/Conduit/Domain/Article.cs",
+      "file": "\\src\\Conduit\\Domain\\Article.cs",
       "source": "pre_classifier"
     },
     {
       "name": "ArticleFavorite",
-      "file": "/src/Conduit/Domain/ArticleFavorite.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleFavorite.cs",
       "source": "pre_classifier"
     },
     {
       "name": "ArticleTag",
-      "file": "/src/Conduit/Domain/ArticleTag.cs",
+      "file": "\\src\\Conduit\\Domain\\ArticleTag.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Comment",
-      "file": "/src/Conduit/Domain/Comment.cs",
+      "file": "\\src\\Conduit\\Domain\\Comment.cs",
       "source": "pre_classifier"
     },
     {
       "name": "FollowedPeople",
-      "file": "/src/Conduit/Domain/FollowedPeople.cs",
+      "file": "\\src\\Conduit\\Domain\\FollowedPeople.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Person",
-      "file": "/src/Conduit/Domain/Person.cs",
+      "file": "\\src\\Conduit\\Domain\\Person.cs",
       "source": "pre_classifier"
     },
     {
       "name": "Tag",
-      "file": "/src/Conduit/Domain/Tag.cs",
+      "file": "\\src\\Conduit\\Domain\\Tag.cs",
       "source": "pre_classifier"
     }
   ],
   "elementary_processes": [
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para consulta de artigo; conta como processo elementar."
+      "reason": "Método de controller exposto na fronteira HTTP para consulta de artigos; conta como EP."
     },
     {
       "name": "GetFeed",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para obter feed de artigos; conta como processo elementar."
+      "reason": "Método de controller exposto na fronteira HTTP para obter feed; operação distinta de negócio."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "source": "llm",
-      "reason": "Método de controller distinto na fronteira HTTP, provavelmente outra rota de listagem de artigos; conta como processo elementar."
+      "reason": "Método de controller exposto na fronteira HTTP para leitura de artigo específico; conta como EP."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para criação de artigo; conta como processo elementar."
+      "reason": "Método de controller para criação de artigo na fronteira do sistema; conta como EP."
     },
     {
       "name": "Edit",
-      "file": "/src/Conduit/Features/Articles/ArticlesController.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticlesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para edição de artigo; conta como processo elementar."
+      "reason": "Método de controller para edição de artigo na fronteira HTTP; conta como EP."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para criação de comentário; conta como processo elementar."
+      "reason": "Método de controller para criação de comentário na fronteira HTTP; conta como EP."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Comments/CommentsController.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\CommentsController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para consulta/listagem de comentários; conta como processo elementar."
+      "reason": "Método de controller para consulta de comentários na fronteira do sistema; conta como EP."
     },
     {
       "name": "FavoriteAdd",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para favoritar artigo; conta como processo elementar."
+      "reason": "Método de controller para favoritar artigo na fronteira HTTP; operação elementar distinta."
     },
     {
       "name": "FavoriteDelete",
-      "file": "/src/Conduit/Features/Favorites/FavoritesController.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\FavoritesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para desfavoritar artigo; conta como processo elementar."
+      "reason": "Método de controller para desfavoritar artigo na fronteira HTTP; conta como EP."
     },
     {
       "name": "Follow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para seguir perfil; conta como processo elementar."
+      "reason": "Método de controller para seguir perfil na fronteira do sistema; conta como EP."
     },
     {
       "name": "Unfollow",
-      "file": "/src/Conduit/Features/Followers/FollowersController.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\FollowersController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para deixar de seguir perfil; conta como processo elementar."
+      "reason": "Método de controller para deixar de seguir perfil; operação distinta na fronteira HTTP."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Profiles/ProfilesController.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfilesController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para obter perfil; conta como processo elementar."
+      "reason": "Método de controller para obter perfil na fronteira HTTP; conta como EP."
     },
     {
       "name": "Get",
-      "file": "/src/Conduit/Features/Tags/TagsController.cs",
+      "file": "\\src\\Conduit\\Features\\Tags\\TagsController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para listar tags; conta como processo elementar."
+      "reason": "Método de controller para listar tags na fronteira do sistema; conta como EP."
     },
     {
       "name": "GetCurrent",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para obter o usuário corrente; conta como processo elementar."
+      "reason": "Método de controller para obter usuário corrente na fronteira HTTP; conta como EP."
     },
     {
       "name": "UpdateUser",
-      "file": "/src/Conduit/Features/Users/UserController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UserController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para atualização do usuário; conta como processo elementar."
+      "reason": "Método de controller para atualização de usuário na fronteira do sistema; conta como EP."
     },
     {
       "name": "Create",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para registro/criação de usuário; conta como processo elementar."
+      "reason": "Método de controller para cadastro de usuário na fronteira HTTP; operação elementar distinta."
     },
     {
       "name": "Login",
-      "file": "/src/Conduit/Features/Users/UsersController.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\UsersController.cs",
       "source": "llm",
-      "reason": "Método de controller exposto na fronteira HTTP para autenticação de usuário; conta como processo elementar."
+      "reason": "Método de controller para autenticação de usuário na fronteira do sistema; conta como EP."
     }
   ],
   "ignored_by_llm": [
     {
       "name": "GetAllData",
-      "file": "/src/Conduit/Features/Articles/ArticleExtensions.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\ArticleExtensions.cs",
       "source": "llm",
-      "reason": "Método em classe de extensão, de apoio interno para composição de dados; não representa fronteira do sistema nem entidade de negócio."
+      "reason": "Método auxiliar em classe de extensão, sem ser fronteira do sistema nem entidade de negócio."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Create.cs",
       "source": "llm",
-      "reason": "Handler interno de feature correspondente ao endpoint Create do controller; pela regra de fronteira, não conta adicionalmente."
+      "reason": "Handler interno de feature CQRS correspondente ao controller ArticlesController.Create; seria dupla contagem."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Details.cs",
       "source": "llm",
-      "reason": "Handler interno de feature correspondente ao endpoint Get do controller para detalhes; não conta além da fronteira HTTP."
+      "reason": "Handler interno correspondente ao endpoint de leitura em ArticlesController.Get; não conta separadamente."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "source": "llm",
-      "reason": "Handler interno de feature correspondente ao endpoint Edit do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint ArticlesController.Edit; pela regra de fronteira deve ser ignorado."
     },
     {
       "name": "GetArticleTagsToCreate",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "source": "llm",
-      "reason": "Método auxiliar interno para cálculo de diferenças de tags na edição; não é operação de fronteira nem função de dados."
+      "reason": "Método auxiliar interno para cálculo de diferenças de tags; não é operação de fronteira."
     },
     {
       "name": "GetArticleTagsToDelete",
-      "file": "/src/Conduit/Features/Articles/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\Edit.cs",
       "source": "llm",
-      "reason": "Método auxiliar interno para cálculo de remoção de tags; não é operação de fronteira nem função de dados."
+      "reason": "Método auxiliar interno para cálculo de diferenças de tags; não é EP nem FD."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Articles/List.cs",
+      "file": "\\src\\Conduit\\Features\\Articles\\List.cs",
       "source": "llm",
-      "reason": "Handler interno de listagem de artigos correspondente a método Get do controller; não conta além da fronteira."
+      "reason": "Handler interno correspondente ao endpoint de listagem em ArticlesController.Get; não conta além do controller."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\Create.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Create do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint CommentsController.Create; deve ser ignorado para evitar dupla contagem."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Comments/List.cs",
+      "file": "\\src\\Conduit\\Features\\Comments\\List.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Get do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint CommentsController.Get; não é EP adicional."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Add.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Add.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint FavoriteAdd do controller; pela regra de fronteira, deve ser ignorado."
+      "reason": "Handler interno correspondente ao endpoint FavoritesController.FavoriteAdd; não conta separadamente."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Favorites/Delete.cs",
+      "file": "\\src\\Conduit\\Features\\Favorites\\Delete.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint FavoriteDelete do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint FavoritesController.FavoriteDelete; seria dupla contagem."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Add.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\Add.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Follow do controller; não conta além da fronteira HTTP."
+      "reason": "Handler interno correspondente ao endpoint FollowersController.Follow; não é EP adicional."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Followers/Delete.cs",
+      "file": "\\src\\Conduit\\Features\\Followers\\Delete.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Unfollow do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint FollowersController.Unfollow; deve ser ignorado."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Profiles/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\Details.cs",
       "source": "llm",
-      "reason": "Handler interno de feature correspondente ao endpoint Get do controller de perfis; não conta além da fronteira."
+      "reason": "Handler interno correspondente ao endpoint ProfilesController.Get; não conta além do controller."
     },
     {
       "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/IProfileReader.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\IProfileReader.cs",
       "source": "llm",
-      "reason": "Método em interface de serviço/leitura; interface e implementação não são fronteira quando há controller correspondente, e a interface deve ser ignorada."
+      "reason": "Método em interface de serviço/leitura; interfaces e contratos técnicos de implementação não contam como EP quando há implementação e controller."
     },
     {
       "name": "ReadProfile",
-      "file": "/src/Conduit/Features/Profiles/ProfileReader.cs",
+      "file": "\\src\\Conduit\\Features\\Profiles\\ProfileReader.cs",
       "source": "llm",
-      "reason": "Método de serviço concreto usado internamente para leitura de perfil; como existe controller para a operação, não é EP adicional."
+      "reason": "Método de serviço interno usado para leitura de perfil, implementando operação já exposta por controller; não é fronteira."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Tags/List.cs",
+      "file": "\\src\\Conduit\\Features\\Tags\\List.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Get do controller de tags; não conta além da fronteira."
+      "reason": "Handler interno correspondente ao endpoint TagsController.Get; não deve ser contado separadamente."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Create.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Create.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Create do controller de usuários; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint UsersController.Create; seria dupla contagem."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Details.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Details.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint GetCurrent do controller de usuário atual; não conta além da fronteira."
+      "reason": "Handler interno correspondente ao endpoint UserController.GetCurrent; não é EP adicional."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Edit.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Edit.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint UpdateUser do controller; não conta adicionalmente."
+      "reason": "Handler interno correspondente ao endpoint UserController.UpdateUser; deve ser ignorado pela regra de fronteira."
     },
     {
       "name": "Handle",
-      "file": "/src/Conduit/Features/Users/Login.cs",
+      "file": "\\src\\Conduit\\Features\\Users\\Login.cs",
       "source": "llm",
-      "reason": "Handler interno correspondente ao endpoint Login do controller de usuários; não conta além da fronteira."
+      "reason": "Handler interno correspondente ao endpoint UsersController.Login; não conta separadamente."
     }
   ]
 }
