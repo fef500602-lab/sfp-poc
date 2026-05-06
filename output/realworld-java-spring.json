@@ -4,7 +4,7 @@
   "data_functions": [
     {
       "name": "Node",
-      "file": "/src/main/java/io/spring/application/Node.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\Node.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -13,7 +13,7 @@
     },
     {
       "name": "Article",
-      "file": "/src/main/java/io/spring/core/article/Article.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\article\\Article.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -26,7 +26,7 @@
     },
     {
       "name": "Tag",
-      "file": "/src/main/java/io/spring/core/article/Tag.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\article\\Tag.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -39,7 +39,7 @@
     },
     {
       "name": "Comment",
-      "file": "/src/main/java/io/spring/core/comment/Comment.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\comment\\Comment.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -52,7 +52,7 @@
     },
     {
       "name": "ArticleFavorite",
-      "file": "/src/main/java/io/spring/core/favorite/ArticleFavorite.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\favorite\\ArticleFavorite.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -65,7 +65,7 @@
     },
     {
       "name": "FollowRelation",
-      "file": "/src/main/java/io/spring/core/user/FollowRelation.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\user\\FollowRelation.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -77,7 +77,7 @@
     },
     {
       "name": "User",
-      "file": "/src/main/java/io/spring/core/user/User.java",
+      "file": "\\src\\main\\java\\io\\spring\\core\\user\\User.java",
       "language": "java",
       "file_role": "model",
       "base_classes": [],
@@ -92,7 +92,7 @@
   "elementary_processes": [
     {
       "name": "article",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -103,7 +103,7 @@
     },
     {
       "name": "updateArticle",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -114,7 +114,7 @@
     },
     {
       "name": "deleteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -125,7 +125,7 @@
     },
     {
       "name": "favoriteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -136,7 +136,7 @@
     },
     {
       "name": "unfavoriteArticle",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -147,7 +147,7 @@
     },
     {
       "name": "responseArticleData",
-      "file": "/src/main/java/io/spring/api/ArticleFavoriteApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticleFavoriteApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -156,7 +156,7 @@
     },
     {
       "name": "createArticle",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -167,7 +167,7 @@
     },
     {
       "name": "getFeed",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -178,7 +178,7 @@
     },
     {
       "name": "getArticles",
-      "file": "/src/main/java/io/spring/api/ArticlesApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ArticlesApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -189,7 +189,7 @@
     },
     {
       "name": "createComment",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -200,7 +200,7 @@
     },
     {
       "name": "getComments",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -211,7 +211,7 @@
     },
     {
       "name": "deleteComment",
-      "file": "/src/main/java/io/spring/api/CommentsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CommentsApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -222,7 +222,7 @@
     },
     {
       "name": "currentUser",
-      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -233,7 +233,7 @@
     },
     {
       "name": "updateProfile",
-      "file": "/src/main/java/io/spring/api/CurrentUserApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\CurrentUserApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -244,7 +244,7 @@
     },
     {
       "name": "getProfile",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -255,7 +255,7 @@
     },
     {
       "name": "follow",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -266,7 +266,7 @@
     },
     {
       "name": "unfollow",
-      "file": "/src/main/java/io/spring/api/ProfileApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\ProfileApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -277,7 +277,7 @@
     },
     {
       "name": "getTags",
-      "file": "/src/main/java/io/spring/api/TagsApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\TagsApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -288,7 +288,7 @@
     },
     {
       "name": "createUser",
-      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -299,7 +299,7 @@
     },
     {
       "name": "userLogin",
-      "file": "/src/main/java/io/spring/api/UsersApi.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\UsersApi.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -310,7 +310,7 @@
     },
     {
       "name": "getParam",
-      "file": "/src/main/java/io/spring/api/exception/CustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\exception\\CustomizeExceptionHandler.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -319,7 +319,7 @@
     },
     {
       "name": "getErrors",
-      "file": "/src/main/java/io/spring/api/exception/InvalidRequestException.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\exception\\InvalidRequestException.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -328,7 +328,7 @@
     },
     {
       "name": "getTokenString",
-      "file": "/src/main/java/io/spring/api/security/JwtTokenFilter.java",
+      "file": "\\src\\main\\java\\io\\spring\\api\\security\\JwtTokenFilter.java",
       "language": "java",
       "file_role": "controller",
       "base_classes": [],
@@ -337,7 +337,7 @@
     },
     {
       "name": "findById",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -346,7 +346,7 @@
     },
     {
       "name": "findBySlug",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -355,7 +355,7 @@
     },
     {
       "name": "findRecentArticlesWithCursor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -364,7 +364,7 @@
     },
     {
       "name": "findUserFeedWithCursor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -373,7 +373,7 @@
     },
     {
       "name": "findRecentArticles",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -382,7 +382,7 @@
     },
     {
       "name": "findUserFeed",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -391,7 +391,7 @@
     },
     {
       "name": "fillExtraInfo",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -400,7 +400,7 @@
     },
     {
       "name": "setIsFollowingAuthor",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -409,7 +409,7 @@
     },
     {
       "name": "setFavoriteCount",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -418,7 +418,7 @@
     },
     {
       "name": "setIsFavorite",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -427,7 +427,7 @@
     },
     {
       "name": "fillExtraInfo",
-      "file": "/src/main/java/io/spring/application/ArticleQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ArticleQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -436,7 +436,7 @@
     },
     {
       "name": "findById",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -445,7 +445,7 @@
     },
     {
       "name": "findByArticleId",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -454,7 +454,7 @@
     },
     {
       "name": "findByArticleIdWithCursor",
-      "file": "/src/main/java/io/spring/application/CommentQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\CommentQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -463,7 +463,7 @@
     },
     {
       "name": "parse",
-      "file": "/src/main/java/io/spring/application/DateTimeCursor.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\DateTimeCursor.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -472,7 +472,7 @@
     },
     {
       "name": "getCursor",
-      "file": "/src/main/java/io/spring/application/Node.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\Node.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -481,7 +481,7 @@
     },
     {
       "name": "findByUsername",
-      "file": "/src/main/java/io/spring/application/ProfileQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\ProfileQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -490,7 +490,7 @@
     },
     {
       "name": "allTags",
-      "file": "/src/main/java/io/spring/application/TagsQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\TagsQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -499,7 +499,7 @@
     },
     {
       "name": "findById",
-      "file": "/src/main/java/io/spring/application/UserQueryService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\UserQueryService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -508,7 +508,7 @@
     },
     {
       "name": "createArticle",
-      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -517,7 +517,7 @@
     },
     {
       "name": "updateArticle",
-      "file": "/src/main/java/io/spring/application/article/ArticleCommandService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\article\\ArticleCommandService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -526,7 +526,7 @@
     },
     {
       "name": "createUser",
-      "file": "/src/main/java/io/spring/application/user/UserService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -535,7 +535,7 @@
     },
     {
       "name": "updateUser",
-      "file": "/src/main/java/io/spring/application/user/UserService.java",
+      "file": "\\src\\main\\java\\io\\spring\\application\\user\\UserService.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -544,7 +544,7 @@
     },
     {
       "name": "getFeed",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -555,7 +555,7 @@
     },
     {
       "name": "findArticleBySlug",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -566,7 +566,7 @@
     },
     {
       "name": "buildArticlePageInfo",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -575,7 +575,7 @@
     },
     {
       "name": "buildArticleResult",
-      "file": "/src/main/java/io/spring/graphql/ArticleDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -584,7 +584,7 @@
     },
     {
       "name": "createArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -595,7 +595,7 @@
     },
     {
       "name": "updateArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -606,7 +606,7 @@
     },
     {
       "name": "favoriteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -617,7 +617,7 @@
     },
     {
       "name": "unfavoriteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -628,7 +628,7 @@
     },
     {
       "name": "deleteArticle",
-      "file": "/src/main/java/io/spring/graphql/ArticleMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ArticleMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -639,7 +639,7 @@
     },
     {
       "name": "buildCommentPageInfo",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -648,7 +648,7 @@
     },
     {
       "name": "buildCommentResult",
-      "file": "/src/main/java/io/spring/graphql/CommentDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\CommentDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -657,7 +657,7 @@
     },
     {
       "name": "queryProfile",
-      "file": "/src/main/java/io/spring/graphql/ProfileDatafetcher.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\ProfileDatafetcher.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -666,7 +666,7 @@
     },
     {
       "name": "buildProfile",
-      "file": "/src/main/java/io/spring/graphql/RelationMutation.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\RelationMutation.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -675,7 +675,7 @@
     },
     {
       "name": "getCurrentUser",
-      "file": "/src/main/java/io/spring/graphql/SecurityUtil.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\SecurityUtil.java",
       "language": "java",
       "file_role": "unknown",
       "base_classes": [],
@@ -684,7 +684,7 @@
     },
     {
       "name": "getErrorsAsData",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -693,7 +693,7 @@
     },
     {
       "name": "getParam",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],
@@ -702,7 +702,7 @@
     },
     {
       "name": "errorsToMap",
-      "file": "/src/main/java/io/spring/graphql/exception/GraphQLCustomizeExceptionHandler.java",
+      "file": "\\src\\main\\java\\io\\spring\\graphql\\exception\\GraphQLCustomizeExceptionHandler.java",
       "language": "java",
       "file_role": "service",
       "base_classes": [],

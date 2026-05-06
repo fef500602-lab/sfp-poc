@@ -6,6 +6,7 @@ import tree_sitter_javascript as tsjavascript
 import tree_sitter_java as tsjava
 import tree_sitter_c_sharp as tscsharp
 import tree_sitter_typescript as tstypescript
+import tree_sitter_kotlin as tskotlin
 
 # =============================================================================
 # SFP Extractor v4.1 — Redução de ruído residual (backlog v4.1 + v3.2)
@@ -31,7 +32,7 @@ import tree_sitter_typescript as tstypescript
 #   - file_role    : papel inferido pelo caminho do arquivo
 #   - sfp_hint     : pré-classificação determinística
 #
-# Compatibilidade: tree-sitter==0.22.3
+# Compatibilidade: tree-sitter==0.25.2
 # =============================================================================
 
 
@@ -45,6 +46,7 @@ LANGUAGES = {
     "java":       {"language": Language(tsjava.language()),                  "extensions": [".java"]},
     "typescript": {"language": Language(tstypescript.language_typescript()), "extensions": [".ts"]},
     "tsx":        {"language": Language(tstypescript.language_tsx()),        "extensions": [".tsx"]},
+    "kotlin":     {"language": Language(tskotlin.language()),                "extensions": [".kt"]},
 }
 
 
@@ -140,6 +142,33 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "dto",
     ],
     "javascript": [],
+
+    "kotlin": [
+        # Infraestrutura e utilitários
+        "util", "utils", "helper", "helpers",
+        "exception", "error",
+        "config", "configuration",
+        "factory",
+        "converter",
+        "interceptor",
+        "listener",
+        "adapter",
+        "extensions",       # funções de extensão Kotlin
+        # Camadas arquiteturais — não são entidades de domínio SFP
+        "repository", "repositoryimpl",  # repositórios Ktor/Exposed/Room
+        "service", "serviceimpl",        # camada de serviço não é FD
+        "controller", "controllerimpl",  # controllers não são FDs
+        # DTOs e transporte
+        "dto", "request", "response",
+        "params", "param",
+        "model",            # ViewModels Android (quando sufixo)
+        # Android específico
+        "activity",         # Activities Android não são SFP
+        "fragment",         # Fragments Android não são SFP
+        "viewmodel",        # ViewModels não são entidades de domínio
+        "adapter",          # RecyclerView adapters
+        "binding",          # ViewBinding/DataBinding
+    ],
 }
 
 # Métodos padrão da linguagem que nunca são Processos Elementares SFP
@@ -188,6 +217,32 @@ IGNORE_METHOD_NAMES = {
         "getderivedstatefromprops", "getderivedstatefromerror",
         "componentdidcatch",
     },
+
+    "kotlin": {
+        # Métodos gerados automaticamente por data class
+        "copy",             # data class copy()
+        "component1", "component2", "component3",
+        "component4", "component5",  # destructuring
+        # Métodos padrão Object
+        "tostring", "hashcode", "equals",
+        # Android lifecycle — não são lógica de negócio SFP
+        "oncreate", "onstart", "onresume",
+        "onpause", "onstop", "ondestroy",
+        "oncreatview", "onviewcreated",
+        "ondestroyview", "onattach", "ondetach",
+        "onactivitycreated",
+        # ViewModel
+        "oncleared",
+        # RecyclerView
+        "onbindviewholder", "oncreateviewholder",
+        "getitemcount", "getitemviewtype",
+        # Queries de repositório — acesso a dados, não operação de fronteira SFP
+        "findby", "findall", "findbyid", "findbyslug",
+        "findbyemail", "findbyusername",
+        "save", "delete", "update", "insert",
+        # Entry point
+        "main",
+    },
 }
 
 # Herança que indica Data Function com certeza
@@ -202,6 +257,11 @@ DATA_FUNCTION_BASE_CLASSES = {
     ],
     "typescript": [],
     "javascript": [],
+
+    "kotlin": [
+        "entity", "baseentity",
+        "roomdatabase",
+    ],
 }
 
 # Decorators/annotations que indicam Data Function com certeza
@@ -217,6 +277,11 @@ DATA_FUNCTION_DECORATORS = {
     "csharp":     [],
     "typescript": ["entity"],  # TypeORM
     "javascript": [],
+
+    "kotlin": [
+        "entity",
+        "table", "document", "mappedsuperclass", "embeddable",
+    ],
 }
 
 # Decorators/annotations que indicam Elementary Process com certeza
@@ -237,6 +302,13 @@ ELEMENTARY_PROCESS_DECORATORS = {
     "csharp":     ["httpget", "httppost", "httpput", "httpdelete", "httppatch"],
     "typescript": ["get", "post", "put", "delete", "patch"],  # NestJS
     "javascript": [],
+
+    "kotlin": [
+        "get", "post", "put", "delete", "patch",
+        "query", "insert", "update", "delete",
+        "getmapping", "postmapping", "putmapping",
+        "deletemapping", "patchmapping", "requestmapping",
+    ],
 }
 
 # Herança/padrões que indicam elementos a IGNORAR
@@ -267,6 +339,7 @@ IGNORE_BASE_CLASSES = {
         "exception", "middleware",
         "profile",  # AutoMapper
     ],
+    
     "typescript": [
         # v4.1: classes de infraestrutura NestJS — não são FD de domínio
         "exceptionfilter",  # filtros de exceção
@@ -276,7 +349,27 @@ IGNORE_BASE_CLASSES = {
     "javascript": [
         "error",            # mesmo padrão para JS puro
     ],
+
+    "kotlin": [
+        # Exceções
+        "exception", "runtimeexception", "throwable",
+        # Android — não são lógica de negócio SFP
+        "appcompatactivity", "activity", "fragmentactivity",
+        "fragment", "dialogfragment", "bottomsheetdialogfragment",
+        "recyclerview",
+        "application",      # classe Application Android
+        "service",          # Android Service (background)
+        "broadcastreceiver",
+        "contentprovider",
+        # Testes
+        "testcase", "androidjunit4",
+        # ViewModel
+        "viewmodel", "androidviewmodel",
+        # Room
+        "roomdatabase",
+    ],
 }
+
 
 # Decorators que indicam elementos a IGNORAR
 IGNORE_DECORATORS = {
@@ -316,6 +409,17 @@ IGNORE_METHOD_NAME_SUFFIXES = {
     "csharp":     [],
     "typescript": [],
     "javascript": [],
+
+    "kotlin": [
+        # Injeção de dependência (Hilt/Koin)
+        "hiltandroidapp", "androidentrypoint", "hiltviewmodel",
+        "inject", "singleton", "module", "provides", "binds",
+        # Testes
+        "test", "before", "after", "beforeclass", "afterclass",
+        # Android
+        "parcelize",        # geração automática de Parcelable
+        "suppresslint",     # supressão de lint
+    ],
 }
 
 
@@ -818,8 +922,7 @@ def extract_decorators_ts(node):
 def analyze_file(filepath, lang_name, relative_path):
     config   = LANGUAGES[lang_name]
     language = config["language"]
-    parser   = Parser()
-    parser.language = language
+    parser   = Parser(language)
 
     with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
         source_code = f.read()
@@ -838,8 +941,9 @@ def analyze_file(filepath, lang_name, relative_path):
     def walk(node):
         # ── Classes ──────────────────────────────────
         if node.type in ("class_definition",          # Python
-                         "class_declaration",          # Java, C#, TS, JS
-                         "interface_declaration",      # Java, C#, TS
+                         "class_declaration",          # Java, C#, TS, JS, Kotlin
+                         "interface_declaration",      # Java, C#, TS, Kotlin
+                         "object_declaration",         # Kotlin: singleton objects
                          "record_declaration",         # C#
                          "type_alias_declaration"):    # TS
 
@@ -869,9 +973,11 @@ def analyze_file(filepath, lang_name, relative_path):
                 elif lang_name in ("typescript", "tsx", "javascript"):
                     bases = extract_base_classes_ts(node)
                     decs  = extract_decorators_ts(node)
+                elif lang_name == "kotlin":
+                    bases = extract_base_classes_java(node)   # mesma estrutura do Java
+                    decs  = extract_decorators_java(node)     # annotations Kotlin = Java
                 else:
                     bases, decs = [], []
-
                 hint = classify_hint(name, bases, decs, file_role, lang_name, is_method=False)
 
                 item = {
@@ -915,6 +1021,8 @@ def analyze_file(filepath, lang_name, relative_path):
                     decs = extract_decorators_csharp(node)
                 elif lang_name in ("typescript", "tsx", "javascript"):
                     decs = extract_decorators_ts(node)
+                elif lang_name == "kotlin":
+                    decs = extract_decorators_java(node)      # annotations Kotlin = Java
                 else:
                     decs = []
 
@@ -1024,7 +1132,6 @@ def analyze_repository(repo_path, repo_name):
             except Exception as e:
                 print(f"   ⚠️  Erro em {filename}: {e}")
 
-    # Resumo por sfp_hint
     hints_df = {}
     for item in report["data_functions"]:
         h = item["sfp_hint"]
@@ -1036,10 +1143,8 @@ def analyze_repository(repo_path, repo_name):
         hints_ep[h] = hints_ep.get(h, 0) + 1
 
     print(f"   ✅ Arquivos analisados    : {report['files_analyzed']}")
-    print(f"   📦 Funções de Dados       : {len(report['data_functions'])} "
-          f"{hints_df}")
-    print(f"   ⚙️  Processos Elementares  : {len(report['elementary_processes'])} "
-          f"{hints_ep}")
+    print(f"   📦 Funções de Dados       : {len(report['data_functions'])} {hints_df}")
+    print(f"   ⚙️  Processos Elementares  : {len(report['elementary_processes'])} {hints_ep}")
 
     return report
 

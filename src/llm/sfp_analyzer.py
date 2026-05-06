@@ -442,11 +442,12 @@ if __name__ == "__main__":
     # Deixe REPOS_PERMITIDOS = [] para processar tudo (cuidado com custo).
     # ─────────────────────────────────────────
     REPOS_PERMITIDOS = [
-        # Conjunto principal RealWorld — mesma aplicação em 4 linguagens
+        # Conjunto principal RealWorld — mesma aplicação em múltiplas linguagens
         "realworld-csharp-dotnet.json",
         "realworld-java-spring.json",
         "realworld-nodejs-express.json",
         "realworld-python-django.json",
+        "realworld-kotlin-ktor.json",
         # Arquiteturas complementares
         "csharp-clean-arch.json",
         "nestjs-framework.json",
