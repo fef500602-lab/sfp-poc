@@ -612,6 +612,7 @@ def extract_ktor_routes(root_node, relative_path):
                                 "base_classes": [],
                                 "decorators":   [f"{method.upper()}:{path}"],
                                 "sfp_hint":     "elementary_process",
+                                "hint_reason":  f"rota Ktor detectada: {method.upper()} {path}",
                             })
 
         for child in node.children:
@@ -671,6 +672,7 @@ def extract_express_routes(root_node, relative_path, lang_name):
                             "base_classes": [],
                             "decorators":   [f"{method.upper()}:{path}"],
                             "sfp_hint":     "elementary_process",
+                            "hint_reason":  f"rota Express detectada: {method.upper()} {path}",
                         })
 
         for child in node.children:
@@ -683,11 +685,13 @@ def extract_express_routes(root_node, relative_path, lang_name):
 # ─────────────────────────────────────────
 # 4. Pré-classificação SFP (sfp_hint)
 #
-# Retorna uma das 3 categorias:
-#   "data_function"       → certeza de que é SFP
-#   "elementary_process"  → certeza de que é SFP
-#   "ignore"              → certeza de que NÃO é SFP
-#   "llm"                 → ambíguo, precisa da LLM
+# Retorna tupla (hint, reason) onde:
+#   hint   : "data_function" | "elementary_process" | "ignore" | "llm"
+#   reason : frase em pt-BR descrevendo qual regra disparou a classificação
+#
+# O campo reason é armazenado como hint_reason no JSON do extrator e
+# propagado como reason no output final do sfp_analyzer, permitindo
+# auditoria completa de cada símbolo contado ou descartado.
 # ─────────────────────────────────────────
 def classify_hint(name, base_classes, decorators, file_role, lang, is_method=False):
     name_lower       = name.lower()
@@ -696,19 +700,19 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
 
     # 1. Arquivo de migration, teste, config, UI ou infraestrutura → sempre ignorar
     if file_role in ("migration", "test", "config", "ui", "infrastructure"):
-        return "ignore"
+        return "ignore", f"file_role='{file_role}' → fora do escopo SFP"
 
     # 2. Método padrão da linguagem → sempre ignorar (antes da regra feature,
     #    para filtrar artefatos do parser como "Task" mesmo em arquivos feature/)
     if is_method and name_lower in IGNORE_METHOD_NAMES.get(lang, set()):
-        return "ignore"
+        return "ignore", f"método '{name}' em IGNORE_METHOD_NAMES[{lang}]"
 
     # 2b. Sufixo de nome de MÉTODO indica helper interno → ignorar
     #     Exemplo: articleResponse(), userResponse() em Java controllers
     if is_method:
         for suffix in IGNORE_METHOD_NAME_SUFFIXES.get(lang, []):
             if name_lower.endswith(suffix):
-                return "ignore"
+                return "ignore", f"sufixo de método '{suffix}' em IGNORE_METHOD_NAME_SUFFIXES[{lang}]"
 
     # 1b. Vertical Slice (feature/): classes são containers ignoráveis;
     #     métodos são potenciais EPs — mas só os que têm decorator HTTP explícito
@@ -717,56 +721,59 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     #     (ex: Details.Handle) que representam a mesma operação de negócio.
     if file_role == "feature":
         if not is_method:
-            return "ignore"
-        has_http_dec = any(
-            any(p in dec for p in ELEMENTARY_PROCESS_DECORATORS.get(lang, []))
-            for dec in decorators_lower
+            return "ignore", "file_role=feature → classe container, ignorada (VSA)"
+        matching_dec = next(
+            (dec for dec in decorators_lower
+             for p in ELEMENTARY_PROCESS_DECORATORS.get(lang, []) if p in dec),
+            None,
         )
-        return "elementary_process" if has_http_dec else "llm"
+        if matching_dec:
+            return "elementary_process", f"file_role=feature + decorator '{matching_dec}' → EP (VSA)"
+        return "llm", "file_role=feature + sem decorator HTTP → ambíguo (possível dupla contagem VSA)"
 
     # 3. Sufixo de nome de CLASSE indica ignorar (não se aplica a métodos)
     if not is_method:
         for suffix in IGNORE_CLASS_NAME_SUFFIXES.get(lang, []):
             if name_lower.endswith(suffix):
-                return "ignore"
+                return "ignore", f"sufixo de classe '{suffix}' em IGNORE_CLASS_NAME_SUFFIXES[{lang}]"
 
     # 4. Base class indica ignorar
     for base in bases_lower:
         for pattern in IGNORE_BASE_CLASSES.get(lang, []):
             if pattern in base:
-                return "ignore"
+                return "ignore", f"herança '{base}' → padrão '{pattern}' em IGNORE_BASE_CLASSES[{lang}]"
 
     # 5. Decorator indica ignorar
     for dec in decorators_lower:
         for pattern in IGNORE_DECORATORS.get(lang, []):
             if pattern in dec:
-                return "ignore"
+                return "ignore", f"decorator '{dec}' → padrão '{pattern}' em IGNORE_DECORATORS[{lang}]"
 
     # 6. Base class indica Data Function com certeza
     for base in bases_lower:
         for pattern in DATA_FUNCTION_BASE_CLASSES.get(lang, []):
             if pattern in base:
-                return "data_function"
+                return "data_function", f"herança '{base}' → padrão '{pattern}' em DATA_FUNCTION_BASE_CLASSES[{lang}]"
 
     # 7. Decorator indica Data Function com certeza
     for dec in decorators_lower:
         for pattern in DATA_FUNCTION_DECORATORS.get(lang, []):
             if pattern in dec:
-                return "data_function"
+                return "data_function", f"decorator '{dec}' → padrão '{pattern}' em DATA_FUNCTION_DECORATORS[{lang}]"
 
     # 8. Decorator indica Elementary Process com certeza
     for dec in decorators_lower:
         for pattern in ELEMENTARY_PROCESS_DECORATORS.get(lang, []):
             if pattern in dec:
-                return "elementary_process"
+                return "elementary_process", f"decorator '{dec}' → padrão '{pattern}' em ELEMENTARY_PROCESS_DECORATORS[{lang}]"
 
     # 9. Arquivo é model → provável Data Function
     #    Exceção Kotlin: projetos Kotlin frequentemente colocam DTOs e entidades
     #    no mesmo pacote models/. Sem herança de entidade confirmada, vai à LLM.
     if file_role == "model":
         if lang == "kotlin":
-            return "llm"
-        return "data_function"
+            return "llm", "file_role=model + kotlin → ambíguo (DTOs e entidades no mesmo pacote)"
+        return "data_function", "file_role=model → FD (regra de caminho)"
 
     # 10. Arquivo é controller → EP na fronteira do sistema (apenas métodos)
     #     Correção v4.0: service separado de controller.
@@ -780,10 +787,10 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     #     decorators individuais — o padrão arquitetural garante o papel.
     if file_role == "controller":
         if not is_method:
-            return "ignore"
+            return "ignore", "file_role=controller + classe → ignorado (classes controller não são FD)"
         if lang in ("java", "kotlin") and not decorators_lower:
-            return "llm"   # método sem decorator → ambíguo (container functions, helpers)
-        return "elementary_process"
+            return "llm", "file_role=controller + método Java/Kotlin sem decorator → ambíguo (possível helper interno)"
+        return "elementary_process", "file_role=controller + método → EP (fronteira do sistema)"
 
     # 10b. Arquivo é service → AMBÍGUO para EP.
     #      Em arquiteturas em camadas (MVC), o service é implementação interna —
@@ -791,14 +798,16 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     #      fronteira real (ex: Application Service sem controller) ou redundante.
     #      Classes service não são FDs → ignore.
     if file_role == "service":
-        return "llm" if is_method else "ignore"
+        if is_method:
+            return "llm", "file_role=service + método → ambíguo (pode ser fronteira ou camada interna)"
+        return "ignore", "file_role=service + classe → ignorado"
 
     # 11. Arquivo é serializer/repository → ignorar
     if file_role in ("serializer", "repository"):
-        return "ignore"
+        return "ignore", f"file_role='{file_role}' → ignorado"
 
     # 12. Ambíguo → delega à LLM
-    return "llm"
+    return "llm", f"nenhuma regra determinística → ambíguo (file_role='{file_role}')"
 
 
 # ─────────────────────────────────────────
@@ -1061,7 +1070,7 @@ def analyze_file(filepath, lang_name, relative_path):
                     decs  = extract_decorators_java(node)     # annotations Kotlin = Java
                 else:
                     bases, decs = [], []
-                hint = classify_hint(name, bases, decs, file_role, lang_name, is_method=False)
+                hint, hint_reason = classify_hint(name, bases, decs, file_role, lang_name, is_method=False)
 
                 item = {
                     "name":         name,
@@ -1071,6 +1080,7 @@ def analyze_file(filepath, lang_name, relative_path):
                     "base_classes": bases,
                     "decorators":   decs,
                     "sfp_hint":     hint,
+                    "hint_reason":  hint_reason,
                 }
 
                 if hint in ("data_function", "llm"):
@@ -1130,7 +1140,7 @@ def analyze_file(filepath, lang_name, relative_path):
                             walk(child)
                         return  # pula construtores Java
 
-                hint = classify_hint(name, [], decs, file_role, lang_name, is_method=True)
+                hint, hint_reason = classify_hint(name, [], decs, file_role, lang_name, is_method=True)
 
                 item = {
                     "name":         name,
@@ -1140,6 +1150,7 @@ def analyze_file(filepath, lang_name, relative_path):
                     "base_classes": [],
                     "decorators":   decs,
                     "sfp_hint":     hint,
+                    "hint_reason":  hint_reason,
                 }
 
                 if hint in ("elementary_process", "llm"):
