@@ -522,3 +522,13 @@ if __name__ == "__main__":
     print("=" * 65)
     print("✅ Análise SFP concluída!")
     print(f"📁 Resultados em: output/sfp/")
+
+    # ── Relatório Excel (SFP-02) ─────────────────────────────────
+    try:
+        import sys
+        sys.path.insert(0, os.path.join(base_dir, "src"))
+        from report.generate_report import generate as generate_excel
+        excel_path = os.path.join(output_dir, "sfp_report.xlsx")
+        generate_excel(sfp_dir, excel_path)
+    except Exception as exc:
+        print(f"   ⚠️  Relatório Excel não gerado: {exc}")
