@@ -350,13 +350,24 @@ def analyze_repository(repo_data):
     print(f"   Pré-classificados → FD: {len(confirmed_fds)}, EP: {len(confirmed_eps)}")
     print(f"   Enviando à LLM   → FD: {len(llm_fds)}, EP: {len(llm_eps)}  ({total_llm} itens)")
 
-    # Monta listas finais com os itens auto-confirmados
+    # Monta listas finais com os itens auto-confirmados.
+    # hint_reason vem do extrator e registra qual regra determinística disparou.
     final_fds = [
-        {"name": i["name"], "file": i["file"], "source": "pre_classifier"}
+        {
+            "name":   i["name"],
+            "file":   i["file"],
+            "source": "pre_classifier",
+            "reason": i.get("hint_reason", ""),
+        }
         for i in confirmed_fds
     ]
     final_eps = [
-        {"name": i["name"], "file": i["file"], "source": "pre_classifier"}
+        {
+            "name":   i["name"],
+            "file":   i["file"],
+            "source": "pre_classifier",
+            "reason": i.get("hint_reason", ""),
+        }
         for i in confirmed_eps
     ]
     ignored_by_llm = []
