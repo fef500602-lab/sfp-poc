@@ -1,0 +1,274 @@
+{
+  "repository": "todobackend-csharp-aspnet",
+  "files_analyzed": 40,
+  "data_functions": [
+    {
+      "name": "TodoDbContext",
+      "file": "\\Todo.Api\\TodoDbContext.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [
+        "IdentityDbContext<TodoUser>",
+        "(options)"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "TodoUser",
+      "file": "\\Todo.Api\\Users\\TodoUser.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [
+        "IdentityUser"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    },
+    {
+      "name": "ExternalProviders",
+      "file": "\\Todo.Web\\Server\\Authentication\\ExternalProviders.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "TodoItem",
+      "file": "\\Todo.Web\\Shared\\SharedClass.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "UserInfo",
+      "file": "\\Todo.Web\\Shared\\SharedClass.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "ExternalUserInfo",
+      "file": "\\Todo.Web\\Shared\\SharedClass.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "AuthToken",
+      "file": "\\Todo.Web\\Shared\\SharedClass.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "AuthorizationBuilder",
+      "file": "\\Todo.Api\\Authorization\\CheckCurrentUserAuthHandler.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "AuthorizationPolicyBuilder",
+      "file": "\\Todo.Api\\Authorization\\CheckCurrentUserAuthHandler.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "TBuilder",
+      "file": "\\Todo.Api\\Filters\\ValidationFilter.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "TodoItem",
+      "file": "\\Todo.Api\\Todos\\Todo.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "RouteGroupBuilder",
+      "file": "\\Todo.Api\\Todos\\TodoApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "RouteGroupBuilder",
+      "file": "\\Todo.Api\\Users\\UsersApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "AddTodoAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "DeleteTodoAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "GetTodosAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "LoginAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "CreateUserAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "LogoutAsync",
+      "file": "\\Todo.Web\\Client\\TodoClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "RouteGroupBuilder",
+      "file": "\\Todo.Web\\Server\\AuthApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "IResult",
+      "file": "\\Todo.Web\\Server\\AuthApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "IResult",
+      "file": "\\Todo.Web\\Server\\AuthApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "GetTokenAsync",
+      "file": "\\Todo.Web\\Server\\AuthClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "CreateUserAsync",
+      "file": "\\Todo.Web\\Server\\AuthClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "GetOrCreateUserAsync",
+      "file": "\\Todo.Web\\Server\\AuthClient.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "RouteGroupBuilder",
+      "file": "\\Todo.Web\\Server\\TodoApi.cs",
+      "language": "csharp",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "GetProviderNamesAsync",
+      "file": "\\Todo.Web\\Server\\Authentication\\ExternalProviders.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "GetProviderNamesAsyncCore",
+      "file": "\\Todo.Web\\Server\\Authentication\\ExternalProviders.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "GetAuthenticationStateAsync",
+      "file": "\\Todo.Web\\Server\\Authentication\\HttpAuthenticationStateProvider.cs",
+      "language": "csharp",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ]
+}

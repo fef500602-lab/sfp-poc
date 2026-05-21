@@ -5,7 +5,7 @@
   "elementary_processes": [
     {
       "name": "getUser",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -16,7 +16,7 @@
     },
     {
       "name": "createUsersLogin",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -27,7 +27,7 @@
     },
     {
       "name": "createUsers",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -38,7 +38,7 @@
     },
     {
       "name": "updateUser",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -49,7 +49,7 @@
     },
     {
       "name": "getTags",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -60,7 +60,7 @@
     },
     {
       "name": "getArticles",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -71,7 +71,7 @@
     },
     {
       "name": "getArticles",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -82,7 +82,7 @@
     },
     {
       "name": "getArticles",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -93,7 +93,7 @@
     },
     {
       "name": "createArticles${slug}Favorite",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -104,7 +104,7 @@
     },
     {
       "name": "getArticles",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -115,7 +115,7 @@
     },
     {
       "name": "getArticlesFeed",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -126,7 +126,7 @@
     },
     {
       "name": "getArticles${slug}",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -137,7 +137,7 @@
     },
     {
       "name": "updateArticles${article.slug}",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -148,7 +148,7 @@
     },
     {
       "name": "createArticles",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -159,7 +159,7 @@
     },
     {
       "name": "createArticles${slug}Comments",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -170,7 +170,7 @@
     },
     {
       "name": "getArticles${slug}Comments",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -181,7 +181,7 @@
     },
     {
       "name": "createProfiles${username}Follow",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],
@@ -192,7 +192,7 @@
     },
     {
       "name": "getProfiles${username}",
-      "file": "/src/agent.js",
+      "file": "\\src\\agent.js",
       "language": "javascript",
       "file_role": "controller",
       "base_classes": [],

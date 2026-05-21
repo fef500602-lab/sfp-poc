@@ -1,0 +1,128 @@
+{
+  "repository": "todobackend-java-spring",
+  "files_analyzed": 5,
+  "data_functions": [
+    {
+      "name": "ResourceWithUrl",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\ResourceWithUrl.java",
+      "language": "java",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [
+        "xmlrootelement"
+      ],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "Todo",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\Todo.java",
+      "language": "java",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "merge",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\Todo.java",
+      "language": "java",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "nonNull",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\Todo.java",
+      "language": "java",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "listAll",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "requestmapping"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "tryToFindById",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "saveTodo",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "requestmapping"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "deleteAllTodos",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "requestmapping"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "deleteOneTodo",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "requestmapping"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "updateTodo",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "requestmapping"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "toResource",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "respondWithResource",
+      "file": "\\src\\main\\java\\com\\jcs\\todomvc\\TodosController.java",
+      "language": "java",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ]
+}

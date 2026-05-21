@@ -1,0 +1,55 @@
+{
+  "repository": "todobackend-python-django",
+  "files_analyzed": 10,
+  "data_functions": [
+    {
+      "name": "Todo",
+      "file": "\\todo\\models.py",
+      "language": "python",
+      "file_role": "model",
+      "base_classes": [
+        "models.Model"
+      ],
+      "decorators": [],
+      "sfp_hint": "data_function"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "post",
+      "file": "\\todo\\views.py",
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "get",
+      "file": "\\todo\\views.py",
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "post",
+      "file": "\\todo\\views.py",
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "put",
+      "file": "\\todo\\views.py",
+      "language": "python",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "elementary_process"
+    }
+  ]
+}

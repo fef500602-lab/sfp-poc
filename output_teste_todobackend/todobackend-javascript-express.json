@@ -1,0 +1,109 @@
+{
+  "repository": "todobackend-javascript-express",
+  "files_analyzed": 2,
+  "data_functions": [],
+  "elementary_processes": [
+    {
+      "name": "query",
+      "file": "\\backend.js",
+      "language": "javascript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "createCallback",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "createTodo",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getCreateTodo",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "GET",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "getId",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "GET:/:id"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "CREATE",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "POST:/"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "updateId",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "PATCH:/:id"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "DELETE",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/"
+      ],
+      "sfp_hint": "elementary_process"
+    },
+    {
+      "name": "deleteId",
+      "file": "\\server.js",
+      "language": "javascript",
+      "file_role": "controller",
+      "base_classes": [],
+      "decorators": [
+        "DELETE:/:id"
+      ],
+      "sfp_hint": "elementary_process"
+    }
+  ]
+}

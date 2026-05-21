@@ -1,0 +1,71 @@
+{
+  "repository": "todobackend-kotlin-ktor2",
+  "files_analyzed": 3,
+  "data_functions": [
+    {
+      "name": "Item",
+      "file": "\\src\\main\\kotlin\\Todo.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "PatchItem",
+      "file": "\\src\\main\\kotlin\\Todo.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "Todos",
+      "file": "\\src\\main\\kotlin\\Todos.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ],
+  "elementary_processes": [
+    {
+      "name": "urlFor",
+      "file": "\\src\\main\\kotlin\\Application.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "getAll",
+      "file": "\\src\\main\\kotlin\\Todos.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "get",
+      "file": "\\src\\main\\kotlin\\Todos.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    },
+    {
+      "name": "deleteAll",
+      "file": "\\src\\main\\kotlin\\Todos.kt",
+      "language": "kotlin",
+      "file_role": "unknown",
+      "base_classes": [],
+      "decorators": [],
+      "sfp_hint": "llm"
+    }
+  ]
+}
