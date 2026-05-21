@@ -132,6 +132,10 @@ IGNORE_CLASS_NAME_SUFFIXES = {
         "repository", "repositoryimpl", # repositórios não são FD
         "service", "serviceimpl",       # camada de serviço não é FD
         "controller", "controllerimpl", # controllers são EPs, não FDs
+        "client",     # TodoClient, AuthClient — clientes HTTP
+        "schemes",    # AuthenticationSchemes — constantes
+        "names",      # TokenNames — constantes
+        "provider",   # HttpAuthenticationStateProvider — infraestrutura
     ],
     "typescript": [
         # DTOs de entrada/saída em *.model.ts — não são entidades de domínio
@@ -179,6 +183,8 @@ IGNORE_METHOD_NAMES = {
         "getclass",       # reflexão
         "notify", "notifyall", "wait",  # sincronização Object
         "isempty",        # utilitário genérico — nunca é EP de negócio
+         # Lifecycle do javax.servlet.Filter — infraestrutura, não fronteira SFP
+        "dofilter", "init", "destroy",
     },
     "python": {
         # Django REST Framework — overrides de Serializer, nunca são EPs
@@ -702,6 +708,14 @@ def classify_hint(name, base_classes, decorators, file_role, lang, is_method=Fal
     #    para filtrar artefatos do parser como "Task" mesmo em arquivos feature/)
     if is_method and name_lower in IGNORE_METHOD_NAMES.get(lang, set()):
         return "ignore"
+
+    # 2a. Getters/setters Java — nunca são EPs SFP (fronteira do sistema)
+    #     getTitle(), setTitle(), isCompleted() são acessores de atributo,
+    #     não operações de negócio. Restrito ao Java porque C# usa propriedades
+    #     e Python/TS têm convenções diferentes.
+    if is_method and lang == "java":
+        if name_lower.startswith(("get", "set", "is")):
+            return "ignore"
 
     # 2b. Sufixo de nome de MÉTODO indica helper interno → ignorar
     #     Exemplo: articleResponse(), userResponse() em Java controllers
@@ -1242,8 +1256,8 @@ def analyze_repository(repo_path, repo_name):
 # ─────────────────────────────────────────
 if __name__ == "__main__":
     base_dir   = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    repos_dir  = os.path.join(base_dir, "repos")
-    output_dir = os.path.join(base_dir, "output")
+    repos_dir  = os.path.join(base_dir, "repos_teste_todobackend")
+    output_dir = os.path.join(base_dir, "output_teste_todobackend")
 
     os.makedirs(output_dir, exist_ok=True)
 
