@@ -1,0 +1,21 @@
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual
+.venv/
+
+# Variáveis de ambiente
+.env
+
+# Outputs gerados
+output/
+
+# Repositórios clonados
+repos/
+
+# Arquivos temporários
+*.patch
