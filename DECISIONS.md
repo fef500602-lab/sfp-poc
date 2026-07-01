@@ -237,6 +237,154 @@ Se a contagem inflar sistematicamente em Kotlin, comparações de produtividade 
 
 ---
 
+## ADR-009 — Validação com implementações alternativas da spec RealWorld (SFP-13)
+
+**Data:** Junho 2026
+**Status:** Vigente
+
+### Contexto
+Após confirmar a convergência entre Python, Java, Node.js e C# (22–25 SFP), a próxima hipótese era: a contagem é independente do **framework** dentro da mesma linguagem? Dois frameworks do mesmo ecossistema que implementam a mesma aplicação deveriam produzir contagens similares.
+
+### Repositórios processados
+
+| Repo | Framework | FD | EP | Total |
+|---|---|---|---|---|
+| conduit-python-fastapi    | Python / FastAPI    | 14 | 19 | 33 |
+| conduit-typescript-nestjs | TypeScript / NestJS |  5 | 20 | 25 |
+| conduit-kotlin-ktor-alt   | Kotlin / Ktor alt.  |  6 |  0 |  6 |
+| conduit-kotlin-quarkus    | Kotlin / Quarkus    |  4 | 15 | 19 |
+
+### Conclusões
+
+- **TypeScript**: Express (25) vs NestJS (25) → Delta 0% → **CONVERGIU ✅** — metodologia é independente de framework em TypeScript
+- **Python**: Django (22) vs FastAPI (33) → EPs convergem (+6%), FDs divergem (+250%) → diferença arquitetural: FastAPI usa Pydantic schemas que inflam FD; EPs OK
+- **Kotlin/Quarkus**: 19 SFP → alinha com baselines Python/Java/Node/C# → confirma que o outlier EP=40 do Ktor é específico do **routing funcional do Ktor** (lambdas), não da linguagem Kotlin
+- **Kotlin/Ktor alt.**: 6 SFP (⚠️ subestimado) — repositório alternativo com arquitetura minimalista, sem handlers completos
+
+### Impacto
+
+- Hipótese de independência de framework: **confirmada para TypeScript**, **parcialmente confirmada para Python** (EPs OK, FDs com ruído de DTOs Pydantic)
+- Kotlin: o viés identificado em SFP-08/ADR-008 é **específico do Ktor** — Quarkus produz resultado dentro do range esperado
+
+---
+
+## ADR-010 — Estratégia de Validação em Camadas (Triangulação FSM)
+
+**Data:** Julho 2026
+**Status:** Vigente
+
+### Contexto
+
+O pipeline SFP (Camada 0) produz contagem automatizada e repetível. Para aumentar a confiabilidade metodológica e viabilizar uso em contratos, estimativas e benchmarking, é necessária uma segunda contagem independente. Nenhum método único cobre todos os projetos — artefatos disponíveis variam por projeto e contexto.
+
+### Decisão: Pipeline de validações em 4 camadas
+
+A estratégia adotada é **triangulação FSM** — conceito estabelecido na literatura de medição de software. Múltiplos métodos independentes são aplicados em sequência, do menor para o maior esforço. A sequência **para** quando dois métodos independentes concordam dentro da faixa de tolerância.
+
+**Referências base:**
+- Cuadrado-Gallego, J.J., Machado, F. et al. — "On the conversion between IFPUG and COSMIC software functional size units: A theoretical and empirical study", *Journal of Systems and Software* (JSS), vol. 81, pp. 661–672, **2008**. [PDF disponível](http://www.cc.uah.es/jjcg/Publications/jjcg/JSS2008.pdf)
+- Cuadrado-Gallego, J.J. et al. — "IFPUG Function Points to COSMIC Function Points convertibility: A fine-grained statistical approach", *Information and Software Technology* (IST), vol. 98, pp. 1–14, **2018**. DOI: [10.1016/j.infsof.2018.01.005](https://www.sciencedirect.com/science/article/abs/pii/S0950584918300168)
+
+```
+Camada 0   →  Pipeline SFP (tree-sitter + Azure OpenAI)            [já implementado]
+Camada 1a  →  OpenAPI/Swagger → FT (Funções de Transação)          [SFP-16]
+Camada 1b  →  DDL/ER do banco → FD (Funções de Dados)              [SFP-16]
+Camada 2   →  Azure DevOps PBIs → contagem por requisitos          [SFP-17]
+Camada 3   →  COSMIC FSM (ISO 19761) → método ISO alternativo      [backlog futuro]
+Sanidade   →  Back-calculation por esforço histórico               [a qualquer momento]
+```
+
+### Critério de parada (convergência)
+
+Se dois métodos independentes concordam dentro de **±15%** para projetos com menos de 500 PF (ou ±10% acima de 500 PF), a validação está completa — não é necessário avançar para a próxima camada.
+
+### Arquitetura de código
+
+Cada validador será implementado como módulo separado em `src/validators/`:
+
+```
+src/
+├── extractor/          ← Camada 0 (existente)
+│   ├── extractor.py
+│   └── validacao.py
+├── llm/                ← Camada 0 (existente)
+│   └── sfp_analyzer.py
+└── validators/         ← Camadas 1-3 (a implementar)
+    ├── swagger_validator.py    ← Camada 1a: FT via OpenAPI
+    ├── ddl_validator.py        ← Camada 1b: FD via DDL/ER
+    ├── devops_validator.py     ← Camada 2:  FT+FD via PBIs
+    └── orchestrator.py         ← Convergência fuzzy entre camadas
+```
+
+Essa estrutura prepara o projeto para evolução futura na escada de maturidade AI.Gile:
+- **Atual (Estágio 3):** Human in the Loop — cada módulo rodado manualmente, 
+- **Próximo (Estágio 4):** `orchestrator.py` executa camadas automaticamente, escala conforme divergência
+- **Futuro:** MCP server expõe o pipeline completo como ferramenta chamável por agentes
+
+### Perguntas operacionais para cada projeto
+
+1. Qual camada é suficiente? (depende de: custo do erro, disponibilidade de artefatos, exigência do cliente)
+2. Swagger existe no projeto? (Spring Boot gera automaticamente em `/v3/api-docs`)
+3. DDL está acessível? (DBA ou export do banco)
+4. Há PBIs (*Product Backlog Item*) escritos no Azure DevOps?
+
+### Consequências
+
+- ✅ Cada projeto VNT pode ser validado no nível adequado ao seu contexto
+- ✅ A estrutura `src/validators/` separa responsabilidades e permite desenvolvimento paralelo (devs do projeto)
+- ✅ Prepara a arquitetura para automação futura sem reescrever o código existente
+- ⚠️ Camada 3 (COSMIC) requer conhecimento específico — backlog futuro, não PoC atual
+- ⚠️ Não criar manual de execução agora — README + DECISIONS.md são suficientes para a PoC
+
+---
+
+## ADR-011 — Fuzzy Logic como Fundação Metodológica da Convergência
+
+**Data:** Julho 2026
+**Status:** Vigente (fundamento teórico — não implementado em código ainda)
+
+### Contexto
+
+A contagem SFP produz um número único (ex: FD=20, EP=129). Mas toda contagem de Pontos de Função tem incerteza inerente — a própria metodologia IFPUG aceita variação de ±10% entre contadores experientes. Tratar o resultado como número exato passa uma falsa precisão.
+
+### Referências acadêmicas
+
+- **Yau & Tsoi** — "Fuzzy Modeling for Function Points Analysis", *Software Quality Journal*, Springer, vol. 11, pp. 199–216, **2002**. DOI: [10.1023/A:1023716628585](https://link.springer.com/article/10.1023/A:1023716628585) — referência seminal: propõe tratar a contagem de FP como distribuição fuzzy em vez de número pontual
+- **Çelik, S. et al.** — "A Neuro-Fuzzy Method to Improving Backfiring Conversion Ratios" (NFFPCM — Neuro-Fuzzy Function Point Calibration Model), arXiv:1508.06191, **2015**. [arXiv](https://arxiv.org/pdf/1508.06191) — mostra 22% de melhoria no MMRE (Mean Magnitude Relative Error) após calibração fuzzy em projetos reais
+- **Cuadrado-Gallego, J.J. et al.** — conversão IFPUG ↔ COSMIC com fator ≈1:1 para muitos domínios — base para usar COSMIC como validador cruzado. Ver referências completas no ADR-010.
+
+### Decisão
+
+Adotar o conceito de **intervalo de confiança fuzzy** na apresentação dos resultados:
+
+```
+SFP Resultado = (min, central, max)
+Exemplo: FD = (17, 20, 23)  |  EP = (115, 129, 143)  |  Confiança: 72%
+```
+
+A **confiança aumenta** conforme mais camadas convergem:
+- 1 método: confiança baixa (~50%)
+- 2 métodos convergindo (±15%): confiança média (~75%)
+- 3 métodos convergindo: confiança alta (~90%)
+- COSMIC alinhado: confiança máxima (~95%)
+
+### Implementação prática (curto prazo)
+
+Não é necessário implementar lógica fuzzy formal. O `orchestrator.py` calcula:
+1. Resultado de cada camada executada
+2. Variação entre resultados (%)
+3. Score de confiança baseado em quantas camadas concordam e dentro de qual faixa
+4. Recomendação: "convergência suficiente" ou "avançar para próxima camada"
+
+### Consequências
+
+- ✅ Comunicação mais honesta com stakeholders — "149 SFP ±10%, confiança 75%" é mais útil que "149 SFP"
+- ✅ Justifica metodologicamente por que múltiplas camadas são necessárias
+- ✅ Alinha com literatura acadêmica de FSM — aumenta credibilidade em contextos formais
+- ⚠️ Requer calibração do score de confiança com dados reais — começar com limiares conservadores
+
+---
+
 ## Convenções deste arquivo
 
 - Cada ADR tem um número sequencial e status: `Vigente` | `Substituído por ADR-XXX` | `Descartado`
